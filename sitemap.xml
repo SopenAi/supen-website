@@ -54,6 +54,42 @@
             href="https://sopen.ai/en/investors.html"/>
     </url>
     
+    <!-- صفحة سياسة الخصوصية -->
+    <url>
+        <loc>https://sopen.ai/privacy.html</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="en-US" 
+            href="https://sopen.ai/en/privacy.html"/>
+    </url>
+
+    <!-- صفحة شروط الاستخدام -->
+    <url>
+        <loc>https://sopen.ai/terms.html</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="en-US" 
+            href="https://sopen.ai/en/terms.html"/>
+    </url>
+    
+    <!-- صفحة حقوق المحتوى (DMCA) -->
+    <url>
+        <loc>https://sopen.ai/copyright.html</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="en-US" 
+            href="https://sopen.ai/en/copyright.html"/>
+    </url>
+
     <!-- نموذج الشراكة العربي (محظور في robots.txt) -->
     <url>
         <loc>https://sopen.ai/Form.html</loc>
@@ -138,6 +174,42 @@
             rel="alternate" 
             hreflang="ar-EG" 
             href="https://sopen.ai/investors.html"/>
+    </url>
+
+    <!-- English Privacy Policy Page -->
+    <url>
+        <loc>https://sopen.ai/en/privacy.html</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="ar-EG" 
+            href="https://sopen.ai/privacy.html"/>
+    </url>
+
+    <!-- English Terms of Use Page -->
+    <url>
+        <loc>https://sopen.ai/en/terms.html</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="ar-EG" 
+            href="https://sopen.ai/terms.html"/>
+    </url>
+    
+    <!-- English Copyright & DMCA Page -->
+    <url>
+        <loc>https://sopen.ai/en/copyright.html</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="ar-EG" 
+            href="https://sopen.ai/copyright.html"/>
     </url>
 
     <!-- English Partnership Form (blocked in robots.txt) -->
