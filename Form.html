@@ -22,97 +22,116 @@
             background-color: #f8fafc; /* slate-50 */
         }
         .ai-gradient-bg {
-            background: linear-gradient(135deg, #0f172a 0%, #164e63 100%); /* Slate-900 to Cyan-800 dark mode */
+            background: linear-gradient(135deg, #0f172a 0%, #164e63 100%); /* slate-900 to cyan-900 */
         }
-        /* Custom input file styling */
-        .file-input {
-            cursor: pointer;
+        .form-container {
+            border: 1px solid rgba(13, 148, 136, 0.2); /* teal-600 with opacity */
         }
-        /* Remove default focus ring and replace with teal one */
-        input:focus, textarea:focus, select:focus {
+        .input-style {
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #d1d5db; /* gray-300 */
+            width: 100%;
+            transition: all 0.2s;
+        }
+        .input-style:focus {
+            border-color: #0d9488; /* teal-600 */
+            box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.2);
             outline: none;
-            box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.5); /* Teal-600 with 50% opacity */
-            border-color: #0d9488;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 min-h-screen flex items-center justify-center py-12">
+<body class="text-slate-900 dark:bg-slate-950 dark:text-slate-100">
 
-    <div class="max-w-4xl w-full mx-auto px-4">
-        <div class="bg-white dark:bg-slate-800 p-6 md:p-10 rounded-2xl shadow-2xl border-t-4 border-teal-600">
-
+    <div class="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
+        <div class="w-full max-w-2xl bg-white dark:bg-slate-900 form-container p-8 rounded-xl shadow-2xl">
+            
             <div class="text-center mb-8">
-                <h1 class="text-4xl font-extrabold text-teal-600 mb-2">طلب الشراكة والاستثمار</h1>
-                <p class="text-lg text-slate-500 dark:text-slate-400">يرجى ملء النموذج لتقديم طلب الشراكة أو الاستثمار.</p>
+                <div class="flex justify-center items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="handshake" class="lucide lucide-handshake text-teal-600 w-10 h-10"><path d="m12 11.2 5-5a2 2 0 0 1 2 3l-2.3 2.3c-.6.6-1.4 1.1-2.3 1.2M9 13v.8l4.2 4.2c.6.6 1.4 1.1 2.3 1.2M5 9.8l5-5a2 2 0 0 1 2 3l-2.3 2.3c-.6.6-1.4 1.1-2.3 1.2M17 17l-5-5"></path></svg>
+                </div>
+                <h1 class="text-3xl font-extrabold text-gray-900 dark:text-gray-100 mb-2">طلب الشراكة والاستثمار</h1>
+                <p class="text-gray-600 dark:text-gray-400">يرجى ملء النموذج لطلب الشراكة الاستراتيجية أو إمكانية الاستثمار في Sopen.ai</p>
             </div>
 
-            <!-- The main form -->
-            <form id="partnershipForm" method="POST" action="https://script.google.com/macros/s/AKfycbzz6PyTIMDzGouX09YjOfDkvvB56a_tTArotAmDki9tuaHMN1mvUYPWd9L6uQmzkuPnaQ/exec" class="space-y-6">
+            <!-- Form -->
+            <form id="partnershipForm" method="post" action="https://script.google.com/macros/s/AKfycbw8TDBBv20NItG0RDns6KMQ0pq63vvRcUzsSpoyRrlUii52x5qaJyuvtL5GDCMlRvD78w/exec" enctype="multipart/form-data" class="space-y-6">
 
-                <!-- Section: Personal Info -->
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-200 border-b pb-2 mb-4 border-slate-200 dark:border-slate-700">1. معلومات الاتصال</h2>
+                <!-- القسم 1: المعلومات الأساسية -->
+                <h2 class="text-xl font-bold text-teal-600 border-b pb-2 mb-4">1. معلومات التواصل</h2>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <fieldset class="space-y-2">
-                        <label for="fullName" class="block text-sm font-semibold">الاسم الكامل *</label>
-                        <input type="text" id="fullName" name="fullName" required class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="الاسم كما يظهر في الوثائق الرسمية">
+                    <!-- الاسم الكامل -->
+                    <fieldset class="space-y-1">
+                        <label for="fullName" class="text-sm font-medium block">الاسم الكامل <span class="text-red-500">*</span></label>
+                        <input type="text" id="fullName" name="fullName" required class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700" placeholder="مثال: أحمد محمد">
                     </fieldset>
-                    <fieldset class="space-y-2">
-                        <label for="email" class="block text-sm font-semibold">البريد الإلكتروني *</label>
-                        <input type="email" id="email" name="email" required class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="example@domain.com">
-                    </fieldset>
-                    <fieldset class="space-y-2">
-                        <label for="company" class="block text-sm font-semibold">الشركة / المنظمة *</label>
-                        <input type="text" id="company" name="company" required class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="اسم شركتك أو الجهة التي تمثلها">
-                    </fieldset>
-                    <fieldset class="space-y-2">
-                        <label for="position" class="block text-sm font-semibold">المنصب / اللقب *</label>
-                        <input type="text" id="position" name="position" required class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="الرئيس التنفيذي، مدير استثمار، إلخ">
-                    </fieldset>
-                    <fieldset class="space-y-2 col-span-1 md:col-span-2">
-                        <label for="linkedin" class="block text-sm font-semibold">رابط LinkedIn أو الموقع الإلكتروني (اختياري)</label>
-                        <input type="url" id="linkedin" name="linkedin" class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="https://www.linkedin.com/in/yourname">
+
+                    <!-- البريد الإلكتروني -->
+                    <fieldset class="space-y-1">
+                        <label for="email" class="text-sm font-medium block">البريد الإلكتروني <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" name="email" required class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700" placeholder="example@domain.com">
                     </fieldset>
                 </div>
 
-                <!-- Section: Partnership Details -->
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-200 border-b pb-2 mb-4 pt-6 border-slate-200 dark:border-slate-700">2. تفاصيل الشراكة/الاستثمار</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- اسم الشركة/المنظمة -->
+                    <fieldset class="space-y-1">
+                        <label for="company" class="text-sm font-medium block">الشركة / المنظمة (اختياري)</label>
+                        <input type="text" id="company" name="company" class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700" placeholder="مثال: صندوق الاستثمار، شركة تقنية">
+                    </fieldset>
 
-                <fieldset class="space-y-2">
-                    <label for="partnershipType" class="block text-sm font-semibold">نوع الشراكة / المبادرة *</label>
-                    <select id="partnershipType" name="partnershipType" required class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white">
-                        <option value="" disabled selected>اختر نوع الشراكة المناسب</option>
-                        <option value="استثمار (Seed / Venture)">استثمار (Seed / Venture)</option>
-                        <option value="شراكة استراتيجية / تقنية">شراكة استراتيجية / تقنية</option>
-                        <option value="شراكة محتوى / تسويق">شراكة محتوى / تسويق</option>
-                        <option value="دعم / احتضان حكومي">دعم / احتضان حكومي</option>
-                        <option value="أخرى">أخرى (يرجى التوضيح في الرسالة)</option>
+                    <!-- المنصب / اللقب -->
+                    <fieldset class="space-y-1">
+                        <label for="position" class="text-sm font-medium block">المنصب / اللقب (اختياري)</label>
+                        <input type="text" id="position" name="position" class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700" placeholder="مثال: شريك، مستثمر رئيسي، مدير تنفيذي">
+                    </fieldset>
+                </div>
+
+                <!-- LinkedIn / الموقع -->
+                <fieldset class="space-y-1">
+                    <label for="linkedin" class="text-sm font-medium block">رابط LinkedIn أو الموقع الإلكتروني (اختياري)</label>
+                    <input type="url" id="linkedin" name="linkedin" class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700" placeholder="https://www.linkedin.com/in/yourprofile">
+                </fieldset>
+
+                <!-- القسم 2: تفاصيل الشراكة -->
+                <h2 class="text-xl font-bold text-teal-600 border-b pb-2 mb-4 pt-6">2. طبيعة الطلب</h2>
+
+                <!-- نوع الشراكة -->
+                <fieldset class="space-y-1">
+                    <label for="partnershipType" class="text-sm font-medium block">الهدف الرئيسي من التواصل <span class="text-red-500">*</span></label>
+                    <select id="partnershipType" name="partnershipType" required class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700">
+                        <option value="">اختر من القائمة...</option>
+                        <option value="Investment">فرصة استثمارية (Seed/Pre-Seed)</option>
+                        <option value="StrategicPartnership">شراكة استراتيجية / تقنية</option>
+                        <option value="MediaRelations">علاقات إعلامية وتغطية</option>
+                        <option value="Other">أخرى (يرجى التوضيح أدناه)</option>
                     </select>
                 </fieldset>
-                
-                <fieldset class="space-y-2">
-                    <label for="investmentRange" class="block text-sm font-semibold">نطاق الاستثمار المقدّر (للشركاء المستثمرين فقط)</label>
-                    <select id="investmentRange" name="investmentRange" class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white">
-                        <option value="N/A (ليس للاستثمار)" selected>N/A (ليس للاستثمار)</option>
-                        <option value="أقل من 50,000$">أقل من 50,000$</option>
-                        <option value="50,000$ - 150,000$">50,000$ - 150,000$</option>
-                        <option value="150,000$ - 500,000$">150,000$ - 500,000$</option>
-                        <option value="أكثر من 500,000$">أكثر من 500,000$</option>
+
+                <!-- نطاق الاستثمار -->
+                <fieldset class="space-y-1">
+                    <label for="investmentRange" class="text-sm font-medium block">نطاق الاستثمار المقدّر (إذا كان الطلب استثمارياً)</label>
+                    <select id="investmentRange" name="investmentRange" class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700">
+                        <option value="">غير محدد / لا ينطبق</option>
+                        <option value="Under_50k">أقل من 50,000 دولار</option>
+                        <option value="50k_200k">50,000 دولار - 200,000 دولار</option>
+                        <option value="200k_500k">200,000 دولار - 500,000 دولار</option>
+                        <option value="500k_1m">500,000 دولار - 1 مليون دولار</option>
+                        <option value="Over_1m">أكثر من 1 مليون دولار</option>
                     </select>
                 </fieldset>
 
-                <!-- Section: Proposal -->
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-200 border-b pb-2 mb-4 pt-6 border-slate-200 dark:border-slate-700">3. رسالة المقترح والمرفقات</h2>
-
-                <fieldset class="space-y-2">
-                    <label for="proposalMessage" class="block text-sm font-semibold">رسالتك أو مقترحك بالتفصيل *</label>
-                    <textarea id="proposalMessage" name="proposalMessage" rows="5" required class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="اذكر بوضوح كيف يمكن أن تكون شراكتنا أو استثمارك مفيدًا لنمو Sopen."></textarea>
+                <!-- الرسالة / المقترح -->
+                <fieldset class="space-y-1">
+                    <label for="proposalMessage" class="text-sm font-medium block">رسالة / مقترح موجز (لتوضيح طبيعة الطلب) <span class="text-red-500">*</span></label>
+                    <textarea id="proposalMessage" name="proposalMessage" rows="5" required class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700" placeholder="يرجى توضيح كيف يمكننا التعاون أو لماذا أنت مهتم بالاستثمار..."></textarea>
                 </fieldset>
 
-                <!-- File Upload -->
-                <fieldset class="space-y-2">
-                    <label for="fileUpload" class="block text-sm font-semibold">إرفاق ملف العرض التقديمي (Pitch Deck) (اختياري)</label>
-                    <input type="file" id="fileUpload" name="fileUpload" class="file-input w-full border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-teal-50 file:text-teal-700 hover:file:bg-teal-100 dark:file:bg-teal-900 dark:file:text-teal-300">
+                <!-- الملف المرفق -->
+                <fieldset class="space-y-1">
+                    <label for="fileUpload" class="text-sm font-medium block">إرفاق Pitch Deck أو ملف إضافي (اختياري، يفضل PDF)</label>
+                    <input type="file" id="fileUpload" name="fileUpload" class="block w-full text-sm text-gray-500 dark:text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:font-semibold file:bg-teal-50 file:text-teal-700 hover:file:bg-teal-100 dark:file:bg-teal-900 dark:file:text-teal-300">
                 </fieldset>
 
                 <!-- Submit Button -->
@@ -131,14 +150,32 @@
         // Initialize Lucide icons for all generated SVG elements
         lucide.createIcons();
 
-        // Optional: Add client-side validation if needed, but for Apps Script, server-side is more critical.
-        // This is a minimal setup to handle the submit process and prevent double submission
+        // This script block handles the submission state and feedback
         const form = document.getElementById('partnershipForm');
         const submitButton = document.getElementById('submitButton');
 
-        form.addEventListener('submit', function() {
+        form.addEventListener('submit', function(e) {
+            // منع الإرسال الافتراضي إذا كانت هناك مشكلة
+            if (!form.checkValidity()) {
+                // المتصفح يتعامل مع هذا، لكن يتم وضعه هنا للتأكيد
+                return; 
+            }
+            
+            // إيقاف الإرسال الافتراضي لمنع الانتقال المباشر (سننتقل عبر الـ iframe بعد المعالجة)
+            // ملاحظة: بما أن النموذج يرسل مباشرة إلى Apps Script، فإننا نحتاج إلى إظهار حالة التحميل
+            // لأن التطبيق سينتقل إلى صفحة التأكيد التي يرجعها Apps Script.
+            
+            // حالة التحميل
             submitButton.disabled = true;
-            submitButton.innerHTML = 'جاري الإرسال... <svg class="animate-spin h-5 w-5 text-white mr-3" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>';
+            submitButton.classList.remove('bg-teal-600', 'hover:bg-teal-700');
+            submitButton.classList.add('bg-gray-400');
+            submitButton.innerHTML = `
+                جاري الإرسال...
+                <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                </svg>
+            `;
         });
     </script>
 </body>
