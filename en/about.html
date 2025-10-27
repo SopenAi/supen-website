@@ -1,0 +1,161 @@
+<html lang="en" dir="ltr" class="scroll-smooth dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Sopen: Vision, Technology, and Economic Independence</title>
+<meta name="description" content="Learn about the vision behind Sopen.ai, the autonomous publishing engine, and the core technology, Sopen.">
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../assets/css/main.css">
+<!-- Fonts & Icons -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&amp;family=Tajawal:wght@400;700&amp;display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+
+<!-- Navbar -->
+<header class="header-fixed fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-slate-900/80 backdrop-blur">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+        <a href="index.html" class="flex items-center gap-2">
+            <img src="../assets/img/logo.png" alt="Sopen Logo" class="w-9 h-9">
+            <span class="text-2xl font-extrabold">Sopen</span>
+            <span class="ms-2 rounded-full text-xs px-2 py-0.5 bg-teal-100 text-teal-700 dark:bg-teal-900/40 dark:text-teal-300">v3.6</span>
+        </a>
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-6 text-[0.95rem] font-semibold">
+            <a href="index.html" class="hover:text-teal-600">Home</a>
+            <a href="about.html" class="hover:text-teal-600 text-teal-600 font-bold">About Project</a>
+            <a href="contact.html" class="bg-blue-600 text-white py-2 px-4 rounded-full shadow hover:bg-blue-700">Contact Us</a>
+            
+            <!-- Language Toggle (to Arabic) -->
+            <a href="../about.html" class="ms-2 p-2 rounded-lg border border-slate-200 dark:border-slate-700 font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition text-sm">
+                عربي
+            </a>
+            <!-- Theme Toggle -->
+            <button id="themeToggle" class="p-2 rounded-lg border border-slate-200 dark:border-slate-700" aria-label="Switch to night mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="moon" class="lucide lucide-moon w-4 h-4"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu Icon -->
+        <button class="md:hidden p-2 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" class="lucide lucide-menu w-6 h-6"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+        </button>
+    </div>
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-white/90 dark:bg-slate-900/80 p-4 border-t border-slate-200 dark:border-slate-700">
+        <div class="flex flex-col gap-3 font-semibold">
+            <a href="index.html#features" class="hover:text-teal-600 border-b pb-2">Features</a>
+            <a href="index.html#monetization" class="hover:text-teal-600 border-b pb-2">Monetization</a>
+            <a href="index.html#roadmap" class="hover:text-teal-600 border-b pb-2">Roadmap</a>
+            <a href="about.html" class="hover:text-teal-600 border-b pb-2">About Project</a>
+            <a href="contact.html" class="bg-blue-600 text-white py-2 px-4 rounded-lg text-center mb-2">Contact Us</a>
+            <a href="../about.html" class="p-2 rounded-lg border border-slate-200 dark:border-slate-700 font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition text-center">
+                عربي
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="ai-gradient-bg pt-36 md:pt-44 pb-20 text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">Our Vision: Building an Autonomous Media System</h1>
+            <p class="text-lg md:text-xl font-medium mb-8 opacity-95">Sopen.ai is more than just a tool. It is an effort to create the first autonomous publishing system that requires almost no human intervention to generate and optimize high-quality content.</p>
+        </div>
+    </section>
+    
+    <!-- Vision and Technology Section -->
+    <section class="py-16 md:py-20 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-black mb-8 text-center">From Idea to Independence</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 text-left">
+                    <p class="text-lg leading-relaxed text-slate-700 dark:text-slate-300 mb-6">
+                        The Sopen system (**S**elf **Open** Publishing Engine) operates on a Closed Learning Loop. It begins by generating ideas based on behavioral analytics (what users read and what achieves the highest CTR), then proceeds through stages of generation, optimization, translation, and sequential publishing across 12+ platforms.
+                    </p>
+                    <p class="text-lg leading-relaxed text-slate-700 dark:text-slate-300 mb-6 font-bold">
+                        The ultimate goal is to achieve "Economic Independence" by v5.0, where the system is capable of managing itself, generating its revenue, and ensuring its compound growth without the need for daily editorial decisions.
+                    </p>
+                    <a href="contact.html" class="cta-button inline-flex items-center gap-2 text-white font-bold py-3 px-6 rounded-xl shadow mt-4 hover:bg-teal-700 transition duration-300">
+                         Join the Vision
+                    </a>
+                </div>
+                
+                <div class="lg:col-span-1 p-6 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl text-left">
+                    <h3 class="text-2xl font-black mb-4 border-b pb-2">Sopen System</h3>
+                    <ul class="space-y-3 text-slate-700 dark:text-slate-300">
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-5 h-5 text-teal-600 mr-2"></svg> 
+                            AI Core: GPT-4o for decision-making.
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-5 h-5 text-teal-600 mr-2"></svg> 
+                            Data Layer: MongoDB & Redis for speed.
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-5 h-5 text-teal-600 mr-2"></svg> 
+                            Queueing: RabbitMQ for publishing reliability.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="py-16 bg-slate-50 dark:bg-slate-900 text-center">
+         <div class="max-w-7xl mx-auto px-4">
+             <h2 class="text-4xl md:text-5xl font-black mb-4">Key Metrics</h2>
+             <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-10">Statistics demonstrating the scale and expansion of the system.</p>
+             <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                 <div class="stat-card p-6 rounded-xl bg-white dark:bg-slate-950 shadow-lg border-l-4 border-teal-600">
+                     <p class="text-4xl font-black text-teal-600 mb-1">12+</p>
+                     <p class="text-sm font-semibold">Integrated Publishing Platforms</p>
+                 </div>
+                 <div class="stat-card p-6 rounded-xl bg-white dark:bg-slate-950 shadow-lg border-l-4 border-teal-600">
+                     <p class="text-4xl font-black text-teal-600 mb-1">9.7/10</p>
+                     <p class="text-sm font-semibold">Average Content Quality Rating</p>
+                 </div>
+                 <div class="stat-card p-6 rounded-xl bg-white dark:bg-slate-950 shadow-lg border-l-4 border-teal-600">
+                     <p class="text-4xl font-black text-teal-600 mb-1">3H</p>
+                     <p class="text-sm font-semibold">Average Learning & Optimization Cycle</p>
+                 </div>
+                 <div class="stat-card p-6 rounded-xl bg-white dark:bg-slate-950 shadow-lg border-l-4 border-teal-600">
+                     <p class="text-4xl font-black text-teal-600 mb-1">x4</p>
+                     <p class="text-sm font-semibold">Language Multiplicity</p>
+                 </div>
+             </div>
+         </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-8">
+      <div class="flex justify-center gap-6 mb-3">
+        <a href="index.html" class="hover:text-teal-400">Home</a>
+        <a href="about.html" class="hover:text-teal-400">About</a>
+        <a href="contact.html" class="hover:text-teal-400">Contact</a>
+      </div>
+      <p class="text-center mt-2">© 2025 Sopen — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle script
+    lucide.createIcons();
+    const themeToggle = document.getElementById('themeToggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const saved = localStorage.getItem('theme');
+    if ((saved === 'dark') || (!saved && prefersDark)) document.documentElement.classList.add('dark');
+    themeToggle?.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
