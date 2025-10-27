@@ -14,7 +14,7 @@
         <priority>1.0</priority>
         <xhtml:link 
             rel="alternate" 
-            hreflang="en" 
+            hreflang="en-US" 
             href="https://sopen.ai/en/index.html"/>
     </url>
 
@@ -26,7 +26,7 @@
         <priority>0.8</priority>
         <xhtml:link 
             rel="alternate" 
-            hreflang="en" 
+            hreflang="en-US" 
             href="https://sopen.ai/en/about.html"/>
     </url>
 
@@ -38,8 +38,30 @@
         <priority>0.8</priority>
         <xhtml:link 
             rel="alternate" 
-            hreflang="en" 
+            hreflang="en-US" 
             href="https://sopen.ai/en/contact.html"/>
+    </url>
+    
+    <!-- الوثائق والتسعير (افتراض وجود نسخة إنجليزية) -->
+    <url>
+        <loc>https://sopen.ai/docs</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="en-US" 
+            href="https://sopen.ai/en/docs"/>
+    </url>
+    <url>
+        <loc>https://sopen.ai/pricing</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="en-US" 
+            href="https://sopen.ai/en/pricing"/>
     </url>
 
     <!-- _______________________________________________________________________ -->
@@ -54,7 +76,7 @@
         <priority>0.9</priority>
         <xhtml:link 
             rel="alternate" 
-            hreflang="ar" 
+            hreflang="ar-EG" 
             href="https://sopen.ai/index.html"/>
     </url>
 
@@ -66,7 +88,7 @@
         <priority>0.7</priority>
         <xhtml:link 
             rel="alternate" 
-            hreflang="ar" 
+            hreflang="ar-EG" 
             href="https://sopen.ai/about.html"/>
     </url>
 
@@ -78,8 +100,30 @@
         <priority>0.7</priority>
         <xhtml:link 
             rel="alternate" 
-            hreflang="ar" 
+            hreflang="ar-EG" 
             href="https://sopen.ai/contact.html"/>
     </url>
     
+    <!-- English Docs and Pricing -->
+    <url>
+        <loc>https://sopen.ai/en/docs</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="ar-EG" 
+            href="https://sopen.ai/docs"/>
+    </url>
+    <url>
+        <loc>https://sopen.ai/en/pricing</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="ar-EG" 
+            href="https://sopen.ai/pricing"/>
+    </url>
+
 </urlset>
