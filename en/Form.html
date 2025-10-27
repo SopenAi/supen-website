@@ -2,14 +2,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sopen.ai Official Partnership & Investment Request Form</title>
-    <meta name="description" content="Official form for investors, strategic partners, and support entities (like Google Cloud or OpenAI) to contact Sopen.ai.">
+    <title>Partnership & Investment Request Form - Sopen.ai</title>
+    <meta name="description" content="Official form for contacting investors, strategic partners, and supporting entities of Sopen.ai.">
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Fonts & Icons: Using Inter for English -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
@@ -18,176 +18,108 @@
         }
         body {
             font-family: var(--font-main);
-            /* Background gradient similar to the original site's style */
             background-color: #f8fafc; /* slate-50 */
         }
-        .ai-gradient-bg {
-            background: linear-gradient(135deg, #0f172a 0%, #164e63 50%, #0891b2 100%);
+        /* Custom input file styling */
+        .file-input {
+            cursor: pointer;
         }
-        .form-card {
-            background-color: #ffffff;
-            border: 1px solid #e2e8f0; /* slate-200 */
-        }
-        .dark .form-card {
-            background-color: #0f172a; /* slate-900 */
-            border: 1px solid #334155; /* slate-700 */
-        }
-        /* Style for required file input field */
-        input[type="file"]::file-selector-button {
-            transition: all 0.3s;
+        /* Remove default focus ring and replace with teal one */
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.5); /* Teal-600 with 50% opacity */
+            border-color: #0d9488;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen p-4 sm:p-8">
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 min-h-screen flex items-center justify-center py-12">
 
-    <!-- Main Container -->
-    <div class="max-w-3xl mx-auto mt-8 mb-16">
-        
-        <!-- Header Section -->
-        <header class="text-center mb-10">
-            <div class="flex items-center justify-center gap-2 mb-4">
-                <img src="https://placehold.co/40x40/0d9488/ffffff?text=S" alt="Sopen Logo" class="w-10 h-10 rounded-full shadow-md">
-                <span class="text-3xl font-black text-slate-900 dark:text-slate-100">Sopen.ai</span>
+    <div class="max-w-4xl w-full mx-auto px-4">
+        <div class="bg-white dark:bg-slate-800 p-6 md:p-10 rounded-2xl shadow-2xl border-t-4 border-teal-600">
+
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-extrabold text-teal-600 mb-2">Partnership & Investment Request</h1>
+                <p class="text-lg text-slate-500 dark:text-slate-400">Please complete the form to submit a collaboration or investment proposal.</p>
             </div>
-            <h1 class="text-4xl font-extrabold text-teal-600 dark:text-teal-400 mb-2">
-                🎯 Official Partnership Request Form
-            </h1>
-            <p class="text-lg text-slate-600 dark:text-slate-400">
-                A streamlined way for Investors, Strategic Partners, and Support Entities to reach the Sopen team.
-            </p>
-        </header>
 
-        <!-- Form Card -->
-        <div id="partnershipFormContainer" class="form-card p-6 md:p-10 rounded-2xl shadow-2xl transition duration-500">
-            
-            <!-- ACTION URL MUST BE THE GOOGLE APPS SCRIPT WEB APP URL -->
-            <form id="googleAppsScriptForm" action="https://script.google.com/macros/s/AKfycbx491OhQkjFNrXEWr38ZkecgWw-P2bbGk7bwBqqpPoxz4kT70Hfz-XomUsi1KE-23Lw/exec" method="POST" enctype="multipart/form-data" class="space-y-8">
+            <!-- The main form, using the Apps Script URL -->
+            <form id="partnershipForm" method="POST" action="https://script.google.com/macros/s/AKfycbzz6PyTIMDzGouX09YjOfDkvvB56a_tTArotAmDki9tuaHMN1mvUYPWd9L6uQmzkuPnaQ/exec" enctype="multipart/form-data" class="space-y-6">
+
+                <!-- Section: Personal Info -->
+                <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-200 border-b pb-2 mb-4 border-slate-200 dark:border-slate-700">1. Basic Contact Information</h2>
                 
-                <!-- 🧩 1. Basic Info -->
-                <fieldset class="border-b border-slate-200 dark:border-slate-700 pb-6">
-                    <legend class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                        1. Basic Info
-                    </legend>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <fieldset class="space-y-2">
+                        <label for="fullName" class="block text-sm font-semibold">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="Name as it appears on official documents">
+                    </fieldset>
+                    <fieldset class="space-y-2">
+                        <label for="email" class="block text-sm font-semibold">Email Address *</label>
+                        <input type="email" id="email" name="email" required class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="example@domain.com">
+                    </fieldset>
+                    <fieldset class="space-y-2">
+                        <label for="company" class="block text-sm font-semibold">Company / Organization *</label>
+                        <input type="text" id="company" name="company" required class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="Your company or entity name">
+                    </fieldset>
+                    <fieldset class="space-y-2">
+                        <label for="position" class="block text-sm font-semibold">Position / Title *</label>
+                        <input type="text" id="position" name="position" required class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="CEO, Investment Director, etc.">
+                    </fieldset>
+                    <fieldset class="space-y-2 col-span-1 md:col-span-2">
+                        <label for="linkedin" class="block text-sm font-semibold">LinkedIn or Website (Optional)</label>
+                        <input type="url" id="linkedin" name="linkedin" class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="https://www.linkedin.com/in/yourname">
+                    </fieldset>
+                </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                            <label for="fullName" class="block text-sm font-medium mb-1">Full Name <span class="text-red-500">*</span></label>
-                            <input type="text" id="fullName" name="fullName" required class="w-full p-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-teal-500 focus:border-teal-500 dark:bg-slate-800 dark:text-slate-100">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium mb-1">Email Address <span class="text-red-500">*</span></label>
-                            <input type="email" id="email" name="email" required class="w-full p-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-teal-500 focus:border-teal-500 dark:bg-slate-800 dark:text-slate-100">
-                        </div>
-                        <div>
-                            <label for="company" class="block text-sm font-medium mb-1">Company / Organization</label>
-                            <input type="text" id="company" name="company" class="w-full p-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-teal-500 focus:border-teal-500 dark:bg-slate-800 dark:text-slate-100">
-                        </div>
-                        <div>
-                            <label for="position" class="block text-sm font-medium mb-1">Position / Title</label>
-                            <input type="text" id="position" name="position" class="w-full p-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-teal-500 focus:border-teal-500 dark:bg-slate-800 dark:text-slate-100">
-                        </div>
-                        <div class="md:col-span-2">
-                            <label for="linkedin" class="block text-sm font-medium mb-1">LinkedIn or Website (Optional)</label>
-                            <input type="url" id="linkedin" name="linkedin" class="w-full p-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-teal-500 focus:border-teal-500 dark:bg-slate-800 dark:text-slate-100">
-                        </div>
-                    </div>
+                <!-- Section: Partnership Details -->
+                <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-200 border-b pb-2 mb-4 pt-6 border-slate-200 dark:border-slate-700">2. Partnership/Investment Details</h2>
+
+                <fieldset class="space-y-2">
+                    <label for="partnershipType" class="block text-sm font-semibold">Partnership Type / Initiative *</label>
+                    <select id="partnershipType" name="partnershipType" required class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                        <option value="" disabled selected>Select the appropriate partnership type</option>
+                        <option value="Investment (Seed / Venture)">Investment (Seed / Venture)</option>
+                        <option value="Strategic / Technology Partner (e.g., Google Cloud)">Strategic / Technology Partner (e.g., Google Cloud)</option>
+                        <option value="Content / Marketing Collaboration">Content / Marketing Collaboration</option>
+                        <option value="Government Support / Incubation">Government Support / Incubation</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset class="space-y-2">
+                    <label for="investmentRange" class="block text-sm font-semibold">Estimated Investment / Support Range (Investors only)</label>
+                    <select id="investmentRange" name="investmentRange" class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                        <option value="N/A (Not for Investment)" selected>N/A (Not for Investment)</option>
+                        <option value="Less than $50,000">Less than $50,000</option>
+                        <option value="$50,000 - $150,000">$50,000 - $150,000</option>
+                        <option value="$150,000 - $500,000">$150,000 - $500,000</option>
+                        <option value="More than $500,000">More than $500,000</option>
+                    </select>
                 </fieldset>
 
-                <!-- 💼 2. Partnership Type -->
-                <fieldset class="border-b border-slate-200 dark:border-slate-700 pb-6">
-                    <legend class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="handshake"><path d="m12 12 4 4v3a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-3l4-4Z"></path><path d="m14.5 12.5-3.5-3.5"></path><path d="m10 8 4 4"></path><path d="M7 21a2 2 0 0 1-2-2v-3l4-4m2 2 4-4m2 2 4 4m-2 2v3a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-3l-4-4"></path></svg>
-                        2. Partnership Type
-                    </legend>
-                    
-                    <div class="space-y-2">
-                        <label class="flex items-center space-x-3 cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
-                            <input type="radio" name="partnershipType" value="Investor / Funding Opportunity" required class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
-                            <span class="text-base font-medium">Investor / Funding Opportunity</span>
-                        </label>
-                        <label class="flex items-center space-x-3 cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
-                            <input type="radio" name="partnershipType" value="Strategic Partner (Tech / API / Infrastructure)" required class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
-                            <span class="text-base font-medium">Strategic Partner (Tech / API / Infrastructure)</span>
-                        </label>
-                        <label class="flex items-center space-x-3 cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
-                            <input type="radio" name="partnershipType" value="Media or Marketing Collaboration" required class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
-                            <span class="text-base font-medium">Media or Marketing Collaboration</span>
-                        </label>
-                        <label class="flex items-center space-x-3 cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
-                            <input type="radio" name="partnershipType" value="Educational or Research Partnership" required class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
-                            <span class="text-base font-medium">Educational or Research Partnership</span>
-                        </label>
-                        <label class="flex items-center space-x-3 cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
-                            <input type="radio" name="partnershipType" value="Other" required class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
-                            <span class="text-base font-medium">Other</span>
-                        </label>
-                    </div>
+                <!-- Section: Proposal -->
+                <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-200 border-b pb-2 mb-4 pt-6 border-slate-200 dark:border-slate-700">3. Proposal Message and Attachments</h2>
+
+                <fieldset class="space-y-2">
+                    <label for="proposalMessage" class="block text-sm font-semibold">Your Detailed Message or Proposal *</label>
+                    <textarea id="proposalMessage" name="proposalMessage" rows="5" required class="w-full p-3 border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="Clearly state how our partnership or your investment can benefit Sopen's growth."></textarea>
                 </fieldset>
 
-                <!-- 📊 3. Estimated Investment / Support Range -->
-                <fieldset class="border-b border-slate-200 dark:border-slate-700 pb-6">
-                    <legend class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="trending-up"><polyline points="22 7 13.5 15.5 10 12 2 20"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
-                        3. Estimated Investment / Support Range (Optional)
-                    </legend>
-                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">This helps us gauge the seriousness of the proposal.</p>
-                    
-                    <div class="grid grid-cols-2 gap-4">
-                        <label class="flex items-center space-x-3 cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
-                            <input type="radio" name="investmentRange" value="$1,000 – $10,000" class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
-                            <span class="text-base font-medium">$1,000 – $10,000</span>
-                        </label>
-                        <label class="flex items-center space-x-3 cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
-                            <input type="radio" name="investmentRange" value="$10,000 – $100,000" class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
-                            <span class="text-base font-medium">$10,000 – $100,000</span>
-                        </label>
-                        <label class="flex items-center space-x-3 cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
-                            <input type="radio" name="investmentRange" value="$100,000 – $1M" class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
-                            <span class="text-base font-medium">$100,000 – $1M</span>
-                        </label>
-                        <label class="flex items-center space-x-3 cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
-                            <input type="radio" name="investmentRange" value="$1M+" class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
-                            <span class="text-base font-medium">$1M+</span>
-                        </label>
-                    </div>
-                </fieldset>
-
-                <!-- 💬 4. Message / Proposal -->
-                <fieldset class="border-b border-slate-200 dark:border-slate-700 pb-6">
-                    <legend class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                        4. Message / Proposal (Required)
-                    </legend>
-                    <textarea id="proposalMessage" name="proposalMessage" rows="5" required placeholder='Example: "I’m interested in collaborating with Sopen to integrate our translation API and offer support to your AI content generation modules."' class="w-full p-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-teal-500 focus:border-teal-500 dark:bg-slate-800 dark:text-slate-100"></textarea>
-                </fieldset>
-
-                <!-- 📎 5. Attach Document (File Upload) -->
-                <fieldset class="pb-6">
-                    <legend class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="upload"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" x2="12" y1="3" y2="15"></line></svg>
-                        5. Attach Document (Pitch Deck / Offer) (Optional)
-                    </legend>
-                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Uploaded files will be saved in a dedicated folder in Google Drive.</p>
-                    
-                    <!-- The name attribute 'fileUpload' is critical for the Apps Script -->
-                    <input type="file" id="attachDocument" name="fileUpload" class="w-full mt-4 text-sm text-slate-500 dark:text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-teal-50 file:text-teal-700 hover:file:bg-teal-100 dark:file:bg-teal-900 dark:file:text-teal-300">
+                <!-- File Upload -->
+                <fieldset class="space-y-2">
+                    <label for="fileUpload" class="block text-sm font-semibold">Attach Pitch Deck or Proposal Document (Optional)</label>
+                    <!-- IMPORTANT: enctype="multipart/form-data" added to form tag above -->
+                    <input type="file" id="fileUpload" name="fileUpload" class="file-input w-full border border-slate-300 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-white file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-teal-50 file:text-teal-700 hover:file:bg-teal-100 dark:file:bg-teal-900 dark:file:text-teal-300">
                 </fieldset>
 
                 <!-- Submit Button -->
                 <div class="text-center pt-4">
                     <button type="submit" id="submitButton" class="bg-teal-600 text-white font-bold py-3 px-12 rounded-xl text-lg shadow-xl hover:bg-teal-700 inline-flex items-center justify-center gap-2 transform transition duration-300 w-full md:w-auto">
-                        Submit Proposal (Saves to Drive)
+                        Submit Proposal (Data saved to Drive)
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="send" class="lucide lucide-send w-5 h-5"><line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 14 2 11 22 2"></polygon></svg>
                     </button>
                 </div>
 
-                <!-- Confirmation Message Placeholder -->
-                <div id="confirmationMessage" class="hidden text-center p-4 rounded-xl bg-green-50 dark:bg-green-900 border border-green-300 dark:border-green-700 text-green-700 dark:text-green-300 mt-6">
-                    <h4 class="font-bold text-xl mb-2">Thank you for reaching out to Sopen.</h4>
-                    <p class="text-lg">Our founder or technical lead will contact you within 48 hours. – The Sopen Team</p>
-                </div>
-                
             </form>
         </div>
     </div>
@@ -195,59 +127,15 @@
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
-        
-        // Simple Dark Mode Toggle
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const saved = localStorage.getItem('theme');
-        if (saved === 'dark' || (!saved && prefersDark)) {
-            document.documentElement.classList.add('dark');
-        }
 
-        // Handle Form Submission and Display Confirmation (Since Apps Script typically redirects/responds)
-        const form = document.getElementById('googleAppsScriptForm');
-        const container = document.getElementById('partnershipFormContainer');
-        const confirmationMessage = document.getElementById('confirmationMessage');
+        // Handle form submission loading state
+        const form = document.getElementById('partnershipForm');
+        const submitButton = document.getElementById('submitButton');
 
-        // Note: Since the form posts to an external Apps Script URL, 
-        // a simple submit event listener won't capture the final result easily 
-        // unless we use AJAX/Fetch. For a direct form post (which is simpler for Apps Script), 
-        // the Apps Script itself handles the success page. 
-
-        // If you were to implement this using Fetch (AJAX) instead of a direct post, 
-        // you would use the following pattern:
-        /*
-        form.addEventListener('submit', async function(e) {
-            e.preventDefault();
-            const formData = new FormData(form);
-            const submitButton = document.getElementById('submitButton');
+        form.addEventListener('submit', function() {
             submitButton.disabled = true;
-            submitButton.textContent = 'Sending...';
-
-            try {
-                // Replace with actual fetch logic if you modify Code.gs to return JSON
-                // const response = await fetch(form.action, { method: 'POST', body: formData });
-                
-                // Simulate success based on the requirement to show the confirmation message
-                setTimeout(() => {
-                    form.classList.add('hidden');
-                    confirmationMessage.classList.remove('hidden');
-                    container.scrollIntoView({ behavior: 'smooth' });
-                }, 1500); // Simulate network delay
-                
-            } catch (error) {
-                console.error('Submission failed:', error);
-                alert('Submission failed. Please check the console for details.');
-                submitButton.disabled = false;
-                submitButton.textContent = 'Submit Proposal (Saves to Drive)';
-            }
+            submitButton.innerHTML = 'Submitting... <svg class="animate-spin h-5 w-5 text-white ml-2" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>';
         });
-        */
-        
-        // Since we are using a direct form POST to Apps Script, 
-        // the Apps Script success handler will handle showing the final message 
-        // or redirecting. We keep the confirmation message hidden here 
-        // as a visual reference for the user's requirement.
-
     </script>
 </body>
 </html>
