@@ -1,0 +1,198 @@
+<html lang="ar" dir="rtl" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج طلب الشراكة والاستثمار - Sopen.ai</title>
+    <meta name="description" content="نموذج رسمي للتواصل مع المستثمرين والشركاء الاستراتيجيين والجهات الداعمة لـ Sopen.ai.">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts & Icons: Using Cairo and Tajawal for Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --font-main: 'Cairo', sans-serif;
+        }
+        body {
+            font-family: var(--font-main);
+            /* Background gradient similar to the original site's style */
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .ai-gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #164e63 50%, #0891b2 100%);
+        }
+        .form-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0; /* slate-200 */
+        }
+        .dark .form-card {
+            background-color: #0f172a; /* slate-900 */
+            border: 1px solid #334155; /* slate-700 */
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen p-4 sm:p-8">
+
+    <!-- Main Container -->
+    <div class="max-w-3xl mx-auto mt-8 mb-16">
+        
+        <!-- Header Section -->
+        <header class="text-center mb-10">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <img src="https://placehold.co/40x40/0d9488/ffffff?text=S" alt="Sopen Logo" class="w-10 h-10 rounded-full shadow-md">
+                <span class="text-3xl font-black text-slate-900 dark:text-slate-100">Sopen.ai</span>
+            </div>
+            <h1 class="text-4xl font-extrabold text-teal-600 dark:text-teal-400 mb-2">
+                🎯 نموذج طلب الشراكة والاستثمار
+            </h1>
+            <p class="text-lg text-slate-600 dark:text-slate-400">
+                منصة رسمية للتواصل مع المستثمرين والشركاء الاستراتيجيين (مثل Google Cloud أو OpenAI).
+            </p>
+        </header>
+
+        <!-- Form Card -->
+        <div id="partnershipFormContainer" class="form-card p-6 md:p-10 rounded-2xl shadow-2xl transition duration-500">
+            
+            <!-- تم تحديث الـ action بعنوان URL الفعلي لتطبيق Google Apps Script -->
+            <form id="googleAppsScriptForm" action="https://script.google.com/macros/s/AKfycbx491OhQkjFNrXEWr38ZkecgWw-P2bbGk7bwBqqFpPoxQz4kT70Hfz-XomUsi1KE-23Lw/exec" method="POST" enctype="multipart/form-data" class="space-y-8">
+                
+                <!-- 🧩 1. Basic Info -->
+                <fieldset class="border-b border-slate-200 dark:border-slate-700 pb-6">
+                    <legend class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        1. المعلومات الأساسية
+                    </legend>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="fullName" class="block text-sm font-medium mb-1">الاسم الكامل <span class="text-red-500">*</span></label>
+                            <!-- Name attributes are crucial for Apps Script -->
+                            <input type="text" id="fullName" name="fullName" required class="w-full p-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-teal-500 focus:border-teal-500 dark:bg-slate-800 dark:text-slate-100">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-1">البريد الإلكتروني <span class="text-red-500">*</span></label>
+                            <input type="email" id="email" name="email" required class="w-full p-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-teal-500 focus:border-teal-500 dark:bg-slate-800 dark:text-slate-100">
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-medium mb-1">الشركة / المنظمة</label>
+                            <input type="text" id="company" name="company" class="w-full p-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-teal-500 focus:border-teal-500 dark:bg-slate-800 dark:text-slate-100">
+                        </div>
+                        <div>
+                            <label for="position" class="block text-sm font-medium mb-1">المنصب / اللقب</label>
+                            <input type="text" id="position" name="position" class="w-full p-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-teal-500 focus:border-teal-500 dark:bg-slate-800 dark:text-slate-100">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="linkedin" class="block text-sm font-medium mb-1">LinkedIn أو الموقع الإلكتروني (اختياري)</label>
+                            <input type="url" id="linkedin" name="linkedin" class="w-full p-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-teal-500 focus:border-teal-500 dark:bg-slate-800 dark:text-slate-100">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- 💼 2. Partnership Type -->
+                <fieldset class="border-b border-slate-200 dark:border-slate-700 pb-6">
+                    <legend class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="handshake"><path d="m12 12 4 4v3a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-3l4-4Z"></path><path d="m14.5 12.5-3.5-3.5"></path><path d="m10 8 4 4"></path><path d="M7 21a2 2 0 0 1-2-2v-3l4-4m2 2 4-4m2 2 4 4m-2 2v3a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-3l-4-4"></path></svg>
+                        2. نوع الشراكة
+                    </legend>
+                    
+                    <div class="space-y-2">
+                        <label class="flex items-center space-x-3 space-x-reverse cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
+                            <input type="radio" name="partnershipType" value="مستثمر / فرصة تمويل" required class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
+                            <span class="text-base font-medium">مستثمر / فرصة تمويل</span>
+                        </label>
+                        <label class="flex items-center space-x-3 space-x-reverse cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
+                            <input type="radio" name="partnershipType" value="شريك استراتيجي" required class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
+                            <span class="text-base font-medium">شريك استراتيجي (تقني / API / بنية تحتية)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 space-x-reverse cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
+                            <input type="radio" name="partnershipType" value="تعاون إعلامي أو تسويقي" required class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
+                            <span class="text-base font-medium">تعاون إعلامي أو تسويقي</span>
+                        </label>
+                        <label class="flex items-center space-x-3 space-x-reverse cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
+                            <input type="radio" name="partnershipType" value="شراكة تعليمية أو بحثية" required class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
+                            <span class="text-base font-medium">شراكة تعليمية أو بحثية</span>
+                        </label>
+                        <label class="flex items-center space-x-3 space-x-reverse cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
+                            <input type="radio" name="partnershipType" value="أخرى" required class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
+                            <span class="text-base font-medium">أخرى</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- 📊 3. Estimated Investment / Support Range -->
+                <fieldset class="border-b border-slate-200 dark:border-slate-700 pb-6">
+                    <legend class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="trending-up"><polyline points="22 7 13.5 15.5 10 12 2 20"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                        3. نطاق الاستثمار / الدعم المقدّر (اختياري)
+                    </legend>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">هذا السؤال يساعدنا في قياس مدى جدّية العرض.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <label class="flex items-center space-x-3 space-x-reverse cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
+                            <input type="radio" name="investmentRange" value="$1,000 – $10,000" class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
+                            <span class="text-base font-medium">$1,000 – $10,000</span>
+                        </label>
+                        <label class="flex items-center space-x-3 space-x-reverse cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
+                            <input type="radio" name="investmentRange" value="$10,000 – $100,000" class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
+                            <span class="text-base font-medium">$10,000 – $100,000</span>
+                        </label>
+                        <label class="flex items-center space-x-3 space-x-reverse cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
+                            <input type="radio" name="investmentRange" value="$100,000 – $1M" class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
+                            <span class="text-base font-medium">$100,000 – $1M</span>
+                        </label>
+                        <label class="flex items-center space-x-3 space-x-reverse cursor-pointer p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition">
+                            <input type="radio" name="investmentRange" value="$1M+" class="w-4 h-4 text-teal-600 border-slate-300 focus:ring-teal-500">
+                            <span class="text-base font-medium">$1M+</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- 💬 4. Message / Proposal -->
+                <fieldset class="border-b border-slate-200 dark:border-slate-700 pb-6">
+                    <legend class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        4. الرسالة / المقترح (مطلوب)
+                    </legend>
+                    <textarea id="proposalMessage" name="proposalMessage" rows="5" required placeholder='مثال: "أنا مهتم بالتعاون مع Sopen لدمج واجهة برمجة تطبيقات الترجمة الخاصة بنا وتقديم الدعم لوحدات توليد المحتوى بالذكاء الاصطناعي لديكم."' class="w-full p-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-teal-500 focus:border-teal-500 dark:bg-slate-800 dark:text-slate-100"></textarea>
+                </fieldset>
+
+                <!-- 📎 5. Attach Document (File Upload) -->
+                <fieldset class="pb-6">
+                    <legend class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="upload"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" x2="12" y1="3" y2="15"></line></svg>
+                        5. إرفاق ملف Pitch Deck أو عرض (اختياري)
+                    </legend>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">سيتم حفظ الملفات المرفقة في مجلد منفصل في Google Drive.</p>
+                    
+                    <!-- يجب أن يكون اسم الحقل 'fileUpload' ليعمل مع Apps Script المقدم -->
+                    <input type="file" id="attachDocument" name="fileUpload" class="w-full mt-4 text-sm text-slate-500 dark:text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-teal-50 file:text-teal-700 hover:file:bg-teal-100 dark:file:bg-teal-900 dark:file:text-teal-300">
+                </fieldset>
+
+                <!-- Submit Button -->
+                <div class="text-center pt-4">
+                    <button type="submit" id="submitButton" class="bg-teal-600 text-white font-bold py-3 px-12 rounded-xl text-lg shadow-xl hover:bg-teal-700 inline-flex items-center justify-center gap-2 transform transition duration-300 w-full md:w-auto">
+                        إرسال الطلب (سيتم الحفظ في Drive)
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="send" class="lucide lucide-send w-5 h-5"><line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 14 2 11 22 2"></polygon></svg>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons for all generated SVG elements
+        lucide.createIcons();
+        
+        // Simple Dark Mode Toggle
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark' || (!saved && prefersDark)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+</html>

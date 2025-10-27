@@ -1,8 +1,4 @@
-----------------------------------------------------------------------
-
 Robots.txt for Sopen AI - Multi-lingual Website
-
-----------------------------------------------------------------------
 
 تعيين إرشادات لجميع وكلاء المستخدم (محركات البحث)
 
@@ -12,8 +8,15 @@ User-agent: *
 
 Allow: /
 
+حظر الصفحات غير المخصصة للفهرسة (مثل النماذج ولوحات التحكم)
+
+Disallow: /Form.html
+Disallow: /en/Form.html
+Disallow: /dashboard.html
+Disallow: /en/dashboard.html
+
 تحديد مسار ملف Sitemap XML الخاص بالموقع
 
-هذا هو أهم جزء لضمان أن Google تفهرس جميع الروابط متعددة اللغات (hreflang)
+(تم تصحيح المسار ليكون رابط مباشر للملف)
 
 Sitemap: https://www.google.com/search?q=https://sopen.ai/sitemap.xml

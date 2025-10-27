@@ -42,6 +42,30 @@
             href="https://sopen.ai/en/contact.html"/>
     </url>
     
+    <!-- صفحة المستثمرون والشركاء -->
+    <url>
+        <loc>https://sopen.ai/investors.html</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="en-US" 
+            href="https://sopen.ai/en/investors.html"/>
+    </url>
+    
+    <!-- نموذج الشراكة العربي (محظور في robots.txt) -->
+    <url>
+        <loc>https://sopen.ai/Form.html</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="en-US" 
+            href="https://sopen.ai/en/Form.html"/>
+    </url>
+
     <!-- الوثائق والتسعير (افتراض وجود نسخة إنجليزية) -->
     <url>
         <loc>https://sopen.ai/docs</loc>
@@ -102,6 +126,30 @@
             rel="alternate" 
             hreflang="ar-EG" 
             href="https://sopen.ai/contact.html"/>
+    </url>
+    
+    <!-- English Investors and Partners Page -->
+    <url>
+        <loc>https://sopen.ai/en/investors.html</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="ar-EG" 
+            href="https://sopen.ai/investors.html"/>
+    </url>
+
+    <!-- English Partnership Form (blocked in robots.txt) -->
+    <url>
+        <loc>https://sopen.ai/en/Form.html</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="ar-EG" 
+            href="https://sopen.ai/Form.html"/>
     </url>
     
     <!-- English Docs and Pricing -->
