@@ -61,3 +61,22 @@ body {
 .language-badge { 
     direction: ltr; 
 }
+
+/* 🚨 جديد: نمط بطاقة معاينة المحتوى الآلي */
+.showcase-card {
+    transition: all 0.3s;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.showcase-card:hover {
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+    transform: translateY(-5px);
+}
+.showcase-card .header-img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+.dark .showcase-card {
+    background-color: #0f172a; /* Slate-900 */
+}
