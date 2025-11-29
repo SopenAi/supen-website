@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth dark">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-72DYP8QRHF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-72DYP8QRHF');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Founders | Sopen.ai</title>
+    <meta name="description" content="Meet the founding team behind Sopen.ai and their vision for autonomous AI publishing.">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS (Relative Path) -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .founder-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .founder-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+
+<!-- Navbar -->
+<header class="header-fixed fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-slate-900/80 backdrop-blur">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+        <a href="index.html" class="flex items-center gap-2">
+            <img src="../assets/img/logo.png" alt="Sopen Logo" class="w-9 h-9">
+            <span class="text-2xl font-extrabold">Sopen</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-[0.95rem] font-semibold">
+            <a href="index.html" class="hover:text-teal-600">Home</a>
+            <a href="about.html" class="hover:text-teal-600">About</a>
+            <a href="founders.html" class="hover:text-teal-600 text-teal-600 font-bold">Founders</a>
+            <a href="contact.html" class="bg-blue-600 text-white py-2 px-4 rounded-full shadow hover:bg-blue-700">Contact Us</a>
+            
+            <a href="../founders.html" class="ms-2 p-2 rounded-lg border border-slate-200 dark:border-slate-700 font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition text-sm language-badge">
+                العربية
+            </a>
+            <button id="themeToggle" class="p-2 rounded-lg border border-slate-200 dark:border-slate-700" aria-label="Switch to night mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="moon" class="lucide lucide-moon w-4 h-4"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden p-2 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" class="lucide lucide-menu w-6 h-6"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+        </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-white/90 dark:bg-slate-900/80 p-4 border-t border-slate-200 dark:border-slate-700">
+        <div class="flex flex-col gap-3 font-semibold">
+            <a href="index.html" class="hover:text-teal-600 border-b pb-2">Home</a>
+            <a href="about.html" class="hover:text-teal-600 border-b pb-2">About</a>
+            <a href="founders.html" class="hover:text-teal-600 border-b pb-2 text-teal-600">Founders</a>
+            <a href="contact.html" class="bg-blue-600 text-white py-2 px-4 rounded-lg text-center mb-2">Contact Us</a>
+            <a href="../founders.html" class="p-2 rounded-lg border border-slate-200 dark:border-slate-700 font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition text-center language-badge">العربية</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="ai-gradient-bg pt-36 md:pt-44 pb-20 text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">Minds Behind Sopen</h1>
+            <p class="text-lg md:text-xl font-medium mb-8 opacity-95">A team of 18-year-old innovators united by one passion: making digital publishing fully autonomous.</p>
+        </div>
+    </section>
+
+    <!-- Founders Grid -->
+    <section class="py-16 md:py-20 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Founder 1: Reda Hussein -->
+                <div class="founder-card bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden flex flex-col">
+                    <div class="p-6 pb-0 flex flex-col items-center text-center">
+                        <img src="assets/img/f1.jpg" alt="Reda Hussein" class="w-32 h-32 rounded-full border-4 border-white dark:border-slate-800 shadow-lg object-cover mb-4">
+                        <h2 class="text-2xl font-black mb-1">Reda Hussein</h2>
+                        <span class="bg-teal-100 text-teal-800 text-xs font-bold px-3 py-1 rounded-full dark:bg-teal-900 dark:text-teal-300">Founder & CEO/CTO</span>
+                        
+                        <!-- Info Bar -->
+                        <div class="flex items-center justify-center gap-4 mt-3 text-sm text-slate-500 font-medium">
+                            <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cake"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"></path><path d="M4 16s.5-1 2-1 2.5 1 4 1 3-1 4-1 2.5-1 4-1 2-1 2 1"></path><path d="M2 21h20"></path><path d="M7 8v2"></path><path d="M12 8v2"></path><path d="M17 8v2"></path><path d="M7 4h.01"></path><path d="M12 4h.01"></path><path d="M17 4h.01"></path></svg> 18 Years Old</span>
+                            <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg> Baghdad</span>
+                        </div>
+
+                        <div class="flex gap-4 mt-4 text-slate-500">
+                             <a href="mailto:admin@sopen.ai" class="hover:text-teal-600 transition flex items-center gap-2 font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path></svg>
+                                admin@sopen.ai
+                             </a>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Full-stack founder responsible for product architecture, AI systems, and cloud infrastructure. Built Sopen from scratch including microservices and AI engines. Started building complex systems at age 17.
+                        </p>
+                        
+                        <!-- Achievements List -->
+                        <div class="mb-4">
+                            <h3 class="text-xs font-bold text-slate-900 dark:text-slate-100 uppercase tracking-wider mb-2">Key Achievements:</h3>
+                            <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-1 list-disc list-inside">
+                                <li>Built Sopen.ai platform from scratch.</li>
+                                <li>Developed autonomous AI code analysis engine at 17.</li>
+                                <li>Created "Forgotten Universe Law" data model.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white dark:bg-slate-950 p-4 rounded-xl border border-slate-100 dark:border-slate-800">
+                            <h3 class="text-sm font-bold text-teal-600 mb-2 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                                The Hack
+                            </h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">
+                                Needed legal support but had no money. Convinced his father using a product simulation instead of theory, turning fear into funding for Sopen 2.0v.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Founder 2: Muntazar Amer -->
+                <div class="founder-card bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden flex flex-col">
+                    <div class="p-6 pb-0 flex flex-col items-center text-center">
+                        <img src="assets/img/f2.png" alt="Muntazar Amer" class="w-32 h-32 rounded-full border-4 border-white dark:border-slate-800 shadow-lg object-cover mb-4">
+                        <h2 class="text-2xl font-black mb-1">Muntazar Amer</h2>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full dark:bg-blue-900 dark:text-blue-300">Co-Founder & COO</span>
+                        
+                        <!-- Info Bar -->
+                        <div class="flex items-center justify-center gap-4 mt-3 text-sm text-slate-500 font-medium">
+                            <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cake"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"></path><path d="M4 16s.5-1 2-1 2.5 1 4 1 3-1 4-1 2.5-1 4-1 2-1 2 1"></path><path d="M2 21h20"></path><path d="M7 8v2"></path><path d="M12 8v2"></path><path d="M17 8v2"></path><path d="M7 4h.01"></path><path d="M12 4h.01"></path><path d="M17 4h.01"></path></svg> 18 Years Old</span>
+                            <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg> Baghdad</span>
+                        </div>
+
+                        <div class="flex gap-4 mt-4 text-slate-500">
+                            <a href="mailto:trz@sopen.ai" class="hover:text-blue-600 transition flex items-center gap-2 font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path></svg>
+                                trz@sopen.ai
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Manages operations and content systems to empower engineering speed. Expert in managing digital communities and learning systems.
+                        </p>
+
+                        <!-- Achievements List -->
+                        <div class="mb-4">
+                            <h3 class="text-xs font-bold text-slate-900 dark:text-slate-100 uppercase tracking-wider mb-2">Key Achievements:</h3>
+                            <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-1 list-disc list-inside">
+                                <li>Built comprehensive online learning portals.</li>
+                                <li>Established automated content workflows.</li>
+                                <li>Managed digital communities effectively.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white dark:bg-slate-950 p-4 rounded-xl border border-slate-100 dark:border-slate-800">
+                            <h3 class="text-sm font-bold text-blue-600 mb-2 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
+                                The Hack
+                            </h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">
+                                Optimized a failing offline business by mapping workflows and changing queues without software, dropping wait times from 30 to 10 minutes and increasing sales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Founder 3: Abdullah Hassan -->
+                <div class="founder-card bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden flex flex-col">
+                    <div class="p-6 pb-0 flex flex-col items-center text-center">
+                        <img src="assets/img/f3.jpg" alt="Abdullah Hassan" class="w-32 h-32 rounded-full border-4 border-white dark:border-slate-800 shadow-lg object-cover mb-4">
+                        <h2 class="text-2xl font-black mb-1">Abdullah Hassan</h2>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full dark:bg-indigo-900 dark:text-indigo-300">Co-Founder & CMO</span>
+                        
+                        <!-- Info Bar -->
+                        <div class="flex items-center justify-center gap-4 mt-3 text-sm text-slate-500 font-medium">
+                            <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cake"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"></path><path d="M4 16s.5-1 2-1 2.5 1 4 1 3-1 4-1 2.5-1 4-1 2-1 2 1"></path><path d="M2 21h20"></path><path d="M7 8v2"></path><path d="M12 8v2"></path><path d="M17 8v2"></path><path d="M7 4h.01"></path><path d="M12 4h.01"></path><path d="M17 4h.01"></path></svg> 18 Years Old</span>
+                            <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg> Baghdad</span>
+                        </div>
+
+                        <div class="flex gap-4 mt-4 text-slate-500">
+                            <a href="mailto:ecs@sopen.ai" class="hover:text-indigo-600 transition flex items-center gap-2 font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path></svg>
+                                ecs@sopen.ai
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Leads global marketing and user acquisition. Specializes in organic growth via data and communities. Balances cybersecurity studies with startup growth.
+                        </p>
+
+                        <!-- Achievements List -->
+                        <div class="mb-4">
+                            <h3 class="text-xs font-bold text-slate-900 dark:text-slate-100 uppercase tracking-wider mb-2">Key Achievements:</h3>
+                            <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-1 list-disc list-inside">
+                                <li>Scaled a community to 10k+ users organically.</li>
+                                <li>Engineered behavior-based growth funnels.</li>
+                                <li>Executed zero-budget marketing campaigns.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white dark:bg-slate-950 p-4 rounded-xl border border-slate-100 dark:border-slate-800">
+                            <h3 class="text-sm font-bold text-indigo-600 mb-2 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                                The Hack
+                            </h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">
+                                Engineered a growth pathway based on human behavior patterns rather than ads, scaling a previous community to tens of thousands of users organically.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-8">
+      <p class="text-center text-xs mb-3 text-slate-500 dark:text-slate-500">
+          Headquarters: Operates globally under Google Cloud (Europe-west1 – Belgium) infrastructure.
+      </p>
+      <div class="flex justify-center gap-6 mb-3">
+        <a href="index.html" class="hover:text-teal-400">Home</a>
+        <a href="about.html" class="hover:text-teal-400">About</a>
+        <a href="contact.html" class="hover:text-teal-400">Contact</a>
+      </div>
+      <p class="text-center mt-2">© 2025 Sopen — All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // Theme toggle script
+    lucide.createIcons();
+    const themeToggle = document.getElementById('themeToggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const saved = localStorage.getItem('theme');
+    if ((saved === 'dark') || (!saved && prefersDark)) document.documentElement.classList.add('dark');
+    themeToggle?.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    });
+</script>
+</body>
+</html>
