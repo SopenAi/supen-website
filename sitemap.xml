@@ -9,7 +9,7 @@
     <!-- الصفحة الرئيسية -->
     <url>
         <loc>https://sopen.ai/index.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <xhtml:link 
@@ -21,7 +21,7 @@
     <!-- صفحة حول المشروع -->
     <url>
         <loc>https://sopen.ai/about.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link 
@@ -30,10 +30,22 @@
             href="https://sopen.ai/en/about.html"/>
     </url>
 
+    <!-- صفحة المؤسسون (جديد) -->
+    <url>
+        <loc>https://sopen.ai/founders.html</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="en-US" 
+            href="https://sopen.ai/en/founders.html"/>
+    </url>
+
     <!-- صفحة تواصل معنا -->
     <url>
         <loc>https://sopen.ai/contact.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link 
@@ -45,7 +57,7 @@
     <!-- صفحة المستثمرون والشركاء -->
     <url>
         <loc>https://sopen.ai/investors.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link 
@@ -57,7 +69,7 @@
     <!-- صفحة سياسة الخصوصية -->
     <url>
         <loc>https://sopen.ai/privacy.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <xhtml:link 
@@ -69,7 +81,7 @@
     <!-- صفحة شروط الاستخدام -->
     <url>
         <loc>https://sopen.ai/terms.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <xhtml:link 
@@ -81,7 +93,7 @@
     <!-- صفحة حقوق المحتوى (DMCA) -->
     <url>
         <loc>https://sopen.ai/copyright.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <xhtml:link 
@@ -93,7 +105,7 @@
     <!-- نموذج الشراكة العربي (محظور في robots.txt) -->
     <url>
         <loc>https://sopen.ai/Form.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.1</priority>
         <xhtml:link 
@@ -105,7 +117,7 @@
     <!-- الوثائق والتسعير (افتراض وجود نسخة إنجليزية) -->
     <url>
         <loc>https://sopen.ai/docs</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
         <xhtml:link 
@@ -115,7 +127,7 @@
     </url>
     <url>
         <loc>https://sopen.ai/pricing</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
         <xhtml:link 
@@ -131,7 +143,7 @@
     <!-- English Homepage -->
     <url>
         <loc>https://sopen.ai/en/index.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link 
@@ -143,7 +155,7 @@
     <!-- English About Page -->
     <url>
         <loc>https://sopen.ai/en/about.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
         <xhtml:link 
@@ -152,10 +164,22 @@
             href="https://sopen.ai/about.html"/>
     </url>
 
+    <!-- English Founders Page (New) -->
+    <url>
+        <loc>https://sopen.ai/en/founders.html</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link 
+            rel="alternate" 
+            hreflang="ar-EG" 
+            href="https://sopen.ai/founders.html"/>
+    </url>
+
     <!-- English Contact Page -->
     <url>
         <loc>https://sopen.ai/en/contact.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
         <xhtml:link 
@@ -167,7 +191,7 @@
     <!-- English Investors and Partners Page -->
     <url>
         <loc>https://sopen.ai/en/investors.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
         <xhtml:link 
@@ -179,7 +203,7 @@
     <!-- English Privacy Policy Page -->
     <url>
         <loc>https://sopen.ai/en/privacy.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <xhtml:link 
@@ -191,7 +215,7 @@
     <!-- English Terms of Use Page -->
     <url>
         <loc>https://sopen.ai/en/terms.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <xhtml:link 
@@ -203,7 +227,7 @@
     <!-- English Copyright & DMCA Page -->
     <url>
         <loc>https://sopen.ai/en/copyright.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <xhtml:link 
@@ -215,7 +239,7 @@
     <!-- English Partnership Form (blocked in robots.txt) -->
     <url>
         <loc>https://sopen.ai/en/Form.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.1</priority>
         <xhtml:link 
@@ -227,7 +251,7 @@
     <!-- English Docs and Pricing -->
     <url>
         <loc>https://sopen.ai/en/docs</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
         <xhtml:link 
@@ -237,7 +261,7 @@
     </url>
     <url>
         <loc>https://sopen.ai/en/pricing</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
         <xhtml:link 
