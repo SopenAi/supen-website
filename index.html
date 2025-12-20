@@ -1,322 +1,432 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" class="scroll-smooth dark">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sopen: نظام النشر الآلي الذكي بالذكاء الاصطناعي</title>
-<meta name="description" content="Sopen 3.6v: يولّد مقالات وصور وفيديو، ينشر تلقائياً على 12+ منصة، ويتعلم من النتائج لتحقيق نمو مركّب.">
-<meta name="keywords" content="Sopen, سوبن, نشر آلي, ذكاء اصطناعي, نظام محتوى, توليد محتوى, جدولة, تحليلات">
-<link rel="icon" href="/favicon.ico">
-<!-- Open Graph / Twitter -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sopen — منصة النشر الآلي بالذكاء الاصطناعي">
-<meta property="og:description" content="أنشئ. وزّع. تعلّم. منصة واحدة للنشر الذكي عبر 12+ قناة">
-<meta property="og:image" content="/og-sopen.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<!-- Tailwind CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Custom CSS -->
-<link rel="stylesheet" href="assets/css/main.css">
-<!-- Fonts & Icons -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&amp;family=Tajawal:wght@400;700&amp;display=swap" rel="stylesheet">
-<script src="https://unpkg.com/lucide@latest"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
-
-<!-- Navbar -->
-<header class="header-fixed fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-slate-900/80 backdrop-blur">
-<div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-<!-- Brand -->
-<a href="#home" class="flex items-center gap-2">
-<img src="assets/img/logo.png" alt="Sopen Logo" class="w-9 h-9">
-<span class="text-2xl font-extrabold">Sopen</span>
-<span class="ms-2 rounded-full text-xs px-2 py-0.5 bg-teal-100 text-teal-700 dark:bg-teal-900/40 dark:text-teal-300 language-badge">v3.6</span>
-</a>
-<!-- Nav -->
-<nav class="hidden md:flex items-center gap-6 text-[0.95rem] font-semibold">
-    <!-- زر تبديل اللغة -->
-    <a href="en/index.html" class="flex items-center gap-1 hover:text-teal-600 transition duration-150 p-2 rounded-full border border-transparent hover:border-teal-500">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="globe" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20"></path><path d="M2 12h20"></path></svg>
-        <span class="language-badge">English</span>
-    </a>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/img/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopen Net, Inc | أنظمة تشغيل للإنسان والشركات</title>
+    <meta name="description" content="Sopen Net ليست شركة منتجات، بل شركة أنظمة تشغيل للإنسان والشركات. Zakkur, Omudia, Senmud.">
     
-    <!-- الزر الجديد: المستثمرون والشركاء -->
-    <a href="investors.html" class="hover:text-teal-600 text-base font-bold">المستثمرون</a>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
-    <a href="#features" class="hover:text-teal-600">المميزات</a>
-    <a href="#monetization" class="hover:text-teal-600">مصادر الدخل</a>
-    <a href="#technology" class="hover:text-teal-600">التقنية</a>
-    <a href="#roadmap" class="hover:text-teal-600">خارطة الطريق</a>
-    <a href="about.html" class="hover:text-teal-600">حول المشروع</a>
-    <a href="founders.html" class="hover:text-teal-600 font-bold text-teal-600">المؤسسون</a> <!-- تمت الإضافة -->
-    <a href="contact.html" class="bg-blue-600 text-white py-2 px-4 rounded-full shadow hover:bg-blue-700">تواصل معنا</a>
-    <button id="themeToggle" class="ms-2 p-2 rounded-lg border border-slate-200 dark:border-slate-700" aria-label="Switch to night mode">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="moon" class="lucide lucide-moon w-4 h-4"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg>
-    </button>
-</nav>
-<!-- Mobile menu icon (Lucide menu) -->
-<button class="md:hidden p-2 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" class="lucide lucide-menu w-6 h-6"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
-</button>
-</div>
-<!-- Mobile Menu -->
-<nav id="mobile-menu" class="hidden md:hidden bg-white/90 dark:bg-slate-900/80 p-4 border-t border-slate-200 dark:border-slate-700">
-<div class="flex flex-col gap-3 font-semibold">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     
-<a href="investors.html" class="hover:text-teal-600 border-b pb-2 text-base font-bold text-teal-600">المستثمرون</a>
-    
-<a href="#features" class="hover:text-teal-600 border-b pb-2">المميزات</a>
-<a href="#monetization" class="hover:text-teal-600 border-b pb-2">مصادر الدخل</a>
-<a href="#technology" class="hover:text-teal-600 border-b pb-2">التقنية</a>
-<a href="#roadmap" class="hover:text-teal-600 border-b pb-2">خارطة الطريق</a>
-<a href="about.html" class="hover:text-teal-600 border-b pb-2">حول المشروع</a>
-<a href="founders.html" class="hover:text-teal-600 border-b pb-2 text-teal-600">المؤسسون</a> <!-- تمت الإضافة -->
-<a href="contact.html" class="bg-blue-600 text-white py-2 px-4 rounded-lg text-center">تواصل معنا</a>
-</div>
-</nav>
-</header>
-<main>
-<!-- Hero -->
-<section id="home" class="ai-gradient-bg pt-36 md:pt-44 pb-20 text-white text-center">
-<div class="max-w-4xl mx-auto px-4">
-<h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">Sopen: نشر يدرك. يتعلم. ينمو.</h1>
-<p class="text-lg md:text-xl font-medium mb-8 opacity-95">Sopen 3.6v يولّد مقالات وصور وفيديو، يُترجم إلى 4 لغات، وينشر تلقائياً على 12+ منصة مع تحليلات A/B وحلقة تعلم مغلقة.</p>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <a href="https://beta.sopen.ai/" target="_blank" rel="noopener noreferrer" class="cta-button text-white font-bold py-3 px-8 rounded-xl text-lg shadow hover:bg-teal-700 inline-flex items-center gap-2 transform hover:scale-105 transition duration-300">
-         جرب منتجنا
-         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" class="lucide lucide-external-link w-5 h-5"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
-    </a>
-    
-    <p class="text-lg font-bold text-yellow-300 mt-6">تم اطلاق Sopen 2.0v Beta نشر ويب ذو جودة عالية دون تدخل بشري يؤهل لاطلاق اصدار 3.6v 🔥</p>
-
-    <p class="mt-6 text-sm/relaxed opacity-90">
-        الأمن و CDN عبر Cloudflare • قاعدة بيانات MongoDB.
-        <br class="hidden md:inline">
-        للاستفسارات الاستثمارية: <a href="mailto:admin@sopen.ai" class="font-bold text-teal-300 hover:text-teal-500 transition duration-150">admin@sopen.ai</a>
-    </p>
-  </div>
-</section>
-
-<!-- Features -->
-<section id="features" class="py-16 md:py-20 bg-white dark:bg-slate-950">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-4xl md:text-5xl font-black text-center mb-3">كيف يعمل Sopen؟</h2>
-    <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 text-center mb-12">يغطي دورة المحتوى الكاملة — من الفكرة إلى التحليل.</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="feature-card bg-white dark:bg-slate-900 p-7 rounded-xl shadow hover:shadow-2xl">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="brain" class="lucide lucide-brain w-9 h-9 text-teal-600 mb-3" aria-hidden="true"><path d="M12 18V5"></path><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"></path><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"></path><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"></path><path d="M18 18a4 4 0 0 0 2-7.464"></path><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"></path><path d="M6 18a4 4 0 0 1-2-7.464"></path><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"></path></svg>
-        <h3 class="text-xl font-bold mb-2">التوليد الذكي و SEO</h3>
-        <p class="text-slate-600 dark:text-slate-300">محرك أفكار تريند/دائم الخضرة، مقالات عميقة (+800 كلمة)، عناوين/أوصاف/روابط داخلية مُحسَّنة.</p>
-      </div>
-      <div class="feature-card bg-white dark:bg-slate-900 p-7 rounded-xl shadow hover:shadow-2xl">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="languages" class="lucide lucide-languages w-9 h-9 text-blue-600 mb-3" aria-hidden="true"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
-        <h3 class="text-xl font-bold mb-2">النشر والترجمة متعددة اللغات</h3>
-        <p class="text-slate-600 dark:text-slate-300">ترجمة آلية دقيقة إلى 4 لغات + توليد صور وفيديو عمودي و Voiceover لكل لغة.</p>
-      </div>
-      <div class="feature-card bg-white dark:bg-slate-900 p-7 rounded-xl shadow hover:shadow-2xl">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="share-2" class="lucide lucide-share-2 w-9 h-9 text-indigo-600 mb-3" aria-hidden="true"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg>
-        <h3 class="text-xl font-bold mb-2">التوزيع عبر 12+ منصة</h3>
-        <p class="text-slate-600 dark:text-slate-300">صيغ مخصصة لكل قناة، جدولة ذكية، وتأخير متدرج لضمان النشر المتسق وغير الحظر.</p>
-      </div>
-      <div class="feature-card bg-white dark:bg-slate-900 p-7 rounded-xl shadow hover:shadow-2xl">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="line-chart" class="lucide lucide-line-chart w-9 h-9 text-rose-600 mb-3" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
-        <h3 class="text-xl font-bold mb-2">التحليلات والتعلم الذاتي</h3>
-        <p class="text-slate-600 dark:text-slate-300">اختبار A/B لكل منشور، تتبع وقت القراءة/المشاهدة، تحسين استراتيجية المحتوى تلقائياً.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Demo -->
-<section id="demo" class="py-16 bg-slate-50 dark:bg-slate-900">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-4xl md:text-5xl font-black text-center mb-10">واجهة بسيطة. قوة معقدة.</h2>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-      <div class="lg:order-2">
-        <img src="assets/img/in.png" alt="Sopen Dashboard Preview" class="rounded-xl shadow-2xl border-4 border-white dark:border-slate-800 transform hover:scale-[1.01] transition">
-      </div>
-      <div class="lg:order-1 text-center lg:text-right">
-        <span class="text-base md:text-lg font-bold text-teal-600 mb-2 block">تحكم كامل عبر AI</span>
-        <h3 class="text-2xl md:text-3xl font-black mb-4">دردشة المشرف المدعومة بـ GPT-4o</h3>
-        <p class="text-slate-700 dark:text-slate-300 text-base md:text-lg leading-relaxed mb-6">أطلق دورة نشر كاملة، اسأل عن أداء منشور معين، أو غيّر خطة الأسبوع — كل ذلك بمحادثة واحدة.</p>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#050505',
+                            gray: '#1a1a1a',
+                            accent: '#3b82f6', 
+                            purple: '#8b5cf6',
+                            pink: '#ec4899', 
+                            text: '#e5e5e5'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #050505; color: #e5e5e5; overflow-x: hidden; }
+        html { scroll-behavior: smooth; }
+        .text-gradient { background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bg-grid { background-size: 50px 50px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px); mask-image: linear-gradient(to bottom, black 40%, transparent 100%); }
         
-      </div>
-    </div>
-  </div>
-</section>
+        /* تأثير التدفق */
+        .flow-line {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+            background-size: 200% 100%;
+            animation: moveGradient 3s linear infinite;
+        }
+        @keyframes moveGradient {
+            0% { background-position: 100% 0; }
+            100% { background-position: -100% 0; }
+        }
+    </style>
+</head>
+<body class="antialiased">
 
-<!-- Monetization 3.6 -->
-<section id="monetization" class="py-16 bg-white dark:bg-slate-950">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-4xl md:text-5xl font-black text-center mb-3">مصادر الدخل في الإصدار 3.6v</h2>
-    <p class="text-center text-slate-600 dark:text-slate-300 mb-10">الحزمة الحالية تركز على ثلاثة مصادر دخل أساسية وقابلة للتطوير.</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
-        <div class="flex items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="badge-dollar" class="lucide lucide-badge-dollar w-6 h-6"><path d="M3 7.5L7.5 3H19a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3V7.5z"></path><path d="M10 12H7V9.5h3a1.5 1.5 0 0 1 0 3z"></path><path d="M12 12h3V9.5h-3a1.5 1.5 0 0 1 0 3z"></path><path d="M12 15h-3v-2.5h3a1.5 1.5 0 0 1 0 3z"></path><path d="M12 15h3v-2.5h-3a1.5 1.5 0 0 1 0 3z"></path></svg><h3 class="text-xl font-bold">الاشتراكات</h3></div>
-        <p class="text-slate-600 dark:text-slate-300">خطط شهرية/سنوية للوكلاء والمبدعين بحدود أعلى للتوليد والنشر ودعم ذو أولوية.</p>
-      </div>
-      <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
-        <div class="flex items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="megaphone" class="lucide lucide-megaphone w-6 h-6"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"></path><path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"></path><path d="M8 6v8"></path></svg><h3 class="text-xl font-bold">الإعلانات (Sopen Ads)</h3></div>
-        <p class="text-slate-600 dark:text-slate-300">شبكة إعلانات داخلية للترويج للمحتوى والقنوات، باستهداف سياقي مدعوم بالذكاء الاصطناعي.</p>
-      </div>
-      <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
-        <div class="flex items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="link" class="lucide lucide-link w-6 h-6"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg><h3 class="text-xl font-bold">الروابط/العمولات</h3></div>
-        <p class="text-slate-600 dark:text-slate-300">تتبع مدمج للروابط وحملات العمولة لمضاعفة الإيرادات من المقالات ومقاطع الفيديو.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <!-- Company Logo -->
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="assets/img/logo.png" onerror="this.src='https://via.placeholder.com/50x50/333/fff?text=S'" alt="Sopen Net Logo" class="h-10 w-auto rounded-full border border-white/10">
+                        <span class="text-xl font-bold tracking-wider text-white hidden sm:block">SOPEN NET</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center gap-6">
+                    <div class="flex items-baseline space-x-4 space-x-reverse">
+                        <a href="#home" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">الرئيسية</a>
+                        <a href="#architecture" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">المنظومة</a>
+                        <a href="#products" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">المنتجات</a>
+                        <a href="founders.html" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">الفريق</a>
+                        <a href="investors.html" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">المستثمرين</a>
+                    </div>
+                    <!-- Language Switcher -->
+                    <a href="en/index.html" class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white/10 transition">English</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden gap-4">
+                    <a href="en/index.html" class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white/10 transition flex items-center">EN</a>
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-brand-dark border-b border-white/10" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-right">
+                <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">الرئيسية</a>
+                <a href="#architecture" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">المنظومة</a>
+                <a href="#products" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">المنتجات</a>
+                <a href="founders.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">الفريق</a>
+                <a href="investors.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">المستثمرين</a>
+            </div>
+        </div>
+    </nav>
 
-<!-- Technology -->
-<section id="technology" class="py-16 bg-slate-50 dark:bg-slate-900">
-  <div class="max-w-7xl mx-auto px-4 text-center">
-    <h2 class="text-4xl md:text-5xl font-black mb-4">مُبنَى على أسس متينة</h2>
-    <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-10">مُصمَّم لمستوى الشركات مع التركيز على الأمان والسرعة.</p>
-    <div class="flex flex-wrap justify-center items-center gap-8 opacity-90">
-      <div class="text-center p-3">
-        <i class="fa-solid fa-robot text-3xl mb-2"></i>
-        <p class="text-sm font-semibold">OpenAI (GPT-4o)</p>
-      </div>
-      <div class="text-center p-3">
-        <i class="fa-brands fa-google text-3xl mb-2"></i>
-        <p class="text-sm font-semibold">Google Cloud (Translate)</p>
-      </div>
-      <div class="text-center p-3">
-        <i class="fa-solid fa-database text-3xl mb-2"></i>
-        <p class="text-sm font-semibold">MongoDB</p>
-      </div>
-      <div class="text-center p-3">
-        <i class="fa-solid fa-cloud text-3xl mb-2"></i>
-        <p class="text-sm font-semibold">Cloudflare (CDN/Security)</p>
-      </div>
-      <div class="text-center p-3">
-        <i class="fa-brands fa-cc-stripe text-3xl mb-2"></i>
-        <p class="text-sm font-semibold">Stripe (Payments)</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-grid"></div>
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse"></div>
+        <div class="absolute top-1/3 right-1/4 w-80 h-80 bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
 
-<!-- Roadmap -->
-<section id="roadmap" class="py-16 ai-gradient-bg text-white">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-4xl md:text-5xl font-black text-center mb-10">خارطة الطريق 🗺️ Sopen v3.6 ➜ v5.0</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-right">
-      <div class="roadmap-card roadmap-card-dark p-6 rounded-xl shadow-xl border-t-8 border-teal-500 glass">
-        <span class="text-xs font-black bg-teal-500 text-white px-3 py-1 rounded-full mb-3 inline-block">المرحلة الأولى: v3.6 ➜ v4.0 (2–4 أسابيع)</span>
-        <h3 class="text-xl font-black mb-2">تحسين الذكاء التحريري</h3>
-        <ul class="text-slate-200 space-y-2 text-sm list-disc pr-5">
-          <li>محرك السياق AI لمصادر أعمق وأكثر دقة.</li>
-          <li>التحليل غير الوصفي + بناء خرائط الروابط الداخلية.</li>
-          <li>واجهة مُحسَّنة (الموقع v2) مع الوضع الليلي.</li>
-          <li>توقيت النشر الأمثل يعتمد على السلوكيات.</li>
-        </ul>
-      </div>
-      <div class="roadmap-card roadmap-card-dark p-6 rounded-xl shadow-xl border-t-8 border-blue-500 glass">
-        <span class="text-xs font-black bg-blue-500 text-white px-3 py-1 rounded-full mb-3 inline-block">المرحلة الثانية: v4.0 ➜ v4.5 (1–2 أشهر)</span>
-        <h3 class="text-xl font-black mb-2">Sopen Studio و Sopen Chat</h3>
-        <ul class="text-slate-200 space-y-2 text-sm list-disc pr-5">
-          <li>Studio: الفيديو/الأنيميشن + صوت AI واقعي.</li>
-          <li>Chat: الأوامر النصية والصوتية لإدارة النظام.</li>
-          <li>التعلم من جمهورك حسب الجغرافيا واللغة.</li>
-          <li>إطلاق Sopen API SaaS.</li>
-        </ul>
-      </div>
-      <div class="roadmap-card roadmap-card-dark p-6 rounded-xl shadow-xl border-t-8 border-yellow-500 glass">
-        <span class="text-xs font-black bg-yellow-500 text-slate-900 px-3 py-1 rounded-full mb-3 inline-block">المرحلة الثالثة: v4.5 ➜ v4.8 (2 أشهر)</span>
-        <h3 class="text-xl font-black mb-2">Sopen Ads AI و Sopen Learn</h3>
-        <ul class="text-slate-200 space-y-2 text-sm list-disc pr-5">
-          <li>شبكة الإعلانات الذكية البديلة لـ AdSense.</li>
-          <li>منصة التعلم الذاتي المدعومة بالذكاء الاصطناعي.</li>
-          <li>الشهادات الرقمية على Blockchain.</li>
-          <li>طبقة الأمان AI مع self-heal.</li>
-        </ul>
-      </div>
-      <div class="roadmap-card roadmap-card-dark p-6 rounded-xl shadow-xl border-t-8 border-red-500 glass">
-        <span class="text-xs font-black bg-red-500 text-white px-3 py-1 rounded-full mb-3 inline-block">المرحلة الرابعة: v4.8 ➜ v5.0 (3–5 أشهر)</span>
-        <h3 class="text-xl font-black mb-2">الاستقلال الاقتصادي</h3>
-        <ul class="text-slate-200 space-y-2 text-sm list-disc pr-5">
-          <li>Sopen Neural Intelligence للتحسين الأسبوعي المستمر.</li>
-          <li>طبقة الأعمال (Business Layer) لإدارة حملات B2B المؤتمتة.</li>
-          <li>Sopen Cloud & CDN Intelligence للتوزيع الجغرافي.</li>
-          <li class="font-bold text-teal-300">النتيجة: نظام إعلامي اقتصادي وذكي بالكامل.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <div class="inline-block mb-4 px-4 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+                <span class="text-sm font-light tracking-wide text-gray-300">The Future of Human Operating Systems</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                لسنا شركة منتجات<br>
+                <span class="text-gradient">نحن شركة أنظمة تشغيل</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400 font-light leading-relaxed">
+                في Sopen Net، نبني البنية التحتية للذكاء الاصطناعي التي تعمل كجسد واحد.
+                <br>
+                <span class="text-white font-medium">قرار (Zakkur) &larr; تنفيذ (Omudia) &larr; إحساس (Senmud)</span>
+            </p>
+            
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#products" class="px-8 py-3 rounded-full bg-white text-black font-bold hover:bg-gray-200 transition shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                    اكتشف المنظومة
+                </a>
+                <a href="investors.html" class="px-8 py-3 rounded-full border border-white/20 hover:bg-white/10 transition backdrop-blur-sm">
+                    تواصل مع المستثمرين
+                </a>
+            </div>
+        </div>
+    </section>
 
-<!-- Contact -->
-<section id="contact-link" class="py-16 bg-white dark:bg-slate-950">
-  <div class="max-w-4xl mx-auto px-4 text-center">
-    <h2 class="text-4xl md:text-5xl font-black mb-4">جاهز للانطلاق؟</h2>
-    <p class="text-lg text-slate-600 dark:text-slate-300 mb-8">ابدأ محادثة حول شراكة أو استثمار في أول نظام نشر آلي.</p>
-    <div class="flex flex-col items-center gap-4">
-      <a href="contact.html" class="cta-button text-white font-bold py-4 px-10 rounded-xl text-lg shadow hover:bg-teal-700 inline-flex items-center gap-2 transform hover:scale-105 transition duration-300">
-         عرض عناوين البريد الإلكتروني للتواصل
-         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail w-5 h-5"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-      </a>
-    </div>
-  </div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-slate-900 text-slate-400 text-sm">
-<div class="max-w-7xl mx-auto px-4 py-8">
-<div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-3">
-<a href="privacy.html" class="hover:text-teal-400">سياسة الخصوصية</a>
-<span class="hidden md:inline">•</span>
-<a href="terms.html" class="hover:text-teal-400">شروط الاستخدام</a>
-<span class="hidden md:inline">•</span>
-<a href="copyright.html" class="hover:text-teal-400">حقوق المحتوى (DMCA)</a>
-<span class="hidden md:inline">•</span>
-<a href="#home" class="hover:text-teal-400">الرئيسية</a>
-<span class="hidden md:inline">•</span>
-<a href="about.html" class="hover:text-teal-400">حول</a>
-<span class="hidden md:inline">•</span>
-<a href="contact.html" class="hover:text-teal-400">تواصل</a>
-</div>
+    <!-- Architecture Section (UPDATED) -->
+    <section id="architecture" class="py-24 bg-brand-gray/30 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Robot Architecture</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto text-lg">المنتجات لا تعمل منفصلة، بل هي دورة مستمرة من التطور والتحسين الذاتي.</p>
+            </div>
+            
+            <!-- Cycle Layout Container -->
+            <div class="relative grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center mb-12">
+                
+                <!-- Connecting Line Background (Desktop) -->
+                <div class="hidden md:block absolute top-[40%] left-0 w-full h-1 flow-line opacity-30 -z-10 rounded-full"></div>
 
-<p class="text-center text-xs mt-3 text-slate-500 dark:text-slate-500">
-    Headquarters: Operates globally under Google Cloud (Europe-west1 – Belgium) infrastructure.
-</p>
+                <!-- Product 1: Zakkur (Brain) -->
+                <div class="group relative flex flex-col items-center w-full max-w-xs">
+                    <div class="relative w-40 h-40 rounded-full bg-gray-900 border-2 border-blue-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-blue-500 overflow-hidden">
+                        <!-- Logo Placeholder -->
+                        <!-- FIX: Reverted to w-full h-full object-cover to FILL the circle and crop excess (zoom effect) -->
+                        <img src="assets/img/i1.jpg" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Zakkur Logo" class="w-full h-full object-cover object-center z-20 relative transition hover:opacity-90">
+                        <!-- Fallback Icon (Shows if image is missing) -->
+                        <i class="fas fa-brain text-5xl text-blue-500 absolute z-10 hidden animate-pulse"></i>
+                        <!-- Glow -->
+                        <div class="absolute inset-0 bg-blue-500/10 z-0 group-hover:bg-blue-500/20 transition"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">Zakkur</h3>
+                    <p class="text-sm text-gray-400 text-center px-4">العقل (القرار)</p>
+                    <div class="md:hidden mt-4 text-blue-500"><i class="fas fa-arrow-down animate-bounce"></i></div>
+                </div>
 
-<p class="text-center text-sm mt-3">Sopen Net, Inc. — Delaware C-Corporation</p>
+                <!-- Product 2: Omudia (Voice/Action) -->
+                <div class="group relative flex flex-col items-center w-full max-w-xs">
+                    <div class="relative w-40 h-40 rounded-full bg-gray-900 border-2 border-purple-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(139,92,246,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-purple-500 overflow-hidden">
+                         <!-- Logo Placeholder -->
+                         <!-- FIX: Reverted to w-full h-full object-cover -->
+                        <img src="assets/img/i2.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Omudia Logo" class="w-full h-full object-cover object-center z-20 relative transition hover:opacity-90">
+                        <!-- Fallback Icon -->
+                        <i class="fas fa-bullhorn text-5xl text-purple-500 absolute z-10 hidden animate-pulse"></i>
+                        <div class="absolute inset-0 bg-purple-500/10 z-0 group-hover:bg-purple-500/20 transition"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-purple-400 mb-2">Omudia</h3>
+                    <p class="text-sm text-gray-400 text-center px-4">الصوت (التنفيذ)</p>
+                    <div class="md:hidden mt-4 text-purple-500"><i class="fas fa-arrow-down animate-bounce"></i></div>
+                </div>
 
-<p class="text-center mt-2">© 2025 Sopen — جميع الحقوق محفوظة.</p>
-<p class="text-center text-xs mt-1 opacity-80">Sopen.ai هو نظام نشر آلي متكامل مدعوم بالذكاء الاصطناعي.</p>
-<p class="text-center text-xs mt-3 text-teal-400 font-bold tracking-widest uppercase">
-  founder : ⭐ ReDA HuSSeiN Ali ⭐ 
-</p>
-</div>
-</footer>
-<!-- JSON‑LD: Organization -->
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "Organization",
-"name": "Sopen",
-"url": "https://sopen.ai",
-"logo": "https://sopen.ai/logo.png",
-"founder": {"@type": "Person", "name": "RiDA Hussein"}
-}
-</script>
-<!-- Scripts -->
-<script>
-// Lucide
-lucide.createIcons();
-// Theme toggle (persist to localStorage)
-const themeToggle = document.getElementById('themeToggle');
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-const saved = localStorage.getItem('theme');
-if ((saved === 'dark') || (!saved && prefersDark)) document.documentElement.classList.add('dark');
-themeToggle?.addEventListener('click', () => {
-document.documentElement.classList.toggle('dark');
-localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
-});
-</script>
+                <!-- Product 3: Senmud (Senses/Data) -->
+                <div class="group relative flex flex-col items-center w-full max-w-xs">
+                    <div class="relative w-40 h-40 rounded-full bg-gray-900 border-2 border-pink-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(236,72,153,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-pink-500 overflow-hidden">
+                        <!-- Logo Placeholder -->
+                        <!-- FIX: Reverted to w-full h-full object-cover -->
+                        <img src="assets/img/i3.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Senmud Logo" class="w-full h-full object-cover object-center z-20 relative transition hover:opacity-90">
+                        <!-- Fallback Icon -->
+                        <i class="fas fa-users text-5xl text-pink-500 absolute z-10 hidden animate-pulse"></i>
+                        <div class="absolute inset-0 bg-pink-500/10 z-0 group-hover:bg-pink-500/20 transition"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-pink-400 mb-2">Senmud</h3>
+                    <p class="text-sm text-gray-400 text-center px-4">الحواس (البيانات)</p>
+                </div>
+            </div>
+
+            <!-- Feedback Loop Visual (Returning Arrow) -->
+            <div class="hidden md:block relative h-24 mt-4">
+                <div class="absolute left-0 right-0 top-0 flex justify-center">
+                    <!-- Dashed line connecting end back to start -->
+                    <div class="w-3/4 h-20 border-b-2 border-l-2 border-r-2 border-dashed border-gray-700 rounded-b-[100px] opacity-50 relative">
+                        <!-- Animated arrow moving back -->
+                         <div class="absolute bottom-[-14px] left-[50%] transform -translate-x-1/2 bg-brand-dark px-4 text-gray-500 text-sm flex items-center gap-2 border border-gray-800 rounded-full py-1">
+                            <i class="fas fa-sync animate-spin text-xs"></i>
+                            <span>دورة التطور (Feedback Loop)</span>
+                         </div>
+                    </div>
+                </div>
+                <!-- Arrow head pointing back to Zakkur (Left side visually but logical start) -->
+                <div class="absolute left-[12%] bottom-4 text-gray-600 rotate-90">
+                    <i class="fas fa-chevron-up text-xl animate-bounce"></i>
+                </div>
+            </div>
+            
+            <div class="md:hidden mt-8 text-center border-t border-dashed border-gray-700 pt-8 relative">
+                 <p class="text-gray-500 text-sm">
+                    <i class="fas fa-arrow-up animate-bounce mb-2 block"></i>
+                    البيانات تعود لتصنع قرارات أدق (Feedback Loop)
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Products Showcase Section -->
+    <section id="products" class="py-24 relative overflow-hidden">
+        <!-- Background Glow -->
+        <div class="absolute top-0 left-0 w-full h-full bg-brand-dark/50 -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">منتجات المنظومة</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">ثلاثة منتجات مستقلة تقنياً، ولكنها مترابطة وظيفياً لتعمل ككيان واحد.</p>
+            </div>
+
+            <!-- Product 1: Zakkur -->
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-32 relative">
+                <!-- Text Side -->
+                <div class="lg:w-1/2 z-10 text-right">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-3 bg-blue-500/20 rounded-xl text-blue-400">
+                            <i class="fas fa-chess text-2xl"></i>
+                        </div>
+                        <span class="px-4 py-1 rounded-full border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-widest bg-blue-500/5">AI Decision Engine</span>
+                    </div>
+                    <h3 class="text-4xl font-bold mb-4 text-white">Zakkur</h3>
+                    <h4 class="text-xl text-blue-300 mb-6">محرك القرار والتنفيذ الذكي (C-Suite Digital)</h4>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                        ليس مجرد Chatbot أو مساعد، بل نظام متكامل لاتخاذ القرارات المعقدة. 
+                        يستقبل السياق المالي والسوقي، يحلل البيانات عبر وكلاء متخصصين (CFO, CMO, COO)، 
+                        ويصدر قرارات قابلة للتنفيذ المباشر مع سجل تدقيق كامل.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fas fa-check-circle text-blue-500 text-xl"></i>
+                            <span>يحلل عبر وكلاء متخصصين (Agents)</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fas fa-check-circle text-blue-500 text-xl"></i>
+                            <span>يطبق قواعد (Guardrails) للميزانية والمخاطر</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fas fa-check-circle text-blue-500 text-xl"></i>
+                            <span>ينتج قراراً تنفيذياً لا مجرد نصيحة</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Image Side (Fixed for Vertical Image) -->
+                <div class="lg:w-1/2 w-full flex justify-center">
+                    <div class="relative w-full max-w-md h-[500px] md:h-[600px] rounded-3xl border border-white/10 bg-gray-900/50 p-4 shadow-2xl shadow-blue-900/20 group hover:border-blue-500/30 transition duration-500 flex justify-center items-center overflow-hidden backdrop-blur-sm">
+                        <div class="absolute inset-0 bg-blue-600/5 blur-2xl -z-10"></div>
+                        <!-- Blurred Background Image for Aesthetics -->
+                        <img src="assets/img/in1.png" class="absolute inset-0 w-full h-full object-cover opacity-20 blur-xl scale-110" alt="Background Blur">
+                        <!-- Main Image (Contained) -->
+                        <img src="assets/img/in1.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Zakkur+UI'" alt="Zakkur Interface" class="h-full w-auto object-contain z-10 rounded-lg shadow-lg group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-4 z-20">
+                             <span class="bg-black/60 backdrop-blur-md px-4 py-2 rounded-full text-xs text-gray-300 border border-white/10">واجهة النظام (قريباً)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2: Omudia -->
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-32 relative">
+                <!-- Text Side -->
+                 <div class="lg:w-1/2 z-10 text-right">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-3 bg-purple-500/20 rounded-xl text-purple-400">
+                            <i class="fas fa-layer-group text-2xl"></i>
+                        </div>
+                        <span class="px-4 py-1 rounded-full border border-purple-500/30 text-purple-400 text-xs font-bold uppercase tracking-widest bg-purple-500/5">AI Content Factory</span>
+                    </div>
+                    <h3 class="text-4xl font-bold mb-4 text-white">Omudia</h3>
+                    <h4 class="text-xl text-purple-300 mb-6">نظام الإنتاج والتوزيع الصناعي للمحتوى</h4>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                        نظام نشر ذكي يبني المحتوى كعملية صناعية. بدلاً من استنزاف الوقت في الكتابة والتصميم، 
+                        يقوم Omudia بتوليد المحتوى، تكييفه لكل منصة (Twitter, LinkedIn, TikTok)، 
+                        ونشره تلقائياً مع تحليل الأداء وإعادة التحسين.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fas fa-check-circle text-purple-500 text-xl"></i>
+                            <span>Time Cost = Zero تقريباً</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fas fa-check-circle text-purple-500 text-xl"></i>
+                            <span>نشر متزامن على 10+ منصات</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fas fa-check-circle text-purple-500 text-xl"></i>
+                            <span>تكييف تلقائي (Adaptation) لكل منصة</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Image Side (Fixed for Vertical Image) -->
+                <div class="lg:w-1/2 w-full flex justify-center">
+                    <div class="relative w-full max-w-md h-[500px] md:h-[600px] rounded-3xl border border-white/10 bg-gray-900/50 p-4 shadow-2xl shadow-purple-900/20 group hover:border-purple-500/30 transition duration-500 flex justify-center items-center overflow-hidden backdrop-blur-sm">
+                        <div class="absolute inset-0 bg-purple-600/5 blur-2xl -z-10"></div>
+                        <!-- Blurred Background Image -->
+                        <img src="assets/img/in2.png" class="absolute inset-0 w-full h-full object-cover opacity-20 blur-xl scale-110" alt="Background Blur">
+                        <!-- Main Image -->
+                        <img src="assets/img/in2.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Omudia+UI'" alt="Omudia Interface" class="h-full w-auto object-contain z-10 rounded-lg shadow-lg group-hover:scale-105 transition duration-500">
+                         <div class="absolute bottom-4 z-20">
+                             <span class="bg-black/60 backdrop-blur-md px-4 py-2 rounded-full text-xs text-gray-300 border border-white/10">واجهة النظام (قريباً)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3: Senmud -->
+            <div class="flex flex-col lg:flex-row items-center gap-12 relative">
+                 <!-- Text Side -->
+                 <div class="lg:w-1/2 z-10 text-right">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-3 bg-pink-500/20 rounded-xl text-pink-400">
+                            <i class="fas fa-comments text-2xl"></i>
+                        </div>
+                        <span class="px-4 py-1 rounded-full border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-widest bg-pink-500/5">AI-Native Social</span>
+                    </div>
+                    <h3 class="text-4xl font-bold mb-4 text-white">Senmud</h3>
+                    <h4 class="text-xl text-pink-300 mb-6">منصة التواصل الاجتماعي المدعومة بالذكاء الاصطناعي</h4>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                        منصة تواصل اجتماعي حيث يكون الذكاء الاصطناعي شريكاً في كل تفاعل (Co-Creator). 
+                        تركز على المعنى بدلاً من الضجيج. النشر، التعليق، والتحليل يمر عبر طبقة ذكاء اصطناعي 
+                        لتوليد بيانات حقيقية تغذي "العقل" (Zakkur).
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fas fa-check-circle text-pink-500 text-xl"></i>
+                            <span>AI كشريك في الإبداع لا بديل للإنسان</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fas fa-check-circle text-pink-500 text-xl"></i>
+                            <span>تدفق معرفي منظم بعيداً عن العشوائية</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fas fa-check-circle text-pink-500 text-xl"></i>
+                            <span>مجتمعات ذكية (Smart Communities)</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Image Side (Fixed for Vertical Image) -->
+                <div class="lg:w-1/2 w-full flex justify-center">
+                    <div class="relative w-full max-w-md h-[500px] md:h-[600px] rounded-3xl border border-white/10 bg-gray-900/50 p-4 shadow-2xl shadow-pink-900/20 group hover:border-pink-500/30 transition duration-500 flex justify-center items-center overflow-hidden backdrop-blur-sm">
+                        <div class="absolute inset-0 bg-pink-600/5 blur-2xl -z-10"></div>
+                        <!-- Blurred Background Image -->
+                        <img src="assets/img/in3.jpg" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover opacity-20 blur-xl scale-110" alt="Background Blur">
+                        <!-- Main Image -->
+                        <img src="assets/img/in3.jpg" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Senmud+UI'" alt="Senmud Interface" class="h-full w-auto object-contain z-10 rounded-lg shadow-lg group-hover:scale-105 transition duration-500">
+                         <div class="absolute bottom-4 z-20">
+                             <span class="bg-black/60 backdrop-blur-md px-4 py-2 rounded-full text-xs text-gray-300 border border-white/10">واجهة النظام (قريباً)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 bg-black pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="flex items-center gap-2 mb-4">
+                        <img src="assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40x40/333/fff?text=S'" alt="Logo" class="h-8 w-auto">
+                        <span class="text-2xl font-bold text-white">SOPEN NET</span>
+                    </a>
+                    <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
+                        شركة أنظمة تشغيل للإنسان والشركات. نبني المستقبل من خلال دمج القرار، التنفيذ، والتواصل في جسد واحد.
+                    </p>
+                    <!-- Social Media Links -->
+                    <div class="flex flex-wrap gap-4 mt-6">
+                        <a href="https://x.com/SopenNet" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-500 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@sopen.ai" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-black hover:text-white hover:border border-white/20 transition"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@SopenNetinc" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-red-600 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/sopen.ai/" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-pink-600 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61585190857126" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://t.me/SopenNet" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-400 hover:text-white transition"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">المنتجات</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-blue-400 transition">Zakkur</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Omudia</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition">Senmud</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">الشركة</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="founders.html" class="hover:text-white transition">عن الفريق</a></li>
+                        <li><a href="investors.html" class="hover:text-white transition">للمستثمرين</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-600 text-sm text-center md:text-right">© 2025 Sopen Net, Inc. جميع الحقوق محفوظة.</p>
+                <div class="flex gap-4">
+                    <img src="assets/img/logo.png" onerror="this.style.display='none'" class="h-6 opacity-30 grayscale">
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

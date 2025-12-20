@@ -1,138 +1,55 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" class="scroll-smooth dark">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="assets/img/logo.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سياسة الخصوصية | Sopen.ai</title>
-    <meta name="description" content="سياسة الخصوصية لخدمات Sopen.ai. شرح لكيفية جمع واستخدام وتخزين وحماية بيانات المستخدمين.">
-    <!-- Tailwind CDN -->
+    <title>سياسة الخصوصية | Sopen Net</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* إضافة خط عربي مناسب */
-        body {
-            font-family: 'Cairo', 'Tajawal', sans-serif;
-        }
-        /* تصميم عام للصفحة */
-        .content-container {
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 3rem 1rem;
-        }
-        .section-title {
-            @apply text-3xl md:text-4xl font-extrabold mb-4 border-r-4 border-teal-500 pr-3;
-        }
-        .subsection-title {
-            @apply text-xl font-bold mb-3 mt-6 text-teal-600 dark:text-teal-400;
-        }
-        .main-title {
-            @apply text-4xl md:text-5xl font-black mb-8 text-center;
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Cairo', sans-serif; background-color: #050505; color: #d1d5db; }</style>
 </head>
-<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
-
-    <div class="content-container">
-        <h1 class="main-title">سياسة الخصوصية</h1>
-        <p class="text-sm text-slate-500 dark:text-slate-400 text-center mb-10">
-            تاريخ آخر تحديث: 27 أكتوبر 2025
-        </p>
-
-        <!-- 1. المقدمة التعريفية -->
-        <div class="mb-8">
-            <h2 class="section-title">1. مقدمة تعريفية</h2>
-            <p class="text-lg leading-relaxed text-slate-700 dark:text-slate-300">
-                في <span class="font-bold text-teal-600 dark:text-teal-400">Sopen.ai</span>، نحترم خصوصية المستخدمين ونسعى لحماية بياناتهم وفقًا لأعلى معايير الأمان العالمية. تشرح هذه السياسة كيفية جمعنا، استخدامنا، تخزيننا، وكشفنا للمعلومات المتعلقة بك عند استخدامك لخدماتنا.
-            </p>
-            <p class="text-base leading-relaxed mt-2">
-                يُرجى قراءة هذه السياسة بعناية. باستخدامك للخدمة، فإنك توافق على جميع الشروط والأحكام الموضحة أدناه.
-            </p>
+<body class="antialiased">
+    <nav class="w-full py-6 px-4 border-b border-white/5 bg-black/50 backdrop-blur-md sticky top-0">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <span class="font-bold text-white text-lg">SOPEN NET <span class="text-gray-500 font-normal">| Privacy</span></span>
+            <a href="index.html" class="text-sm text-blue-400 hover:text-blue-300">العودة للرئيسية</a>
         </div>
+    </nav>
 
-        <!-- 2. ما البيانات التي نجمعها -->
-        <div class="mb-8">
-            <h2 class="section-title">2. ما البيانات التي نجمعها</h2>
-            <p class="text-base leading-relaxed mb-4">نحن نجمع نوعين أساسيين من البيانات:</p>
-            <h3 class="subsection-title">2.1. البيانات الشخصية المباشرة</h3>
-            <ul class="list-disc pr-8 space-y-2 text-slate-700 dark:text-slate-300">
-                <li>**البريد الإلكتروني:** يُجمع عند التسجيل في المنصة واستخدامه للتحقق والتواصل.</li>
-                <li>**معلومات الدفع:** تُجمع بواسطة شريكنا (Stripe) لمعالجة الاشتراكات، ولا نقوم بتخزين تفاصيل بطاقتك الائتمانية مباشرة.</li>
-            </ul>
-            <h3 class="subsection-title">2.2. بيانات الاستخدام والأداء</h3>
-            <ul class="list-disc pr-8 space-y-2 text-slate-700 dark:text-slate-300">
-                <li>**النشاط داخل الموقع:** بما في ذلك الصفحات التي تمت زيارتها، مدة الجلسة، ونقرات المستخدم (لتحليل الإحصاءات وتحسين الأداء).</li>
-                <li>**ملفات تعريف الارتباط (Cookies):** نستخدمها لتخزين تفضيلات المستخدم (مثل الوضع الليلي/النهاري) وتحسين تجربة تسجيل الدخول.</li>
-                <li>**البيانات المُجمّعة عبر واجهات برمجة التطبيقات (APIs):** بما في ذلك البيانات التي تُعالج عبر Google Cloud و Analytics و OpenAI API لأغراض التشغيل والتحسين، وتتم معالجتها بطريقة لا تكشف عن هويتك الشخصية.</li>
-            </ul>
-        </div>
-
-        <!-- 3. كيف نستخدم البيانات -->
-        <div class="mb-8">
-            <h2 class="section-title">3. كيف نستخدم البيانات</h2>
-            <p class="text-base leading-relaxed mb-4">تُستخدم البيانات التي نجمعها في الأغراض التالية:</p>
-            <ul class="list-disc pr-8 space-y-2 text-slate-700 dark:text-slate-300">
-                <li>**تحسين الخدمات:** لتحليل كيفية استخدام المنصة وتحديد المجالات التي تحتاج إلى تطوير أو تحسين (حلقة التعلم المغلقة).</li>
-                <li>**تخصيص المحتوى:** لتقديم محتوى إعلاني أو تحريري أكثر صلة باهتماماتك.</li>
-                <li>**التواصل والإشعارات:** لإرسال تحديثات النظام، إشعارات الأمان، أو معلومات حول خطة الاشتراك الخاصة بك.</li>
-                <li>**الأمان والامتثال:** للكشف عن الاحتيال ومنعه، وللامتثال للالتزامات القانونية.</li>
-            </ul>
-        </div>
-
-        <!-- 4. تخزين البيانات وأمانها -->
-        <div class="mb-8">
-            <h2 class="section-title">4. تخزين البيانات وأمانها</h2>
-            <ul class="list-disc pr-8 space-y-2 text-slate-700 dark:text-slate-300">
-                <li>**البنية التحتية:** نستخدم قواعد بيانات MongoDB Atlas لتخزين بيانات المستخدمين، ونعتمد على خدمات Cloudflare لحماية البنية التحتية وتقديم شبكة توصيل المحتوى (CDN).</li>
-                <li>**الأمان:** يتم تشفير جميع عمليات النقل بين متصفحك وخوادمنا باستخدام بروتوكولات تشفير SSL/TLS، لضمان حماية بياناتك أثناء الإرسال.</li>
-                <li>**فترة الاحتفاظ:** نحتفظ ببياناتك طالما كان حسابك نشطًا أو للامتثال لالتزاماتنا القانونية.</li>
-            </ul>
-        </div>
-
-        <!-- 5. مشاركة البيانات -->
-        <div class="mb-8">
-            <h2 class="section-title">5. مشاركة البيانات</h2>
-            <p class="text-base leading-relaxed text-slate-700 dark:text-slate-300">
-                <span class="font-bold text-red-500">لا نبيع أو نؤجر أو نشارك البيانات الشخصية للمستخدمين مع طرف ثالث لأغراض التسويق المباشر.</span>
-            </p>
-            <p class="text-base leading-relaxed mt-2">
-                قد نشارك بياناتك فقط في الحالات التالية: (1) مع مقدمي الخدمات الذين يعملون نيابة عنا (مثل خدمات التخزين السحابي أو معالجة الدفع)، (2) إذا اقتضى القانون ذلك أو استجابة لأمر قضائي، (3) في حال بيع أو نقل جزء أو كل أصول الشركة، حيث يتم إشعار المستخدمين مسبقًا.
-            </p>
-        </div>
-
-        <!-- 6. حقوق المستخدم -->
-        <div class="mb-8">
-            <h2 class="section-title">6. حقوق المستخدم</h2>
-            <p class="text-base leading-relaxed mb-4">يحق لك كمستخدم لـ Sopen.ai ما يلي:</p>
-            <ul class="list-disc pr-8 space-y-2 text-slate-700 dark:text-slate-300">
-                <li>**حق الوصول:** طلب نسخة من بياناتك الشخصية التي نحتفظ بها.</li>
-                <li>**حق التعديل:** طلب تصحيح أي معلومات غير كاملة أو غير دقيقة.</li>
-                <li>**حق الحذف (الحق في النسيان):** طلب حذف حسابك وبياناتك الشخصية بشكل كامل، باستثناء البيانات التي يتطلب القانون الاحتفاظ بها.</li>
-            </ul>
-            <p class="text-base leading-relaxed mt-2">لتقديم أي من هذه الطلبات، يُرجى التواصل معنا عبر البريد الإلكتروني المخصص في صفحة "تواصل معنا".</p>
-        </div>
-
-        <!-- 7. تحديث السياسة -->
-        <div class="mb-8">
-            <h2 class="section-title">7. تحديث السياسة</h2>
-            <p class="text-base leading-relaxed text-slate-700 dark:text-slate-300">
-                نحتفظ بالحق في تعديل هذه السياسة في أي وقت. في حال إجراء تعديلات جوهرية، سنقوم بإشعارك عبر البريد الإلكتروني أو من خلال إشعار واضح داخل المنصة قبل أن يصبح التعديل ساري المفعول. استمرارك في استخدام الخدمة بعد نشر التعديلات يعتبر موافقة منك على الشروط الجديدة.
-            </p>
-        </div>
+    <main class="max-w-4xl mx-auto px-4 py-16">
+        <h1 class="text-3xl font-bold text-white mb-8">سياسة الخصوصية</h1>
         
-        <!-- العبارة الجديدة للمقر الرئيسي -->
-        <p class="text-center text-xs mt-4 mb-4 text-slate-500 dark:text-slate-500">
-            Headquarters: Operates globally under Google Cloud (Europe-west1 – Belgium) infrastructure.
-        </p>
+        <div class="space-y-8 text-sm leading-relaxed">
+            <section>
+                <h2 class="text-xl font-bold text-white mb-3">1. مقدمة</h2>
+                <p>في Sopen Net, Inc، نأخذ خصوصيتك على محمل الجد. توضح هذه السياسة كيف نقوم بجمع واستخدام وحماية بياناتك عند استخدام منظومتنا (Zakkur, Omudia, Senmud).</p>
+            </section>
 
-        <!-- رابط العودة -->
-        <div class="text-center mt-12">
-            <a href="index.html" class="inline-flex items-center gap-2 text-teal-600 dark:text-teal-400 hover:text-teal-500 font-bold transition">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-circle rotate-180"><circle cx="12" cy="12" r="10"></circle><path d="M12 8l4 4-4 4"></path><path d="M8 12h8"></path></svg>
-                العودة إلى الصفحة الرئيسية
-            </a>
+            <section>
+                <h2 class="text-xl font-bold text-white mb-3">2. البيانات التي نجمعها</h2>
+                <ul class="list-disc list-inside space-y-1 mr-4">
+                    <li>المعلومات الشخصية (الاسم، البريد الإلكتروني) عند التسجيل.</li>
+                    <li>بيانات الاستخدام والتحليلات لتحسين أداء النظام.</li>
+                    <li>المدخلات التي تقدمها لوكلاء الذكاء الاصطناعي (Zakkur Agents).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-white mb-3">3. استخدام الذكاء الاصطناعي</h2>
+                <p>نستخدم البيانات لتدريب وتحسين نماذجنا. يتم معالجة البيانات داخل بيئة آمنة، ولا يتم مشاركة البيانات الحساسة مع أطراف ثالثة دون موافقة صريحة، باستثناء شركاء البنية التحتية الموثوقين.</p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-white mb-3">4. الأمان</h2>
+                <p>نطبق معايير أمان صارمة (CISO Grade Guardrails) لحماية بياناتك من الوصول غير المصرح به.</p>
+            </section>
+
+            <div class="pt-8 border-t border-white/10">
+                <p class="text-gray-500">آخر تحديث: ديسمبر 2025</p>
+                <p class="text-gray-500">للاستفسارات: privacy@sopen.net</p>
+            </div>
         </div>
-    </div>
-
+    </main>
 </body>
 </html>
