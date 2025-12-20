@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="../assets/img/logo.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sopen Net, Inc | Operating Systems for Humans and Companies</title>
     <meta name="description" content="Sopen Net is not a product company, but an operating systems company for humans and businesses. Zakkur, Omudia, Senmud.">
+    <link rel="icon" href="../assets/img/logo.jpg">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -56,6 +56,26 @@
             0% { background-position: 100% 0; }
             100% { background-position: -100% 0; }
         }
+
+        .tech-pill {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            color: #9ca3af;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.25rem;
+        }
+        .tech-pill:hover {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: rgba(59, 130, 246, 0.4);
+            color: white;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -76,6 +96,7 @@
                         <a href="#home" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
                         <a href="#architecture" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">Architecture</a>
                         <a href="#products" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">Products</a>
+                        <a href="#tech-stack" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">Tech Stack</a>
                         <a href="founders.html" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">Team</a>
                         <a href="investors.html" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">Investors</a>
                     </div>
@@ -97,6 +118,7 @@
                 <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
                 <a href="#architecture" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Architecture</a>
                 <a href="#products" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Products</a>
+                <a href="#tech-stack" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tech Stack</a>
                 <a href="founders.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
                 <a href="investors.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Investors</a>
             </div>
@@ -131,6 +153,16 @@
                     Investor Relations
                 </a>
             </div>
+
+            <!-- Google Cloud Startups Badge (NEW) -->
+            <div class="mt-12 flex items-center justify-center gap-2 opacity-80 hover:opacity-100 transition duration-300">
+                <span class="text-xs text-gray-500 uppercase tracking-widest">Powered By</span>
+                <div class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
+                    <i class="fab fa-google text-white text-lg"></i>
+                    <span class="font-bold text-white text-sm">Google Cloud <span class="text-blue-400">Startups</span></span>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -361,6 +393,84 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+     <!-- Tech Stack Section (NEW) -->
+     <section id="tech-stack" class="py-20 bg-black relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-4">Under The Hood</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Our Tech Stack</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">We use the latest technologies to build a robust, fast, and infinitely scalable infrastructure.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Category 1: Databases & Data -->
+                <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-database text-blue-400 text-xl"></i>
+                        <h3 class="text-white font-bold">Data & Storage</h3>
+                    </div>
+                    <div class="flex flex-wrap">
+                        <span class="tech-pill"><i class="fas fa-leaf text-green-500"></i> MongoDB</span>
+                        <span class="tech-pill"><i class="fas fa-fire text-orange-500"></i> Firebase</span>
+                        <span class="tech-pill"><i class="fas fa-table text-blue-300"></i> SQL</span>
+                        <span class="tech-pill"><i class="fas fa-bolt text-red-500"></i> Redis</span>
+                    </div>
+                </div>
+
+                <!-- Category 2: Infrastructure & Cloud -->
+                <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-cloud text-blue-400 text-xl"></i>
+                        <h3 class="text-white font-bold">Cloud & Infra</h3>
+                    </div>
+                    <div class="flex flex-wrap">
+                        <span class="tech-pill"><i class="fab fa-google text-white"></i> Google Cloud</span>
+                        <span class="tech-pill"><i class="fas fa-server text-gray-400"></i> Microservices</span>
+                        <span class="tech-pill"><i class="fab fa-docker text-blue-500"></i> Docker</span>
+                        <span class="tech-pill"><i class="fas fa-network-wired text-orange-400"></i> Cloudflare</span>
+                        <span class="tech-pill">VPS</span>
+                        <span class="tech-pill">MQ</span>
+                        <span class="tech-pill">CDN</span>
+                        <span class="tech-pill">GoDaddy</span>
+                        <span class="tech-pill">Google Workspace</span>
+                    </div>
+                </div>
+
+                <!-- Category 3: Core & API -->
+                <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-code text-blue-400 text-xl"></i>
+                        <h3 class="text-white font-bold">Core & Code</h3>
+                    </div>
+                    <div class="flex flex-wrap">
+                        <span class="tech-pill"><i class="fab fa-node text-green-500"></i> Node.js</span>
+                        <span class="tech-pill"><i class="fab fa-react text-blue-400"></i> Next.js</span>
+                        <span class="tech-pill"><i class="fab fa-python text-yellow-300"></i> Python</span>
+                        <span class="tech-pill"><i class="fab fa-js text-yellow-400"></i> JS</span>
+                        <span class="tech-pill">C#</span>
+                        <span class="tech-pill">REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Category 4: Mobile & Env -->
+                <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-laptop-code text-blue-400 text-xl"></i>
+                        <h3 class="text-white font-bold">Dev Environment</h3>
+                    </div>
+                    <div class="flex flex-wrap">
+                        <span class="tech-pill"><i class="fas fa-mobile-alt text-blue-300"></i> Flutter</span>
+                        <span class="tech-pill"><i class="fas fa-code-branch text-blue-400"></i> Dart</span>
+                        <span class="tech-pill">VS Code</span>
+                        <span class="tech-pill">Android Studio</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
