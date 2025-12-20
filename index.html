@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sopen Net, Inc | Operating Systems for Humans and Companies</title>
-    <meta name="description" content="Sopen Net is not a product company, but an operating systems company for humans and businesses. Zakkur, Omudia, Senmud.">
-    <link rel="icon" href="../assets/img/logo.jpg">
+    <title>Sopen Net, Inc | أنظمة تشغيل للإنسان والشركات</title>
+    <meta name="description" content="Sopen Net ليست شركة منتجات، بل شركة أنظمة تشغيل للإنسان والشركات. Zakkur, Omudia, Senmud.">
+    <link rel="icon" href="assets/img/logo.jpg">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -46,7 +46,7 @@
         .text-gradient { background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .bg-grid { background-size: 50px 50px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px); mask-image: linear-gradient(to bottom, black 40%, transparent 100%); }
         
-        /* Flow Effect */
+        /* تأثير التدفق */
         .flow-line {
             background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
             background-size: 200% 100%;
@@ -85,27 +85,27 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center gap-3">
-                    <!-- Company Logo (Path Updated) -->
+                    <!-- Company Logo -->
                     <a href="index.html" class="flex items-center gap-2">
-                        <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/50x50/333/fff?text=S'" alt="Sopen Net Logo" class="h-10 w-auto rounded-full border border-white/10">
+                        <img src="assets/img/logo.png" onerror="this.src='https://via.placeholder.com/50x50/333/fff?text=S'" alt="Sopen Net Logo" class="h-10 w-auto rounded-full border border-white/10">
                         <span class="text-xl font-bold tracking-wider text-white hidden sm:block">SOPEN NET</span>
                     </a>
                 </div>
                 <div class="hidden md:flex items-center gap-6">
-                    <div class="flex items-baseline space-x-4">
-                        <a href="#home" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
-                        <a href="#architecture" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">Architecture</a>
-                        <a href="#products" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">Products</a>
-                        <a href="#tech-stack" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">Tech Stack</a>
-                        <a href="founders.html" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">Team</a>
-                        <a href="investors.html" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">Investors</a>
+                    <div class="flex items-baseline space-x-4 space-x-reverse">
+                        <a href="#home" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">الرئيسية</a>
+                        <a href="#architecture" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">المنظومة</a>
+                        <a href="#products" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">المنتجات</a>
+                        <a href="#tech-stack" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">التقنيات</a>
+                        <a href="founders.html" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">الفريق</a>
+                        <a href="investors.html" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition">المستثمرين</a>
                     </div>
-                    <!-- Language Switcher (Links back to Arabic Root) -->
-                    <a href="../index.html" class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white/10 transition">العربية</a>
+                    <!-- Language Switcher -->
+                    <a href="en/index.html" class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white/10 transition">English</a>
                 </div>
                 <!-- Mobile menu button -->
                 <div class="-mr-2 flex md:hidden gap-4">
-                    <a href="../index.html" class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white/10 transition flex items-center">AR</a>
+                    <a href="en/index.html" class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white/10 transition flex items-center">EN</a>
                     <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
@@ -114,13 +114,13 @@
         </div>
         <!-- Mobile Menu -->
         <div class="hidden md:hidden bg-brand-dark border-b border-white/10" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-left">
-                <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="#architecture" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Architecture</a>
-                <a href="#products" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Products</a>
-                <a href="#tech-stack" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tech Stack</a>
-                <a href="founders.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
-                <a href="investors.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Investors</a>
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-right">
+                <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">الرئيسية</a>
+                <a href="#architecture" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">المنظومة</a>
+                <a href="#products" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">المنتجات</a>
+                <a href="#tech-stack" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">التقنيات</a>
+                <a href="founders.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">الفريق</a>
+                <a href="investors.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">المستثمرين</a>
             </div>
         </div>
     </nav>
@@ -128,29 +128,29 @@
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div class="absolute inset-0 bg-grid"></div>
-        <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse"></div>
-        <div class="absolute top-1/3 left-1/4 w-80 h-80 bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse"></div>
+        <div class="absolute top-1/3 right-1/4 w-80 h-80 bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
             <div class="inline-block mb-4 px-4 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
                 <span class="text-sm font-light tracking-wide text-gray-300">The Future of Human Operating Systems</span>
             </div>
             <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
-                Not a Product Company.<br>
-                <span class="text-gradient">We are an OS Company.</span>
+                لسنا شركة منتجات<br>
+                <span class="text-gradient">نحن شركة أنظمة تشغيل</span>
             </h1>
             <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400 font-light leading-relaxed">
-                At Sopen Net, we build the AI infrastructure that functions as a single body.
+                في Sopen Net، نبني البنية التحتية للذكاء الاصطناعي التي تعمل كجسد واحد.
                 <br>
-                <span class="text-white font-medium">Decision (Zakkur) &larr; Action (Omudia) &larr; Sensing (Senmud)</span>
+                <span class="text-white font-medium">قرار (Zakkur) &larr; تنفيذ (Omudia) &larr; إحساس (Senmud)</span>
             </p>
             
             <div class="mt-10 flex flex-wrap justify-center gap-4">
                 <a href="#products" class="px-8 py-3 rounded-full bg-white text-black font-bold hover:bg-gray-200 transition shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                    Explore Ecosystem
+                    اكتشف المنظومة
                 </a>
                 <a href="investors.html" class="px-8 py-3 rounded-full border border-white/20 hover:bg-white/10 transition backdrop-blur-sm">
-                    Investor Relations
+                    تواصل مع المستثمرين
                 </a>
             </div>
 
@@ -171,7 +171,7 @@
         <div class="max-w-7xl mx-auto px-4 relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Robot Architecture</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto text-lg">Products do not work in isolation; they are a continuous cycle of evolution and self-improvement.</p>
+                <p class="text-gray-400 max-w-2xl mx-auto text-lg">المنتجات لا تعمل منفصلة، بل هي دورة مستمرة من التطور والتحسين الذاتي.</p>
             </div>
             
             <!-- Cycle Layout Container -->
@@ -183,56 +183,50 @@
                 <!-- Product 1: Zakkur (Brain) -->
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
                     <div class="relative w-40 h-40 rounded-full bg-gray-900 border-2 border-blue-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-blue-500 overflow-hidden">
-                        <!-- Image Path Updated -->
-                        <img src="../assets/img/i1.jpg" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Zakkur Logo" class="w-full h-full object-cover object-center z-20 relative transition hover:opacity-90">
+                        <img src="assets/img/i1.jpg" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Zakkur Logo" class="w-full h-full object-cover object-center z-20 relative transition hover:opacity-90">
                         <i class="fas fa-brain text-5xl text-blue-500 absolute z-10 hidden animate-pulse"></i>
                         <div class="absolute inset-0 bg-blue-500/10 z-0 group-hover:bg-blue-500/20 transition"></div>
                     </div>
                     <h3 class="text-2xl font-bold text-blue-400 mb-2">Zakkur</h3>
-                    <p class="text-sm text-gray-400 text-center px-4">The Brain (Decision)</p>
+                    <p class="text-sm text-gray-400 text-center px-4">العقل (القرار)</p>
                     <div class="md:hidden mt-4 text-blue-500"><i class="fas fa-arrow-down animate-bounce"></i></div>
                 </div>
 
                 <!-- Product 2: Omudia (Voice/Action) -->
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
                     <div class="relative w-40 h-40 rounded-full bg-gray-900 border-2 border-purple-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(139,92,246,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-purple-500 overflow-hidden">
-                        <!-- Image Path Updated -->
-                        <img src="../assets/img/i2.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Omudia Logo" class="w-full h-full object-cover object-center z-20 relative transition hover:opacity-90">
+                        <img src="assets/img/i2.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Omudia Logo" class="w-full h-full object-cover object-center z-20 relative transition hover:opacity-90">
                         <i class="fas fa-bullhorn text-5xl text-purple-500 absolute z-10 hidden animate-pulse"></i>
                         <div class="absolute inset-0 bg-purple-500/10 z-0 group-hover:bg-purple-500/20 transition"></div>
                     </div>
                     <h3 class="text-2xl font-bold text-purple-400 mb-2">Omudia</h3>
-                    <p class="text-sm text-gray-400 text-center px-4">The Voice (Action)</p>
+                    <p class="text-sm text-gray-400 text-center px-4">الصوت (التنفيذ)</p>
                     <div class="md:hidden mt-4 text-purple-500"><i class="fas fa-arrow-down animate-bounce"></i></div>
                 </div>
 
                 <!-- Product 3: Senmud (Senses/Data) -->
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
                     <div class="relative w-40 h-40 rounded-full bg-gray-900 border-2 border-pink-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(236,72,153,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-pink-500 overflow-hidden">
-                        <!-- Image Path Updated -->
-                        <img src="../assets/img/i3.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Senmud Logo" class="w-full h-full object-cover object-center z-20 relative transition hover:opacity-90">
+                        <img src="assets/img/i3.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Senmud Logo" class="w-full h-full object-cover object-center z-20 relative transition hover:opacity-90">
                         <i class="fas fa-users text-5xl text-pink-500 absolute z-10 hidden animate-pulse"></i>
                         <div class="absolute inset-0 bg-pink-500/10 z-0 group-hover:bg-pink-500/20 transition"></div>
                     </div>
                     <h3 class="text-2xl font-bold text-pink-400 mb-2">Senmud</h3>
-                    <p class="text-sm text-gray-400 text-center px-4">The Senses (Data)</p>
+                    <p class="text-sm text-gray-400 text-center px-4">الحواس (البيانات)</p>
                 </div>
             </div>
 
-            <!-- Feedback Loop Visual -->
+            <!-- Feedback Loop Visual (Returning Arrow) -->
             <div class="hidden md:block relative h-24 mt-4">
                 <div class="absolute left-0 right-0 top-0 flex justify-center">
-                    <!-- Dashed line connecting end back to start -->
                     <div class="w-3/4 h-20 border-b-2 border-l-2 border-r-2 border-dashed border-gray-700 rounded-b-[100px] opacity-50 relative">
-                        <!-- Animated arrow moving back -->
                          <div class="absolute bottom-[-14px] left-[50%] transform -translate-x-1/2 bg-brand-dark px-4 text-gray-500 text-sm flex items-center gap-2 border border-gray-800 rounded-full py-1">
                             <i class="fas fa-sync animate-spin text-xs"></i>
-                            <span>Evolution Cycle (Feedback Loop)</span>
+                            <span>دورة التطور (Feedback Loop)</span>
                          </div>
                     </div>
                 </div>
-                <!-- Arrow head -->
-                <div class="absolute right-[12%] bottom-4 text-gray-600 -rotate-90">
+                <div class="absolute left-[12%] bottom-4 text-gray-600 rotate-90">
                     <i class="fas fa-chevron-up text-xl animate-bounce"></i>
                 </div>
             </div>
@@ -240,7 +234,7 @@
             <div class="md:hidden mt-8 text-center border-t border-dashed border-gray-700 pt-8 relative">
                  <p class="text-gray-500 text-sm">
                     <i class="fas fa-arrow-up animate-bounce mb-2 block"></i>
-                    Data returns to create sharper decisions (Feedback Loop)
+                    البيانات تعود لتصنع قرارات أدق (Feedback Loop)
                 </p>
             </div>
 
@@ -249,19 +243,16 @@
 
     <!-- Products Showcase Section -->
     <section id="products" class="py-24 relative overflow-hidden">
-        <!-- Background Glow -->
         <div class="absolute top-0 left-0 w-full h-full bg-brand-dark/50 -z-10"></div>
-        
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-24">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Our Ecosystem</h2>
-                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Three technically independent products, functionally interconnected to operate as one entity.</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">منتجات المنظومة</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">ثلاثة منتجات مستقلة تقنياً، ولكنها مترابطة وظيفياً لتعمل ككيان واحد.</p>
             </div>
 
             <!-- Product 1: Zakkur -->
             <div class="flex flex-col lg:flex-row items-center gap-12 mb-32 relative">
-                <!-- Text Side (Left for English) -->
-                <div class="lg:w-1/2 z-10 text-left">
+                <div class="lg:w-1/2 z-10 text-right">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="p-3 bg-blue-500/20 rounded-xl text-blue-400">
                             <i class="fas fa-chess text-2xl"></i>
@@ -269,44 +260,25 @@
                         <span class="px-4 py-1 rounded-full border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-widest bg-blue-500/5">AI Decision Engine</span>
                     </div>
                     <h3 class="text-4xl font-bold mb-4 text-white">Zakkur</h3>
-                    <h4 class="text-xl text-blue-300 mb-6">C-Suite Digital Decision & Execution Engine</h4>
+                    <h4 class="text-xl text-blue-300 mb-6">محرك القرار والتنفيذ الذكي (C-Suite Digital)</h4>
                     <p class="text-gray-400 text-lg leading-relaxed mb-8">
-                        More than a chatbot or assistant. It is a complete system for complex decision-making. 
-                        It intakes financial and market context, analyzes data via specialized agents (CFO, CMO, COO), 
-                        and issues directly executable decisions with a full audit log.
+                        ليس مجرد Chatbot أو مساعد، بل نظام متكامل لاتخاذ القرارات المعقدة. 
+                        يستقبل السياق المالي والسوقي، يحلل البيانات عبر وكلاء متخصصين (CFO, CMO, COO)، 
+                        ويصدر قرارات قابلة للتنفيذ المباشر مع سجل تدقيق كامل.
                     </p>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-center gap-3 text-gray-300">
-                            <i class="fas fa-check-circle text-blue-500 text-xl"></i>
-                            <span>Analyzes via specialized Agents</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-300">
-                            <i class="fas fa-check-circle text-blue-500 text-xl"></i>
-                            <span>Applies budget and risk Guardrails</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-300">
-                            <i class="fas fa-check-circle text-blue-500 text-xl"></i>
-                            <span>Produces executive decisions, not just advice</span>
-                        </li>
-                    </ul>
                 </div>
-                <!-- Image Side -->
                 <div class="lg:w-1/2 w-full flex justify-center">
                     <div class="relative w-full max-w-md h-[500px] md:h-[600px] rounded-3xl border border-white/10 bg-gray-900/50 p-4 shadow-2xl shadow-blue-900/20 group hover:border-blue-500/30 transition duration-500 flex justify-center items-center overflow-hidden backdrop-blur-sm">
                         <div class="absolute inset-0 bg-blue-600/5 blur-2xl -z-10"></div>
-                        <img src="../assets/img/in1.png" class="absolute inset-0 w-full h-full object-cover opacity-20 blur-xl scale-110" alt="Background Blur">
-                        <img src="../assets/img/in1.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Zakkur+UI'" alt="Zakkur Interface" class="h-full w-auto object-contain z-10 rounded-lg shadow-lg group-hover:scale-105 transition duration-500">
-                        <div class="absolute bottom-4 z-20">
-                             <span class="bg-black/60 backdrop-blur-md px-4 py-2 rounded-full text-xs text-gray-300 border border-white/10">System Interface (Coming Soon)</span>
-                        </div>
+                        <img src="assets/img/in1.png" class="absolute inset-0 w-full h-full object-cover opacity-20 blur-xl scale-110" alt="Background Blur">
+                        <img src="assets/img/in1.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Zakkur+UI'" alt="Zakkur Interface" class="h-full w-auto object-contain z-10 rounded-lg shadow-lg group-hover:scale-105 transition duration-500">
                     </div>
                 </div>
             </div>
 
             <!-- Product 2: Omudia -->
             <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-32 relative">
-                <!-- Text Side -->
-                 <div class="lg:w-1/2 z-10 text-left">
+                 <div class="lg:w-1/2 z-10 text-right">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="p-3 bg-purple-500/20 rounded-xl text-purple-400">
                             <i class="fas fa-layer-group text-2xl"></i>
@@ -314,44 +286,25 @@
                         <span class="px-4 py-1 rounded-full border border-purple-500/30 text-purple-400 text-xs font-bold uppercase tracking-widest bg-purple-500/5">AI Content Factory</span>
                     </div>
                     <h3 class="text-4xl font-bold mb-4 text-white">Omudia</h3>
-                    <h4 class="text-xl text-purple-300 mb-6">Industrial Content Production & Distribution</h4>
+                    <h4 class="text-xl text-purple-300 mb-6">نظام الإنتاج والتوزيع الصناعي للمحتوى</h4>
                     <p class="text-gray-400 text-lg leading-relaxed mb-8">
-                        A smart publishing system that treats content as an industrial process. Instead of wasting time on writing and design, 
-                        Omudia generates content, adapts it for every platform (Twitter, LinkedIn, TikTok), 
-                        and publishes automatically while analyzing performance and re-optimizing.
+                        نظام نشر ذكي يبني المحتوى كعملية صناعية. بدلاً من استنزاف الوقت في الكتابة والتصميم، 
+                        يقوم Omudia بتوليد المحتوى، تكييفه لكل منصة (Twitter, LinkedIn, TikTok)، 
+                        ونشره تلقائياً مع تحليل الأداء وإعادة التحسين.
                     </p>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-center gap-3 text-gray-300">
-                            <i class="fas fa-check-circle text-purple-500 text-xl"></i>
-                            <span>Time Cost ≈ Zero</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-300">
-                            <i class="fas fa-check-circle text-purple-500 text-xl"></i>
-                            <span>Simultaneous publishing on 10+ platforms</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-300">
-                            <i class="fas fa-check-circle text-purple-500 text-xl"></i>
-                            <span>Auto-Adaptation for each channel</span>
-                        </li>
-                    </ul>
                 </div>
-                <!-- Image Side -->
                 <div class="lg:w-1/2 w-full flex justify-center">
                     <div class="relative w-full max-w-md h-[500px] md:h-[600px] rounded-3xl border border-white/10 bg-gray-900/50 p-4 shadow-2xl shadow-purple-900/20 group hover:border-purple-500/30 transition duration-500 flex justify-center items-center overflow-hidden backdrop-blur-sm">
                         <div class="absolute inset-0 bg-purple-600/5 blur-2xl -z-10"></div>
-                        <img src="../assets/img/in2.png" class="absolute inset-0 w-full h-full object-cover opacity-20 blur-xl scale-110" alt="Background Blur">
-                        <img src="../assets/img/in2.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Omudia+UI'" alt="Omudia Interface" class="h-full w-auto object-contain z-10 rounded-lg shadow-lg group-hover:scale-105 transition duration-500">
-                         <div class="absolute bottom-4 z-20">
-                             <span class="bg-black/60 backdrop-blur-md px-4 py-2 rounded-full text-xs text-gray-300 border border-white/10">System Interface (Coming Soon)</span>
-                        </div>
+                        <img src="assets/img/in2.png" class="absolute inset-0 w-full h-full object-cover opacity-20 blur-xl scale-110" alt="Background Blur">
+                        <img src="assets/img/in2.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Omudia+UI'" alt="Omudia Interface" class="h-full w-auto object-contain z-10 rounded-lg shadow-lg group-hover:scale-105 transition duration-500">
                     </div>
                 </div>
             </div>
 
             <!-- Product 3: Senmud -->
             <div class="flex flex-col lg:flex-row items-center gap-12 relative">
-                 <!-- Text Side -->
-                 <div class="lg:w-1/2 z-10 text-left">
+                 <div class="lg:w-1/2 z-10 text-right">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="p-3 bg-pink-500/20 rounded-xl text-pink-400">
                             <i class="fas fa-comments text-2xl"></i>
@@ -359,36 +312,18 @@
                         <span class="px-4 py-1 rounded-full border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-widest bg-pink-500/5">AI-Native Social</span>
                     </div>
                     <h3 class="text-4xl font-bold mb-4 text-white">Senmud</h3>
-                    <h4 class="text-xl text-pink-300 mb-6">AI-Powered Social Media Platform</h4>
+                    <h4 class="text-xl text-pink-300 mb-6">منصة التواصل الاجتماعي المدعومة بالذكاء الاصطناعي</h4>
                     <p class="text-gray-400 text-lg leading-relaxed mb-8">
-                        A social platform where AI is a partner in every interaction (Co-Creator). 
-                        Focused on meaning rather than noise. Posting, commenting, and analysis pass through an AI layer 
-                        to generate genuine data that feeds the "Brain" (Zakkur).
+                        منصة تواصل اجتماعي حيث يكون الذكاء الاصطناعي شريكاً في كل تفاعل (Co-Creator). 
+                        تركز على المعنى بدلاً من الضجيج. النشر، التعليق، والتحليل يمر عبر طبقة ذكاء اصطناعي 
+                        لتوليد بيانات حقيقية تغذي "العقل" (Zakkur).
                     </p>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-center gap-3 text-gray-300">
-                            <i class="fas fa-check-circle text-pink-500 text-xl"></i>
-                            <span>AI as a Co-Creator, not a replacement</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-300">
-                            <i class="fas fa-check-circle text-pink-500 text-xl"></i>
-                            <span>Structured knowledge flow</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-300">
-                            <i class="fas fa-check-circle text-pink-500 text-xl"></i>
-                            <span>Smart Communities</span>
-                        </li>
-                    </ul>
                 </div>
-                <!-- Image Side -->
                 <div class="lg:w-1/2 w-full flex justify-center">
                     <div class="relative w-full max-w-md h-[500px] md:h-[600px] rounded-3xl border border-white/10 bg-gray-900/50 p-4 shadow-2xl shadow-pink-900/20 group hover:border-pink-500/30 transition duration-500 flex justify-center items-center overflow-hidden backdrop-blur-sm">
                         <div class="absolute inset-0 bg-pink-600/5 blur-2xl -z-10"></div>
-                        <img src="../assets/img/in3.jpg" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover opacity-20 blur-xl scale-110" alt="Background Blur">
-                        <img src="../assets/img/in3.jpg" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Senmud+UI'" alt="Senmud Interface" class="h-full w-auto object-contain z-10 rounded-lg shadow-lg group-hover:scale-105 transition duration-500">
-                         <div class="absolute bottom-4 z-20">
-                             <span class="bg-black/60 backdrop-blur-md px-4 py-2 rounded-full text-xs text-gray-300 border border-white/10">System Interface (Coming Soon)</span>
-                        </div>
+                        <img src="assets/img/in3.jpg" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover opacity-20 blur-xl scale-110" alt="Background Blur">
+                        <img src="assets/img/in3.jpg" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Senmud+UI'" alt="Senmud Interface" class="h-full w-auto object-contain z-10 rounded-lg shadow-lg group-hover:scale-105 transition duration-500">
                     </div>
                 </div>
             </div>
@@ -396,13 +331,13 @@
         </div>
     </section>
 
-     <!-- Tech Stack Section (NEW) -->
-     <section id="tech-stack" class="py-20 bg-black relative border-t border-white/5">
+    <!-- Tech Stack Section (NEW) -->
+    <section id="tech-stack" class="py-20 bg-black relative border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
                 <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-4">Under The Hood</span>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Our Tech Stack</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">We use the latest technologies to build a robust, fast, and infinitely scalable infrastructure.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">الترسانة التقنية</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">نستخدم أحدث التقنيات لبناء بنية تحتية صلبة، سريعة، وقابلة للتوسع اللانهائي.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -411,7 +346,7 @@
                 <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-database text-blue-400 text-xl"></i>
-                        <h3 class="text-white font-bold">Data & Storage</h3>
+                        <h3 class="text-white font-bold">البيانات والتخزين</h3>
                     </div>
                     <div class="flex flex-wrap">
                         <span class="tech-pill"><i class="fas fa-leaf text-green-500"></i> MongoDB</span>
@@ -425,7 +360,7 @@
                 <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-cloud text-blue-400 text-xl"></i>
-                        <h3 class="text-white font-bold">Cloud & Infra</h3>
+                        <h3 class="text-white font-bold">السحابة والبنية</h3>
                     </div>
                     <div class="flex flex-wrap">
                         <span class="tech-pill"><i class="fab fa-google text-white"></i> Google Cloud</span>
@@ -444,7 +379,7 @@
                 <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-code text-blue-400 text-xl"></i>
-                        <h3 class="text-white font-bold">Core & Code</h3>
+                        <h3 class="text-white font-bold">النواة والبرمجة</h3>
                     </div>
                     <div class="flex flex-wrap">
                         <span class="tech-pill"><i class="fab fa-node text-green-500"></i> Node.js</span>
@@ -460,7 +395,7 @@
                 <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-laptop-code text-blue-400 text-xl"></i>
-                        <h3 class="text-white font-bold">Dev Environment</h3>
+                        <h3 class="text-white font-bold">بيئة التطوير</h3>
                     </div>
                     <div class="flex flex-wrap">
                         <span class="tech-pill"><i class="fas fa-mobile-alt text-blue-300"></i> Flutter</span>
@@ -480,11 +415,11 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div class="col-span-1 md:col-span-2">
                     <a href="#" class="flex items-center gap-2 mb-4">
-                        <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40x40/333/fff?text=S'" alt="Logo" class="h-8 w-auto">
+                        <img src="assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40x40/333/fff?text=S'" alt="Logo" class="h-8 w-auto">
                         <span class="text-2xl font-bold text-white">SOPEN NET</span>
                     </a>
                     <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
-                        Operating Systems for Humans and Companies. Building the future by integrating Decision, Action, and Connection into one body.
+                        شركة أنظمة تشغيل للإنسان والشركات. نبني المستقبل من خلال دمج القرار، التنفيذ، والتواصل في جسد واحد.
                     </p>
                     <!-- Social Media Links -->
                     <div class="flex flex-wrap gap-4 mt-6">
@@ -499,7 +434,7 @@
                 </div>
                 
                 <div>
-                    <h4 class="text-white font-bold mb-4">Products</h4>
+                    <h4 class="text-white font-bold mb-4">المنتجات</h4>
                     <ul class="space-y-2 text-sm text-gray-500">
                         <li><a href="#" class="hover:text-blue-400 transition">Zakkur</a></li>
                         <li><a href="#" class="hover:text-purple-400 transition">Omudia</a></li>
@@ -508,20 +443,20 @@
                 </div>
 
                 <div>
-                    <h4 class="text-white font-bold mb-4">Company</h4>
+                    <h4 class="text-white font-bold mb-4">الشركة</h4>
                     <ul class="space-y-2 text-sm text-gray-500">
-                        <li><a href="founders.html" class="hover:text-white transition">Team</a></li>
-                        <li><a href="investors.html" class="hover:text-white transition">Investors</a></li>
-                        <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
-                        <li><a href="terms.html" class="hover:text-white transition">Terms & Conditions</a></li>
+                        <li><a href="founders.html" class="hover:text-white transition">عن الفريق</a></li>
+                        <li><a href="investors.html" class="hover:text-white transition">للمستثمرين</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">الشروط والأحكام</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-gray-600 text-sm text-center md:text-left">© 2025 Sopen Net, Inc. All rights reserved.</p>
+                <p class="text-gray-600 text-sm text-center md:text-right">© 2025 Sopen Net, Inc. جميع الحقوق محفوظة.</p>
                 <div class="flex gap-4">
-                    <img src="../assets/img/logo.png" onerror="this.style.display='none'" class="h-6 opacity-30 grayscale">
+                    <img src="assets/img/logo.png" onerror="this.style.display='none'" class="h-6 opacity-30 grayscale">
                 </div>
             </div>
         </div>
