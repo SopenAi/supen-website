@@ -17,6 +17,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/index.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/index.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/index.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/index.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sopen.ai/index.html"/>
     </url>
 
@@ -31,6 +32,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/index.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/index.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/index.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/index.html"/>
     </url>
 
     <!-- Spanish -->
@@ -44,6 +46,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/index.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/index.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/index.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/index.html"/>
     </url>
 
     <!-- Hindi -->
@@ -57,6 +60,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/index.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/index.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/index.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/index.html"/>
     </url>
 
     <!-- Chinese -->
@@ -70,6 +74,21 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/index.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/index.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/index.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/index.html"/>
+    </url>
+
+    <!-- Russian -->
+    <url>
+        <loc>https://sopen.ai/ru/index.html</loc>
+        <lastmod>2025-12-27</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sopen.ai/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sopen.ai/en/index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/index.html"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/index.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/index.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/index.html"/>
     </url>
 
     <!-- ========================================== -->
@@ -86,6 +105,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/founders.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/founders.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/founders.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/founders.html"/>
     </url>
 
     <url>
@@ -98,6 +118,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/founders.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/founders.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/founders.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/founders.html"/>
     </url>
 
     <url>
@@ -110,6 +131,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/founders.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/founders.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/founders.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/founders.html"/>
     </url>
 
     <url>
@@ -122,6 +144,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/founders.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/founders.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/founders.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/founders.html"/>
     </url>
 
     <url>
@@ -134,6 +157,20 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/founders.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/founders.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/founders.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/founders.html"/>
+    </url>
+
+    <url>
+        <loc>https://sopen.ai/ru/founders.html</loc>
+        <lastmod>2025-12-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sopen.ai/founders.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sopen.ai/en/founders.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/founders.html"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/founders.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/founders.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/founders.html"/>
     </url>
 
     <!-- ========================================== -->
@@ -150,6 +187,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/investors.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/investors.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/investors.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/investors.html"/>
     </url>
 
     <url>
@@ -162,6 +200,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/investors.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/investors.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/investors.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/investors.html"/>
     </url>
 
     <url>
@@ -174,6 +213,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/investors.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/investors.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/investors.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/investors.html"/>
     </url>
 
     <url>
@@ -186,6 +226,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/investors.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/investors.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/investors.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/investors.html"/>
     </url>
 
     <url>
@@ -198,6 +239,20 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/investors.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/investors.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/investors.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/investors.html"/>
+    </url>
+
+    <url>
+        <loc>https://sopen.ai/ru/investors.html</loc>
+        <lastmod>2025-12-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sopen.ai/investors.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sopen.ai/en/investors.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/investors.html"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/investors.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/investors.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/investors.html"/>
     </url>
 
     <!-- ========================================== -->
@@ -214,6 +269,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/privacy.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/privacy.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/privacy.html"/>
     </url>
 
     <url>
@@ -226,6 +282,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/privacy.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/privacy.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/privacy.html"/>
     </url>
 
     <url>
@@ -238,6 +295,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/privacy.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/privacy.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/privacy.html"/>
     </url>
 
     <url>
@@ -250,6 +308,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/privacy.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/privacy.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/privacy.html"/>
     </url>
 
     <url>
@@ -262,6 +321,20 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/privacy.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/privacy.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/privacy.html"/>
+    </url>
+
+    <url>
+        <loc>https://sopen.ai/ru/privacy.html</loc>
+        <lastmod>2025-12-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sopen.ai/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sopen.ai/en/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/privacy.html"/>
     </url>
 
     <!-- ========================================== -->
@@ -278,6 +351,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/terms.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/terms.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/terms.html"/>
     </url>
 
     <url>
@@ -290,6 +364,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/terms.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/terms.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/terms.html"/>
     </url>
 
     <url>
@@ -302,6 +377,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/terms.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/terms.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/terms.html"/>
     </url>
 
     <url>
@@ -314,6 +390,7 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/terms.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/terms.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/terms.html"/>
     </url>
 
     <url>
@@ -326,6 +403,20 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/terms.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/terms.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/terms.html"/>
+    </url>
+
+    <url>
+        <loc>https://sopen.ai/ru/terms.html</loc>
+        <lastmod>2025-12-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sopen.ai/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sopen.ai/en/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sopen.ai/es/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://sopen.ai/hi/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://sopen.ai/zh/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://sopen.ai/ru/terms.html"/>
     </url>
 
 </urlset>
