@@ -1,22 +1,10 @@
-Robots.txt for Sopen AI - Multi-lingual Website
+Sopen Net, Inc. Robots File
 
-تعيين إرشادات لجميع وكلاء المستخدم (محركات البحث)
+Allow all major search engines to crawl the site
 
 User-agent: *
-
-السماح بالوصول لجميع الصفحات العامة
-
 Allow: /
 
-حظر الصفحات غير المخصصة للفهرسة (مثل النماذج ولوحات التحكم)
+Sitemap Location
 
-Disallow: /Form.html
-Disallow: /en/Form.html
-Disallow: /dashboard.html
-Disallow: /en/dashboard.html
-
-تحديد مسار ملف Sitemap XML الخاص بالموقع
-
-(تم تصحيح المسار ليكون رابط مباشر للملف)
-
-Sitemap: https://www.google.com/search?q=https://sopen.ai/sitemap.xml
+Sitemap: https://sopen.ai/sitemap.xml
