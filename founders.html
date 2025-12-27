@@ -17,6 +17,7 @@
                             dark: '#050505',
                             gray: '#1a1a1a',
                             accent: '#3b82f6',
+                            purple: '#8b5cf6',
                         }
                     },
                     fontFamily: {
@@ -44,6 +45,50 @@
             color: white;
             transform: translateY(-2px);
         }
+        .timeline-item {
+            position: relative;
+            padding-right: 2rem;
+            border-right: 2px solid #333;
+            margin-bottom: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: -0.4rem;
+            top: 0.5rem;
+            width: 0.8rem;
+            height: 0.8rem;
+            background-color: #3b82f6;
+            border-radius: 50%;
+        }
+        .tech-category {
+            margin-bottom: 1rem;
+        }
+        .tech-category-title {
+            font-size: 0.75rem;
+            color: #6b7280;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .tech-tag {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ccc;
+            white-space: nowrap;
+            display: inline-block;
+            margin: 0.1rem;
+        }
+        /* Custom colors for categories */
+        .tag-data { color: #86efac; border-color: rgba(134, 239, 172, 0.2); background: rgba(134, 239, 172, 0.05); }
+        .tag-cloud { color: #93c5fd; border-color: rgba(147, 197, 253, 0.2); background: rgba(147, 197, 253, 0.05); }
+        .tag-core { color: #fca5a5; border-color: rgba(252, 165, 165, 0.2); background: rgba(252, 165, 165, 0.05); }
+        .tag-dev { color: #fcd34d; border-color: rgba(252, 211, 77, 0.2); background: rgba(252, 211, 77, 0.05); }
     </style>
 </head>
 <body class="antialiased">
@@ -61,131 +106,322 @@
     </nav>
 
     <section class="py-20 relative overflow-hidden">
-        <!-- Background Decor -->
-        <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-900/20 rounded-full blur-[100px] -z-10"></div>
-        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-900/20 rounded-full blur-[100px] -z-10"></div>
+        <!-- Decoration -->
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-900/10 rounded-full blur-[100px] -z-10"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-900/10 rounded-full blur-[100px] -z-10"></div>
 
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">العقول التي تبني <span class="text-blue-500">نظام التشغيل البشري</span></h1>
-            <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-20 leading-relaxed">
-                في Sopen Net، نحن لا نوظف مجرد مهندسين، بل نوظف "مهندسي وعي". 
-                فريقنا يجمع بين الرؤية الفلسفية والهندسة المتقدمة لبناء Robot Architecture.
+        <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">فريق القيادة</h1>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                عقول عراقية تبني البنية التحتية لمستقبل الذكاء الاصطناعي.
             </p>
+        </div>
 
-            <!-- Founders Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <!-- Founder Profile: Reda Hussein -->
+            <div class="bg-brand-gray/30 border border-white/10 rounded-3xl p-8 mb-16 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-purple-600"></div>
                 
-                <!-- Founder 1: Reda Hussein -->
-                <div class="group relative">
-                    <div class="absolute inset-0 bg-gradient-to-b from-blue-600/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 rounded-3xl -z-10"></div>
-                    <div class="bg-brand-gray/50 border border-white/10 rounded-3xl p-8 hover:border-blue-500/50 transition duration-300 h-full flex flex-col text-right">
-                        <div class="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-white/10 mb-6 relative shadow-2xl">
-                            <img src="assets/img/f1.jpg" onerror="this.src='https://via.placeholder.com/150'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <!-- Left Column: Image, Socials, Stack -->
+                    <div class="w-full md:w-1/3 flex flex-col items-center text-center">
+                        <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-blue-500/50 mb-6 shadow-2xl relative group">
+                            <img src="assets/img/f1.jpg" onerror="this.src='https://via.placeholder.com/200'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         </div>
+                        <h2 class="text-3xl font-bold text-white mb-2">رضا حسين</h2>
+                        <p class="text-blue-400 font-bold text-sm tracking-widest uppercase mb-1">Founder & CEO | Full-Stack</p>
+                        <p class="text-gray-500 text-xs mb-6 dir-ltr flex items-center justify-center gap-1"><i class="fas fa-map-marker-alt text-red-500"></i> Babylon, Iraq</p>
                         
-                        <div class="text-center mb-6">
-                            <h3 class="text-2xl font-bold text-white mb-1">رضا حسين</h3>
-                            <p class="text-blue-400 font-bold text-sm tracking-widest uppercase mb-2">مؤسس & CTO/CEO</p>
-                            <p class="text-gray-500 text-xs dir-ltr font-mono bg-white/5 inline-block px-3 py-1 rounded-full">admin@sopen.ai | Baghdad, 18</p>
+                        <!-- Socials -->
+                        <div class="flex justify-center flex-wrap gap-2 mb-8">
+                            <a href="https://x.com/ri_husse" class="social-link hover:bg-black"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.tiktok.com/@ri_huss" class="social-link hover:bg-black"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.youtube.com/@ri-hus" class="social-link hover:bg-red-600"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/ri_husse" class="social-link hover:bg-pink-600"><i class="fab fa-instagram"></i></a>
+                            <a href="https://t.me/Ri_Huss" class="social-link hover:bg-blue-400"><i class="fab fa-telegram-plane"></i></a>
                         </div>
-                        
-                        <div class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow space-y-5">
-                            <p class="font-medium text-white/90">
-                                مؤسس تقني شامل (Full-stack). بدأ بناء أنظمة الذكاء الاصطناعي في سن 17. مسؤول عن هندسة Sopen بالكامل من الخدمات المصغرة إلى البنية السحابية.
-                            </p>
+
+                        <!-- Full Tech Stack (Categorized) -->
+                        <div class="w-full text-right space-y-4 border-t border-white/10 pt-6">
                             
-                            <div>
-                                <h4 class="text-blue-300 font-bold mb-2 text-xs uppercase tracking-wide border-b border-blue-500/20 pb-1 inline-block">أبرز الإنجازات</h4>
-                                <ul class="space-y-2 text-gray-300 list-none">
-                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-1 text-xs"></i> <span>بناء نظام Sopen.ai بالكامل من الصفر.</span></li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-1 text-xs"></i> <span>تطوير محرك AI مستقل لتحليل الأكواد في سن 17.</span></li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-1 text-xs"></i> <span>ابتكار نموذج "قانون الكون المنسي" لتنظيم البيانات.</span></li>
-                                </ul>
+                            <!-- Data & Storage -->
+                            <div class="tech-category">
+                                <h5 class="tech-category-title"><i class="fas fa-database text-green-400"></i> البيانات والتخزين</h5>
+                                <div>
+                                    <span class="tech-tag tag-data">MongoDB</span>
+                                    <span class="tech-tag tag-data">Firebase</span>
+                                    <span class="tech-tag tag-data">SQL</span>
+                                    <span class="tech-tag tag-data">Redis</span>
+                                </div>
                             </div>
 
-                            <div class="bg-gradient-to-br from-blue-500/10 to-transparent p-4 rounded-xl border border-blue-500/20 relative overflow-hidden">
-                                <div class="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
-                                <h4 class="text-white font-bold mb-1 flex items-center gap-2"><i class="fas fa-rocket text-blue-400"></i> الاختراق الذكي (The Hack)</h4>
-                                <p class="text-xs text-gray-300 leading-relaxed">
-                                    عندما احتاج للتمويل الأولي، قام ببناء محاكاة حية للمنتج لإقناع والده بجدوى الفكرة بدلاً من الحديث النظري، مما حول الشك إلى دعم ومكنه من إطلاق Sopen 2.0v.
-                                </p>
+                            <!-- Cloud & Infra -->
+                            <div class="tech-category">
+                                <h5 class="tech-category-title"><i class="fas fa-cloud text-blue-400"></i> السحابة والبنية</h5>
+                                <div>
+                                    <span class="tech-tag tag-cloud">Google Cloud</span>
+                                    <span class="tech-tag tag-cloud">Microservices</span>
+                                    <span class="tech-tag tag-cloud">Docker</span>
+                                    <span class="tech-tag tag-cloud">Cloudflare</span>
+                                    <span class="tech-tag tag-cloud">VPS</span>
+                                    <span class="tech-tag tag-cloud">MQ</span>
+                                    <span class="tech-tag tag-cloud">CDN</span>
+                                    <span class="tech-tag tag-cloud">DNS</span>
+                                    <span class="tech-tag tag-cloud">G-Workspace</span>
+                                </div>
                             </div>
-                        </div>
 
-                        <!-- Social Media Icons -->
-                        <div class="flex justify-center flex-wrap gap-2 pt-6 border-t border-white/5 mt-auto">
-                            <a href="https://x.com/ri_husse" class="social-link hover:bg-black" title="Twitter / X"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.tiktok.com/@ri_huss" class="social-link hover:bg-black" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                            <a href="https://www.youtube.com/@ri-hus" class="social-link hover:bg-red-600" title="YouTube"><i class="fab fa-youtube"></i></a>
-                            <a href="https://www.instagram.com/ri_husse" class="social-link hover:bg-pink-600" title="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="https://t.me/Ri_Huss" class="social-link hover:bg-blue-400" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                            <!-- Core & Programming -->
+                            <div class="tech-category">
+                                <h5 class="tech-category-title"><i class="fas fa-code text-red-400"></i> النواة والبرمجة</h5>
+                                <div>
+                                    <span class="tech-tag tag-core">Python</span>
+                                    <span class="tech-tag tag-core">C++</span>
+                                    <span class="tech-tag tag-core">Network Engineering</span>
+                                    <span class="tech-tag tag-core">JS/TS</span>
+                                    <span class="tech-tag tag-core">Dart</span>
+                                    <span class="tech-tag tag-core">C# (.NET)</span>
+                                    <span class="tech-tag tag-core">REST APIs</span>
+                                </div>
+                            </div>
+
+                            <!-- Dev Environment -->
+                            <div class="tech-category">
+                                <h5 class="tech-category-title"><i class="fas fa-laptop-code text-yellow-400"></i> بيئة التطوير</h5>
+                                <div>
+                                    <span class="tech-tag tag-dev">Node.js</span>
+                                    <span class="tech-tag tag-dev">Next.js</span>
+                                    <span class="tech-tag tag-dev">Flutter</span>
+                                    <span class="tech-tag tag-dev">VS Code</span>
+                                    <span class="tech-tag tag-dev">Android Studio</span>
+                                    <span class="tech-tag tag-dev">Visual Studio</span>
+                                </div>
+                            </div>
+
+                            <!-- Project Timeline (Full) -->
+                            <div class="mt-4 pt-4 border-t border-white/5">
+                                <h5 class="tech-category-title"><i class="fas fa-history text-gray-400"></i> الجدول الزمني الكامل</h5>
+                                <div class="space-y-1 text-[0.65rem] text-gray-400 font-mono pr-2 border-r border-white/10">
+                                    <div class="flex justify-between"><span>Dec 2025</span> <span class="text-white">SISE Engine</span></div>
+                                    <div class="flex justify-between"><span>Oct 2025</span> <span class="text-white">Zakkur AI</span></div>
+                                    <div class="flex justify-between"><span>Aug 2025</span> <span class="text-white">Omudia</span></div>
+                                    <div class="flex justify-between"><span>Jul 2025</span> <span class="text-white">CinemaBoxD</span></div>
+                                    <div class="flex justify-between"><span>Mar 2025</span> <span class="text-white">Senmud</span></div>
+                                    <div class="flex justify-between"><span>Jan 2025</span> <span class="text-white">UseMindWin</span></div>
+                                    <div class="flex justify-between"><span>Aug 2024</span> <span class="text-white">FamilyOS</span></div>
+                                    <div class="flex justify-between"><span>Jun 2024</span> <span class="text-white">PDF Reader</span></div>
+                                    <div class="flex justify-between"><span>Mar 2024</span> <span class="text-white">DyausOS</span></div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </div>
 
-                <!-- Founder 2: Montazer Amer -->
-                <div class="group relative">
-                    <div class="absolute inset-0 bg-gradient-to-b from-purple-600/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 rounded-3xl -z-10"></div>
-                    <div class="bg-brand-gray/50 border border-white/10 rounded-3xl p-8 hover:border-purple-500/50 transition duration-300 h-full flex flex-col text-right">
-                        <div class="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-white/10 mb-6 relative shadow-2xl">
-                            <!-- Using f3 based on request to remove f2 -->
-                            <img src="assets/img/f2.png" onerror="this.src='https://via.placeholder.com/150'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0">
-                        </div>
+                    <!-- Right Column: Detailed Info -->
+                    <div class="w-full md:w-2/3 space-y-10 border-r border-white/5 pr-0 md:pr-8">
                         
-                        <div class="text-center mb-6">
-                            <h3 class="text-2xl font-bold text-white mb-1">منتظر عامر</h3>
-                            <p class="text-purple-400 font-bold text-sm tracking-widest uppercase mb-2">شريك مؤسس & COO</p>
-                            <p class="text-gray-500 text-xs dir-ltr font-mono bg-white/5 inline-block px-3 py-1 rounded-full">trz@sopen.ai | Baghdad, 18</p>
-                        </div>
-                        
-                        <div class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow space-y-5">
-                            <p class="font-medium text-white/90">
-                                يدير العمليات وأنظمة المحتوى لتمكين الفريق الهندسي من التحرك بسرعة. خبير في إدارة المجتمعات الرقمية والأنظمة التعليمية.
+                        <!-- About -->
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fas fa-user-astronaut text-blue-500"></i> عن المؤسس
+                            </h3>
+                            <p class="text-gray-400 leading-relaxed text-sm mb-4 bg-black/20 p-4 rounded-xl border border-white/5">
+                                مؤسس تقني ومهندس برمجيات عصامي من بابل، العراق. أؤمن بأن الكود هو الأداة الأقوى لإعادة تشكيل الواقع.
+                                أقود حالياً <strong>Sopen Net, Inc.</strong> لبناء الجيل القادم من البنية التحتية للذكاء الاصطناعي (Zakkur, Omudia, Senmud).
                             </p>
-                            
-                            <div>
-                                <h4 class="text-purple-300 font-bold mb-2 text-xs uppercase tracking-wide border-b border-purple-500/20 pb-1 inline-block">أبرز الإنجازات</h4>
-                                <ul class="space-y-2 text-gray-300 list-none">
-                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-purple-500 mt-1 text-xs"></i> <span>بناء وإدارة أنظمة تعلم ومحتوى رقمي متكاملة.</span></li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-purple-500 mt-1 text-xs"></i> <span>إنشاء سير عمل متكامل لأتمتة النشر والتنسيق.</span></li>
-                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-purple-500 mt-1 text-xs"></i> <span>إدارة مجتمعات رقمية وتطوير المحتوى ذاتياً.</span></li>
+                            <p class="text-gray-400 leading-relaxed text-sm">
+                                رحلتي تمزج بين الفضول العميق والهندسة الصلبة. أتخصص في سد الفجوة بين تحسينات النواة (Kernel Level) بلغة C# وتطبيقات الذكاء الاصطناعي المتقدمة بلغة Python.
+                            </p>
+                        </div>
+
+                        <!-- Experience -->
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fas fa-briefcase text-blue-500"></i> الخبرة العملية
+                            </h3>
+                            <div class="timeline-item">
+                                <h4 class="text-white font-bold text-lg">Founder & CEO</h4>
+                                <p class="text-blue-400 text-sm mb-1">Sopen Net, Inc | Delaware, US (Remote from Iraq)</p>
+                                <p class="text-gray-500 text-xs mb-3 font-mono">Jun 2025 - Present</p>
+                                <ul class="list-disc list-inside text-gray-400 text-sm space-y-2 marker:text-blue-500">
+                                    <li>قيادة الرؤية الاستراتيجية والهندسة التقنية لبناء أنظمة AI ذاتية القيادة.</li>
+                                    <li>الإشراف المباشر على تطوير المنتجات الأساسية (Zakkur, Omudia, Senmud).</li>
+                                    <li>هندسة أنظمة عالية الأداء (High-Performance Systems) باستخدام .NET 10.</li>
+                                    <li>تطوير خوارزميات SISE لتحسين موارد النظام بشكل ذكي.</li>
                                 </ul>
                             </div>
+                        </div>
 
-                            <div class="bg-gradient-to-br from-purple-500/10 to-transparent p-4 rounded-xl border border-purple-500/20 relative overflow-hidden">
-                                <div class="absolute top-0 left-0 w-1 h-full bg-purple-500"></div>
-                                <h4 class="text-white font-bold mb-1 flex items-center gap-2"><i class="fas fa-lightbulb text-purple-400"></i> الاختراق الذكي (The Hack)</h4>
-                                <p class="text-xs text-gray-300 leading-relaxed">
-                                    قام بتحسين كفاءة عمل تجاري واقعي يعاني من الطوابير، عبر إعادة هندسة سير العمل ونظام الأولويات بدون تكلفة برمجية، مما قلل الانتظار من 30 إلى 10 دقائق وزاد المبيعات.
-                                </p>
+                        <!-- Projects -->
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fas fa-laptop-code text-blue-500"></i> أهم المشاريع
+                            </h3>
+                            <div class="grid grid-cols-1 gap-4">
+                                <!-- SISE -->
+                                <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-white font-bold group-hover:text-blue-400 transition">SISE Engine</h4>
+                                        <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded">Kernel Lvl</span>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed">محرك تحسين نظام ذكي (Context-Aware) يدير موارد CPU/RAM ديناميكياً باستخدام C#.</p>
+                                </div>
+                                <!-- Zakkur -->
+                                <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-white font-bold group-hover:text-blue-400 transition">Zakkur AI</h4>
+                                        <span class="text-[10px] bg-yellow-500/20 text-yellow-300 px-2 py-0.5 rounded">Python AI</span>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed">محرك القرار والتنفيذ. العقل المدبر للنظام الذي يحول التحليل إلى أفعال.</p>
+                                </div>
+                                <!-- Omudia -->
+                                <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-white font-bold group-hover:text-blue-400 transition">Omudia</h4>
+                                        <span class="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded">Automation</span>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed">مصنع المحتوى الآلي. نظام نشر وتوزيع يدير دورة حياة المحتوى بالكامل.</p>
+                                </div>
+                                <!-- Senmud (Changed from CinemaBoxD) -->
+                                <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-white font-bold group-hover:text-blue-400 transition">Senmud</h4>
+                                        <span class="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded">AI Social</span>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed">منصة تواصل اجتماعي تعتمد على الذكاء الاصطناعي لالتقاط "الإشارات" الحقيقية وبناء مجتمعات ذكية.</p>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Social Media Icons -->
-                        <div class="flex justify-center flex-wrap gap-2 pt-6 border-t border-white/5 mt-auto">
-                            <a href="https://x.com/mnt_amer" class="social-link hover:bg-black" title="Twitter / X"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.tiktok.com/@mnt_amer" class="social-link hover:bg-black" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                            <a href="https://www.instagram.com/mnt_amer" class="social-link hover:bg-pink-600" title="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="https://t.me/mnt_amer" class="social-link hover:bg-blue-400" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                        <!-- Awards -->
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fas fa-medal text-yellow-500"></i> الجوائز والتقديرات
+                            </h3>
+                            <ul class="space-y-4 text-sm text-gray-400">
+                                <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-bug text-red-500 mt-1"></i>
+                                    <div>
+                                        <strong class="text-white block mb-1">Shabakaty TV - Critical API Security</strong>
+                                        <span class="text-xs">اكتشاف ثغرة IDOR حرجة وتطوير أداة PoC لإثبات إمكانية تنفيذ هجوم DoS، مما ساهم في تأمين المنصة.</span>
+                                    </div>
+                                </li>
+                                <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-shield-alt text-blue-500 mt-1"></i>
+                                    <div>
+                                        <strong class="text-white block mb-1">Albox - Security Bounty</strong>
+                                        <span class="text-xs">اكتشاف ثغرة في الـ CDN تسمح بالوصول لملفات المستخدمين الخاصة.</span>
+                                    </div>
+                                </li>
+                                <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-university text-green-500 mt-1"></i>
+                                    <div>
+                                        <strong class="text-white block mb-1">University of Babylon - Critical Disclosure</strong>
+                                        <span class="text-xs">حماية بيانات 25,000 طالب عبر الإبلاغ المسؤول عن ثغرة في البنية التحتية.</span>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
+
                     </div>
                 </div>
-
             </div>
+
+            <!-- Co-Founder: Montazer Amer (Restored Full Detail) -->
+            <div class="bg-brand-gray/30 border border-white/10 rounded-3xl p-8 mb-16 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-pink-600"></div>
+                
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <!-- Image & Quick Info -->
+                    <div class="w-full md:w-1/3 flex flex-col items-center text-center">
+                        <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-purple-500/50 mb-6 shadow-2xl relative">
+                            <img src="assets/img/f2.png" onerror="this.src='https://via.placeholder.com/150'" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        </div>
+                        <h2 class="text-2xl font-bold text-white mb-2">منتظر عامر</h2>
+                        <p class="text-purple-400 font-bold text-sm tracking-widest uppercase mb-4">شريك مؤسس & COO</p>
+                        <p class="text-gray-500 text-xs mb-6 dir-ltr"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Babylon, Iraq</p>
+                        
+                        <!-- Socials -->
+                        <div class="flex justify-center flex-wrap gap-2 mb-6">
+                            <a href="https://x.com/mnt_amer" class="social-link hover:bg-black"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.tiktok.com/@mnt_amer" class="social-link hover:bg-black"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com/mnt_amer" class="social-link hover:bg-pink-600"><i class="fab fa-instagram"></i></a>
+                            <a href="https://t.me/mnt_amer" class="social-link hover:bg-blue-400"><i class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Info -->
+                    <div class="w-full md:w-2/3 space-y-8">
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 border-b border-white/10 pb-2">عن الشريك المؤسس</h3>
+                            <p class="text-gray-400 leading-relaxed text-sm mb-4">
+                                اليد اليمنى التي تحول الفوضى إلى نظام. يدير منتظر العمليات اليومية وأنظمة المحتوى لتمكين الفريق الهندسي من التحرك بأقصى سرعة.
+                            </p>
+                            <p class="text-gray-400 leading-relaxed text-sm">
+                                خبير في إدارة المجتمعات الرقمية والأنظمة التعليمية، ويمتلك رؤية ثاقبة في تحسين كفاءة العمليات (Operational Efficiency) بدون تعقيد تقني.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-purple-300 font-bold mb-3 text-sm uppercase tracking-wide">الإنجازات الرئيسية</h4>
+                            <ul class="space-y-3 text-gray-300 text-sm list-none">
+                                <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-project-diagram text-purple-500 mt-1"></i> 
+                                    <span><strong>إدارة أنظمة المحتوى:</strong> بناء وإدارة سلاسل توريد المحتوى الرقمي وأنظمة التعلم المتكاملة.</span>
+                                </li>
+                                <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-robot text-purple-500 mt-1"></i> 
+                                    <span><strong>أتمتة العمليات:</strong> إنشاء سير عمل (Workflows) يقلل من الجهد اليدوي في النشر والتنسيق.</span>
+                                </li>
+                                <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-users text-purple-500 mt-1"></i> 
+                                    <span><strong>بناء المجتمعات:</strong> إدارة وتنمية مجتمعات رقمية نشطة وتطوير المحتوى ذاتياً.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-purple-500/10 to-transparent p-5 rounded-xl border border-purple-500/20 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-1 h-full bg-purple-500"></div>
+                            <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="fas fa-lightbulb text-purple-400"></i> الاختراق الذكي (The Hack)</h4>
+                            <p class="text-sm text-gray-300 leading-relaxed">
+                                قام بحل مشكلة "طوابير الانتظار" في نشاط تجاري واقعي دون كتابة سطر كود واحد. عبر إعادة هندسة سير العمل ونظام الأولويات (Process Re-engineering)، قلل وقت الانتظار من 30 دقيقة إلى 10 دقائق، مما ضاعف المبيعات ورضا العملاء.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Footer Include -->
-    <footer class="border-t border-white/5 bg-black py-8 text-center">
-        <div class="flex justify-center gap-6 mb-4 text-gray-400">
-            <a href="https://x.com/SopenNet" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-500 hover:text-white transition"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.tiktok.com/@sopen.ai" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-black hover:text-white hover:border border-white/20 transition"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.youtube.com/@SopenNetinc" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-red-600 hover:text-white transition"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/sopen.ai/" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-pink-600 hover:text-white transition"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61585190857126" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://t.me/SopenNet" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-400 hover:text-white transition"><i class="fab fa-telegram-plane"></i></a>
+    <!-- Footer -->
+    <footer class="border-t border-white/5 bg-black py-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            
+            <div class="flex items-center gap-2 mb-6">
+                <img src="assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full opacity-80">
+                <span class="text-xl font-bold text-white tracking-widest">SOPEN NET</span>
+            </div>
+
+            <!-- Social Media Links (Company) -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <a href="https://x.com/SopenNet" class="social-link hover:bg-blue-500 hover:text-white" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@sopen.ai" class="social-link hover:bg-black hover:text-white hover:border border-white/20" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@SopenNetinc" class="social-link hover:bg-red-600 hover:text-white" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/sopen.ai/" class="social-link hover:bg-pink-600 hover:text-white" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61585190857126" class="social-link hover:bg-blue-600 hover:text-white" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-700 hover:text-white" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-400 hover:text-white" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+
+            <div class="text-center border-t border-white/10 pt-8 w-full">
+                <p class="text-gray-500 text-sm mb-2">© 2025 Sopen Net, Inc. جميع الحقوق محفوظة.</p>
+                <p class="text-gray-600 text-xs">صُنِعَ بفخر في بابل، العراق <i class="fas fa-heart text-red-900 ml-1"></i></p>
+            </div>
         </div>
-        <p class="text-gray-600 text-sm">&copy; 2025 Sopen Net, Inc. جميع الحقوق محفوظة.</p>
     </footer>
 </body>
 </html>
