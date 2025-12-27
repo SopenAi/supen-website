@@ -5,6 +5,14 @@ Allow all major search engines to crawl the site
 User-agent: *
 Allow: /
 
+Language Paths (Explicitly defined)
+
+Allow: /en/
+Allow: /es/
+Allow: /zh/
+Allow: /hi/
+Allow: /ru/
+
 Sitemap Location
 
 Sitemap: https://sopen.ai/sitemap.xml
