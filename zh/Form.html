@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/img/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partnership & Investment Request Form - Sopen.ai</title>
+    <meta name="description" content="Official form for contacting investors, strategic partners, and supporting entities of Sopen.ai.">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts & Icons: Using Inter for English (Standard Font) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --font-main: 'Inter', sans-serif;
+        }
+        body {
+            font-family: var(--font-main);
+            /* Background color consistent with the Arabic version's style */
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .ai-gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #164e63 100%); /* slate-900 to cyan-900 */
+        }
+        .form-container {
+            border: 1px solid rgba(13, 148, 136, 0.2); /* teal-600 with opacity */
+        }
+        .input-style {
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #d1d5db; /* gray-300 */
+            width: 100%;
+            transition: all 0.2s;
+        }
+        .input-style:focus {
+            border-color: #0d9488; /* teal-600 */
+            box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.2);
+            outline: none;
+        }
+        /* Custom file input styling */
+        .file-input-style {
+            background-color: #f0fdfa; /* teal-50 */
+            border-color: #0d9488; /* teal-600 */
+        }
+        .dark .file-input-style {
+            background-color: #115e59; /* teal-800 */
+            border-color: #0d9488;
+        }
+    </style>
+</head>
+<body class="text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+
+    <div class="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
+        <!-- Container matching the Arabic version's styling and structure -->
+        <div class="w-full max-w-2xl bg-white dark:bg-slate-900 form-container p-8 rounded-xl shadow-2xl">
+            
+            <div class="text-center mb-8">
+                <div class="flex justify-center items-center mb-4">
+                    <!-- Handshake icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="handshake" class="lucide lucide-handshake text-teal-600 w-10 h-10"><path d="m12 11.2 5-5a2 2 0 0 1 2 3l-2.3 2.3c-.6.6-1.4 1.1-2.3 1.2M9 13v.8l4.2 4.2c.6.6 1.4 1.1 2.3 1.2M5 9.8l5-5a2 2 0 0 1 2 3l-2.3 2.3c-.6.6-1.4 1.1-2.3 1.2M17 17l-5-5"></path></svg>
+                </div>
+                <h1 class="text-3xl font-extrabold text-gray-900 dark:text-gray-100 mb-2">Partnership & Investment Request</h1>
+                <p class="text-gray-600 dark:text-gray-400">Please fill out the form to request a strategic partnership or explore investment opportunities in Sopen.ai.</p>
+            </div>
+
+            <!-- Form starts here. Action URL updated as requested. -->
+            <form id="partnershipForm" method="post" action="https://script.google.com/macros/s/AKfycbw8TDBBv20NItG0RDns6KMQ0pq63vvRcUzsSpoyRrlUii52x5qaJyuvtL5GDCMlRvD78w/exec" enctype="multipart/form-data" class="space-y-6">
+
+                <!-- Section 1: Basic Information -->
+                <h2 class="text-xl font-bold text-teal-600 border-b pb-2 mb-4">1. Contact Information</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Full Name -->
+                    <fieldset class="space-y-1">
+                        <label for="fullName" class="text-sm font-medium block">Full Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="fullName" name="fullName" required class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700" placeholder="Example: John Doe">
+                    </fieldset>
+
+                    <!-- Email Address -->
+                    <fieldset class="space-y-1">
+                        <label for="email" class="text-sm font-medium block">Email Address <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" name="email" required class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700" placeholder="example@domain.com">
+                    </fieldset>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Company/Organization Name -->
+                    <fieldset class="space-y-1">
+                        <label for="company" class="text-sm font-medium block">Company / Organization (Optional)</label>
+                        <input type="text" id="company" name="company" class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700" placeholder="Example: Investment Fund, Tech Company">
+                    </fieldset>
+
+                    <!-- Position / Title -->
+                    <fieldset class="space-y-1">
+                        <label for="position" class="text-sm font-medium block">Position / Title (Optional)</label>
+                        <input type="text" id="position" name="position" class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700" placeholder="Example: Partner, Lead Investor, CEO">
+                    </fieldset>
+                </div>
+
+                <!-- LinkedIn / Website -->
+                <fieldset class="space-y-1">
+                    <label for="linkedin" class="text-sm font-medium block">LinkedIn Profile or Website Link (Optional)</label>
+                    <input type="url" id="linkedin" name="linkedin" class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700" placeholder="https://www.linkedin.com/in/yourprofile">
+                </fieldset>
+
+                <!-- Section 2: Partnership Details -->
+                <h2 class="text-xl font-bold text-teal-600 border-b pb-2 mb-4 pt-6">2. Request Details</h2>
+
+                <!-- Type of Partnership -->
+                <fieldset class="space-y-1">
+                    <label for="partnershipType" class="text-sm font-medium block">Primary Goal of Contact <span class="text-red-500">*</span></label>
+                    <select id="partnershipType" name="partnershipType" required class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700">
+                        <option value="">Select from the list...</option>
+                        <option value="Investment">Investment Opportunity (Seed/Pre-Seed)</option>
+                        <option value="StrategicPartnership">Strategic / Technology Partnership</option>
+                        <option value="MediaRelations">Media Relations and Coverage</option>
+                        <option value="Other">Other (Please specify below)</option>
+                    </select>
+                </fieldset>
+
+                <!-- Investment Range -->
+                <fieldset class="space-y-1">
+                    <label for="investmentRange" class="text-sm font-medium block">Estimated Investment Range (If request is for investment)</label>
+                    <select id="investmentRange" name="investmentRange" class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700">
+                        <option value="">N/A (Not Applicable / Undefined)</option>
+                        <option value="Under_50k">Less than $50,000</option>
+                        <option value="50k_200k">$50,000 - $200,000</option>
+                        <option value="200k_500k">$200,000 - $500,000</option>
+                        <option value="500k_1m">$500,000 - $1 Million</option>
+                        <option value="Over_1m">More than $1 Million</option>
+                    </select>
+                </fieldset>
+
+                <!-- Message / Proposal -->
+                <fieldset class="space-y-1">
+                    <label for="proposalMessage" class="text-sm font-medium block">Brief Message / Proposal (Explain the nature of your request) <span class="text-red-500">*</span></label>
+                    <textarea id="proposalMessage" name="proposalMessage" rows="5" required class="input-style dark:bg-slate-800 dark:text-white dark:border-slate-700" placeholder="Please clarify how we can collaborate or why you are interested in investing..."></textarea>
+                </fieldset>
+
+                <!-- Attachment -->
+                <fieldset class="space-y-1">
+                    <label for="fileUpload" class="text-sm font-medium block">Attach Pitch Deck or Additional File (Optional, PDF preferred)</label>
+                    <input type="file" id="fileUpload" name="fileUpload" class="block w-full text-sm text-gray-500 dark:text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:font-semibold file:bg-teal-50 file:text-teal-700 hover:file:bg-teal-100 dark:file:bg-teal-900 dark:file:text-teal-300">
+                </fieldset>
+
+                <!-- Submit Button -->
+                <div class="text-center pt-4">
+                    <button type="submit" id="submitButton" class="bg-teal-600 text-white font-bold py-3 px-12 rounded-xl text-lg shadow-xl hover:bg-teal-700 inline-flex items-center justify-center gap-2 transform transition duration-300 w-full md:w-auto">
+                        Submit Request (Data saved to Drive)
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="send" class="lucide lucide-send w-5 h-5"><line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 14 2 11 22 2"></polygon></svg>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons for all generated SVG elements
+        lucide.createIcons();
+
+        // This script block handles the submission state and feedback
+        const form = document.getElementById('partnershipForm');
+        const submitButton = document.getElementById('submitButton');
+
+        form.addEventListener('submit', function(e) {
+            // Check form validity before submission
+            if (!form.checkValidity()) {
+                // Browser handles native validation UI
+                return; 
+            }
+            
+            // Show loading state
+            submitButton.disabled = true;
+            submitButton.classList.remove('bg-teal-600', 'hover:bg-teal-700');
+            submitButton.classList.add('bg-gray-400');
+            // Update button text and add a spinner
+            submitButton.innerHTML = `
+                Submitting...
+                <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                </svg>
+            `;
+        });
+    </script>
+</body>
+</html>

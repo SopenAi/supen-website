@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sopen Net, Inc | Operating Systems for Humans and Companies</title>
-    <meta name="description" content="Sopen Net is not a product company, but an operating systems company for humans and businesses. Zakkur, Omudia, Senmud.">
+    <title>Sopen Net, Inc | Operating Systems for Humans & Companies</title>
+    <meta name="description" content="Sopen Net is not a product company, but an operating system company for humans and companies. Zakkur, Omudia, Senmud.">
     <link rel="icon" href="../assets/img/logo.jpg">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -26,13 +26,13 @@
                             gray: '#1a1a1a',
                             accent: '#3b82f6', 
                             purple: '#8b5cf6',
-                            pink: '#ec4899', 
+                            pink: '#ec4899',
                             teal: '#14b8a6',
                             text: '#e5e5e5'
                         }
                     },
                     fontFamily: {
-                        sans: ['Cairo', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
                     },
                     animation: {
                         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
@@ -49,11 +49,12 @@
         }
     </script>
     <style>
-        body { font-family: 'Cairo', sans-serif; background-color: #050505; color: #e5e5e5; overflow-x: hidden; }
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #e5e5e5; overflow-x: hidden; }
         html { scroll-behavior: smooth; }
         .text-gradient { background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .bg-grid { background-size: 50px 50px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px); mask-image: linear-gradient(to bottom, black 40%, transparent 100%); }
         
+        /* Flow Effect */
         .flow-line {
             background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
             background-size: 200% 100%;
@@ -83,7 +84,8 @@
             color: white;
             transform: translateY(-2px);
         }
-
+        
+        /* LTR Specifics */
         .feature-list li {
             position: relative;
             padding-left: 1.5rem;
@@ -135,8 +137,8 @@
         .faq-item.active .faq-icon {
             transform: rotate(180deg);
         }
-
-        /* Glass effect */
+        
+        /* Glass effect for detailed cards */
         .glass-panel {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(10px);
@@ -158,45 +160,89 @@
                         <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/50x50/333/fff?text=S'" alt="Sopen Net Logo" class="h-10 w-auto rounded-full border border-white/10">
                         <span class="text-xl font-bold tracking-wider text-white hidden sm:block">SOPEN NET</span>
                     </a>
-
+                    
                     <!-- System Status Indicator -->
                     <div class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 ml-4">
                         <span class="relative flex h-2 w-2">
                           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                           <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                         </span>
-                        <span class="text-[10px] font-bold text-green-400 uppercase tracking-wide">All Systems: 100%</span>
+                        <span class="text-[10px] font-bold text-green-400 uppercase tracking-wide">SYSTEMS OPERATIONAL: 100%</span>
                     </div>
                 </div>
 
-                <!-- Restored Full Navigation Links -->
+                <!-- Navigation Links -->
                 <div class="hidden md:flex items-center gap-4 lg:gap-6">
                     <div class="flex items-baseline space-x-2 lg:space-x-4 text-sm lg:text-base">
                         <a href="#home" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Home</a>
-                        <a href="#architecture" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">System</a>
+                        <a href="#architecture" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Ecosystem</a>
                         <a href="#products" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Products</a>
                         <a href="#tech-stack" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Tech Stack</a>
                         <a href="founders.html" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Team</a>
                         <a href="investors.html" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Investors</a>
                     </div>
-                    <a href="../index.html" class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white/10 transition">العربية</a>
+                    
+                    <!-- Multi-Language Dropdown (Desktop) -->
+                    <div class="relative group">
+                        <button class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white/10 transition flex items-center gap-2 text-gray-300">
+                            <i class="fas fa-globe"></i>
+                            <span>English</span>
+                            <i class="fas fa-chevron-down text-[10px]"></i>
+                        </button>
+                        <div class="absolute right-0 mt-2 w-48 bg-brand-dark border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
+                            <a href="../index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                                <span>العربية</span>
+                                <span class="text-xs border border-white/10 px-1 rounded">AR</span>
+                            </a>
+                            <div class="block px-4 py-3 text-sm text-brand-accent font-bold bg-white/5 flex justify-between items-center">
+                                <span>English</span>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <a href="../es/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                                <span>Español</span>
+                                <span class="text-xs border border-white/10 px-1 rounded">ES</span>
+                            </a>
+                            <a href="../zh/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                                <span>中文 (Mandarin)</span>
+                                <span class="text-xs border border-white/10 px-1 rounded">ZH</span>
+                            </a>
+                            <a href="../hi/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                                <span>हिन्दी (Hindi)</span>
+                                <span class="text-xs border border-white/10 px-1 rounded">HI</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="-mr-2 flex md:hidden gap-4">
-                    <a href="../index.html" class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white/10 transition flex items-center">AR</a>
                     <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
         </div>
+        
+        <!-- Mobile Menu -->
         <div class="hidden md:hidden bg-brand-dark border-b border-white/10" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-left">
                 <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="#architecture" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">System</a>
+                <a href="#architecture" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Ecosystem</a>
                 <a href="#products" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Products</a>
+                <a href="#tech-stack" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tech Stack</a>
                 <a href="founders.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
                 <a href="investors.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Investors</a>
+                
+                <!-- Mobile Language Selector -->
+                <div class="border-t border-white/10 mt-4 pt-4">
+                    <p class="px-3 text-xs text-gray-500 uppercase tracking-widest mb-3">Languages</p>
+                    <div class="grid grid-cols-2 gap-2 px-3">
+                        <a href="../index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">العربية</a>
+                        <div class="text-center py-2 border border-brand-accent/50 bg-brand-accent/10 rounded text-sm text-brand-accent font-bold">English</div>
+                        <a href="../es/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">Español</a>
+                        <a href="../zh/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">中文 (ZH)</a>
+                        <a href="../hi/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">हिन्दी (HI)</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -219,7 +265,7 @@
                 </span>
             </h1>
             <p class="mt-4 max-w-3xl mx-auto text-xl text-gray-400 font-light leading-relaxed">
-                Sopen Net is not a suite of separate apps. It is a single operating ecosystem consisting of four interconnected parts.
+                Sopen Net is not a collection of separate apps. It is a single operating system composed of four interconnected parts.
                 <br>
                 <span class="text-white font-medium mt-2 block">
                     Decision (Zakkur) &rarr; Execution (Omudia) &rarr; Signal (Senmud)
@@ -231,7 +277,7 @@
                     System Performance
                 </a>
                 <a href="#products" class="px-8 py-3 rounded-full border border-white/20 hover:bg-white/10 transition backdrop-blur-sm">
-                    Explore Ecosystem
+                    Discover System
                 </a>
             </div>
 
@@ -251,23 +297,23 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Sopen System 1.5v</h2>
                 <p class="text-gray-400 max-w-2xl mx-auto text-lg">
-                    Core Concept: Decision &rarr; Execution &rarr; Signal &rarr; Optimization.
+                    Core Idea: Decision → Execution → Signal → Optimization.
                     <br>
-                    All within a single traceable and auditable loop.
+                    A single, fully traceable, and auditable loop.
                 </p>
             </div>
             
             <div class="relative grid grid-cols-1 md:grid-cols-4 gap-8 items-center justify-items-center mb-12">
                 <div class="hidden md:block absolute top-[40%] left-0 w-full h-1 flow-line opacity-30 -z-10 rounded-full"></div>
 
-                <!-- Products Icons (Same as before) -->
+                <!-- Products Icons -->
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
                     <div class="relative w-36 h-36 rounded-full bg-gray-900 border-2 border-blue-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-blue-500 overflow-hidden">
                         <img src="../assets/img/i1.jpg" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Zakkur" class="w-full h-full object-cover z-20 transition hover:opacity-90">
                         <i class="fas fa-brain text-4xl text-blue-500 absolute z-10 hidden animate-pulse"></i>
                     </div>
                     <h3 class="text-xl font-bold text-blue-400 mb-1">Zakkur</h3>
-                    <p class="text-xs text-gray-400 text-center">Decision & Execution Brain</p>
+                    <p class="text-xs text-gray-400 text-center">Decision Brain</p>
                 </div>
 
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
@@ -276,7 +322,7 @@
                         <i class="fas fa-bullhorn text-4xl text-purple-500 absolute z-10 hidden animate-pulse"></i>
                     </div>
                     <h3 class="text-xl font-bold text-purple-400 mb-1">Omudia</h3>
-                    <p class="text-xs text-gray-400 text-center">Production & Distribution Arm</p>
+                    <p class="text-xs text-gray-400 text-center">Production Arm</p>
                 </div>
 
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
@@ -293,14 +339,14 @@
                         <i class="fas fa-fingerprint text-5xl text-teal-500 z-10"></i>
                     </div>
                     <h3 class="text-xl font-bold text-teal-400 mb-1">Sopen CV</h3>
-                    <p class="text-xs text-gray-400 text-center">Unified Identity + Context</p>
+                    <p class="text-xs text-gray-400 text-center">Unified Identity</p>
                 </div>
             </div>
 
             <div class="mt-8 text-center border-t border-dashed border-gray-700 pt-8 relative">
                  <p class="text-gray-400 text-sm max-w-2xl mx-auto">
                     <i class="fas fa-sync animate-spin mr-2 text-blue-500"></i>
-                    One Single Loop: <span class="text-white">Senmud</span> captures signal &rarr; <span class="text-white">Zakkur</span> decides &rarr; <span class="text-white">Omudia</span> executes &rarr; <span class="text-white">Sopen CV</span> authenticates
+                    System operating as a single loop: <span class="text-white">Senmud</span> captures signal → <span class="text-white">Zakkur</span> decides → <span class="text-white">Omudia</span> executes → <span class="text-white">Sopen CV</span> documents.
                 </p>
             </div>
         </div>
@@ -326,26 +372,26 @@
                         </div>
                     </div>
                     
-                    <h4 class="text-2xl text-blue-300 mb-6 font-light">Decision & Execution Engine - Digital C-Suite</h4>
+                    <h4 class="text-2xl text-blue-300 mb-6 font-light">Decision & Execution Brain - The Digital C-Suite</h4>
                     
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        Zakkur is not just a smart assistant giving tips; it is an <strong>operating system for decisions</strong>. It targets existential problems for companies: slow decision-making, lack of traceability, and manual execution breakdown under pressure. It operates as a digital executive team (CFO, CTO, CMO, COO) within a single framework.
+                        Zakkur is not just a smart assistant giving advice; it is an <strong>operating system for decisions</strong>. It targets existential corporate problems: slow decision-making, lack of tracking, and manual execution collapse under pressure. It functions as a digital executive team (CFO, CTO, CMO, COO) within a single framework.
                     </p>
                     
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-blue-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">How it Works (The Pipeline):</h5>
+                        <h5 class="text-blue-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">How it works (The Pipeline):</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>1. Read:</strong> Gathers context from multiple sources (financial data, KPIs, logs, risks).</li>
+                            <li><strong>1. Read:</strong> Collects context from multiple sources (financial data, KPIs, logs, risks).</li>
                             <li><strong>2. Validate:</strong> Passes data through "Zero-Trust" filters and compliance policies before processing.</li>
-                            <li><strong>3. Decide:</strong> Doesn't give a vague opinion, but outputs a final option backed by alternatives (Option A/B), risks, and success conditions.</li>
+                            <li><strong>3. Decide:</strong> Doesn't give a vague opinion, but generates a final option backed by alternatives (Option A/B), risks, and success conditions.</li>
                             <li><strong>4. Execute:</strong> Immediately converts the decision into actions: running tasks, sending API commands, updating settings, or launching campaigns.</li>
-                            <li><strong>5. Audit:</strong> Logs every step chronologically: Who decided? Why? And with what data? To ensure absolute transparency.</li>
+                            <li><strong>5. Audit:</strong> Records every step chronologically: Who decided? Why? And with what data? To ensure absolute transparency.</li>
                         </ul>
                     </div>
 
                     <div class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
                         <i class="fas fa-shield-alt text-blue-500 text-xl"></i>
-                        <span>Solves the "speed vs. security" conflict via Guardrails that prevent runaway actions.</span>
+                        <span>Solves the "speed vs security conflict" via Guardrails that prevent overreach.</span>
                     </div>
                 </div>
                 
@@ -368,26 +414,26 @@
                         </div>
                     </div>
                     
-                    <h4 class="text-2xl text-purple-300 mb-6 font-light">Industrial Content Production Arm - The Factory</h4>
+                    <h4 class="text-2xl text-purple-300 mb-6 font-light">Industrial Production & Publishing Arm - The Factory</h4>
                     
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        Omudia changes the concept of content from "artistic inspiration" to a "measurable operational process". It is a complete factory for companies and founders (Founder-Led Marketing) solving the problem of wasted time and identity fragmentation across platforms.
+                        Omudia shifts the concept of content from "artistic inspiration" to a "measurable operational process". It is an all-in-one factory for companies and founders (Founder-Led Marketing) solving the problem of time loss and identity dispersion across platforms.
                     </p>
                     
                     <div class="glass-panel rounded-2xl p-8 mb-8">
                         <h5 class="text-purple-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">The Factory Loop:</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>Idea &rarr; Brief:</strong> Precisely defining the goal, audience, and constraints (legal/brand).</li>
-                            <li><strong>Generate & Adapt:</strong> Doesn't just write, but "adapts". Converts the same idea into an article, tweet, short video, and LinkedIn post with a different style for each platform.</li>
-                            <li><strong>Validate & Filter:</strong> Checks content against company policies to prevent unsupported claims or risks.</li>
+                            <li><strong>Idea &rarr; Brief:</strong> Precise definition of goal, audience, and constraints (legal/brand).</li>
+                            <li><strong>Generate & Adapt:</strong> Not just writing, but "adapting". Converts the same idea into an article, tweet, short video, and LinkedIn post with distinct styles for each platform.</li>
+                            <li><strong>Validate & Filter:</strong> Checking content against company policies to prevent unsupported claims or risks.</li>
                             <li><strong>Publish & Schedule:</strong> Fully automated publishing and scheduling across all channels.</li>
-                            <li><strong>Measure & Optimize:</strong> Publishing isn't the end. The system measures engagement (clicks, impressions, conversions) and feeds back to Zakkur to improve the next cycle.</li>
+                            <li><strong>Measure & Optimize:</strong> Publishing is not the end. The system measures interaction (clicks, impressions, conversion) and feeds back to Zakkur to improve the next cycle.</li>
                         </ul>
                     </div>
 
                     <div class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
                         <i class="fas fa-sync text-purple-500 text-xl"></i>
-                        <span>Seamless Integration: Zakkur decides strategy, Omudia executes and publishes.</span>
+                        <span>Full integration: Zakkur decides strategy, Omudia executes and publishes.</span>
                     </div>
                 </div>
                 
@@ -413,22 +459,22 @@
                     <h4 class="text-2xl text-pink-300 mb-6 font-light">Human Signal Layer - Signal vs Noise</h4>
                     
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        Senmud targets the problems of traditional networks: noise, addiction, and superficial interaction. Here, AI is not a side feature, but the infrastructure that helps humans build meaning.
+                        Senmud targets traditional network problems: noise, addiction, and superficial interaction. Here, AI is not a side feature, but the infrastructure helping humans build meaning.
                     </p>
                     
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-pink-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">What's Inside Senmud?</h5>
+                        <h5 class="text-pink-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">What's inside Senmud?</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>Comprehensive Platform:</strong> Not a single page, but contains Posts, Stories, Audio Rooms, and Live Streams.</li>
-                            <li><strong>AI as Co-Creator:</strong> Helps you formulate ideas, summarize long discussions, translate content, and even suggest responses to counter arguments.</li>
-                            <li><strong>Quality Systems:</strong> Relies on Reputation, Leaderboards, and Gamification to elevate discussion quality.</li>
-                            <li><strong>System Senses:</strong> Senmud captures what actually works and fails with the audience, feeding these "signals" to Zakkur to decide the next move.</li>
+                            <li><strong>Comprehensive Platform:</strong> Not just a page, containing posts, stories, audio rooms, and live streams.</li>
+                            <li><strong>AI as Co-Creator:</strong> Helps you formulate ideas, summarize long debates, translate content, and even suggest replies to refute arguments.</li>
+                            <li><strong>Quality Systems:</strong> Based on reputation, leaderboards, and gamification to elevate debate quality.</li>
+                            <li><strong>System Senses:</strong> Senmud captures what truly works and fails with the audience, feeding these "signals" to Zakkur to decide the next step.</li>
                         </ul>
                     </div>
 
                     <div class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
                         <i class="fas fa-users text-pink-500 text-xl"></i>
-                        <span>Humans decide meaning, AI helps build and clarify.</span>
+                        <span>Humans decide meaning, AI assists in construction and clarification.</span>
                     </div>
                 </div>
                 
@@ -454,16 +500,16 @@
                     <h4 class="text-2xl text-teal-300 mb-6 font-light">Unified Identity + Permissions + Context</h4>
                     
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        The Goal: No "new user" for every app. There is one user with one context moving with you. Sopen CV is the digital "passport" within the ecosystem.
+                        Goal: No "new user" for each app. There is one user with context traveling with you. Sopen CV is the digital "passport" within the ecosystem.
                     </p>
                     
                     <div class="glass-panel rounded-2xl p-8 mb-8">
                         <h5 class="text-teal-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">Key Features:</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
                             <li><strong>Single Sign-On (SSO):</strong> One secure account for the entire ecosystem.</li>
-                            <li><strong>Operational Profile:</strong> Not a standard job CV, but a record reflecting your activity, progress, reputation in Senmud, and history in the ecosystem.</li>
-                            <li><strong>Context Passport:</strong> Feeds Zakkur with necessary info (Who are you? What are your permissions? What is your goal?) to enable accurate decision-making on your behalf.</li>
-                            <li><strong>Organization Management:</strong> Full support for company accounts, teams, and roles (Admin, Member, Viewer).</li>
+                            <li><strong>Operational Profile:</strong> Not a normal job CV, but a record reflecting your activity, progress, reputation in Senmud, and system history.</li>
+                            <li><strong>Context Passport:</strong> Feeds Zakkur necessary info (Who are you? What permissions do you have? What is your goal?) to enable accurate decision-making on your behalf.</li>
+                            <li><strong>Organization Management:</strong> Full support for company accounts, teams, and permissions (Admin, Member, Viewer).</li>
                         </ul>
                     </div>
                 </div>
@@ -501,8 +547,8 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
                 <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-4">Under The Hood</span>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Our Tech Stack</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">We use the latest technologies to build a robust, fast, and infinitely scalable infrastructure.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Technical Arsenal</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">We use the latest technologies to build a solid, fast, and infinitely scalable infrastructure.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -539,7 +585,7 @@
                 <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-code text-blue-400 text-xl"></i>
-                        <h3 class="text-white font-bold">Core & Code</h3>
+                        <h3 class="text-white font-bold">Core & Programming</h3>
                     </div>
                     <div class="flex flex-wrap">
                         <span class="tech-pill"><i class="fab fa-node text-green-500"></i> Node.js</span>
@@ -569,16 +615,16 @@
     <!-- FAQ Section -->
     <section class="py-20 bg-brand-gray/20 border-t border-white/5">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-10 text-white">Frequently Asked Questions</h2>
+            <h2 class="text-3xl font-bold text-center mb-10 text-white">FAQ</h2>
             <div class="space-y-4">
                 <div class="faq-item border border-white/10 rounded-lg bg-black/40 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
                     <div class="p-4 flex justify-between items-center">
-                        <h4 class="text-lg font-bold text-gray-200">Is Zakkur replacing employees?</h4>
+                        <h4 class="text-lg font-bold text-gray-200">Is Zakkur a replacement for employees?</h4>
                         <i class="fas fa-chevron-down text-gray-500 faq-icon transition-transform duration-300"></i>
                     </div>
                     <div class="faq-content bg-white/5">
                         <div class="p-4 text-gray-400 text-sm leading-relaxed">
-                            No, Zakkur is an "Enabler". It doesn't replace human leadership but equips it with accurate data, fast analysis, and error-free execution, allowing employees to focus on strategy and creativity.
+                            No, Zakkur is an "Enabler". It does not replace human leadership but equips them with precise data, fast analysis, and error-free execution, allowing employees to focus on creativity and strategy.
                         </div>
                     </div>
                 </div>
@@ -589,7 +635,7 @@
                     </div>
                     <div class="faq-content bg-white/5">
                         <div class="p-4 text-gray-400 text-sm leading-relaxed">
-                            Sopen CV isn't a traditional PDF resume. It's a "living" file documenting your actions, decisions, and reputation within the system, giving you credibility based on "what you did," not just "what you wrote."
+                            Sopen CV is not a traditional PDF resume, but a "living" file documenting your actions, decisions, and reputation within the system, giving you credibility based on "what you did" not just "what you wrote".
                         </div>
                     </div>
                 </div>
@@ -600,7 +646,7 @@
                     </div>
                     <div class="faq-content bg-white/5">
                         <div class="p-4 text-gray-400 text-sm leading-relaxed">
-                            We follow a Continuous Deployment strategy. We will release modules sequentially as soon as they are complete and pass security tests. Join the waitlist to be the first to know.
+                            We follow a "Continuous Deployment" policy. We will launch Modules successively as soon as they are complete and pass security tests. Sign up for the mailing list to be the first to know.
                         </div>
                     </div>
                 </div>
@@ -619,7 +665,7 @@
                 <h3 class="text-3xl md:text-4xl font-bold text-white">PageSpeed Insights</h3>
             </div>
             <p class="text-gray-400 text-lg mb-16 max-w-2xl mx-auto">
-                Real performance results reflecting code quality and responsiveness.
+                Real performance results reflecting code quality and response speed.
             </p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -629,7 +675,7 @@
                     <div class="text-5xl font-black text-white mb-2">100<span class="text-xl text-gray-500 font-normal">/100</span></div>
                     <div class="text-green-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-green-500"></span>
-                        Search Engine Optimization
+                        SEO Optimization
                     </div>
                 </div>
                 <!-- Best Practices -->
@@ -666,14 +712,14 @@
         </div>
     </section>
 
-    <!-- Zakkur v1.5 Performance Details (NEW) -->
+    <!-- Zakkur v1.5 Performance Details -->
     <section class="py-20 bg-black border-t border-white/5 relative">
         <div class="absolute inset-0 bg-blue-900/5"></div>
         <div class="max-w-7xl mx-auto px-4 relative z-10">
             <div class="text-center mb-12">
                 <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-4">Platform Edition</span>
-                <h3 class="text-3xl font-bold text-white mb-4">Zakkur v1.5: Performance Specs</h3>
-                <p class="text-gray-400 max-w-2xl mx-auto">Engineered for High-Throughput ingestion and Low-Latency display.</p>
+                <h3 class="text-3xl font-bold text-white mb-4">Zakkur v1.5: Performance Metrics</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">System designed for High-Throughput reception and Low-Latency display.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -682,7 +728,7 @@
                 <div class="bg-brand-gray/50 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm">
                     <div class="p-6 border-b border-white/10 flex items-center gap-3 bg-white/5">
                         <i class="fas fa-rocket text-blue-500 text-xl"></i>
-                        <h4 class="text-white font-bold">Performance Summary</h4>
+                        <h4 class="text-white font-bold">General Summary (Performance Summary)</h4>
                     </div>
                     <div class="p-6">
                         <table class="w-full text-sm text-left">
@@ -695,29 +741,29 @@
                             </thead>
                             <tbody class="text-gray-300">
                                 <tr class="border-b border-white/5">
-                                    <td class="py-3">Real-time Latency</td>
+                                    <td class="py-3">Real-time Response</td>
                                     <td class="py-3 text-green-400 font-mono font-bold">&lt; 50ms</td>
                                     <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Via Socket.io</td>
                                 </tr>
                                 <tr class="border-b border-white/5">
-                                    <td class="py-3">Redis Cache Latency</td>
+                                    <td class="py-3">Cache Latency (Redis)</td>
                                     <td class="py-3 text-green-400 font-mono font-bold">&lt; 5ms</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Instant Retrieval</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Instant retrieval</td>
                                 </tr>
                                 <tr class="border-b border-white/5">
                                     <td class="py-3">Single Agent Analysis</td>
                                     <td class="py-3 text-blue-400 font-mono font-bold">1.5 - 3s</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">AI Dependent</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Depends on AI speed</td>
                                 </tr>
                                 <tr class="border-b border-white/5">
-                                    <td class="py-3">Full Board Meeting</td>
+                                    <td class="py-3">Full Board</td>
                                     <td class="py-3 text-purple-400 font-mono font-bold">8 - 12s</td>
                                     <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Parallel Execution</td>
                                 </tr>
                                 <tr>
-                                    <td class="py-3">Time to First Token</td>
+                                    <td class="py-3">First Paint (TTFT)</td>
                                     <td class="py-3 text-green-400 font-mono font-bold">&lt; 1s</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Streaming Enabled</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Streaming active</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -730,22 +776,22 @@
                     <div class="bg-brand-gray/50 border border-white/10 rounded-2xl overflow-hidden p-6 hover:border-purple-500/30 transition duration-300">
                         <div class="flex items-center gap-3 mb-4">
                             <i class="fas fa-bolt text-purple-500 text-xl"></i>
-                            <h4 class="text-white font-bold">Throughput & Scalability</h4>
+                            <h4 class="text-white font-bold">Scalability</h4>
                         </div>
                         <ul class="space-y-4">
                             <li class="flex justify-between items-center text-sm">
-                                <span class="text-gray-400">Concurrent Users</span>
-                                <span class="text-white font-mono font-bold">10,000+ Sockets</span>
+                                <span class="text-gray-400">Concurrent Connections</span>
+                                <span class="text-white font-mono font-bold">10,000+ Socket</span>
                             </li>
                             <li class="w-full bg-gray-700 h-1.5 rounded-full overflow-hidden">
                                 <div class="bg-purple-500 h-full w-[90%]"></div>
                             </li>
                             <li class="flex justify-between items-center text-sm pt-2">
-                                <span class="text-gray-400">Inbound Webhooks</span>
+                                <span class="text-gray-400">Event Reception (Webhooks)</span>
                                 <span class="text-white font-mono font-bold">~1,000 Req/s</span>
                             </li>
                             <li class="flex justify-between items-center text-sm border-t border-white/5 pt-3 mt-2">
-                                <span class="text-gray-400">Indexed Queries</span>
+                                <span class="text-gray-400">Query Efficiency (Indexed)</span>
                                 <span class="text-green-400 font-mono">&lt; 20ms</span>
                             </li>
                         </ul>
@@ -768,7 +814,7 @@
                         </div>
                         <p class="text-gray-400 text-sm border-t border-white/5 pt-3">
                             <i class="fas fa-check text-teal-500 mr-2"></i>
-                            Global Error Handling & Automatic Scheduler Restart.
+                            Scheduler auto-restart upon server start.
                         </p>
                     </div>
                 </div>
@@ -787,7 +833,7 @@
                         <span class="text-2xl font-bold text-white">SOPEN NET</span>
                     </a>
                     <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
-                        Operating Systems for Humans and Companies. Building the future by integrating Decision, Execution, and Connection into one body.
+                        Operating system company for humans and companies. We build the future by integrating decision, execution, and communication into one body.
                     </p>
                     <div class="flex flex-wrap gap-4 mt-6">
                         <a href="https://x.com/SopenNet" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-500 hover:text-white transition"><i class="fab fa-twitter"></i></a>
@@ -801,7 +847,7 @@
                     
                     <!-- Registered Address -->
                     <div class="mt-8 pt-6 border-t border-white/5">
-                        <p class="text-xs text-gray-500 font-bold uppercase tracking-widest mb-3">Legal Registered Office</p>
+                        <p class="text-xs text-gray-500 font-bold uppercase tracking-widest mb-3">Registered Legal Address</p>
                         <address class="text-gray-400 text-sm not-italic font-mono leading-relaxed opacity-80">
                             <span class="text-white font-bold">Sopen Net, Inc.</span><br>
                             1111B S Governors Ave STE 48214<br>
@@ -825,8 +871,8 @@
                     <ul class="space-y-2 text-sm text-gray-500">
                         <li><a href="founders.html" class="hover:text-white transition">Team</a></li>
                         <li><a href="investors.html" class="hover:text-white transition">Investors</a></li>
-                        <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
-                        <li><a href="terms.html" class="hover:text-white transition">Terms & Conditions</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition">Privacy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">Terms</a></li>
                     </ul>
                 </div>
             </div>
@@ -844,7 +890,7 @@
     <script>
         // Typewriter Logic
         const textElement = document.getElementById('typewriter-text');
-        const phrases = ["Operating as One System", "Making Smart Decisions", "Executing Tasks Flawlessly", "Connecting Everyone"];
+        const phrases = ["operates as a single system", "makes decisions", "executes tasks", "intelligently connects everyone"];
         let phraseIndex = 0;
         let charIndex = 0;
         let isDeleting = false;

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/img/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>टीम | Sopen Net, Inc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#050505',
+                            gray: '#1a1a1a',
+                            accent: '#3b82f6',
+                            purple: '#8b5cf6',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Hind', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Hind', sans-serif; background-color: #050505; color: #e5e5e5; }
+        .social-link {
+            width: 2.2rem;
+            height: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #9ca3af;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        .social-link:hover {
+            color: white;
+            transform: translateY(-2px);
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid #333;
+            margin-bottom: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -0.4rem;
+            top: 0.5rem;
+            width: 0.8rem;
+            height: 0.8rem;
+            background-color: #3b82f6;
+            border-radius: 50%;
+        }
+        .tech-category {
+            margin-bottom: 1rem;
+        }
+        .tech-category-title {
+            font-size: 0.75rem;
+            color: #6b7280;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .tech-tag {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ccc;
+            white-space: nowrap;
+            display: inline-block;
+            margin: 0.1rem;
+        }
+        /* Custom colors for categories */
+        .tag-data { color: #86efac; border-color: rgba(134, 239, 172, 0.2); background: rgba(134, 239, 172, 0.05); }
+        .tag-cloud { color: #93c5fd; border-color: rgba(147, 197, 253, 0.2); background: rgba(147, 197, 253, 0.05); }
+        .tag-core { color: #fca5a5; border-color: rgba(252, 165, 165, 0.2); background: rgba(252, 165, 165, 0.05); }
+        .tag-dev { color: #fcd34d; border-color: rgba(252, 211, 77, 0.2); background: rgba(252, 211, 77, 0.05); }
+        
+        .research-badge {
+            font-size: 0.6rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.1);
+            color: #888;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <nav class="w-full py-6 px-4 border-b border-white/5 bg-black/50 backdrop-blur-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full border border-white/10">
+                <span class="font-bold text-white tracking-wider">SOPEN NET</span>
+            </a>
+            <a href="index.html" class="text-sm text-gray-400 hover:text-white transition flex items-center gap-2 group">
+                <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i> होम पर वापस
+            </a>
+        </div>
+    </nav>
+
+    <section class="py-20 relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-blue-900/10 rounded-full blur-[100px] -z-10"></div>
+        <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-purple-900/10 rounded-full blur-[100px] -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">नेतृत्व टीम</h1>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                इराकी दिमाग AI के भविष्य के लिए बुनियादी ढांचे का निर्माण कर रहे हैं।
+            </p>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <!-- Founder Profile: Reda Hussein -->
+            <div class="bg-brand-gray/30 border border-white/10 rounded-3xl p-8 mb-16 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-purple-600"></div>
+                
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <!-- Left Column: Image, Socials, Stack -->
+                    <div class="w-full md:w-1/3 flex flex-col items-center text-center">
+                        <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-blue-500/50 mb-6 shadow-2xl relative group">
+                            <img src="../assets/img/f1.jpg" onerror="this.src='https://via.placeholder.com/200'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        </div>
+                        <h2 class="text-3xl font-bold text-white mb-2">Reda Hussein</h2>
+                        <p class="text-blue-400 font-bold text-sm tracking-widest uppercase mb-1">Founder & CEO | Full-Stack</p>
+                        <p class="text-gray-500 text-xs mb-6 dir-ltr flex items-center justify-center gap-1"><i class="fas fa-map-marker-alt text-red-500"></i> Babylon, Iraq</p>
+                        
+                        <!-- Socials -->
+                        <div class="flex justify-center flex-wrap gap-2 mb-8">
+                            <a href="https://x.com/ri_husse" class="social-link hover:bg-black"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.tiktok.com/@ri_huss" class="social-link hover:bg-black"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.youtube.com/@ri-hus" class="social-link hover:bg-red-600"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/ri_husse" class="social-link hover:bg-pink-600"><i class="fab fa-instagram"></i></a>
+                            <a href="https://t.me/Ri_Huss" class="social-link hover:bg-blue-400"><i class="fab fa-telegram-plane"></i></a>
+                        </div>
+
+                        <!-- Full Tech Stack (Categorized) -->
+                        <div class="w-full text-left space-y-4 border-t border-white/10 pt-6">
+                            
+                            <!-- Data & Storage -->
+                            <div class="tech-category">
+                                <h5 class="tech-category-title"><i class="fas fa-database text-green-400"></i> डेटा और स्टोरेज</h5>
+                                <div>
+                                    <span class="tech-tag tag-data">MongoDB</span>
+                                    <span class="tech-tag tag-data">Firebase</span>
+                                    <span class="tech-tag tag-data">SQL</span>
+                                    <span class="tech-tag tag-data">Redis</span>
+                                </div>
+                            </div>
+
+                            <!-- Cloud & Infra -->
+                            <div class="tech-category">
+                                <h5 class="tech-category-title"><i class="fas fa-cloud text-blue-400"></i> क्लाउड और इंफ्रा</h5>
+                                <div>
+                                    <span class="tech-tag tag-cloud">Google Cloud</span>
+                                    <span class="tech-tag tag-cloud">Microservices</span>
+                                    <span class="tech-tag tag-cloud">Docker</span>
+                                    <span class="tech-tag tag-cloud">Cloudflare</span>
+                                    <span class="tech-tag tag-cloud">VPS</span>
+                                    <span class="tech-tag tag-cloud">MQ</span>
+                                    <span class="tech-tag tag-cloud">CDN</span>
+                                    <span class="tech-tag tag-cloud">DNS</span>
+                                    <span class="tech-tag tag-cloud">G-Workspace</span>
+                                </div>
+                            </div>
+
+                            <!-- Core & Programming -->
+                            <div class="tech-category">
+                                <h5 class="tech-category-title"><i class="fas fa-code text-red-400"></i> कोर और प्रोग्रामिंग</h5>
+                                <div>
+                                    <span class="tech-tag tag-core">Python</span>
+                                    <span class="tech-tag tag-core">C++</span>
+                                    <span class="tech-tag tag-core">Network Engineering</span>
+                                    <span class="tech-tag tag-core">JS/TS</span>
+                                    <span class="tech-tag tag-core">Dart</span>
+                                    <span class="tech-tag tag-core">C# (.NET)</span>
+                                    <span class="tech-tag tag-core">REST APIs</span>
+                                </div>
+                            </div>
+
+                            <!-- Dev Environment -->
+                            <div class="tech-category">
+                                <h5 class="tech-category-title"><i class="fas fa-laptop-code text-yellow-400"></i> विकास पर्यावरण</h5>
+                                <div>
+                                    <span class="tech-tag tag-dev">Node.js</span>
+                                    <span class="tech-tag tag-dev">Next.js</span>
+                                    <span class="tech-tag tag-dev">Flutter</span>
+                                    <span class="tech-tag tag-dev">VS Code</span>
+                                    <span class="tech-tag tag-dev">Android Studio</span>
+                                    <span class="tech-tag tag-dev">Visual Studio</span>
+                                </div>
+                            </div>
+
+                            <!-- Project Timeline (Full) -->
+                            <div class="mt-4 pt-4 border-t border-white/5">
+                                <h5 class="tech-category-title"><i class="fas fa-history text-gray-400"></i> पूर्ण समयरेखा</h5>
+                                <div class="space-y-1 text-[0.65rem] text-gray-400 font-mono pl-2 border-l border-white/10">
+                                    <div class="flex justify-between"><span>Dec 2025</span> <span class="text-white">SISE Engine</span></div>
+                                    <div class="flex justify-between"><span>Oct 2025</span> <span class="text-white">Zakkur AI</span></div>
+                                    <div class="flex justify-between"><span>Aug 2025</span> <span class="text-white">Omudia</span></div>
+                                    <div class="flex justify-between"><span>Jul 2025</span> <span class="text-white">CinemaBoxD</span></div>
+                                    <div class="flex justify-between"><span>Mar 2025</span> <span class="text-white">Senmud</span></div>
+                                    <div class="flex justify-between"><span>Jan 2025</span> <span class="text-white">UseMindWin</span></div>
+                                    <div class="flex justify-between"><span>Aug 2024</span> <span class="text-white">FamilyOS</span></div>
+                                    <div class="flex justify-between"><span>Jun 2024</span> <span class="text-white">PDF Reader</span></div>
+                                    <div class="flex justify-between"><span>Mar 2024</span> <span class="text-white">DyausOS</span></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Detailed Info -->
+                    <div class="w-full md:w-2/3 space-y-10 border-l border-white/5 pl-0 md:pl-8">
+                        
+                        <!-- About -->
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fas fa-user-astronaut text-blue-500"></i> संस्थापक के बारे में
+                            </h3>
+                            <p class="text-gray-400 leading-relaxed text-sm mb-4 bg-black/20 p-4 rounded-xl border border-white/5">
+                                बाबुल, इराक से तकनीकी संस्थापक और स्व-सिखाया सॉफ्टवेयर इंजीनियर। मेरा मानना है कि कोड वास्तविकता को फिर से आकार देने का सबसे शक्तिशाली उपकरण है।
+                                वर्तमान में मैं <strong>Sopen Net, Inc.</strong> का नेतृत्व कर रहा हूँ ताकि अगली पीढ़ी के AI बुनियादी ढांचे (Zakkur, Omudia, Senmud) का निर्माण किया जा सके।
+                            </p>
+                            <p class="text-gray-400 leading-relaxed text-sm">
+                                मेरी यात्रा गहरी जिज्ञासा और ठोस इंजीनियरिंग को जोड़ती है। मैं कर्नेल स्तर के अनुकूलन (C#) और उन्नत AI अनुप्रयोगों (Python) के बीच की खाई को पाटने में माहिर हूँ।
+                            </p>
+                        </div>
+
+                        <!-- Experience -->
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fas fa-briefcase text-blue-500"></i> कार्य अनुभव
+                            </h3>
+                            <div class="timeline-item">
+                                <h4 class="text-white font-bold text-lg">संस्थापक और CEO</h4>
+                                <p class="text-blue-400 text-sm mb-1">Sopen Net, Inc | Delaware, US (इराक से रिमोट)</p>
+                                <p class="text-gray-500 text-xs mb-3 font-mono">Jun 2025 - वर्तमान</p>
+                                <ul class="list-disc list-inside text-gray-400 text-sm space-y-2 marker:text-blue-500">
+                                    <li>स्वायत्त AI सिस्टम बनाने के लिए रणनीतिक दृष्टि और तकनीकी इंजीनियरिंग का नेतृत्व करना।</li>
+                                    <li>मुख्य उत्पादों (Zakkur, Omudia, Senmud) के विकास की प्रत्यक्ष निगरानी।</li>
+                                    <li>.NET 10 का उपयोग करके उच्च-प्रदर्शन प्रणालियों की इंजीनियरिंग।</li>
+                                    <li>बुद्धिमान संसाधन अनुकूलन के लिए SISE एल्गोरिदम का विकास।</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Scientific Research & Theories -->
+                        <div class="bg-gradient-to-br from-purple-900/10 to-transparent p-6 rounded-2xl border border-purple-500/10 relative overflow-hidden mb-10">
+                             <div class="absolute top-0 right-0 w-1 h-full bg-purple-600"></div>
+                            <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                                <i class="fas fa-atom text-purple-500"></i> सिद्धांत और वैज्ञानिक अनुसंधान
+                            </h3>
+                            
+                            <div class="space-y-4">
+                                <!-- Paper 1 -->
+                                <div class="bg-black/30 p-4 rounded-xl border border-white/5 hover:border-purple-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <div>
+                                            <h4 class="text-white font-bold text-base group-hover:text-purple-400 transition">The Multi-Inquiry System (MIS)</h4>
+                                            <p class="text-[10px] text-gray-500 mt-0.5">Cognitive Science • Artificial Intelligence Theory</p>
+                                        </div>
+                                        <i class="fas fa-file-alt text-purple-500/50"></i>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed mt-2">
+                                        एक शोध पत्र जो आर्टिफिशियल जनरल इंटेलिजेंस (AGI) के लिए एक नया मॉडल प्रस्तुत करता है। यह मन को उत्तरों की मशीन के रूप में नहीं, बल्कि "पूछताछ तनाव" (Inquiry Tension) के प्रबंधन के लिए एक गतिशील प्रणाली के रूप में पुनर्परिभाषित करता है, जो आंतरिक जिज्ञासा और आत्म-प्रश्न करने की क्षमता के साथ AI की स्थापना करता है।
+                                    </p>
+                                    <div class="mt-3 flex gap-2">
+                                        <span class="research-badge">Philosophy of Mind</span>
+                                        <span class="research-badge">Epistemic Curiosity</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Paper 2 -->
+                                <div class="bg-black/30 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <div>
+                                            <h4 class="text-white font-bold text-base group-hover:text-blue-400 transition">Dyaus AGI-7X Architecture</h4>
+                                            <p class="text-[10px] text-gray-500 mt-0.5">System Architecture • AI Alignment</p>
+                                        </div>
+                                        <i class="fas fa-network-wired text-blue-500/50"></i>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed mt-2">
+                                        "कृत्रिम चेतना" के लिए व्यापक वास्तुकला डिजाइन जिसमें 7 कार्यात्मक परतें (प्रेरणा के लिए LMEGO और मूल्य पर्यवेक्षण के लिए LMindSelf सहित) शामिल हैं। यह प्रणाली सुरक्षित और स्पष्ट निर्णयों के लिए कार्य-कारण (Causality) और उत्पादक सोच को एकीकृत करती है।
+                                    </p>
+                                </div>
+
+                                <!-- Protocol -->
+                                <div class="bg-black/30 p-4 rounded-xl border border-white/5 hover:border-pink-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <div>
+                                            <h4 class="text-white font-bold text-base group-hover:text-pink-400 transition">UTFN Protocol</h4>
+                                            <p class="text-[10px] text-gray-500 mt-0.5">Distributed Systems • Neural Communication</p>
+                                        </div>
+                                        <i class="fas fa-share-alt text-pink-500/50"></i>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed mt-2">
+                                        (Unified Thought & Function Network) - वितरित खुफिया घटकों को जोड़ने वाला एक तंत्रिका संचार प्रोटोकॉल। यह अतार्किक छलांगों को रोकने के लिए "कार्य-कारण गार्ड" (Causality Guard) परत के साथ "मानसिक स्थिति" और पूर्ण संदर्भ को स्थानांतरित करने की विशेषता रखता है।
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projects -->
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fas fa-laptop-code text-blue-500"></i> प्रमुख परियोजनाएँ
+                            </h3>
+                            <div class="grid grid-cols-1 gap-4">
+                                <!-- SISE -->
+                                <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-white font-bold group-hover:text-blue-400 transition">SISE Engine</h4>
+                                        <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded">Kernel Lvl</span>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed">बुद्धिमान अनुकूलन इंजन (Context-Aware) जो C# का उपयोग करके CPU/RAM संसाधनों को गतिशील रूप से प्रबंधित करता है।</p>
+                                </div>
+                                <!-- Zakkur -->
+                                <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-white font-bold group-hover:text-blue-400 transition">Zakkur AI</h4>
+                                        <span class="text-[10px] bg-yellow-500/20 text-yellow-300 px-2 py-0.5 rounded">Python AI</span>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed">निर्णय और निष्पादन इंजन। सिस्टम का दिमाग जो विश्लेषण को क्रियाओं में बदलता है।</p>
+                                </div>
+                                <!-- Omudia -->
+                                <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-white font-bold group-hover:text-blue-400 transition">Omudia</h4>
+                                        <span class="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded">Automation</span>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed">स्वचालित सामग्री कारखाना। प्रकाशन और वितरण प्रणाली जो सामग्री के पूरे जीवनचक्र का प्रबंधन करती है।</p>
+                                </div>
+                                <!-- Senmud -->
+                                <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-white font-bold group-hover:text-blue-400 transition">Senmud</h4>
+                                        <span class="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded">AI Social</span>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed">वास्तविक "संकेतों" को पकड़ने और बुद्धिमान समुदायों का निर्माण करने के लिए AI-आधारित सोशल प्लेटफॉर्म।</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Awards -->
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fas fa-medal text-yellow-500"></i> पुरस्कार और मान्यता
+                            </h3>
+                            <ul class="space-y-4 text-sm text-gray-400">
+                                <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-bug text-red-500 mt-1"></i>
+                                    <div>
+                                        <strong class="text-white block mb-1">Shabakaty TV - Critical API Security</strong>
+                                        <span class="text-xs">एक महत्वपूर्ण IDOR भेद्यता की खोज और DoS हमले के लिए PoC विकसित करना, जिससे प्लेटफ़ॉर्म की सुरक्षा में योगदान मिला।</span>
+                                    </div>
+                                </li>
+                                <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-shield-alt text-blue-500 mt-1"></i>
+                                    <div>
+                                        <strong class="text-white block mb-1">Albox - Security Bounty</strong>
+                                        <span class="text-xs">CDN में भेद्यता की खोज जिससे निजी उपयोगकर्ता फ़ाइलों तक पहुँच की अनुमति मिली।</span>
+                                    </div>
+                                </li>
+                                <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-university text-green-500 mt-1"></i>
+                                    <div>
+                                        <strong class="text-white block mb-1">University of Babylon - Critical Disclosure</strong>
+                                        <span class="text-xs">बुनियादी ढांचे की भेद्यता की जिम्मेदार रिपोर्टिंग के माध्यम से 25,000 छात्रों के डेटा की सुरक्षा।</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Co-Founder: Montazer Amer -->
+            <div class="bg-brand-gray/30 border border-white/10 rounded-3xl p-8 mb-16 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-pink-600"></div>
+                
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <!-- Image & Quick Info -->
+                    <div class="w-full md:w-1/3 flex flex-col items-center text-center">
+                        <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-purple-500/50 mb-6 shadow-2xl relative">
+                            <img src="../assets/img/f2.png" onerror="this.src='https://via.placeholder.com/150'" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        </div>
+                        <h2 class="text-2xl font-bold text-white mb-2">Montazer Amer</h2>
+                        <p class="text-purple-400 font-bold text-sm tracking-widest uppercase mb-4">सह-संस्थापक और COO</p>
+                        <p class="text-gray-500 text-xs mb-6 dir-ltr"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Babylon, Iraq</p>
+                        
+                        <!-- Socials -->
+                        <div class="flex justify-center flex-wrap gap-2 mb-6">
+                            <a href="https://x.com/mnt_amer" class="social-link hover:bg-black"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.tiktok.com/@mnt_amer" class="social-link hover:bg-black"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com/mnt_amer" class="social-link hover:bg-pink-600"><i class="fab fa-instagram"></i></a>
+                            <a href="https://t.me/mnt_amer" class="social-link hover:bg-blue-400"><i class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Info -->
+                    <div class="w-full md:w-2/3 space-y-8">
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 border-b border-white/10 pb-2">सह-संस्थापक के बारे में</h3>
+                            <p class="text-gray-400 leading-relaxed text-sm mb-4">
+                                वह दाहिना हाथ जो अराजकता को व्यवस्था में बदल देता है। मोंटाज़र इंजीनियरिंग टीम को अधिकतम गति से आगे बढ़ने में सक्षम बनाने के लिए दैनिक संचालन और सामग्री प्रणालियों का प्रबंधन करता है।
+                            </p>
+                            <p class="text-gray-400 leading-relaxed text-sm">
+                                डिजिटल समुदायों और शैक्षिक प्रणालियों के प्रबंधन में विशेषज्ञ, उनके पास तकनीकी जटिलता के बिना परिचालन दक्षता (Operational Efficiency) में सुधार करने के लिए एक गहरी दृष्टि है।
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-purple-300 font-bold mb-3 text-sm uppercase tracking-wide">प्रमुख उपलब्धियां</h4>
+                            <ul class="space-y-3 text-gray-300 text-sm list-none">
+                                <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-project-diagram text-purple-500 mt-1"></i> 
+                                    <span><strong>सामग्री प्रणाली प्रबंधन:</strong> डिजिटल सामग्री आपूर्ति श्रृंखला और एकीकृत शिक्षण प्रणालियों का निर्माण और प्रबंधन।</span>
+                                </li>
+                                <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-robot text-purple-500 mt-1"></i> 
+                                    <span><strong>प्रक्रिया स्वचालन:</strong> वर्कफ़्लोज़ (Workflows) बनाना जो प्रकाशन और समन्वय में मैन्युअल प्रयास को कम करता है।</span>
+                                </li>
+                                <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-users text-purple-500 mt-1"></i> 
+                                    <span><strong>समुदाय निर्माण:</strong> सक्रिय डिजिटल समुदायों का प्रबंधन और विकास तथा स्वायत्त सामग्री विकास।</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-purple-500/10 to-transparent p-5 rounded-xl border border-purple-500/20 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-1 h-full bg-purple-500"></div>
+                            <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="fas fa-lightbulb text-purple-400"></i> स्मार्ट हैक (The Hack)</h4>
+                            <p class="text-sm text-gray-300 leading-relaxed">
+                                कोड की एक भी पंक्ति लिखे बिना वास्तविक व्यवसाय में "प्रतीक्षा कतार" की समस्या को हल किया। वर्कफ़्लो रीइंजीनियरिंग और प्राथमिकता प्रणाली के माध्यम से, प्रतीक्षा समय को 30 मिनट से घटाकर 10 मिनट कर दिया, जिससे बिक्री और ग्राहक संतुष्टि दोगुनी हो गई।
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 bg-black py-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            
+            <div class="flex items-center gap-2 mb-6">
+                <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full opacity-80">
+                <span class="text-xl font-bold text-white tracking-widest">SOPEN NET</span>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <a href="https://x.com/SopenNet" class="social-link hover:bg-blue-500 hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@sopen.ai" class="social-link hover:bg-black hover:text-white hover:border border-white/20"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@SopenNetinc" class="social-link hover:bg-red-600 hover:text-white"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/sopen.ai/" class="social-link hover:bg-pink-600 hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61585190857126" class="social-link hover:bg-blue-600 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-700 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-400 hover:text-white"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+
+            <div class="text-center border-t border-white/10 pt-8 w-full">
+                <p class="text-gray-500 text-sm mb-2">© 2025 Sopen Net, Inc. सर्वाधिकार सुरक्षित।</p>
+                <p class="text-gray-600 text-xs">बाबुल, इराक में गर्व के साथ बनाया गया <i class="fas fa-heart text-red-900 ml-1"></i></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="hi" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sopen Net, Inc | أنظمة تشغيل للإنسان والشركات</title>
-    <meta name="description" content="Sopen Net ليست شركة منتجات، بل شركة أنظمة تشغيل للإنسان والشركات. Zakkur, Omudia, Senmud.">
-    <link rel="icon" href="assets/img/logo.jpg">
+    <title>Sopen Net, Inc | मनुष्यों और कंपनियों के लिए ऑपरेटिंग सिस्टम</title>
+    <meta name="description" content="Sopen Net कोई उत्पाद कंपनी नहीं है, बल्कि मनुष्यों और कंपनियों के लिए एक ऑपरेटिंग सिस्टम कंपनी है। Zakkur, Omudia, Senmud.">
+    <link rel="icon" href="../assets/img/logo.jpg">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Google Fonts for Hindi -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -32,7 +32,7 @@
                         }
                     },
                     fontFamily: {
-                        sans: ['Cairo', 'sans-serif'],
+                        sans: ['Hind', 'sans-serif'], // Changed to Hind for better Hindi support
                     },
                     animation: {
                         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
@@ -49,7 +49,7 @@
         }
     </script>
     <style>
-        body { font-family: 'Cairo', sans-serif; background-color: #050505; color: #e5e5e5; overflow-x: hidden; }
+        body { font-family: 'Hind', sans-serif; background-color: #050505; color: #e5e5e5; overflow-x: hidden; }
         html { scroll-behavior: smooth; }
         .text-gradient { background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .bg-grid { background-size: 50px 50px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px); mask-image: linear-gradient(to bottom, black 40%, transparent 100%); }
@@ -85,9 +85,10 @@
             transform: translateY(-2px);
         }
         
+        /* Adjusted for LTR */
         .feature-list li {
             position: relative;
-            padding-right: 1.5rem;
+            padding-left: 1.5rem;
             margin-bottom: 0.75rem;
             color: #d1d5db;
             line-height: 1.6;
@@ -95,7 +96,7 @@
         .feature-list li::before {
             content: "•";
             position: absolute;
-            right: 0;
+            left: 0;
             color: currentColor;
             font-weight: bold;
             font-size: 1.2em;
@@ -107,7 +108,7 @@
             width: 3px;
             background-color: #3b82f6;
             animation: blink 1s step-end infinite;
-            margin-right: 2px;
+            margin-left: 2px;
             height: 1em;
             vertical-align: text-bottom;
         }
@@ -156,59 +157,59 @@
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center gap-3">
                     <a href="index.html" class="flex items-center gap-2">
-                        <img src="assets/img/logo.png" onerror="this.src='https://via.placeholder.com/50x50/333/fff?text=S'" alt="Sopen Net Logo" class="h-10 w-auto rounded-full border border-white/10">
+                        <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/50x50/333/fff?text=S'" alt="Sopen Net Logo" class="h-10 w-auto rounded-full border border-white/10">
                         <span class="text-xl font-bold tracking-wider text-white hidden sm:block">SOPEN NET</span>
                     </a>
                     
                     <!-- System Status Indicator -->
-                    <div class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 mr-4">
+                    <div class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 ml-4">
                         <span class="relative flex h-2 w-2">
                           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                           <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                         </span>
-                        <span class="text-[10px] font-bold text-green-400 uppercase tracking-wide">الأنظمة تعمل: 100%</span>
+                        <span class="text-[10px] font-bold text-green-400 uppercase tracking-wide">सिस्टम चालू हैं: 100%</span>
                     </div>
                 </div>
 
-                <!-- Desktop Navigation -->
+                <!-- Navigation Links -->
                 <div class="hidden md:flex items-center gap-4 lg:gap-6">
-                    <div class="flex items-baseline space-x-2 lg:space-x-4 space-x-reverse text-sm lg:text-base">
-                        <a href="#home" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">الرئيسية</a>
-                        <a href="#architecture" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">المنظومة</a>
-                        <a href="#products" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">المنتجات</a>
-                        <a href="#tech-stack" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">التقنيات</a>
-                        <a href="founders.html" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">الفريق</a>
-                        <a href="investors.html" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">المستثمرين</a>
+                    <div class="flex items-baseline space-x-2 lg:space-x-4 text-sm lg:text-base">
+                        <a href="#home" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">होम</a>
+                        <a href="#architecture" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">इकोसिस्टम</a>
+                        <a href="#products" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">उत्पाद</a>
+                        <a href="#tech-stack" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">तकनीक</a>
+                        <a href="founders.html" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">टीम</a>
+                        <a href="investors.html" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">निवेशक</a>
                     </div>
                     
                     <!-- Multi-Language Dropdown (Desktop) -->
                     <div class="relative group">
                         <button class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white/10 transition flex items-center gap-2 text-gray-300">
                             <i class="fas fa-globe"></i>
-                            <span>العربية</span>
+                            <span>हिन्दी</span>
                             <i class="fas fa-chevron-down text-[10px]"></i>
                         </button>
-                        <div class="absolute left-0 mt-2 w-48 bg-brand-dark border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
-                            <div class="block px-4 py-3 text-sm text-brand-accent font-bold bg-white/5 flex justify-between items-center">
+                        <div class="absolute right-0 mt-2 w-48 bg-brand-dark border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
+                            <a href="../index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
                                 <span>العربية</span>
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <a href="en/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                                <span class="text-xs border border-white/10 px-1 rounded">AR</span>
+                            </a>
+                            <a href="../en/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
                                 <span>English</span>
                                 <span class="text-xs border border-white/10 px-1 rounded">EN</span>
                             </a>
-                            <a href="es/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
-                                <span>Español</span>
-                                <span class="text-xs border border-white/10 px-1 rounded">ES</span>
-                            </a>
-                            <a href="zh/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                            <a href="../zh/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
                                 <span>中文 (Mandarin)</span>
                                 <span class="text-xs border border-white/10 px-1 rounded">ZH</span>
                             </a>
-                            <a href="hi/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
-                                <span>हिन्दी (Hindi)</span>
-                                <span class="text-xs border border-white/10 px-1 rounded">HI</span>
+                            <a href="../es/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                                <span>Español</span>
+                                <span class="text-xs border border-white/10 px-1 rounded">ES</span>
                             </a>
+                            <div class="block px-4 py-3 text-sm text-brand-accent font-bold bg-white/5 flex justify-between items-center">
+                                <span>हिन्दी</span>
+                                <i class="fas fa-check"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -223,23 +224,23 @@
         
         <!-- Mobile Menu -->
         <div class="hidden md:hidden bg-brand-dark border-b border-white/10" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-right">
-                <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">الرئيسية</a>
-                <a href="#architecture" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">المنظومة</a>
-                <a href="#products" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">المنتجات</a>
-                <a href="#tech-stack" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">التقنيات</a>
-                <a href="founders.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">الفريق</a>
-                <a href="investors.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">المستثمرين</a>
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-left">
+                <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">होम</a>
+                <a href="#architecture" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">इकोसिस्टम</a>
+                <a href="#products" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">उत्पाद</a>
+                <a href="#tech-stack" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">तकनीक</a>
+                <a href="founders.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">टीम</a>
+                <a href="investors.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">निवेशक</a>
                 
                 <!-- Mobile Language Selector -->
                 <div class="border-t border-white/10 mt-4 pt-4">
-                    <p class="px-3 text-xs text-gray-500 uppercase tracking-widest mb-3">اللغات</p>
+                    <p class="px-3 text-xs text-gray-500 uppercase tracking-widest mb-3">भाषाएँ</p>
                     <div class="grid grid-cols-2 gap-2 px-3">
-                        <div class="text-center py-2 border border-brand-accent/50 bg-brand-accent/10 rounded text-sm text-brand-accent font-bold">العربية</div>
-                        <a href="en/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">English</a>
-                        <a href="es/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">Español</a>
-                        <a href="zh/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">中文 (ZH)</a>
-                        <a href="hi/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">हिन्दी (HI)</a>
+                        <a href="../index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">العربية</a>
+                        <a href="../en/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">English</a>
+                        <a href="../zh/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">中文 (ZH)</a>
+                        <a href="../es/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">Español (ES)</a>
+                        <div class="text-center py-2 border border-brand-accent/50 bg-brand-accent/10 rounded text-sm text-brand-accent font-bold">हिन्दी</div>
                     </div>
                 </div>
             </div>
@@ -249,34 +250,34 @@
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div class="absolute inset-0 bg-grid"></div>
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse"></div>
-        <div class="absolute top-1/3 right-1/4 w-80 h-80 bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
+        <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse"></div>
+        <div class="absolute top-1/3 left-1/4 w-80 h-80 bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
             <div class="inline-block mb-4 px-4 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
-                <span class="text-sm font-light tracking-wide text-gray-300">Sopen System 1.5v - Coming Soon</span>
+                <span class="text-sm font-light tracking-wide text-gray-300">Sopen System 1.5v - जल्द आ रहा है</span>
             </div>
             <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight h-[160px] md:h-[180px] flex flex-col justify-center">
-                <span>شركة AI‑Native</span>
+                <span>AI-Native कंपनी</span>
                 <!-- Typewriter Effect -->
                 <span class="text-gradient block mt-2">
                     <span id="typewriter-text"></span><span class="cursor">|</span>
                 </span>
             </h1>
             <p class="mt-4 max-w-3xl mx-auto text-xl text-gray-400 font-light leading-relaxed">
-                Sopen Net ليست مجموعة تطبيقات منفصلة. هي منظومة تشغيل واحدة تتكون من أربعة أجزاء مترابطة.
+                Sopen Net अलग-अलग ऐप्स का समूह नहीं है। यह एक एकल ऑपरेटिंग सिस्टम है जिसमें चार परस्पर जुड़े भाग हैं।
                 <br>
                 <span class="text-white font-medium mt-2 block">
-                    القرار (Zakkur) &larr; التنفيذ (Omudia) &larr; الإشارة (Senmud)
+                    निर्णय (Zakkur) &rarr; निष्पादन (Omudia) &rarr; संकेत (Senmud)
                 </span>
             </p>
             
             <div class="mt-10 flex flex-wrap justify-center gap-4">
                 <a href="#performance" class="px-8 py-3 rounded-full bg-white text-black font-bold hover:bg-gray-200 transition shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                    أداء النظام
+                    सिस्टम प्रदर्शन
                 </a>
                 <a href="#products" class="px-8 py-3 rounded-full border border-white/20 hover:bg-white/10 transition backdrop-blur-sm">
-                    اكتشف النظام
+                    सिस्टम खोजें
                 </a>
             </div>
 
@@ -296,41 +297,41 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Sopen System 1.5v</h2>
                 <p class="text-gray-400 max-w-2xl mx-auto text-lg">
-                    الفكرة الأساسية: القرار ← التنفيذ ← الإشارة ← التحسين.
+                    मुख्य विचार: निर्णय → निष्पादन → संकेत → अनुकूलन।
                     <br>
-                    حلقة واحدة قابلة للتتبع والتدقيق بالكامل.
+                    एक एकल लूप जो पूरी तरह से ट्रैक करने योग्य और ऑडिट करने योग्य है।
                 </p>
             </div>
             
             <div class="relative grid grid-cols-1 md:grid-cols-4 gap-8 items-center justify-items-center mb-12">
                 <div class="hidden md:block absolute top-[40%] left-0 w-full h-1 flow-line opacity-30 -z-10 rounded-full"></div>
 
-                <!-- Products Icons (Same as before) -->
+                <!-- Products Icons -->
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
                     <div class="relative w-36 h-36 rounded-full bg-gray-900 border-2 border-blue-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-blue-500 overflow-hidden">
-                        <img src="assets/img/i1.jpg" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Zakkur" class="w-full h-full object-cover z-20 transition hover:opacity-90">
+                        <img src="../assets/img/i1.jpg" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Zakkur" class="w-full h-full object-cover z-20 transition hover:opacity-90">
                         <i class="fas fa-brain text-4xl text-blue-500 absolute z-10 hidden animate-pulse"></i>
                     </div>
                     <h3 class="text-xl font-bold text-blue-400 mb-1">Zakkur</h3>
-                    <p class="text-xs text-gray-400 text-center">عقل القرار والتنفيذ</p>
+                    <p class="text-xs text-gray-400 text-center">निर्णय मस्तिष्क</p>
                 </div>
 
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
                     <div class="relative w-36 h-36 rounded-full bg-gray-900 border-2 border-purple-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(139,92,246,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-purple-500 overflow-hidden">
-                        <img src="assets/img/i2.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Omudia" class="w-full h-full object-cover z-20 transition hover:opacity-90">
+                        <img src="../assets/img/i2.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Omudia" class="w-full h-full object-cover z-20 transition hover:opacity-90">
                         <i class="fas fa-bullhorn text-4xl text-purple-500 absolute z-10 hidden animate-pulse"></i>
                     </div>
                     <h3 class="text-xl font-bold text-purple-400 mb-1">Omudia</h3>
-                    <p class="text-xs text-gray-400 text-center">ذراع الإنتاج والنشر</p>
+                    <p class="text-xs text-gray-400 text-center">उत्पादन शाखा</p>
                 </div>
 
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
                     <div class="relative w-36 h-36 rounded-full bg-gray-900 border-2 border-pink-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(236,72,153,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-pink-500 overflow-hidden">
-                        <img src="assets/img/i3.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Senmud" class="w-full h-full object-cover z-20 transition hover:opacity-90">
+                        <img src="../assets/img/i3.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Senmud" class="w-full h-full object-cover z-20 transition hover:opacity-90">
                         <i class="fas fa-users text-4xl text-pink-500 absolute z-10 hidden animate-pulse"></i>
                     </div>
                     <h3 class="text-xl font-bold text-pink-400 mb-1">Senmud</h3>
-                    <p class="text-xs text-gray-400 text-center">طبقة الإشارة البشرية</p>
+                    <p class="text-xs text-gray-400 text-center">मानव संकेत परत</p>
                 </div>
 
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
@@ -338,14 +339,14 @@
                         <i class="fas fa-fingerprint text-5xl text-teal-500 z-10"></i>
                     </div>
                     <h3 class="text-xl font-bold text-teal-400 mb-1">Sopen CV</h3>
-                    <p class="text-xs text-gray-400 text-center">هوية موحدة + سياق</p>
+                    <p class="text-xs text-gray-400 text-center">एकीकृत पहचान</p>
                 </div>
             </div>
 
             <div class="mt-8 text-center border-t border-dashed border-gray-700 pt-8 relative">
                  <p class="text-gray-400 text-sm max-w-2xl mx-auto">
-                    <i class="fas fa-sync animate-spin ml-2 text-blue-500"></i>
-                    نظام يعمل كدورة واحدة: <span class="text-white">Senmud</span> يلتقط الإشارة ← <span class="text-white">Zakkur</span> يقرر ← <span class="text-white">Omudia</span> ينفذ ← <span class="text-white">Sopen CV</span> يوثق الهوية
+                    <i class="fas fa-sync animate-spin mr-2 text-blue-500"></i>
+                    सिस्टम एक लूप के रूप में काम करता है: <span class="text-white">Senmud</span> संकेत पकड़ता है → <span class="text-white">Zakkur</span> निर्णय लेता है → <span class="text-white">Omudia</span> निष्पादित करता है → <span class="text-white">Sopen CV</span> दस्तावेज करता है।
                 </p>
             </div>
         </div>
@@ -356,13 +357,13 @@
         <div class="absolute top-0 left-0 w-full h-full bg-brand-dark/50 -z-10"></div>
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-24">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">مكونات المنظومة</h2>
-                <p class="text-xl text-gray-400 max-w-2xl mx-auto">كلها قريبًا (Coming Soon)</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">इकोसिस्टम के घटक</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">सब कुछ जल्द आ रहा है (Coming Soon)</p>
             </div>
 
             <!-- Zakkur Detailed -->
             <div class="flex flex-col lg:flex-row items-start gap-12 mb-40 relative">
-                <div class="lg:w-3/5 z-10 text-right">
+                <div class="lg:w-3/5 z-10 text-left">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="p-4 bg-blue-500/20 rounded-2xl text-blue-400"><i class="fas fa-brain text-3xl"></i></div>
                         <div>
@@ -371,40 +372,40 @@
                         </div>
                     </div>
                     
-                    <h4 class="text-2xl text-blue-300 mb-6 font-light">عقل القرار والتنفيذ - The Digital C-Suite</h4>
+                    <h4 class="text-2xl text-blue-300 mb-6 font-light">निर्णय और निष्पादन मस्तिष्क - The Digital C-Suite</h4>
                     
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        Zakkur ليس مجرد مساعد ذكي يكتب نصائح، بل هو <strong>نظام تشغيل للقرارات</strong>. يستهدف المشاكل الوجودية للشركات: بطء اتخاذ القرار، غياب التتبع، وانهيار التنفيذ اليدوي تحت الضغط. هو يعمل كفريق تنفيذي رقمي (CFO, CTO, CMO, COO) داخل إطار واحد.
+                        Zakkur केवल एक स्मार्ट असिस्टेंट नहीं है जो सलाह देता है, यह <strong>निर्णयों के लिए एक ऑपरेटिंग सिस्टम</strong> है। यह कंपनियों की अस्तित्वगत समस्याओं को लक्षित करता है: धीमा निर्णय लेना, ट्रैकिंग की कमी, और दबाव में मैनुअल निष्पादन का पतन। यह एक ही ढांचे के भीतर एक डिजिटल कार्यकारी टीम (CFO, CTO, CMO, COO) के रूप में कार्य करता है।
                     </p>
                     
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-blue-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">كيف يعمل (The Pipeline):</h5>
+                        <h5 class="text-blue-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">यह कैसे काम करता है (The Pipeline):</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>1. القراءة (Read):</strong> يجمع السياق من مصادر متعددة (بيانات مالية، مؤشرات أداء، سجلات، مخاطر).</li>
-                            <li><strong>2. التحقق (Validate):</strong> يمرر البيانات عبر فلاتر "Zero-Trust" وسياسات الامتثال (Compliance) قبل المعالجة.</li>
-                            <li><strong>3. القرار (Decide):</strong> لا يعطي رأياً عائماً، بل يخرج بخيار نهائي مدعوم بالبدائل (Option A/B)، المخاطر، وشروط النجاح.</li>
-                            <li><strong>4. التنفيذ (Execute):</strong> يحول القرار فوراً إلى إجراءات: تشغيل مهام، إرسال أوامر API، تحديث إعدادات، أو إطلاق حملات.</li>
-                            <li><strong>5. التدقيق (Audit):</strong> يسجل كل خطوة زمنياً: من قرر؟ لماذا؟ وبأي بيانات؟ لضمان الشفافية المطلقة.</li>
+                            <li><strong>1. पढ़ना (Read):</strong> कई स्रोतों से संदर्भ एकत्र करता है (वित्तीय डेटा, KPI, लॉग, जोखिम)।</li>
+                            <li><strong>2. मान्य करना (Validate):</strong> प्रसंस्करण से पहले "Zero-Trust" फिल्टर और अनुपालन नीतियों के माध्यम से डेटा पास करता है।</li>
+                            <li><strong>3. निर्णय लेना (Decide):</strong> कोई अस्पष्ट राय नहीं देता, बल्कि विकल्पों (विकल्प A/B), जोखिमों और सफलता की शर्तों द्वारा समर्थित अंतिम विकल्प उत्पन्न करता है।</li>
+                            <li><strong>4. निष्पादित करना (Execute):</strong> निर्णय को तुरंत कार्यों में बदल देता है: कार्य चलाना, API कमांड भेजना, सेटिंग्स अपडेट करना, या अभियान लॉन्च करना।</li>
+                            <li><strong>5. ऑडिट (Audit):</strong> हर कदम को कालानुक्रमिक रूप से रिकॉर्ड करता है: किसने निर्णय लिया? क्यों? और किस डेटा के साथ? पूर्ण पारदर्शिता सुनिश्चित करने के लिए।</li>
                         </ul>
                     </div>
 
                     <div class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
                         <i class="fas fa-shield-alt text-blue-500 text-xl"></i>
-                        <span>يحل مشكلة "تضارب السرعة والأمان" عبر لوحة Guardrails تمنع الانفلات.</span>
+                        <span>Guardrails के माध्यम से "गति और सुरक्षा संघर्ष" की समस्या को हल करता है।</span>
                     </div>
                 </div>
                 
                 <div class="lg:w-2/5 w-full sticky top-24">
                     <div class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-blue-900/20 flex flex-col justify-between overflow-hidden backdrop-blur-md">
                         <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent blur-2xl -z-10"></div>
-                        <img src="assets/img/in1.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Zakkur+Interface'" alt="Zakkur" class="w-full mt-8 rounded-t-xl border-t-4 border-blue-500 shadow-lg object-cover">
+                        <img src="../assets/img/in1.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Zakkur+Interface'" alt="Zakkur" class="w-full mt-8 rounded-t-xl border-t-4 border-blue-500 shadow-lg object-cover">
                     </div>
                 </div>
             </div>
 
             <!-- Omudia Detailed -->
             <div class="flex flex-col lg:flex-row-reverse items-start gap-12 mb-40 relative">
-                 <div class="lg:w-3/5 z-10 text-right">
+                 <div class="lg:w-3/5 z-10 text-left">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="p-4 bg-purple-500/20 rounded-2xl text-purple-400"><i class="fas fa-industry text-3xl"></i></div>
                         <div>
@@ -413,40 +414,40 @@
                         </div>
                     </div>
                     
-                    <h4 class="text-2xl text-purple-300 mb-6 font-light">ذراع الإنتاج والنشر الصناعي - The Factory</h4>
+                    <h4 class="text-2xl text-purple-300 mb-6 font-light">औद्योगिक उत्पादन और प्रकाशन शाखा - The Factory</h4>
                     
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        Omudia يغير مفهوم المحتوى من "إلهام فني" إلى "عملية تشغيل قابلة للقياس". هو مصنع متكامل للشركات والمؤسسين (Founder-Led Marketing) يحل مشكلة ضياع الوقت وتشتت الهوية عبر المنصات.
+                        Omudia सामग्री की अवधारणा को "कलात्मक प्रेरणा" से "मापने योग्य परिचालन प्रक्रिया" में बदल देता है। यह कंपनियों और संस्थापकों (Founder-Led Marketing) के लिए एक एकीकृत कारखाना है जो प्लेटफार्मों पर समय की बर्बादी और पहचान के फैलाव की समस्या को हल करता है।
                     </p>
                     
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-purple-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">دورة المصنع (The Factory Loop):</h5>
+                        <h5 class="text-purple-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">फैक्ट्री लूप (The Factory Loop):</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>Idea &rarr; Brief:</strong> تحديد الهدف والجمهور والقيود (قانونية/علامة تجارية) بدقة.</li>
-                            <li><strong>Generate & Adapt:</strong> لا يكتب فقط، بل "يكيف". يحول نفس الفكرة إلى مقال، تغريدة، فيديو قصير، ومنشور LinkedIn بأسلوب مختلف لكل منصة.</li>
-                            <li><strong>Validate & Filter:</strong> فحص المحتوى ضد سياسات الشركة لمنع أي ادعاءات غير مدعومة أو مخاطر.</li>
-                            <li><strong>Publish & Schedule:</strong> نشر وجدولة تلقائية بالكامل على كافة القنوات.</li>
-                            <li><strong>Measure & Optimize:</strong> النشر ليس النهاية. النظام يقيس التفاعل (نقر، ظهور، تحويل) ويعيد تغذية Zakkur لتحسين الدورة القادمة.</li>
+                            <li><strong>Idea &rarr; Brief:</strong> लक्ष्य, दर्शकों और प्रतिबंधों (कानूनी/ब्रांड) की सटीक परिभाषा।</li>
+                            <li><strong>Generate & Adapt:</strong> केवल लिखता नहीं है, "अनुकूलित" करता है। उसी विचार को लेख, ट्वीट, लघु वीडियो और लिंक्डइन पोस्ट में बदल देता है।</li>
+                            <li><strong>Validate & Filter:</strong> असमर्थित दावों या जोखिमों से बचने के लिए कंपनी की नीतियों के खिलाफ सामग्री का सत्यापन।</li>
+                            <li><strong>Publish & Schedule:</strong> सभी चैनलों पर पूरी तरह से स्वचालित प्रकाशन और शेड्यूलिंग।</li>
+                            <li><strong>Measure & Optimize:</strong> प्रकाशन अंत नहीं है। सिस्टम इंटरैक्शन (क्लिक, इंप्रेशन, रूपांतरण) को मापता है और अगले चक्र को बेहतर बनाने के लिए Zakkur को फीडबैक देता है।</li>
                         </ul>
                     </div>
 
                     <div class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
                         <i class="fas fa-sync text-purple-500 text-xl"></i>
-                        <span>تكامل تام: Zakkur يقرر الاستراتيجية، و Omudia ينفذ وينشر.</span>
+                        <span>पूर्ण एकीकरण: Zakkur रणनीति तय करता है, और Omudia निष्पादित और प्रकाशित करता है।</span>
                     </div>
                 </div>
                 
                 <div class="lg:w-2/5 w-full sticky top-24">
                     <div class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-purple-900/20 flex flex-col justify-between overflow-hidden backdrop-blur-md">
                         <div class="absolute inset-0 bg-gradient-to-bl from-purple-600/10 to-transparent blur-2xl -z-10"></div>
-                        <img src="assets/img/in2.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Omudia+Factory'" alt="Omudia" class="w-full rounded-lg border border-purple-500/30 shadow-lg object-cover">
+                        <img src="../assets/img/in2.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Omudia+Factory'" alt="Omudia" class="w-full rounded-lg border border-purple-500/30 shadow-lg object-cover">
                     </div>
                 </div>
             </div>
 
             <!-- Senmud Detailed -->
             <div class="flex flex-col lg:flex-row items-start gap-12 mb-40 relative">
-                 <div class="lg:w-3/5 z-10 text-right">
+                 <div class="lg:w-3/5 z-10 text-left">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="p-4 bg-pink-500/20 rounded-2xl text-pink-400"><i class="fas fa-satellite-dish text-3xl"></i></div>
                         <div>
@@ -455,39 +456,39 @@
                         </div>
                     </div>
                     
-                    <h4 class="text-2xl text-pink-300 mb-6 font-light">طبقة الإشارة البشرية - Signal vs Noise</h4>
+                    <h4 class="text-2xl text-pink-300 mb-6 font-light">मानव संकेत परत - Signal vs Noise</h4>
                     
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        Senmud تستهدف مشاكل الشبكات التقليدية: الضجيج، الإدمان، والتفاعل السطحي. هنا، الذكاء الاصطناعي ليس ميزة جانبية، بل هو البنية التحتية التي تساعد البشر على بناء المعنى.
+                        Senmud पारंपरिक नेटवर्क की समस्याओं को लक्षित करता है: शोर, लत और सतही बातचीत। यहाँ, AI कोई साइड फीचर नहीं है, बल्कि बुनियादी ढांचा है जो मनुष्यों को अर्थ बनाने में मदद करता है।
                     </p>
                     
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-pink-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">ماذا بداخل Senmud؟</h5>
+                        <h5 class="text-pink-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">Senmud के अंदर क्या है?</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>منصة شاملة:</strong> ليست صفحة واحدة، بل تحتوي على منشورات، قصص (Stories)، غرف صوتية (Audio Rooms)، وبث مباشر (Live Streams).</li>
-                            <li><strong>الـ AI كشريك (Co-Creator):</strong> يساعدك في صياغة الأفكار، تلخيص النقاشات الطويلة، وترجمة المحتوى، وحتى اقتراح ردود تفند الحجج.</li>
-                            <li><strong>أنظمة الجودة:</strong> تعتمد على السمعة (Reputation)، ولوحات الترتيب (Leaderboards)، والتحفيز (Gamification) لرفع جودة النقاش.</li>
-                            <li><strong>حواس المنظومة:</strong> Senmud تلتقط ما ينجح وما يفشل فعلياً مع الجمهور، وتغذي هذه "الإشارات" إلى Zakkur ليقرر الخطوة التالية.</li>
+                            <li><strong>व्यापक मंच:</strong> केवल एक पेज नहीं, इसमें पोस्ट, कहानियां (Stories), ऑडियो रूम और लाइव स्ट्रीम शामिल हैं।</li>
+                            <li><strong>सहयोगी के रूप में AI (Co-Creator):</strong> आपको विचारों को तैयार करने, लंबी बहसों को संक्षेप में प्रस्तुत करने, सामग्री का अनुवाद करने और यहां तक कि तर्कों का खंडन करने के लिए उत्तर सुझाने में मदद करता है।</li>
+                            <li><strong>गुणवत्ता प्रणाली:</strong> बहस की गुणवत्ता बढ़ाने के लिए प्रतिष्ठा, लीडरबोर्ड और गेमिफिकेशन पर आधारित है।</li>
+                            <li><strong>सिस्टम के सेंस:</strong> Senmud वह पकड़ता है जो वास्तव में दर्शकों के साथ काम करता है और क्या विफल होता है, और इन "संकेतों" को Zakkur को खिलाता है ताकि वह अगला कदम तय कर सके।</li>
                         </ul>
                     </div>
 
                     <div class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
                         <i class="fas fa-users text-pink-500 text-xl"></i>
-                        <span>الإنسان يقرر المعنى، والـ AI يساعد في البناء والتوضيح.</span>
+                        <span>मनुष्य अर्थ तय करता है, और AI निर्माण और स्पष्टीकरण में मदद करता है।</span>
                     </div>
                 </div>
                 
                 <div class="lg:w-2/5 w-full sticky top-24">
                     <div class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-pink-900/20 flex flex-col justify-center items-center overflow-hidden backdrop-blur-md">
                         <div class="absolute inset-0 bg-gradient-to-tr from-pink-600/10 to-transparent blur-2xl -z-10"></div>
-                        <img src="assets/img/in3.jpg" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Senmud+Feed'" alt="Senmud" class="w-full rounded-lg border border-pink-500/30 shadow-lg object-cover">
+                        <img src="../assets/img/in3.jpg" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Senmud+Feed'" alt="Senmud" class="w-full rounded-lg border border-pink-500/30 shadow-lg object-cover">
                     </div>
                 </div>
             </div>
 
             <!-- Sopen CV Detailed -->
             <div class="flex flex-col lg:flex-row-reverse items-start gap-12 relative">
-                 <div class="lg:w-3/5 z-10 text-right">
+                 <div class="lg:w-3/5 z-10 text-left">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="p-4 bg-brand-teal/20 rounded-2xl text-teal-400"><i class="fas fa-fingerprint text-3xl"></i></div>
                         <div>
@@ -496,19 +497,19 @@
                         </div>
                     </div>
                     
-                    <h4 class="text-2xl text-teal-300 mb-6 font-light">هوية موحدة + صلاحيات + سياق</h4>
+                    <h4 class="text-2xl text-teal-300 mb-6 font-light">एकीकृत पहचान + अनुमतियां + संदर्भ</h4>
                     
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        الهدف: لا يوجد "مستخدم جديد" لكل تطبيق. يوجد مستخدم واحد بسياق واحد ينتقل معك. Sopen CV هو "جواز السفر" الرقمي داخل المنظومة.
+                        लक्ष्य: प्रत्येक एप्लिकेशन के लिए कोई "नया उपयोगकर्ता" नहीं है। एक ही उपयोगकर्ता है जिसका संदर्भ आपके साथ यात्रा करता है। Sopen CV इकोसिस्टम के भीतर डिजिटल "पासपोर्ट" है।
                     </p>
                     
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-teal-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">المميزات الأساسية:</h5>
+                        <h5 class="text-teal-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">मुख्य विशेषताएं:</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>تسجيل دخول موحد (SSO):</strong> حساب واحد آمن لكل المنظومة.</li>
-                            <li><strong>الملف التشغيلي (Operational Profile):</strong> ليس CV وظيفي عادي، بل سجل يعكس نشاطك، تقدمك، سمعتك في Senmud، وتاريخك في المنظومة.</li>
-                            <li><strong>جواز السياق (Context Passport):</strong> يغذي Zakkur بالمعلومات اللازمة (من أنت؟ ما صلاحياتك؟ ما هدفك؟) ليتمكن من اتخاذ القرارات نيابة عنك بشكل دقيق.</li>
-                            <li><strong>إدارة الشركات (Organizations):</strong> دعم كامل لحسابات الشركات، الفرق، والصلاحيات (Admin, Member, Viewer).</li>
+                            <li><strong>सिंगल साइन-ऑन (SSO):</strong> पूरे इकोसिस्टम के लिए एक सुरक्षित खाता।</li>
+                            <li><strong>परिचालन प्रोफ़ाइल:</strong> यह एक सामान्य नौकरी CV नहीं है, बल्कि एक रिकॉर्ड है जो आपकी गतिविधि, प्रगति, Senmud में प्रतिष्ठा और सिस्टम इतिहास को दर्शाता है।</li>
+                            <li><strong>संदर्भ पासपोर्ट:</strong> Zakkur को आवश्यक जानकारी (आप कौन हैं? आपके पास क्या अनुमतियां हैं? आपका लक्ष्य क्या है?) देता है ताकि वह आपकी ओर से सटीक निर्णय ले सके।</li>
+                            <li><strong>संगठन प्रबंधन:</strong> कंपनी खातों, टीमों और अनुमतियों (Admin, Member, Viewer) के लिए पूर्ण समर्थन।</li>
                         </ul>
                     </div>
                 </div>
@@ -546,8 +547,8 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
                 <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-4">Under The Hood</span>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">الترسانة التقنية</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">نستخدم أحدث التقنيات لبناء بنية تحتية صلبة، سريعة، وقابلة للتوسع اللانهائي.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">तकनीकी शस्त्रागार</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">हम एक ठोस, तेज और अनंत रूप से स्केलेबल बुनियादी ढांचा बनाने के लिए नवीनतम तकनीकों का उपयोग करते हैं।</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -555,7 +556,7 @@
                 <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-database text-blue-400 text-xl"></i>
-                        <h3 class="text-white font-bold">البيانات والتخزين</h3>
+                        <h3 class="text-white font-bold">डेटा और स्टोरेज</h3>
                     </div>
                     <div class="flex flex-wrap">
                         <span class="tech-pill"><i class="fas fa-leaf text-green-500"></i> MongoDB</span>
@@ -568,7 +569,7 @@
                 <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-cloud text-blue-400 text-xl"></i>
-                        <h3 class="text-white font-bold">السحابة والبنية</h3>
+                        <h3 class="text-white font-bold">क्लाउड और इंफ्रा</h3>
                     </div>
                     <div class="flex flex-wrap">
                         <span class="tech-pill"><i class="fab fa-google text-white"></i> Google Cloud</span>
@@ -584,7 +585,7 @@
                 <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-code text-blue-400 text-xl"></i>
-                        <h3 class="text-white font-bold">النواة والبرمجة</h3>
+                        <h3 class="text-white font-bold">कोर और प्रोग्रामिंग</h3>
                     </div>
                     <div class="flex flex-wrap">
                         <span class="tech-pill"><i class="fab fa-node text-green-500"></i> Node.js</span>
@@ -598,7 +599,7 @@
                 <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-laptop-code text-blue-400 text-xl"></i>
-                        <h3 class="text-white font-bold">بيئة التطوير</h3>
+                        <h3 class="text-white font-bold">विकास पर्यावरण</h3>
                     </div>
                     <div class="flex flex-wrap">
                         <span class="tech-pill"><i class="fas fa-mobile-alt text-blue-300"></i> Flutter</span>
@@ -614,38 +615,38 @@
     <!-- FAQ Section -->
     <section class="py-20 bg-brand-gray/20 border-t border-white/5">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-10 text-white">أسئلة شائعة</h2>
+            <h2 class="text-3xl font-bold text-center mb-10 text-white">अक्सर पूछे जाने वाले प्रश्न</h2>
             <div class="space-y-4">
                 <div class="faq-item border border-white/10 rounded-lg bg-black/40 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
                     <div class="p-4 flex justify-between items-center">
-                        <h4 class="text-lg font-bold text-gray-200">هل Zakkur بديل للموظفين؟</h4>
+                        <h4 class="text-lg font-bold text-gray-200">क्या Zakkur कर्मचारियों का प्रतिस्थापन है?</h4>
                         <i class="fas fa-chevron-down text-gray-500 faq-icon transition-transform duration-300"></i>
                     </div>
                     <div class="faq-content bg-white/5">
                         <div class="p-4 text-gray-400 text-sm leading-relaxed">
-                            لا، Zakkur هو "محرك تمكين" (Enabler). هو لا يستبدل القيادة البشرية بل يزودها ببيانات دقيقة، تحليل سريع، وتنفيذ خالي من الأخطاء، مما يسمح للموظفين بالتركيز على الإبداع والاستراتيجية.
+                            नहीं, Zakkur एक "सक्षमकर्ता" (Enabler) है। यह मानव नेतृत्व को प्रतिस्थापित नहीं करता है, बल्कि उन्हें सटीक डेटा, तेज विश्लेषण और त्रुटि-मुक्त निष्पादन से लैस करता है, जिससे कर्मचारियों को रचनात्मकता और रणनीति पर ध्यान केंद्रित करने की अनुमति मिलती है।
                         </div>
                     </div>
                 </div>
                 <div class="faq-item border border-white/10 rounded-lg bg-black/40 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
                     <div class="p-4 flex justify-between items-center">
-                        <h4 class="text-lg font-bold text-gray-200">ما هو Sopen CV؟</h4>
+                        <h4 class="text-lg font-bold text-gray-200">Sopen CV क्या है?</h4>
                         <i class="fas fa-chevron-down text-gray-500 faq-icon transition-transform duration-300"></i>
                     </div>
                     <div class="faq-content bg-white/5">
                         <div class="p-4 text-gray-400 text-sm leading-relaxed">
-                            Sopen CV ليس سيرة ذاتية تقليدية (PDF)، بل هو ملف "حي" يوثق أفعالك، قراراتك، وسمعتك داخل النظام، مما يمنحك مصداقية تعتمد على "ما فعلت" وليس فقط "ما كتبت".
+                            Sopen CV एक पारंपरिक बायोडाटा (PDF) नहीं है, बल्कि एक "जीवित" फ़ाइल है जो सिस्टम के भीतर आपके कार्यों, निर्णयों और प्रतिष्ठा को दस्तावेज करती है, जिससे आपको केवल "आपने जो लिखा है" के बजाय "आपने जो किया है" के आधार पर विश्वसनीयता मिलती है।
                         </div>
                     </div>
                 </div>
                 <div class="faq-item border border-white/10 rounded-lg bg-black/40 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
                     <div class="p-4 flex justify-between items-center">
-                        <h4 class="text-lg font-bold text-gray-200">متى موعد الإطلاق؟</h4>
+                        <h4 class="text-lg font-bold text-gray-200">लॉन्च कब है?</h4>
                         <i class="fas fa-chevron-down text-gray-500 faq-icon transition-transform duration-300"></i>
                     </div>
                     <div class="faq-content bg-white/5">
                         <div class="p-4 text-gray-400 text-sm leading-relaxed">
-                            نحن نتبع سياسة "النشر المستمر" (Continuous Deployment). سنقوم بإطلاق الوحدات (Modules) تباعاً فور اكتمالها واجتيازها اختبارات الأمان. سجل في القائمة البريدية لتكون أول من يعلم.
+                            हम "सतत तैनाती" (Continuous Deployment) नीति का पालन करते हैं। हम मॉड्यूल (Modules) के पूरा होते ही और सुरक्षा परीक्षण पास करते ही उन्हें क्रमिक रूप से लॉन्च करेंगे। सबसे पहले जानने के लिए मेलिंग सूची के लिए साइन अप करें।
                         </div>
                     </div>
                 </div>
@@ -664,7 +665,7 @@
                 <h3 class="text-3xl md:text-4xl font-bold text-white">PageSpeed Insights</h3>
             </div>
             <p class="text-gray-400 text-lg mb-16 max-w-2xl mx-auto">
-                نتائج أداء حقيقية تعكس جودة الكود وسرعة الاستجابة.
+                वास्तविक प्रदर्शन परिणाम जो कोड गुणवत्ता और प्रतिक्रिया गति को दर्शाते हैं।
             </p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -674,7 +675,7 @@
                     <div class="text-5xl font-black text-white mb-2">100<span class="text-xl text-gray-500 font-normal">/100</span></div>
                     <div class="text-green-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-green-500"></span>
-                        Search Engine Optimization
+                        SEO अनुकूलन
                     </div>
                 </div>
                 <!-- Best Practices -->
@@ -683,7 +684,7 @@
                     <div class="text-5xl font-black text-white mb-2">96<span class="text-xl text-gray-500 font-normal">/100</span></div>
                     <div class="text-green-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-green-500"></span>
-                        Best Practices
+                        सर्वोत्तम प्रथाएँ
                     </div>
                 </div>
                 <!-- Accessibility -->
@@ -692,7 +693,7 @@
                     <div class="text-5xl font-black text-white mb-2">90<span class="text-xl text-gray-500 font-normal">/100</span></div>
                     <div class="text-green-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-green-500"></span>
-                        Accessibility
+                        पहुँच
                     </div>
                 </div>
                 <!-- Performance -->
@@ -701,24 +702,24 @@
                     <div class="text-5xl font-black text-white mb-2">78<span class="text-xl text-gray-500 font-normal">/100</span></div>
                     <div class="text-orange-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-                        Performance & Speed
+                        प्रदर्शन और गति
                     </div>
                 </div>
             </div>
             <div class="mt-12 text-sm text-gray-500">
-                * تم القياس باستخدام أدوات Google PageSpeed Insights الرسمية.
+                * Google PageSpeed Insights के आधिकारिक टूल का उपयोग करके मापा गया।
             </div>
         </div>
     </section>
 
-    <!-- Zakkur v1.5 Performance Details (NEW) -->
+    <!-- Zakkur v1.5 Performance Details -->
     <section class="py-20 bg-black border-t border-white/5 relative">
         <div class="absolute inset-0 bg-blue-900/5"></div>
         <div class="max-w-7xl mx-auto px-4 relative z-10">
             <div class="text-center mb-12">
                 <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-4">Platform Edition</span>
-                <h3 class="text-3xl font-bold text-white mb-4">Zakkur v1.5: أرقام الأداء</h3>
-                <p class="text-gray-400 max-w-2xl mx-auto">النظام مصمم ليكون High-Throughput في الاستقبال، و Low-Latency في العرض.</p>
+                <h3 class="text-3xl font-bold text-white mb-4">Zakkur v1.5: प्रदर्शन मेट्रिक्स</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">रिसेप्शन में हाई-थ्रूपुट और डिस्प्ले में लो-लेटेंसी के लिए डिज़ाइन किया गया सिस्टम।</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -727,42 +728,42 @@
                 <div class="bg-brand-gray/50 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm">
                     <div class="p-6 border-b border-white/10 flex items-center gap-3 bg-white/5">
                         <i class="fas fa-rocket text-blue-500 text-xl"></i>
-                        <h4 class="text-white font-bold">ملخص الأداء العام (Performance Summary)</h4>
+                        <h4 class="text-white font-bold">सामान्य सारांश (Performance Summary)</h4>
                     </div>
                     <div class="p-6">
-                        <table class="w-full text-sm text-right">
+                        <table class="w-full text-sm text-left">
                             <thead>
                                 <tr class="text-gray-500 border-b border-white/10">
-                                    <th class="pb-3 font-medium">المعيار (Metric)</th>
-                                    <th class="pb-3 font-medium">القيمة (Value)</th>
-                                    <th class="pb-3 font-medium hidden sm:table-cell">الملاحظات</th>
+                                    <th class="pb-3 font-medium">मेट्रिक (Metric)</th>
+                                    <th class="pb-3 font-medium">मूल्य (Value)</th>
+                                    <th class="pb-3 font-medium hidden sm:table-cell">नोट्स</th>
                                 </tr>
                             </thead>
                             <tbody class="text-gray-300">
                                 <tr class="border-b border-white/5">
-                                    <td class="py-3">الاستجابة الحية (Real-time)</td>
+                                    <td class="py-3">रियल-टाइम प्रतिक्रिया</td>
                                     <td class="py-3 text-green-400 font-mono font-bold">&lt; 50ms</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">بفضل Socket.io</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Socket.io के कारण</td>
                                 </tr>
                                 <tr class="border-b border-white/5">
-                                    <td class="py-3">زمن استجابة الكاش (Redis)</td>
+                                    <td class="py-3">कैश विलंबता (Redis)</td>
                                     <td class="py-3 text-green-400 font-mono font-bold">&lt; 5ms</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">استرجاع فوري</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">तत्काल पुनर्प्राप्ति</td>
                                 </tr>
                                 <tr class="border-b border-white/5">
-                                    <td class="py-3">تحليل الوكيل المنفرد</td>
+                                    <td class="py-3">एकल एजेंट विश्लेषण</td>
                                     <td class="py-3 text-blue-400 font-mono font-bold">1.5 - 3s</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">يعتمد على سرعة AI</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">AI गति पर निर्भर</td>
                                 </tr>
                                 <tr class="border-b border-white/5">
-                                    <td class="py-3">مجلس الإدارة (Full Board)</td>
+                                    <td class="py-3">पूर्ण बोर्ड (Full Board)</td>
                                     <td class="py-3 text-purple-400 font-mono font-bold">8 - 12s</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">تنفيذ متوازي (Parallel)</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">समानांतर निष्पादन</td>
                                 </tr>
                                 <tr>
-                                    <td class="py-3">أول استجابة مرئية (TTFT)</td>
+                                    <td class="py-3">पहला रेंडर (TTFT)</td>
                                     <td class="py-3 text-green-400 font-mono font-bold">&lt; 1s</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Streaming مفعّل</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">स्ट्रीमिंग सक्रिय</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -775,22 +776,22 @@
                     <div class="bg-brand-gray/50 border border-white/10 rounded-2xl overflow-hidden p-6 hover:border-purple-500/30 transition duration-300">
                         <div class="flex items-center gap-3 mb-4">
                             <i class="fas fa-bolt text-purple-500 text-xl"></i>
-                            <h4 class="text-white font-bold">القدرة الاستيعابية (Scalability)</h4>
+                            <h4 class="text-white font-bold">स्केलेबिलिटी (Scalability)</h4>
                         </div>
                         <ul class="space-y-4">
                             <li class="flex justify-between items-center text-sm">
-                                <span class="text-gray-400">اتصالات متزامنة (Concurrent Users)</span>
+                                <span class="text-gray-400">समवर्ती कनेक्शन</span>
                                 <span class="text-white font-mono font-bold">10,000+ Socket</span>
                             </li>
                             <li class="w-full bg-gray-700 h-1.5 rounded-full overflow-hidden">
                                 <div class="bg-purple-500 h-full w-[90%]"></div>
                             </li>
                             <li class="flex justify-between items-center text-sm pt-2">
-                                <span class="text-gray-400">استقبال الأحداث (Webhooks)</span>
+                                <span class="text-gray-400">इवेंट रिसेप्शन (Webhooks)</span>
                                 <span class="text-white font-mono font-bold">~1,000 Req/s</span>
                             </li>
                             <li class="flex justify-between items-center text-sm border-t border-white/5 pt-3 mt-2">
-                                <span class="text-gray-400">كفاءة الاستعلام (Indexed Queries)</span>
+                                <span class="text-gray-400">क्वेरी दक्षता (Indexed)</span>
                                 <span class="text-green-400 font-mono">&lt; 20ms</span>
                             </li>
                         </ul>
@@ -800,12 +801,12 @@
                     <div class="bg-brand-gray/50 border border-white/10 rounded-2xl overflow-hidden p-6 hover:border-teal-500/30 transition duration-300">
                         <div class="flex items-center gap-3 mb-4">
                             <i class="fas fa-shield-alt text-teal-500 text-xl"></i>
-                            <h4 class="text-white font-bold">الموثوقية (Reliability)</h4>
+                            <h4 class="text-white font-bold">विश्वसनीयता (Reliability)</h4>
                         </div>
                         <div class="flex items-center justify-between mb-4">
                             <div>
                                 <div class="text-3xl font-bold text-white mb-1">&lt; 0.1%</div>
-                                <div class="text-xs text-gray-500">نسبة الخطأ المتوقعة</div>
+                                <div class="text-xs text-gray-500">अपेक्षित त्रुटि दर</div>
                             </div>
                             <div class="text-right">
                                 <div class="px-3 py-1 rounded bg-teal-500/10 text-teal-400 text-xs border border-teal-500/20">Auto-Recovery</div>
@@ -813,7 +814,7 @@
                         </div>
                         <p class="text-gray-400 text-sm border-t border-white/5 pt-3">
                             <i class="fas fa-check text-teal-500 mr-2"></i>
-                            إعادة تشغيل المجدول (Scheduler) تلقائياً فور بدء الخادم.
+                            सर्वर शुरू होने पर शेड्यूलर (Scheduler) का ऑटो-रिस्टार्ट।
                         </p>
                     </div>
                 </div>
@@ -828,11 +829,11 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div class="col-span-1 md:col-span-2">
                     <a href="#" class="flex items-center gap-2 mb-4">
-                        <img src="assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40x40/333/fff?text=S'" alt="Logo" class="h-8 w-auto">
+                        <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40x40/333/fff?text=S'" alt="Logo" class="h-8 w-auto">
                         <span class="text-2xl font-bold text-white">SOPEN NET</span>
                     </a>
                     <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
-                        شركة أنظمة تشغيل للإنسان والشركات. نبني المستقبل من خلال دمج القرار، التنفيذ، والتواصل في جسد واحد.
+                        मनुष्यों और कंपनियों के लिए ऑपरेटिंग सिस्टम कंपनी। हम निर्णय, निष्पादन और संचार को एक ही शरीर में एकीकृत करके भविष्य का निर्माण करते हैं।
                     </p>
                     <div class="flex flex-wrap gap-4 mt-6">
                         <a href="https://x.com/SopenNet" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-500 hover:text-white transition"><i class="fab fa-twitter"></i></a>
@@ -846,7 +847,7 @@
                     
                     <!-- Registered Address -->
                     <div class="mt-8 pt-6 border-t border-white/5">
-                        <p class="text-xs text-gray-500 font-bold uppercase tracking-widest mb-3">المقر القانوني المسجل</p>
+                        <p class="text-xs text-gray-500 font-bold uppercase tracking-widest mb-3">पंजीकृत कानूनी पता</p>
                         <address class="text-gray-400 text-sm not-italic font-mono leading-relaxed opacity-80">
                             <span class="text-white font-bold">Sopen Net, Inc.</span><br>
                             1111B S Governors Ave STE 48214<br>
@@ -857,7 +858,7 @@
                 </div>
                 
                 <div>
-                    <h4 class="text-white font-bold mb-4">المنتجات</h4>
+                    <h4 class="text-white font-bold mb-4">उत्पाद</h4>
                     <ul class="space-y-2 text-sm text-gray-500">
                         <li><a href="#" class="hover:text-blue-400 transition">Zakkur</a></li>
                         <li><a href="#" class="hover:text-purple-400 transition">Omudia</a></li>
@@ -866,20 +867,20 @@
                 </div>
 
                 <div>
-                    <h4 class="text-white font-bold mb-4">الشركة</h4>
+                    <h4 class="text-white font-bold mb-4">कंपनी</h4>
                     <ul class="space-y-2 text-sm text-gray-500">
-                        <li><a href="founders.html" class="hover:text-white transition">عن الفريق</a></li>
-                        <li><a href="investors.html" class="hover:text-white transition">للمستثمرين</a></li>
-                        <li><a href="privacy.html" class="hover:text-white transition">سياسة الخصوصية</a></li>
-                        <li><a href="terms.html" class="hover:text-white transition">الشروط والأحكام</a></li>
+                        <li><a href="founders.html" class="hover:text-white transition">टीम</a></li>
+                        <li><a href="investors.html" class="hover:text-white transition">निवेशक</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition">गोपनीयता</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">शर्तें</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-gray-600 text-sm text-center md:text-right">© 2025 Sopen Net, Inc. جميع الحقوق محفوظة.</p>
+                <p class="text-gray-600 text-sm text-center md:text-left">© 2025 Sopen Net, Inc. सर्वाधिकार सुरक्षित।</p>
                 <div class="flex gap-4">
-                    <img src="assets/img/logo.png" onerror="this.style.display='none'" class="h-6 opacity-30 grayscale">
+                    <img src="../assets/img/logo.png" onerror="this.style.display='none'" class="h-6 opacity-30 grayscale">
                 </div>
             </div>
         </div>
@@ -889,7 +890,7 @@
     <script>
         // Typewriter Logic
         const textElement = document.getElementById('typewriter-text');
-        const phrases = ["تعمل كنظام واحد", "تتخذ القرارات", "تنفذ المهام", "تربط الجميع بذكاء"];
+        const phrases = ["एकल प्रणाली के रूप में कार्य करता है", "निर्णय लेता है", "कार्य निष्पादित करता है", "सभी को बुद्धिमानी से जोड़ता है"];
         let phraseIndex = 0;
         let charIndex = 0;
         let isDeleting = false;

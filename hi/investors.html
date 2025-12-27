@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/img/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>निवेशक | Sopen Net, Inc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#050505',
+                            gray: '#1a1a1a',
+                            accent: '#3b82f6',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Hind', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Hind', sans-serif; background-color: #050505; color: #e5e5e5; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <nav class="w-full py-6 px-4 border-b border-white/5 bg-black/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full border border-white/10">
+                <span class="font-bold text-white tracking-wider">SOPEN NET</span>
+            </a>
+            <a href="index.html" class="text-sm text-gray-400 hover:text-white transition flex items-center gap-2 group">
+                <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i> होम पर वापस
+            </a>
+        </div>
+    </nav>
+
+    <main class="relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-900/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-4 py-20">
+            <!-- Hero Section -->
+            <div class="text-center mb-16">
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-6">निवेशक संबंध</span>
+                <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight"><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">भविष्य के बुनियादी ढांचे</span><br>में निवेश करें</h1>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                    हम केवल एप्लिकेशन नहीं बना रहे हैं, हम एक व्यापक ऑपरेटिंग सिस्टम बना रहे हैं जो निर्णय, निष्पादन और संचार को मिलाता है। परिचालन AI की अगली लहर का हिस्सा बनने का अवसर।
+                </p>
+            </div>
+
+            <!-- Pitch Deck Info Card -->
+            <div class="glass-card rounded-3xl p-10 mb-16 relative overflow-hidden group hover:border-blue-500/30 transition duration-500">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition">
+                    <i class="fas fa-file-pdf text-9xl text-white"></i>
+                </div>
+                
+                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="text-left w-full">
+                        <h2 class="text-3xl font-bold text-white mb-2">Sopen Net Deck 2025</h2>
+                        <p class="text-gray-400 mb-6 max-w-2xl">
+                            बिजनेस मॉडल (रोबोट आर्किटेक्चर), विकास रणनीति और अगले पांच वर्षों के लिए वित्तीय अनुमानों का एक व्यापक दृष्टिकोण। कृपया पूर्ण संस्करण प्राप्त करने के लिए हमसे संपर्क करें।
+                        </p>
+                        <div class="flex flex-wrap gap-4 text-sm text-gray-500">
+                            <span class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> तकनीकी रोडमैप</span>
+                            <span class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> राजस्व मॉडल</span>
+                            <span class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> बाजार विश्लेषण</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Metrics / Why Invest Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center text-blue-400 mb-4 text-xl">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">विशाल बाजार</h3>
+                    <p class="text-sm text-gray-400">हम एंटरप्राइज ऑटोमेशन और कंटेंट निर्माण बाजार को लक्षित करते हैं, जिसका संयुक्त मूल्य 500 बिलियन डॉलर से अधिक है।</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center text-purple-400 mb-4 text-xl">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">स्वामित्व तकनीक</h3>
+                    <p class="text-sm text-gray-400">"रोबोट आर्किटेक्चर" मॉडल और एजेंट इंटरकनेक्शन तकनीकें Sopen Net की विशेष बौद्धिक संपदा हैं।</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="w-12 h-12 bg-pink-500/20 rounded-lg flex items-center justify-center text-pink-400 mb-4 text-xl">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">तकनीकी संस्थापक टीम</h3>
+                    <p class="text-sm text-gray-400">संस्थापक जिन्हें कम उम्र से ही जटिल सिस्टम बनाने और समुदायों का प्रबंधन करने का व्यावहारिक अनुभव है।</p>
+                </div>
+            </div>
+
+            <!-- Direct Contact Section -->
+            <div class="border-t border-white/10 pt-16 text-center">
+                <h2 class="text-2xl font-bold mb-8">संस्थापकों से सीधे संपर्क करें</h2>
+                
+                <div class="flex flex-col md:flex-row justify-center gap-6 max-w-3xl mx-auto">
+                    <!-- Email Contact -->
+                    <a href="mailto:admin@sopen.ai" class="flex-1 glass-card p-6 rounded-2xl hover:bg-white/5 transition group">
+                        <div class="w-12 h-12 mx-auto bg-gray-800 rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="text-white font-bold mb-1">ईमेल</h3>
+                        <p class="text-blue-400 font-mono text-sm">admin@sopen.ai</p>
+                        <p class="text-gray-500 text-xs mt-2">आधिकारिक पूछताछ और फंडिंग प्रस्तावों के लिए</p>
+                    </a>
+
+                    <!-- Form Contact -->
+                    <a href="Form.html" class="flex-1 glass-card p-6 rounded-2xl hover:bg-white/5 transition group">
+                        <div class="w-12 h-12 mx-auto bg-gray-800 rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3 class="text-white font-bold mb-1">पंजीकरण फॉर्म</h3>
+                        <p class="text-purple-400 font-mono text-sm">Application Form</p>
+                        <p class="text-gray-500 text-xs mt-2">अपनी रुचि दर्ज करें और निवेशकों की सूची में शामिल हों</p>
+                    </a>
+                </div>
+
+                <p class="mt-12 text-gray-500 text-sm">
+                    Sopen Net, Inc. डेलावेयर, यूएस में पंजीकृत। सर्वाधिकार सुरक्षित &copy; 2025.
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

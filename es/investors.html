@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/img/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversores | Sopen Net, Inc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#050505',
+                            gray: '#1a1a1a',
+                            accent: '#3b82f6',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #050505; color: #e5e5e5; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <nav class="w-full py-6 px-4 border-b border-white/5 bg-black/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full border border-white/10">
+                <span class="font-bold text-white tracking-wider">SOPEN NET</span>
+            </a>
+            <a href="index.html" class="text-sm text-gray-400 hover:text-white transition flex items-center gap-2 group">
+                <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i> Volver al Inicio
+            </a>
+        </div>
+    </nav>
+
+    <main class="relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-900/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-4 py-20">
+            <!-- Hero Section -->
+            <div class="text-center mb-16">
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-6">Relaciones con Inversores</span>
+                <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">Invertir en la <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Infraestructura del Futuro</span></h1>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                    No solo construimos aplicaciones, construimos un sistema operativo integral que fusiona decisión, ejecución y comunicación. Una oportunidad para ser parte de la próxima ola de IA operativa.
+                </p>
+            </div>
+
+            <!-- Pitch Deck Info Card -->
+            <div class="glass-card rounded-3xl p-10 mb-16 relative overflow-hidden group hover:border-blue-500/30 transition duration-500">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition">
+                    <i class="fas fa-file-pdf text-9xl text-white"></i>
+                </div>
+                
+                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="text-left w-full"> <!-- text-left for Spanish -->
+                        <h2 class="text-3xl font-bold text-white mb-2">Sopen Net Deck 2025</h2>
+                        <p class="text-gray-400 mb-6 max-w-2xl">
+                            Una visión completa del modelo de negocio (Arquitectura Robot), estrategia de crecimiento y proyecciones financieras para los próximos cinco años. Por favor, contáctenos para obtener la versión completa.
+                        </p>
+                        <div class="flex flex-wrap gap-4 text-sm text-gray-500">
+                            <span class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Hoja de Ruta Técnica</span>
+                            <span class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Modelo de Ingresos</span>
+                            <span class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Análisis de Mercado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Metrics / Why Invest Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center text-blue-400 mb-4 text-xl">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Mercado Masivo</h3>
+                    <p class="text-sm text-gray-400">Apuntamos al mercado de automatización empresarial y creación de contenido, con un valor combinado de más de 500 mil millones de dólares.</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center text-purple-400 mb-4 text-xl">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Tecnología Propietaria</h3>
+                    <p class="text-sm text-gray-400">El modelo "Arquitectura Robot" y las tecnologías de interconexión de agentes son propiedad intelectual exclusiva de Sopen Net.</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="w-12 h-12 bg-pink-500/20 rounded-lg flex items-center justify-center text-pink-400 mb-4 text-xl">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Equipo Fundador Técnico</h3>
+                    <p class="text-sm text-gray-400">Fundadores con experiencia práctica en la construcción de sistemas complejos y gestión de comunidades desde temprana edad.</p>
+                </div>
+            </div>
+
+            <!-- Direct Contact Section -->
+            <div class="border-t border-white/10 pt-16 text-center">
+                <h2 class="text-2xl font-bold mb-8">Contactar directamente a los fundadores</h2>
+                
+                <div class="flex flex-col md:flex-row justify-center gap-6 max-w-3xl mx-auto">
+                    <!-- Email Contact -->
+                    <a href="mailto:admin@sopen.ai" class="flex-1 glass-card p-6 rounded-2xl hover:bg-white/5 transition group">
+                        <div class="w-12 h-12 mx-auto bg-gray-800 rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="text-white font-bold mb-1">Correo Electrónico</h3>
+                        <p class="text-blue-400 font-mono text-sm">admin@sopen.ai</p>
+                        <p class="text-gray-500 text-xs mt-2">Para consultas oficiales y ofertas de financiación</p>
+                    </a>
+
+                    <!-- Form Contact -->
+                    <a href="Form.html" class="flex-1 glass-card p-6 rounded-2xl hover:bg-white/5 transition group">
+                        <div class="w-12 h-12 mx-auto bg-gray-800 rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3 class="text-white font-bold mb-1">Formulario de Registro</h3>
+                        <p class="text-purple-400 font-mono text-sm">Formulario de Solicitud</p>
+                        <p class="text-gray-500 text-xs mt-2">Registre su interés y únase a la lista de inversores</p>
+                    </a>
+                </div>
+
+                <p class="mt-12 text-gray-500 text-sm">
+                    Sopen Net, Inc. registrada en Delaware, EE. UU. Todos los derechos reservados &copy; 2025.
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

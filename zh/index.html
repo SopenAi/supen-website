@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="zh-CN" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sopen Net, Inc | أنظمة تشغيل للإنسان والشركات</title>
-    <meta name="description" content="Sopen Net ليست شركة منتجات، بل شركة أنظمة تشغيل للإنسان والشركات. Zakkur, Omudia, Senmud.">
-    <link rel="icon" href="assets/img/logo.jpg">
+    <title>Sopen Net, Inc | 人类与企业的操作系统</title>
+    <meta name="description" content="Sopen Net 不是一家产品公司，而是一家为人类和企业提供操作系统的公司。Zakkur, Omudia, Senmud.">
+    <link rel="icon" href="../assets/img/logo.jpg">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Google Fonts for Chinese -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -32,7 +32,7 @@
                         }
                     },
                     fontFamily: {
-                        sans: ['Cairo', 'sans-serif'],
+                        sans: ['Noto Sans SC', 'sans-serif'], // Optimized for Chinese
                     },
                     animation: {
                         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
@@ -49,7 +49,7 @@
         }
     </script>
     <style>
-        body { font-family: 'Cairo', sans-serif; background-color: #050505; color: #e5e5e5; overflow-x: hidden; }
+        body { font-family: 'Noto Sans SC', sans-serif; background-color: #050505; color: #e5e5e5; overflow-x: hidden; }
         html { scroll-behavior: smooth; }
         .text-gradient { background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .bg-grid { background-size: 50px 50px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px); mask-image: linear-gradient(to bottom, black 40%, transparent 100%); }
@@ -85,9 +85,10 @@
             transform: translateY(-2px);
         }
         
+        /* Adjusted for LTR */
         .feature-list li {
             position: relative;
-            padding-right: 1.5rem;
+            padding-left: 1.5rem;
             margin-bottom: 0.75rem;
             color: #d1d5db;
             line-height: 1.6;
@@ -95,7 +96,7 @@
         .feature-list li::before {
             content: "•";
             position: absolute;
-            right: 0;
+            left: 0;
             color: currentColor;
             font-weight: bold;
             font-size: 1.2em;
@@ -107,7 +108,7 @@
             width: 3px;
             background-color: #3b82f6;
             animation: blink 1s step-end infinite;
-            margin-right: 2px;
+            margin-left: 2px;
             height: 1em;
             vertical-align: text-bottom;
         }
@@ -156,59 +157,59 @@
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center gap-3">
                     <a href="index.html" class="flex items-center gap-2">
-                        <img src="assets/img/logo.png" onerror="this.src='https://via.placeholder.com/50x50/333/fff?text=S'" alt="Sopen Net Logo" class="h-10 w-auto rounded-full border border-white/10">
+                        <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/50x50/333/fff?text=S'" alt="Sopen Net Logo" class="h-10 w-auto rounded-full border border-white/10">
                         <span class="text-xl font-bold tracking-wider text-white hidden sm:block">SOPEN NET</span>
                     </a>
                     
                     <!-- System Status Indicator -->
-                    <div class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 mr-4">
+                    <div class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 ml-4">
                         <span class="relative flex h-2 w-2">
                           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                           <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                         </span>
-                        <span class="text-[10px] font-bold text-green-400 uppercase tracking-wide">الأنظمة تعمل: 100%</span>
+                        <span class="text-[10px] font-bold text-green-400 uppercase tracking-wide">系统运行中: 100%</span>
                     </div>
                 </div>
 
-                <!-- Desktop Navigation -->
+                <!-- Navigation Links -->
                 <div class="hidden md:flex items-center gap-4 lg:gap-6">
-                    <div class="flex items-baseline space-x-2 lg:space-x-4 space-x-reverse text-sm lg:text-base">
-                        <a href="#home" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">الرئيسية</a>
-                        <a href="#architecture" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">المنظومة</a>
-                        <a href="#products" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">المنتجات</a>
-                        <a href="#tech-stack" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">التقنيات</a>
-                        <a href="founders.html" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">الفريق</a>
-                        <a href="investors.html" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">المستثمرين</a>
+                    <div class="flex items-baseline space-x-2 lg:space-x-4 text-sm lg:text-base">
+                        <a href="#home" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">主页</a>
+                        <a href="#architecture" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">生态系统</a>
+                        <a href="#products" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">产品</a>
+                        <a href="#tech-stack" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">技术栈</a>
+                        <a href="founders.html" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">团队</a>
+                        <a href="investors.html" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">投资者</a>
                     </div>
                     
                     <!-- Multi-Language Dropdown (Desktop) -->
                     <div class="relative group">
                         <button class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white/10 transition flex items-center gap-2 text-gray-300">
                             <i class="fas fa-globe"></i>
-                            <span>العربية</span>
+                            <span>中文</span>
                             <i class="fas fa-chevron-down text-[10px]"></i>
                         </button>
-                        <div class="absolute left-0 mt-2 w-48 bg-brand-dark border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
-                            <div class="block px-4 py-3 text-sm text-brand-accent font-bold bg-white/5 flex justify-between items-center">
+                        <div class="absolute right-0 mt-2 w-48 bg-brand-dark border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
+                            <a href="../index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
                                 <span>العربية</span>
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <a href="en/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                                <span class="text-xs border border-white/10 px-1 rounded">AR</span>
+                            </a>
+                            <a href="../en/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
                                 <span>English</span>
                                 <span class="text-xs border border-white/10 px-1 rounded">EN</span>
                             </a>
-                            <a href="es/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                            <a href="../es/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
                                 <span>Español</span>
                                 <span class="text-xs border border-white/10 px-1 rounded">ES</span>
                             </a>
-                            <a href="zh/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
-                                <span>中文 (Mandarin)</span>
-                                <span class="text-xs border border-white/10 px-1 rounded">ZH</span>
-                            </a>
-                            <a href="hi/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
-                                <span>हिन्दी (Hindi)</span>
+                            <a href="../hi/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                                <span>हिन्दी</span>
                                 <span class="text-xs border border-white/10 px-1 rounded">HI</span>
                             </a>
+                            <div class="block px-4 py-3 text-sm text-brand-accent font-bold bg-white/5 flex justify-between items-center">
+                                <span>中文</span>
+                                <i class="fas fa-check"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -223,23 +224,23 @@
         
         <!-- Mobile Menu -->
         <div class="hidden md:hidden bg-brand-dark border-b border-white/10" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-right">
-                <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">الرئيسية</a>
-                <a href="#architecture" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">المنظومة</a>
-                <a href="#products" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">المنتجات</a>
-                <a href="#tech-stack" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">التقنيات</a>
-                <a href="founders.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">الفريق</a>
-                <a href="investors.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">المستثمرين</a>
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-left">
+                <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">主页</a>
+                <a href="#architecture" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">生态系统</a>
+                <a href="#products" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">产品</a>
+                <a href="#tech-stack" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">技术栈</a>
+                <a href="founders.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">团队</a>
+                <a href="investors.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">投资者</a>
                 
                 <!-- Mobile Language Selector -->
                 <div class="border-t border-white/10 mt-4 pt-4">
-                    <p class="px-3 text-xs text-gray-500 uppercase tracking-widest mb-3">اللغات</p>
+                    <p class="px-3 text-xs text-gray-500 uppercase tracking-widest mb-3">语言 (Language)</p>
                     <div class="grid grid-cols-2 gap-2 px-3">
-                        <div class="text-center py-2 border border-brand-accent/50 bg-brand-accent/10 rounded text-sm text-brand-accent font-bold">العربية</div>
-                        <a href="en/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">English</a>
-                        <a href="es/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">Español</a>
-                        <a href="zh/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">中文 (ZH)</a>
-                        <a href="hi/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">हिन्दी (HI)</a>
+                        <a href="../index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">العربية</a>
+                        <a href="../en/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">English</a>
+                        <a href="../es/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">Español (ES)</a>
+                        <a href="../hi/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">हिन्दी (HI)</a>
+                        <div class="text-center py-2 border border-brand-accent/50 bg-brand-accent/10 rounded text-sm text-brand-accent font-bold">中文 (ZH)</div>
                     </div>
                 </div>
             </div>
@@ -249,34 +250,34 @@
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div class="absolute inset-0 bg-grid"></div>
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse"></div>
-        <div class="absolute top-1/3 right-1/4 w-80 h-80 bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
+        <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse"></div>
+        <div class="absolute top-1/3 left-1/4 w-80 h-80 bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
             <div class="inline-block mb-4 px-4 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
-                <span class="text-sm font-light tracking-wide text-gray-300">Sopen System 1.5v - Coming Soon</span>
+                <span class="text-sm font-light tracking-wide text-gray-300">Sopen System 1.5v - 即将推出</span>
             </div>
             <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight h-[160px] md:h-[180px] flex flex-col justify-center">
-                <span>شركة AI‑Native</span>
+                <span>AI 原生公司</span>
                 <!-- Typewriter Effect -->
                 <span class="text-gradient block mt-2">
                     <span id="typewriter-text"></span><span class="cursor">|</span>
                 </span>
             </h1>
             <p class="mt-4 max-w-3xl mx-auto text-xl text-gray-400 font-light leading-relaxed">
-                Sopen Net ليست مجموعة تطبيقات منفصلة. هي منظومة تشغيل واحدة تتكون من أربعة أجزاء مترابطة.
+                Sopen Net 不是零散应用的集合。它是一个单一的操作系统，由四个相互关联的部分组成。
                 <br>
                 <span class="text-white font-medium mt-2 block">
-                    القرار (Zakkur) &larr; التنفيذ (Omudia) &larr; الإشارة (Senmud)
+                    决策 (Zakkur) &rarr; 执行 (Omudia) &rarr; 信号 (Senmud)
                 </span>
             </p>
             
             <div class="mt-10 flex flex-wrap justify-center gap-4">
                 <a href="#performance" class="px-8 py-3 rounded-full bg-white text-black font-bold hover:bg-gray-200 transition shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                    أداء النظام
+                    系统性能
                 </a>
                 <a href="#products" class="px-8 py-3 rounded-full border border-white/20 hover:bg-white/10 transition backdrop-blur-sm">
-                    اكتشف النظام
+                    探索系统
                 </a>
             </div>
 
@@ -296,41 +297,41 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Sopen System 1.5v</h2>
                 <p class="text-gray-400 max-w-2xl mx-auto text-lg">
-                    الفكرة الأساسية: القرار ← التنفيذ ← الإشارة ← التحسين.
+                    核心理念：决策 → 执行 → 信号 → 优化。
                     <br>
-                    حلقة واحدة قابلة للتتبع والتدقيق بالكامل.
+                    一个完全可追踪和可审计的单一循环。
                 </p>
             </div>
             
             <div class="relative grid grid-cols-1 md:grid-cols-4 gap-8 items-center justify-items-center mb-12">
                 <div class="hidden md:block absolute top-[40%] left-0 w-full h-1 flow-line opacity-30 -z-10 rounded-full"></div>
 
-                <!-- Products Icons (Same as before) -->
+                <!-- Products Icons -->
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
                     <div class="relative w-36 h-36 rounded-full bg-gray-900 border-2 border-blue-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-blue-500 overflow-hidden">
-                        <img src="assets/img/i1.jpg" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Zakkur" class="w-full h-full object-cover z-20 transition hover:opacity-90">
+                        <img src="../assets/img/i1.jpg" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Zakkur" class="w-full h-full object-cover z-20 transition hover:opacity-90">
                         <i class="fas fa-brain text-4xl text-blue-500 absolute z-10 hidden animate-pulse"></i>
                     </div>
                     <h3 class="text-xl font-bold text-blue-400 mb-1">Zakkur</h3>
-                    <p class="text-xs text-gray-400 text-center">عقل القرار والتنفيذ</p>
+                    <p class="text-xs text-gray-400 text-center">决策大脑</p>
                 </div>
 
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
                     <div class="relative w-36 h-36 rounded-full bg-gray-900 border-2 border-purple-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(139,92,246,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-purple-500 overflow-hidden">
-                        <img src="assets/img/i2.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Omudia" class="w-full h-full object-cover z-20 transition hover:opacity-90">
+                        <img src="../assets/img/i2.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Omudia" class="w-full h-full object-cover z-20 transition hover:opacity-90">
                         <i class="fas fa-bullhorn text-4xl text-purple-500 absolute z-10 hidden animate-pulse"></i>
                     </div>
                     <h3 class="text-xl font-bold text-purple-400 mb-1">Omudia</h3>
-                    <p class="text-xs text-gray-400 text-center">ذراع الإنتاج والنشر</p>
+                    <p class="text-xs text-gray-400 text-center">生产臂膀</p>
                 </div>
 
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
                     <div class="relative w-36 h-36 rounded-full bg-gray-900 border-2 border-pink-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(236,72,153,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-pink-500 overflow-hidden">
-                        <img src="assets/img/i3.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Senmud" class="w-full h-full object-cover z-20 transition hover:opacity-90">
+                        <img src="../assets/img/i3.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Senmud" class="w-full h-full object-cover z-20 transition hover:opacity-90">
                         <i class="fas fa-users text-4xl text-pink-500 absolute z-10 hidden animate-pulse"></i>
                     </div>
                     <h3 class="text-xl font-bold text-pink-400 mb-1">Senmud</h3>
-                    <p class="text-xs text-gray-400 text-center">طبقة الإشارة البشرية</p>
+                    <p class="text-xs text-gray-400 text-center">人类信号层</p>
                 </div>
 
                 <div class="group relative flex flex-col items-center w-full max-w-xs">
@@ -338,14 +339,14 @@
                         <i class="fas fa-fingerprint text-5xl text-teal-500 z-10"></i>
                     </div>
                     <h3 class="text-xl font-bold text-teal-400 mb-1">Sopen CV</h3>
-                    <p class="text-xs text-gray-400 text-center">هوية موحدة + سياق</p>
+                    <p class="text-xs text-gray-400 text-center">统一身份</p>
                 </div>
             </div>
 
             <div class="mt-8 text-center border-t border-dashed border-gray-700 pt-8 relative">
                  <p class="text-gray-400 text-sm max-w-2xl mx-auto">
-                    <i class="fas fa-sync animate-spin ml-2 text-blue-500"></i>
-                    نظام يعمل كدورة واحدة: <span class="text-white">Senmud</span> يلتقط الإشارة ← <span class="text-white">Zakkur</span> يقرر ← <span class="text-white">Omudia</span> ينفذ ← <span class="text-white">Sopen CV</span> يوثق الهوية
+                    <i class="fas fa-sync animate-spin mr-2 text-blue-500"></i>
+                    系统作为一个循环运行：<span class="text-white">Senmud</span> 捕捉信号 → <span class="text-white">Zakkur</span> 决策 → <span class="text-white">Omudia</span> 执行 → <span class="text-white">Sopen CV</span> 记录。
                 </p>
             </div>
         </div>
@@ -356,13 +357,13 @@
         <div class="absolute top-0 left-0 w-full h-full bg-brand-dark/50 -z-10"></div>
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-24">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">مكونات المنظومة</h2>
-                <p class="text-xl text-gray-400 max-w-2xl mx-auto">كلها قريبًا (Coming Soon)</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">生态系统组件</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">全部即将推出 (Coming Soon)</p>
             </div>
 
             <!-- Zakkur Detailed -->
             <div class="flex flex-col lg:flex-row items-start gap-12 mb-40 relative">
-                <div class="lg:w-3/5 z-10 text-right">
+                <div class="lg:w-3/5 z-10 text-left">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="p-4 bg-blue-500/20 rounded-2xl text-blue-400"><i class="fas fa-brain text-3xl"></i></div>
                         <div>
@@ -371,40 +372,40 @@
                         </div>
                     </div>
                     
-                    <h4 class="text-2xl text-blue-300 mb-6 font-light">عقل القرار والتنفيذ - The Digital C-Suite</h4>
+                    <h4 class="text-2xl text-blue-300 mb-6 font-light">决策与执行大脑 - 数字化 C-Suite</h4>
                     
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        Zakkur ليس مجرد مساعد ذكي يكتب نصائح، بل هو <strong>نظام تشغيل للقرارات</strong>. يستهدف المشاكل الوجودية للشركات: بطء اتخاذ القرار، غياب التتبع، وانهيار التنفيذ اليدوي تحت الضغط. هو يعمل كفريق تنفيذي رقمي (CFO, CTO, CMO, COO) داخل إطار واحد.
+                        Zakkur 不仅仅是一个提供建议的智能助手，它是一个<strong>决策操作系统</strong>。它针对企业的生存问题：决策缓慢、缺乏跟踪以及手动执行在压力下的崩溃。它在一个框架内作为数字化执行团队（CFO, CTO, CMO, COO）运作。
                     </p>
                     
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-blue-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">كيف يعمل (The Pipeline):</h5>
+                        <h5 class="text-blue-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">工作原理 (The Pipeline):</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>1. القراءة (Read):</strong> يجمع السياق من مصادر متعددة (بيانات مالية، مؤشرات أداء، سجلات، مخاطر).</li>
-                            <li><strong>2. التحقق (Validate):</strong> يمرر البيانات عبر فلاتر "Zero-Trust" وسياسات الامتثال (Compliance) قبل المعالجة.</li>
-                            <li><strong>3. القرار (Decide):</strong> لا يعطي رأياً عائماً، بل يخرج بخيار نهائي مدعوم بالبدائل (Option A/B)، المخاطر، وشروط النجاح.</li>
-                            <li><strong>4. التنفيذ (Execute):</strong> يحول القرار فوراً إلى إجراءات: تشغيل مهام، إرسال أوامر API، تحديث إعدادات، أو إطلاق حملات.</li>
-                            <li><strong>5. التدقيق (Audit):</strong> يسجل كل خطوة زمنياً: من قرر؟ لماذا؟ وبأي بيانات؟ لضمان الشفافية المطلقة.</li>
+                            <li><strong>1. 读取 (Read):</strong> 从多个来源收集背景信息（财务数据、KPI、日志、风险）。</li>
+                            <li><strong>2. 验证 (Validate):</strong> 在处理之前，将数据通过“零信任”过滤器和合规策略。</li>
+                            <li><strong>3. 决策 (Decide):</strong> 不给出模糊的意见，而是生成一个由替代方案（选项 A/B）、风险和成功条件支持的最终选项。</li>
+                            <li><strong>4. 执行 (Execute):</strong> 立即将决策转化为行动：运行任务、发送 API 命令、更新设置或启动活动。</li>
+                            <li><strong>5. 审计 (Audit):</strong> 按时间顺序记录每一步：谁决定的？为什么？用了什么数据？以确保绝对的透明度。</li>
                         </ul>
                     </div>
 
                     <div class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
                         <i class="fas fa-shield-alt text-blue-500 text-xl"></i>
-                        <span>يحل مشكلة "تضارب السرعة والأمان" عبر لوحة Guardrails تمنع الانفلات.</span>
+                        <span>通过防止越界的 Guardrails 解决“速度与安全冲突”的问题。</span>
                     </div>
                 </div>
                 
                 <div class="lg:w-2/5 w-full sticky top-24">
                     <div class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-blue-900/20 flex flex-col justify-between overflow-hidden backdrop-blur-md">
                         <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent blur-2xl -z-10"></div>
-                        <img src="assets/img/in1.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Zakkur+Interface'" alt="Zakkur" class="w-full mt-8 rounded-t-xl border-t-4 border-blue-500 shadow-lg object-cover">
+                        <img src="../assets/img/in1.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Zakkur+Interface'" alt="Zakkur" class="w-full mt-8 rounded-t-xl border-t-4 border-blue-500 shadow-lg object-cover">
                     </div>
                 </div>
             </div>
 
             <!-- Omudia Detailed -->
             <div class="flex flex-col lg:flex-row-reverse items-start gap-12 mb-40 relative">
-                 <div class="lg:w-3/5 z-10 text-right">
+                 <div class="lg:w-3/5 z-10 text-left">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="p-4 bg-purple-500/20 rounded-2xl text-purple-400"><i class="fas fa-industry text-3xl"></i></div>
                         <div>
@@ -413,40 +414,40 @@
                         </div>
                     </div>
                     
-                    <h4 class="text-2xl text-purple-300 mb-6 font-light">ذراع الإنتاج والنشر الصناعي - The Factory</h4>
+                    <h4 class="text-2xl text-purple-300 mb-6 font-light">工业生产与发布臂膀 - 工厂 (The Factory)</h4>
                     
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        Omudia يغير مفهوم المحتوى من "إلهام فني" إلى "عملية تشغيل قابلة للقياس". هو مصنع متكامل للشركات والمؤسسين (Founder-Led Marketing) يحل مشكلة ضياع الوقت وتشتت الهوية عبر المنصات.
+                        Omudia 将内容的概念从“艺术灵感”转变为“可衡量的操作流程”。它是企业和创始人（创始人主导营销）的一体化工厂，解决了跨平台发布耗时和身份分散的问题。
                     </p>
                     
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-purple-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">دورة المصنع (The Factory Loop):</h5>
+                        <h5 class="text-purple-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">工厂循环 (The Factory Loop):</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>Idea &rarr; Brief:</strong> تحديد الهدف والجمهور والقيود (قانونية/علامة تجارية) بدقة.</li>
-                            <li><strong>Generate & Adapt:</strong> لا يكتب فقط، بل "يكيف". يحول نفس الفكرة إلى مقال، تغريدة، فيديو قصير، ومنشور LinkedIn بأسلوب مختلف لكل منصة.</li>
-                            <li><strong>Validate & Filter:</strong> فحص المحتوى ضد سياسات الشركة لمنع أي ادعاءات غير مدعومة أو مخاطر.</li>
-                            <li><strong>Publish & Schedule:</strong> نشر وجدولة تلقائية بالكامل على كافة القنوات.</li>
-                            <li><strong>Measure & Optimize:</strong> النشر ليس النهاية. النظام يقيس التفاعل (نقر، ظهور، تحويل) ويعيد تغذية Zakkur لتحسين الدورة القادمة.</li>
+                            <li><strong>Idea &rarr; Brief:</strong> 精确定义目标、受众和限制（法律/品牌）。</li>
+                            <li><strong>Generate & Adapt:</strong> 不仅仅是写作，而是“适配”。将同一个想法转化为文章、推文、短视频和 LinkedIn 帖子，每种平台风格各异。</li>
+                            <li><strong>Validate & Filter:</strong> 根据公司政策验证内容，以防止任何未经证实的主张或风险。</li>
+                            <li><strong>Publish & Schedule:</strong> 在所有渠道上完全自动化的发布和调度。</li>
+                            <li><strong>Measure & Optimize:</strong> 发布不是终点。系统测量互动（点击、展示、转化）并反馈给 Zakkur 以改进下一个循环。</li>
                         </ul>
                     </div>
 
                     <div class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
                         <i class="fas fa-sync text-purple-500 text-xl"></i>
-                        <span>تكامل تام: Zakkur يقرر الاستراتيجية، و Omudia ينفذ وينشر.</span>
+                        <span>完全集成：Zakkur 决定策略，Omudia 执行并发布。</span>
                     </div>
                 </div>
                 
                 <div class="lg:w-2/5 w-full sticky top-24">
                     <div class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-purple-900/20 flex flex-col justify-between overflow-hidden backdrop-blur-md">
                         <div class="absolute inset-0 bg-gradient-to-bl from-purple-600/10 to-transparent blur-2xl -z-10"></div>
-                        <img src="assets/img/in2.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Omudia+Factory'" alt="Omudia" class="w-full rounded-lg border border-purple-500/30 shadow-lg object-cover">
+                        <img src="../assets/img/in2.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Omudia+Factory'" alt="Omudia" class="w-full rounded-lg border border-purple-500/30 shadow-lg object-cover">
                     </div>
                 </div>
             </div>
 
             <!-- Senmud Detailed -->
             <div class="flex flex-col lg:flex-row items-start gap-12 mb-40 relative">
-                 <div class="lg:w-3/5 z-10 text-right">
+                 <div class="lg:w-3/5 z-10 text-left">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="p-4 bg-pink-500/20 rounded-2xl text-pink-400"><i class="fas fa-satellite-dish text-3xl"></i></div>
                         <div>
@@ -455,39 +456,39 @@
                         </div>
                     </div>
                     
-                    <h4 class="text-2xl text-pink-300 mb-6 font-light">طبقة الإشارة البشرية - Signal vs Noise</h4>
+                    <h4 class="text-2xl text-pink-300 mb-6 font-light">人类信号层 - 信号 vs 噪音</h4>
                     
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        Senmud تستهدف مشاكل الشبكات التقليدية: الضجيج، الإدمان، والتفاعل السطحي. هنا، الذكاء الاصطناعي ليس ميزة جانبية، بل هو البنية التحتية التي تساعد البشر على بناء المعنى.
+                        Senmud 针对传统网络的问题：噪音、成瘾和肤浅的互动。在这里，人工智能不是次要功能，而是帮助人类构建意义的基础设施。
                     </p>
                     
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-pink-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">ماذا بداخل Senmud؟</h5>
+                        <h5 class="text-pink-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">Senmud 内部有什么？</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>منصة شاملة:</strong> ليست صفحة واحدة، بل تحتوي على منشورات، قصص (Stories)، غرف صوتية (Audio Rooms)، وبث مباشر (Live Streams).</li>
-                            <li><strong>الـ AI كشريك (Co-Creator):</strong> يساعدك في صياغة الأفكار، تلخيص النقاشات الطويلة، وترجمة المحتوى، وحتى اقتراح ردود تفند الحجج.</li>
-                            <li><strong>أنظمة الجودة:</strong> تعتمد على السمعة (Reputation)، ولوحات الترتيب (Leaderboards)، والتحفيز (Gamification) لرفع جودة النقاش.</li>
-                            <li><strong>حواس المنظومة:</strong> Senmud تلتقط ما ينجح وما يفشل فعلياً مع الجمهور، وتغذي هذه "الإشارات" إلى Zakkur ليقرر الخطوة التالية.</li>
+                            <li><strong>综合平台：</strong> 不仅仅是一个页面，它包含帖子、故事 (Stories)、音频室和直播。</li>
+                            <li><strong>AI 作为合作伙伴 (Co-Creator):</strong> 帮助你构思想法、总结长篇辩论、翻译内容，甚至建议反驳论点的回复。</li>
+                            <li><strong>质量系统：</strong> 基于声誉、排行榜和游戏化来提升辩论质量。</li>
+                            <li><strong>系统感知：</strong> Senmud 捕捉观众真正感兴趣的内容和失败的内容，并将这些“信号”反馈给 Zakkur 以决定下一步。</li>
                         </ul>
                     </div>
 
                     <div class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
                         <i class="fas fa-users text-pink-500 text-xl"></i>
-                        <span>الإنسان يقرر المعنى، والـ AI يساعد في البناء والتوضيح.</span>
+                        <span>人类决定意义，AI 协助构建和澄清。</span>
                     </div>
                 </div>
                 
                 <div class="lg:w-2/5 w-full sticky top-24">
                     <div class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-pink-900/20 flex flex-col justify-center items-center overflow-hidden backdrop-blur-md">
                         <div class="absolute inset-0 bg-gradient-to-tr from-pink-600/10 to-transparent blur-2xl -z-10"></div>
-                        <img src="assets/img/in3.jpg" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Senmud+Feed'" alt="Senmud" class="w-full rounded-lg border border-pink-500/30 shadow-lg object-cover">
+                        <img src="../assets/img/in3.jpg" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Senmud+Feed'" alt="Senmud" class="w-full rounded-lg border border-pink-500/30 shadow-lg object-cover">
                     </div>
                 </div>
             </div>
 
             <!-- Sopen CV Detailed -->
             <div class="flex flex-col lg:flex-row-reverse items-start gap-12 relative">
-                 <div class="lg:w-3/5 z-10 text-right">
+                 <div class="lg:w-3/5 z-10 text-left">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="p-4 bg-brand-teal/20 rounded-2xl text-teal-400"><i class="fas fa-fingerprint text-3xl"></i></div>
                         <div>
@@ -496,19 +497,19 @@
                         </div>
                     </div>
                     
-                    <h4 class="text-2xl text-teal-300 mb-6 font-light">هوية موحدة + صلاحيات + سياق</h4>
+                    <h4 class="text-2xl text-teal-300 mb-6 font-light">统一身份 + 权限 + 上下文</h4>
                     
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        الهدف: لا يوجد "مستخدم جديد" لكل تطبيق. يوجد مستخدم واحد بسياق واحد ينتقل معك. Sopen CV هو "جواز السفر" الرقمي داخل المنظومة.
+                        目标：每个应用程序不再有“新用户”。只有一个随身携带上下文的用户。Sopen CV 是生态系统内的数字“护照”。
                     </p>
                     
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-teal-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">المميزات الأساسية:</h5>
+                        <h5 class="text-teal-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">主要功能：</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>تسجيل دخول موحد (SSO):</strong> حساب واحد آمن لكل المنظومة.</li>
-                            <li><strong>الملف التشغيلي (Operational Profile):</strong> ليس CV وظيفي عادي، بل سجل يعكس نشاطك، تقدمك، سمعتك في Senmud، وتاريخك في المنظومة.</li>
-                            <li><strong>جواز السياق (Context Passport):</strong> يغذي Zakkur بالمعلومات اللازمة (من أنت؟ ما صلاحياتك؟ ما هدفك؟) ليتمكن من اتخاذ القرارات نيابة عنك بشكل دقيق.</li>
-                            <li><strong>إدارة الشركات (Organizations):</strong> دعم كامل لحسابات الشركات، الفرق، والصلاحيات (Admin, Member, Viewer).</li>
+                            <li><strong>单点登录 (SSO):</strong> 整个生态系统的一个安全账户。</li>
+                            <li><strong>操作档案 (Operational Profile):</strong> 这不是普通的求职简历，而是一个反映你在 Senmud 中的活动、进度、声誉和系统历史的记录。</li>
+                            <li><strong>上下文护照:</strong> 为 Zakkur 提供必要信息（你是谁？你有什么权限？你的目标是什么？），以便它能代表你做出准确决策。</li>
+                            <li><strong>组织管理:</strong> 对公司账户、团队和权限（管理员、成员、查看者）的全面支持。</li>
                         </ul>
                     </div>
                 </div>
@@ -518,19 +519,19 @@
                         <div class="absolute inset-0 bg-teal-600/5 blur-2xl -z-10"></div>
                         <div class="text-center p-8 border border-teal-500/30 rounded-2xl bg-black/40 w-full">
                             <div class="w-20 h-20 bg-gray-700 rounded-full mx-auto mb-4 border-2 border-teal-500"></div>
-                            <h5 class="text-white text-xl font-bold mb-1">User Name</h5>
+                            <h5 class="text-white text-xl font-bold mb-1">用户名</h5>
                             <p class="text-gray-500 text-sm mb-6">@username • Admin</p>
                             
                             <div class="space-y-3 text-left">
                                 <div class="flex justify-between text-sm text-gray-400">
-                                    <span>Reputation</span>
+                                    <span>声誉</span>
                                     <span class="text-teal-400 font-bold">980</span>
                                 </div>
                                 <div class="h-1 bg-gray-700 rounded-full overflow-hidden">
                                     <div class="h-full bg-teal-500 w-[90%]"></div>
                                 </div>
                                 <div class="flex justify-between text-sm text-gray-400 pt-2">
-                                    <span>Permissions</span>
+                                    <span>权限</span>
                                     <span class="text-white">Level 5</span>
                                 </div>
                             </div>
@@ -546,8 +547,8 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
                 <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-4">Under The Hood</span>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">الترسانة التقنية</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">نستخدم أحدث التقنيات لبناء بنية تحتية صلبة، سريعة، وقابلة للتوسع اللانهائي.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">技术武库</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">我们使用最新技术构建坚固、快速且可无限扩展的基础设施。</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -555,7 +556,7 @@
                 <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-database text-blue-400 text-xl"></i>
-                        <h3 class="text-white font-bold">البيانات والتخزين</h3>
+                        <h3 class="text-white font-bold">数据与存储</h3>
                     </div>
                     <div class="flex flex-wrap">
                         <span class="tech-pill"><i class="fas fa-leaf text-green-500"></i> MongoDB</span>
@@ -568,7 +569,7 @@
                 <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-cloud text-blue-400 text-xl"></i>
-                        <h3 class="text-white font-bold">السحابة والبنية</h3>
+                        <h3 class="text-white font-bold">云与基础设施</h3>
                     </div>
                     <div class="flex flex-wrap">
                         <span class="tech-pill"><i class="fab fa-google text-white"></i> Google Cloud</span>
@@ -584,7 +585,7 @@
                 <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-code text-blue-400 text-xl"></i>
-                        <h3 class="text-white font-bold">النواة والبرمجة</h3>
+                        <h3 class="text-white font-bold">核心与编程</h3>
                     </div>
                     <div class="flex flex-wrap">
                         <span class="tech-pill"><i class="fab fa-node text-green-500"></i> Node.js</span>
@@ -598,7 +599,7 @@
                 <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-laptop-code text-blue-400 text-xl"></i>
-                        <h3 class="text-white font-bold">بيئة التطوير</h3>
+                        <h3 class="text-white font-bold">开发环境</h3>
                     </div>
                     <div class="flex flex-wrap">
                         <span class="tech-pill"><i class="fas fa-mobile-alt text-blue-300"></i> Flutter</span>
@@ -614,38 +615,38 @@
     <!-- FAQ Section -->
     <section class="py-20 bg-brand-gray/20 border-t border-white/5">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-10 text-white">أسئلة شائعة</h2>
+            <h2 class="text-3xl font-bold text-center mb-10 text-white">常见问题</h2>
             <div class="space-y-4">
                 <div class="faq-item border border-white/10 rounded-lg bg-black/40 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
                     <div class="p-4 flex justify-between items-center">
-                        <h4 class="text-lg font-bold text-gray-200">هل Zakkur بديل للموظفين؟</h4>
+                        <h4 class="text-lg font-bold text-gray-200">Zakkur 会取代员工吗？</h4>
                         <i class="fas fa-chevron-down text-gray-500 faq-icon transition-transform duration-300"></i>
                     </div>
                     <div class="faq-content bg-white/5">
                         <div class="p-4 text-gray-400 text-sm leading-relaxed">
-                            لا، Zakkur هو "محرك تمكين" (Enabler). هو لا يستبدل القيادة البشرية بل يزودها ببيانات دقيقة، تحليل سريع، وتنفيذ خالي من الأخطاء، مما يسمح للموظفين بالتركيز على الإبداع والاستراتيجية.
+                            不，Zakkur 是一个“使能者” (Enabler)。它不会取代人类领导力，而是为其提供精确的数据、快速的分析和无错误的执行，让员工专注于创造力和战略。
                         </div>
                     </div>
                 </div>
                 <div class="faq-item border border-white/10 rounded-lg bg-black/40 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
                     <div class="p-4 flex justify-between items-center">
-                        <h4 class="text-lg font-bold text-gray-200">ما هو Sopen CV؟</h4>
+                        <h4 class="text-lg font-bold text-gray-200">什么是 Sopen CV？</h4>
                         <i class="fas fa-chevron-down text-gray-500 faq-icon transition-transform duration-300"></i>
                     </div>
                     <div class="faq-content bg-white/5">
                         <div class="p-4 text-gray-400 text-sm leading-relaxed">
-                            Sopen CV ليس سيرة ذاتية تقليدية (PDF)، بل هو ملف "حي" يوثق أفعالك، قراراتك، وسمعتك داخل النظام، مما يمنحك مصداقية تعتمد على "ما فعلت" وليس فقط "ما كتبت".
+                            Sopen CV 不是传统的 PDF 简历，而是一份“活的”文件，记录了您在系统内的行动、决策和声誉，让您基于“您做了什么”而不仅仅是“您写了什么”来获得信誉。
                         </div>
                     </div>
                 </div>
                 <div class="faq-item border border-white/10 rounded-lg bg-black/40 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
                     <div class="p-4 flex justify-between items-center">
-                        <h4 class="text-lg font-bold text-gray-200">متى موعد الإطلاق؟</h4>
+                        <h4 class="text-lg font-bold text-gray-200">什么时候发布？</h4>
                         <i class="fas fa-chevron-down text-gray-500 faq-icon transition-transform duration-300"></i>
                     </div>
                     <div class="faq-content bg-white/5">
                         <div class="p-4 text-gray-400 text-sm leading-relaxed">
-                            نحن نتبع سياسة "النشر المستمر" (Continuous Deployment). سنقوم بإطلاق الوحدات (Modules) تباعاً فور اكتمالها واجتيازها اختبارات الأمان. سجل في القائمة البريدية لتكون أول من يعلم.
+                            我们遵循“持续部署” (Continuous Deployment) 策略。一旦模块 (Modules) 完成并通过安全测试，我们将陆续发布。注册邮件列表以第一时间获知。
                         </div>
                     </div>
                 </div>
@@ -664,7 +665,7 @@
                 <h3 class="text-3xl md:text-4xl font-bold text-white">PageSpeed Insights</h3>
             </div>
             <p class="text-gray-400 text-lg mb-16 max-w-2xl mx-auto">
-                نتائج أداء حقيقية تعكس جودة الكود وسرعة الاستجابة.
+                反映代码质量和响应速度的真实性能结果。
             </p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -674,7 +675,7 @@
                     <div class="text-5xl font-black text-white mb-2">100<span class="text-xl text-gray-500 font-normal">/100</span></div>
                     <div class="text-green-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-green-500"></span>
-                        Search Engine Optimization
+                        SEO 优化
                     </div>
                 </div>
                 <!-- Best Practices -->
@@ -683,7 +684,7 @@
                     <div class="text-5xl font-black text-white mb-2">96<span class="text-xl text-gray-500 font-normal">/100</span></div>
                     <div class="text-green-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-green-500"></span>
-                        Best Practices
+                        最佳实践
                     </div>
                 </div>
                 <!-- Accessibility -->
@@ -692,7 +693,7 @@
                     <div class="text-5xl font-black text-white mb-2">90<span class="text-xl text-gray-500 font-normal">/100</span></div>
                     <div class="text-green-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-green-500"></span>
-                        Accessibility
+                        无障碍访问
                     </div>
                 </div>
                 <!-- Performance -->
@@ -701,24 +702,24 @@
                     <div class="text-5xl font-black text-white mb-2">78<span class="text-xl text-gray-500 font-normal">/100</span></div>
                     <div class="text-orange-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-                        Performance & Speed
+                        性能与速度
                     </div>
                 </div>
             </div>
             <div class="mt-12 text-sm text-gray-500">
-                * تم القياس باستخدام أدوات Google PageSpeed Insights الرسمية.
+                * 使用 Google PageSpeed Insights 官方工具测量。
             </div>
         </div>
     </section>
 
-    <!-- Zakkur v1.5 Performance Details (NEW) -->
+    <!-- Zakkur v1.5 Performance Details -->
     <section class="py-20 bg-black border-t border-white/5 relative">
         <div class="absolute inset-0 bg-blue-900/5"></div>
         <div class="max-w-7xl mx-auto px-4 relative z-10">
             <div class="text-center mb-12">
                 <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-4">Platform Edition</span>
-                <h3 class="text-3xl font-bold text-white mb-4">Zakkur v1.5: أرقام الأداء</h3>
-                <p class="text-gray-400 max-w-2xl mx-auto">النظام مصمم ليكون High-Throughput في الاستقبال، و Low-Latency في العرض.</p>
+                <h3 class="text-3xl font-bold text-white mb-4">Zakkur v1.5: 性能指标</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">系统设计为高吞吐量接收和低延迟显示。</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -727,42 +728,42 @@
                 <div class="bg-brand-gray/50 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm">
                     <div class="p-6 border-b border-white/10 flex items-center gap-3 bg-white/5">
                         <i class="fas fa-rocket text-blue-500 text-xl"></i>
-                        <h4 class="text-white font-bold">ملخص الأداء العام (Performance Summary)</h4>
+                        <h4 class="text-white font-bold">总体摘要 (Performance Summary)</h4>
                     </div>
                     <div class="p-6">
-                        <table class="w-full text-sm text-right">
+                        <table class="w-full text-sm text-left">
                             <thead>
                                 <tr class="text-gray-500 border-b border-white/10">
-                                    <th class="pb-3 font-medium">المعيار (Metric)</th>
-                                    <th class="pb-3 font-medium">القيمة (Value)</th>
-                                    <th class="pb-3 font-medium hidden sm:table-cell">الملاحظات</th>
+                                    <th class="pb-3 font-medium">指标 (Metric)</th>
+                                    <th class="pb-3 font-medium">数值 (Value)</th>
+                                    <th class="pb-3 font-medium hidden sm:table-cell">备注</th>
                                 </tr>
                             </thead>
                             <tbody class="text-gray-300">
                                 <tr class="border-b border-white/5">
-                                    <td class="py-3">الاستجابة الحية (Real-time)</td>
+                                    <td class="py-3">实时响应</td>
                                     <td class="py-3 text-green-400 font-mono font-bold">&lt; 50ms</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">بفضل Socket.io</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">得益于 Socket.io</td>
                                 </tr>
                                 <tr class="border-b border-white/5">
-                                    <td class="py-3">زمن استجابة الكاش (Redis)</td>
+                                    <td class="py-3">缓存延迟 (Redis)</td>
                                     <td class="py-3 text-green-400 font-mono font-bold">&lt; 5ms</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">استرجاع فوري</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">即时检索</td>
                                 </tr>
                                 <tr class="border-b border-white/5">
-                                    <td class="py-3">تحليل الوكيل المنفرد</td>
+                                    <td class="py-3">单代理分析</td>
                                     <td class="py-3 text-blue-400 font-mono font-bold">1.5 - 3s</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">يعتمد على سرعة AI</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">取决于 AI 速度</td>
                                 </tr>
                                 <tr class="border-b border-white/5">
-                                    <td class="py-3">مجلس الإدارة (Full Board)</td>
+                                    <td class="py-3">全董事会 (Full Board)</td>
                                     <td class="py-3 text-purple-400 font-mono font-bold">8 - 12s</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">تنفيذ متوازي (Parallel)</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">并行执行</td>
                                 </tr>
                                 <tr>
-                                    <td class="py-3">أول استجابة مرئية (TTFT)</td>
+                                    <td class="py-3">首次渲染 (TTFT)</td>
                                     <td class="py-3 text-green-400 font-mono font-bold">&lt; 1s</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Streaming مفعّل</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">流式传输激活</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -775,22 +776,22 @@
                     <div class="bg-brand-gray/50 border border-white/10 rounded-2xl overflow-hidden p-6 hover:border-purple-500/30 transition duration-300">
                         <div class="flex items-center gap-3 mb-4">
                             <i class="fas fa-bolt text-purple-500 text-xl"></i>
-                            <h4 class="text-white font-bold">القدرة الاستيعابية (Scalability)</h4>
+                            <h4 class="text-white font-bold">可扩展性 (Scalability)</h4>
                         </div>
                         <ul class="space-y-4">
                             <li class="flex justify-between items-center text-sm">
-                                <span class="text-gray-400">اتصالات متزامنة (Concurrent Users)</span>
+                                <span class="text-gray-400">并发连接</span>
                                 <span class="text-white font-mono font-bold">10,000+ Socket</span>
                             </li>
                             <li class="w-full bg-gray-700 h-1.5 rounded-full overflow-hidden">
                                 <div class="bg-purple-500 h-full w-[90%]"></div>
                             </li>
                             <li class="flex justify-between items-center text-sm pt-2">
-                                <span class="text-gray-400">استقبال الأحداث (Webhooks)</span>
+                                <span class="text-gray-400">事件接收 (Webhooks)</span>
                                 <span class="text-white font-mono font-bold">~1,000 Req/s</span>
                             </li>
                             <li class="flex justify-between items-center text-sm border-t border-white/5 pt-3 mt-2">
-                                <span class="text-gray-400">كفاءة الاستعلام (Indexed Queries)</span>
+                                <span class="text-gray-400">查询效率 (Indexed)</span>
                                 <span class="text-green-400 font-mono">&lt; 20ms</span>
                             </li>
                         </ul>
@@ -800,12 +801,12 @@
                     <div class="bg-brand-gray/50 border border-white/10 rounded-2xl overflow-hidden p-6 hover:border-teal-500/30 transition duration-300">
                         <div class="flex items-center gap-3 mb-4">
                             <i class="fas fa-shield-alt text-teal-500 text-xl"></i>
-                            <h4 class="text-white font-bold">الموثوقية (Reliability)</h4>
+                            <h4 class="text-white font-bold">可靠性 (Reliability)</h4>
                         </div>
                         <div class="flex items-center justify-between mb-4">
                             <div>
                                 <div class="text-3xl font-bold text-white mb-1">&lt; 0.1%</div>
-                                <div class="text-xs text-gray-500">نسبة الخطأ المتوقعة</div>
+                                <div class="text-xs text-gray-500">预期错误率</div>
                             </div>
                             <div class="text-right">
                                 <div class="px-3 py-1 rounded bg-teal-500/10 text-teal-400 text-xs border border-teal-500/20">Auto-Recovery</div>
@@ -813,7 +814,7 @@
                         </div>
                         <p class="text-gray-400 text-sm border-t border-white/5 pt-3">
                             <i class="fas fa-check text-teal-500 mr-2"></i>
-                            إعادة تشغيل المجدول (Scheduler) تلقائياً فور بدء الخادم.
+                            服务器启动时调度程序 (Scheduler) 自动重启。
                         </p>
                     </div>
                 </div>
@@ -828,11 +829,11 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div class="col-span-1 md:col-span-2">
                     <a href="#" class="flex items-center gap-2 mb-4">
-                        <img src="assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40x40/333/fff?text=S'" alt="Logo" class="h-8 w-auto">
+                        <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40x40/333/fff?text=S'" alt="Logo" class="h-8 w-auto">
                         <span class="text-2xl font-bold text-white">SOPEN NET</span>
                     </a>
                     <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
-                        شركة أنظمة تشغيل للإنسان والشركات. نبني المستقبل من خلال دمج القرار، التنفيذ، والتواصل في جسد واحد.
+                        人类与企业的操作系统公司。我们通过将决策、执行和沟通整合到一个主体中来构建未来。
                     </p>
                     <div class="flex flex-wrap gap-4 mt-6">
                         <a href="https://x.com/SopenNet" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-500 hover:text-white transition"><i class="fab fa-twitter"></i></a>
@@ -846,7 +847,7 @@
                     
                     <!-- Registered Address -->
                     <div class="mt-8 pt-6 border-t border-white/5">
-                        <p class="text-xs text-gray-500 font-bold uppercase tracking-widest mb-3">المقر القانوني المسجل</p>
+                        <p class="text-xs text-gray-500 font-bold uppercase tracking-widest mb-3">注册法定地址</p>
                         <address class="text-gray-400 text-sm not-italic font-mono leading-relaxed opacity-80">
                             <span class="text-white font-bold">Sopen Net, Inc.</span><br>
                             1111B S Governors Ave STE 48214<br>
@@ -857,7 +858,7 @@
                 </div>
                 
                 <div>
-                    <h4 class="text-white font-bold mb-4">المنتجات</h4>
+                    <h4 class="text-white font-bold mb-4">产品</h4>
                     <ul class="space-y-2 text-sm text-gray-500">
                         <li><a href="#" class="hover:text-blue-400 transition">Zakkur</a></li>
                         <li><a href="#" class="hover:text-purple-400 transition">Omudia</a></li>
@@ -866,20 +867,20 @@
                 </div>
 
                 <div>
-                    <h4 class="text-white font-bold mb-4">الشركة</h4>
+                    <h4 class="text-white font-bold mb-4">公司</h4>
                     <ul class="space-y-2 text-sm text-gray-500">
-                        <li><a href="founders.html" class="hover:text-white transition">عن الفريق</a></li>
-                        <li><a href="investors.html" class="hover:text-white transition">للمستثمرين</a></li>
-                        <li><a href="privacy.html" class="hover:text-white transition">سياسة الخصوصية</a></li>
-                        <li><a href="terms.html" class="hover:text-white transition">الشروط والأحكام</a></li>
+                        <li><a href="founders.html" class="hover:text-white transition">团队</a></li>
+                        <li><a href="investors.html" class="hover:text-white transition">投资者</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition">隐私</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">条款</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-gray-600 text-sm text-center md:text-right">© 2025 Sopen Net, Inc. جميع الحقوق محفوظة.</p>
+                <p class="text-gray-600 text-sm text-center md:text-left">© 2025 Sopen Net, Inc. 保留所有权利。</p>
                 <div class="flex gap-4">
-                    <img src="assets/img/logo.png" onerror="this.style.display='none'" class="h-6 opacity-30 grayscale">
+                    <img src="../assets/img/logo.png" onerror="this.style.display='none'" class="h-6 opacity-30 grayscale">
                 </div>
             </div>
         </div>
@@ -889,7 +890,7 @@
     <script>
         // Typewriter Logic
         const textElement = document.getElementById('typewriter-text');
-        const phrases = ["تعمل كنظام واحد", "تتخذ القرارات", "تنفذ المهام", "تربط الجميع بذكاء"];
+        const phrases = ["作为一个单一系统运行", "做出决策", "执行任务", "智能连接所有人"];
         let phraseIndex = 0;
         let charIndex = 0;
         let isDeleting = false;

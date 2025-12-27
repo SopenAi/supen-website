@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/img/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队 | Sopen Net, Inc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#050505',
+                            gray: '#1a1a1a',
+                            accent: '#3b82f6',
+                            purple: '#8b5cf6',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans SC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Noto Sans SC', sans-serif; background-color: #050505; color: #e5e5e5; }
+        .social-link {
+            width: 2.2rem;
+            height: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #9ca3af;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        .social-link:hover {
+            color: white;
+            transform: translateY(-2px);
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid #333;
+            margin-bottom: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -0.4rem;
+            top: 0.5rem;
+            width: 0.8rem;
+            height: 0.8rem;
+            background-color: #3b82f6;
+            border-radius: 50%;
+        }
+        .tech-category {
+            margin-bottom: 1rem;
+        }
+        .tech-category-title {
+            font-size: 0.75rem;
+            color: #6b7280;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .tech-tag {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ccc;
+            white-space: nowrap;
+            display: inline-block;
+            margin: 0.1rem;
+        }
+        /* Custom colors for categories */
+        .tag-data { color: #86efac; border-color: rgba(134, 239, 172, 0.2); background: rgba(134, 239, 172, 0.05); }
+        .tag-cloud { color: #93c5fd; border-color: rgba(147, 197, 253, 0.2); background: rgba(147, 197, 253, 0.05); }
+        .tag-core { color: #fca5a5; border-color: rgba(252, 165, 165, 0.2); background: rgba(252, 165, 165, 0.05); }
+        .tag-dev { color: #fcd34d; border-color: rgba(252, 211, 77, 0.2); background: rgba(252, 211, 77, 0.05); }
+        
+        .research-badge {
+            font-size: 0.6rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.1);
+            color: #888;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <nav class="w-full py-6 px-4 border-b border-white/5 bg-black/50 backdrop-blur-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full border border-white/10">
+                <span class="font-bold text-white tracking-wider">SOPEN NET</span>
+            </a>
+            <a href="index.html" class="text-sm text-gray-400 hover:text-white transition flex items-center gap-2 group">
+                <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i> 返回主页
+            </a>
+        </div>
+    </nav>
+
+    <section class="py-20 relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-blue-900/10 rounded-full blur-[100px] -z-10"></div>
+        <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-purple-900/10 rounded-full blur-[100px] -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">领导团队</h1>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                伊拉克头脑正在构建 AI 未来的基础设施。
+            </p>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <!-- Founder Profile: Reda Hussein -->
+            <div class="bg-brand-gray/30 border border-white/10 rounded-3xl p-8 mb-16 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-purple-600"></div>
+                
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <!-- Left Column: Image, Socials, Stack -->
+                    <div class="w-full md:w-1/3 flex flex-col items-center text-center">
+                        <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-blue-500/50 mb-6 shadow-2xl relative group">
+                            <img src="../assets/img/f1.jpg" onerror="this.src='https://via.placeholder.com/200'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        </div>
+                        <h2 class="text-3xl font-bold text-white mb-2">Reda Hussein</h2>
+                        <p class="text-blue-400 font-bold text-sm tracking-widest uppercase mb-1">创始人兼 CEO | 全栈</p>
+                        <p class="text-gray-500 text-xs mb-6 dir-ltr flex items-center justify-center gap-1"><i class="fas fa-map-marker-alt text-red-500"></i> Babylon, Iraq</p>
+                        
+                        <!-- Socials -->
+                        <div class="flex justify-center flex-wrap gap-2 mb-8">
+                            <a href="https://x.com/ri_husse" class="social-link hover:bg-black"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.tiktok.com/@ri_huss" class="social-link hover:bg-black"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.youtube.com/@ri-hus" class="social-link hover:bg-red-600"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/ri_husse" class="social-link hover:bg-pink-600"><i class="fab fa-instagram"></i></a>
+                            <a href="https://t.me/Ri_Huss" class="social-link hover:bg-blue-400"><i class="fab fa-telegram-plane"></i></a>
+                        </div>
+
+                        <!-- Full Tech Stack (Categorized) -->
+                        <div class="w-full text-left space-y-4 border-t border-white/10 pt-6">
+                            
+                            <!-- Data & Storage -->
+                            <div class="tech-category">
+                                <h5 class="tech-category-title"><i class="fas fa-database text-green-400"></i> 数据与存储</h5>
+                                <div>
+                                    <span class="tech-tag tag-data">MongoDB</span>
+                                    <span class="tech-tag tag-data">Firebase</span>
+                                    <span class="tech-tag tag-data">SQL</span>
+                                    <span class="tech-tag tag-data">Redis</span>
+                                </div>
+                            </div>
+
+                            <!-- Cloud & Infra -->
+                            <div class="tech-category">
+                                <h5 class="tech-category-title"><i class="fas fa-cloud text-blue-400"></i> 云与基础设施</h5>
+                                <div>
+                                    <span class="tech-tag tag-cloud">Google Cloud</span>
+                                    <span class="tech-tag tag-cloud">Microservices</span>
+                                    <span class="tech-tag tag-cloud">Docker</span>
+                                    <span class="tech-tag tag-cloud">Cloudflare</span>
+                                    <span class="tech-tag tag-cloud">VPS</span>
+                                    <span class="tech-tag tag-cloud">MQ</span>
+                                    <span class="tech-tag tag-cloud">CDN</span>
+                                    <span class="tech-tag tag-cloud">DNS</span>
+                                    <span class="tech-tag tag-cloud">G-Workspace</span>
+                                </div>
+                            </div>
+
+                            <!-- Core & Programming -->
+                            <div class="tech-category">
+                                <h5 class="tech-category-title"><i class="fas fa-code text-red-400"></i> 核心与编程</h5>
+                                <div>
+                                    <span class="tech-tag tag-core">Python</span>
+                                    <span class="tech-tag tag-core">C++</span>
+                                    <span class="tech-tag tag-core">Network Engineering</span>
+                                    <span class="tech-tag tag-core">JS/TS</span>
+                                    <span class="tech-tag tag-core">Dart</span>
+                                    <span class="tech-tag tag-core">C# (.NET)</span>
+                                    <span class="tech-tag tag-core">REST APIs</span>
+                                </div>
+                            </div>
+
+                            <!-- Dev Environment -->
+                            <div class="tech-category">
+                                <h5 class="tech-category-title"><i class="fas fa-laptop-code text-yellow-400"></i> 开发环境</h5>
+                                <div>
+                                    <span class="tech-tag tag-dev">Node.js</span>
+                                    <span class="tech-tag tag-dev">Next.js</span>
+                                    <span class="tech-tag tag-dev">Flutter</span>
+                                    <span class="tech-tag tag-dev">VS Code</span>
+                                    <span class="tech-tag tag-dev">Android Studio</span>
+                                    <span class="tech-tag tag-dev">Visual Studio</span>
+                                </div>
+                            </div>
+
+                            <!-- Project Timeline (Full) -->
+                            <div class="mt-4 pt-4 border-t border-white/10">
+                                <h5 class="tech-category-title"><i class="fas fa-history text-gray-400"></i> 完整时间线</h5>
+                                <div class="space-y-1 text-[0.65rem] text-gray-400 font-mono pl-2 border-l border-white/10">
+                                    <div class="flex justify-between"><span>Dec 2025</span> <span class="text-white">SISE Engine</span></div>
+                                    <div class="flex justify-between"><span>Oct 2025</span> <span class="text-white">Zakkur AI</span></div>
+                                    <div class="flex justify-between"><span>Aug 2025</span> <span class="text-white">Omudia</span></div>
+                                    <div class="flex justify-between"><span>Jul 2025</span> <span class="text-white">CinemaBoxD</span></div>
+                                    <div class="flex justify-between"><span>Mar 2025</span> <span class="text-white">Senmud</span></div>
+                                    <div class="flex justify-between"><span>Jan 2025</span> <span class="text-white">UseMindWin</span></div>
+                                    <div class="flex justify-between"><span>Aug 2024</span> <span class="text-white">FamilyOS</span></div>
+                                    <div class="flex justify-between"><span>Jun 2024</span> <span class="text-white">PDF Reader</span></div>
+                                    <div class="flex justify-between"><span>Mar 2024</span> <span class="text-white">DyausOS</span></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Detailed Info -->
+                    <div class="w-full md:w-2/3 space-y-10 border-l border-white/5 pl-0 md:pl-8">
+                        
+                        <!-- About -->
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fas fa-user-astronaut text-blue-500"></i> 关于创始人
+                            </h3>
+                            <p class="text-gray-400 leading-relaxed text-sm mb-4 bg-black/20 p-4 rounded-xl border border-white/5">
+                                来自伊拉克巴比伦的技术创始人和自学成才的软件工程师。我相信代码是重塑现实的最强大工具。
+                                目前领导 <strong>Sopen Net, Inc.</strong> 构建下一代 AI 基础设施 (Zakkur, Omudia, Senmud)。
+                            </p>
+                            <p class="text-gray-400 leading-relaxed text-sm">
+                                我的旅程结合了深刻的好奇心和扎实的工程技术。我专注于弥合内核级优化 (C#) 与高级 AI 应用 (Python) 之间的差距。
+                            </p>
+                        </div>
+
+                        <!-- Experience -->
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fas fa-briefcase text-blue-500"></i> 工作经历
+                            </h3>
+                            <div class="timeline-item">
+                                <h4 class="text-white font-bold text-lg">创始人兼 CEO</h4>
+                                <p class="text-blue-400 text-sm mb-1">Sopen Net, Inc | Delaware, US (伊拉克远程)</p>
+                                <p class="text-gray-500 text-xs mb-3 font-mono">Jun 2025 - 至今</p>
+                                <ul class="list-disc list-inside text-gray-400 text-sm space-y-2 marker:text-blue-500">
+                                    <li>领导构建自主 AI 系统的战略愿景和技术工程。</li>
+                                    <li>直接监督核心产品 (Zakkur, Omudia, Senmud) 的开发。</li>
+                                    <li>使用 .NET 10 设计高性能系统。</li>
+                                    <li>开发 SISE 算法以进行智能资源优化。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Scientific Research & Theories -->
+                        <div class="bg-gradient-to-br from-purple-900/10 to-transparent p-6 rounded-2xl border border-purple-500/10 relative overflow-hidden mb-10">
+                             <div class="absolute top-0 right-0 w-1 h-full bg-purple-600"></div>
+                            <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                                <i class="fas fa-atom text-purple-500"></i> 理论与科学研究
+                            </h3>
+                            
+                            <div class="space-y-4">
+                                <!-- Paper 1 -->
+                                <div class="bg-black/30 p-4 rounded-xl border border-white/5 hover:border-purple-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <div>
+                                            <h4 class="text-white font-bold text-base group-hover:text-purple-400 transition">The Multi-Inquiry System (MIS)</h4>
+                                            <p class="text-[10px] text-gray-500 mt-0.5">Cognitive Science • Artificial Intelligence Theory</p>
+                                        </div>
+                                        <i class="fas fa-file-alt text-purple-500/50"></i>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed mt-2">
+                                        一篇提出通用人工智能 (AGI) 新模型的论文。它将思维重新定义为管理“探究张力” (Inquiry Tension) 的动态系统，而不是简单的问答机器，从而建立了具有内在好奇心和自我质疑能力的 AI。
+                                    </p>
+                                    <div class="mt-3 flex gap-2">
+                                        <span class="research-badge">Philosophy of Mind</span>
+                                        <span class="research-badge">Epistemic Curiosity</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Paper 2 -->
+                                <div class="bg-black/30 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <div>
+                                            <h4 class="text-white font-bold text-base group-hover:text-blue-400 transition">Dyaus AGI-7X Architecture</h4>
+                                            <p class="text-[10px] text-gray-500 mt-0.5">System Architecture • AI Alignment</p>
+                                        </div>
+                                        <i class="fas fa-network-wired text-blue-500/50"></i>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed mt-2">
+                                        包含 7 个功能层（包括用于动机的 LMEGO 和用于价值监督的 LMindSelf）的“人工意识”综合架构设计。系统集成了因果关系 (Causality) 和生成思维，以实现安全和可解释的决策。
+                                    </p>
+                                </div>
+
+                                <!-- Protocol -->
+                                <div class="bg-black/30 p-4 rounded-xl border border-white/5 hover:border-pink-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <div>
+                                            <h4 class="text-white font-bold text-base group-hover:text-pink-400 transition">UTFN Protocol</h4>
+                                            <p class="text-[10px] text-gray-500 mt-0.5">Distributed Systems • Neural Communication</p>
+                                        </div>
+                                        <i class="fas fa-share-alt text-pink-500/50"></i>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed mt-2">
+                                        (Unified Thought & Function Network) - 连接分布式智能组件的神经通信协议。其特点是传输“精神状态”和完整上下文，并具有“因果关系卫士” (Causality Guard) 层以防止不合逻辑的跳跃。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projects -->
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fas fa-laptop-code text-blue-500"></i> 重点项目
+                            </h3>
+                            <div class="grid grid-cols-1 gap-4">
+                                <!-- SISE -->
+                                <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-white font-bold group-hover:text-blue-400 transition">SISE Engine</h4>
+                                        <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded">Kernel Lvl</span>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed">使用 C# 动态管理 CPU/RAM 资源的智能优化引擎 (Context-Aware)。</p>
+                                </div>
+                                <!-- Zakkur -->
+                                <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-white font-bold group-hover:text-blue-400 transition">Zakkur AI</h4>
+                                        <span class="text-[10px] bg-yellow-500/20 text-yellow-300 px-2 py-0.5 rounded">Python AI</span>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed">决策与执行引擎。将分析转化为行动的系统大脑。</p>
+                                </div>
+                                <!-- Omudia -->
+                                <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-white font-bold group-hover:text-blue-400 transition">Omudia</h4>
+                                        <span class="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded">Automation</span>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed">自动化内容工厂。管理内容整个生命周期的发布和分发系统。</p>
+                                </div>
+                                <!-- Senmud -->
+                                <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-white font-bold group-hover:text-blue-400 transition">Senmud</h4>
+                                        <span class="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded">AI Social</span>
+                                    </div>
+                                    <p class="text-gray-400 text-xs leading-relaxed">基于 AI 捕捉真实“信号”并构建智能社区的社交平台。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Awards -->
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fas fa-medal text-yellow-500"></i> 奖项与认可
+                            </h3>
+                            <ul class="space-y-4 text-sm text-gray-400">
+                                <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-bug text-red-500 mt-1"></i>
+                                    <div>
+                                        <strong class="text-white block mb-1">Shabakaty TV - Critical API Security</strong>
+                                        <span class="text-xs">发现关键 IDOR 漏洞并开发 PoC 以演示 DoS 攻击可能性，为平台安全做出贡献。</span>
+                                    </div>
+                                </li>
+                                <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-shield-alt text-blue-500 mt-1"></i>
+                                    <div>
+                                        <strong class="text-white block mb-1">Albox - Security Bounty</strong>
+                                        <span class="text-xs">发现 CDN 漏洞，允许访问用户私人文件。</span>
+                                    </div>
+                                </li>
+                                <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-university text-green-500 mt-1"></i>
+                                    <div>
+                                        <strong class="text-white block mb-1">University of Babylon - Critical Disclosure</strong>
+                                        <span class="text-xs">通过负责任地报告基础设施漏洞，保护了 25,000 名学生的数据。</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Co-Founder: Montazer Amer -->
+            <div class="bg-brand-gray/30 border border-white/10 rounded-3xl p-8 mb-16 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-pink-600"></div>
+                
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <!-- Image & Quick Info -->
+                    <div class="w-full md:w-1/3 flex flex-col items-center text-center">
+                        <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-purple-500/50 mb-6 shadow-2xl relative">
+                            <img src="../assets/img/f2.png" onerror="this.src='https://via.placeholder.com/150'" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        </div>
+                        <h2 class="text-2xl font-bold text-white mb-2">Montazer Amer</h2>
+                        <p class="text-purple-400 font-bold text-sm tracking-widest uppercase mb-4">联合创始人兼 COO</p>
+                        <p class="text-gray-500 text-xs mb-6 dir-ltr"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Babylon, Iraq</p>
+                        
+                        <!-- Socials -->
+                        <div class="flex justify-center flex-wrap gap-2 mb-6">
+                            <a href="https://x.com/mnt_amer" class="social-link hover:bg-black"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.tiktok.com/@mnt_amer" class="social-link hover:bg-black"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com/mnt_amer" class="social-link hover:bg-pink-600"><i class="fab fa-instagram"></i></a>
+                            <a href="https://t.me/mnt_amer" class="social-link hover:bg-blue-400"><i class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Info -->
+                    <div class="w-full md:w-2/3 space-y-8">
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 border-b border-white/10 pb-2">关于联合创始人</h3>
+                            <p class="text-gray-400 leading-relaxed text-sm mb-4">
+                                将混乱转化为系统的得力助手。Montazer 管理日常运营和内容系统，以使工程团队能够以最快速度前进。
+                            </p>
+                            <p class="text-gray-400 leading-relaxed text-sm">
+                                数字社区和教育系统管理专家，在不增加技术复杂性的情况下提高运营效率 (Operational Efficiency) 方面具有敏锐的洞察力。
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-purple-300 font-bold mb-3 text-sm uppercase tracking-wide">主要成就</h4>
+                            <ul class="space-y-3 text-gray-300 text-sm list-none">
+                                <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-project-diagram text-purple-500 mt-1"></i> 
+                                    <span><strong>内容系统管理：</strong> 构建和管理数字内容供应链和集成学习系统。</span>
+                                </li>
+                                <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-robot text-purple-500 mt-1"></i> 
+                                    <span><strong>流程自动化：</strong> 创建工作流 (Workflows)，减少发布和协调中的手动工作。</span>
+                                </li>
+                                <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
+                                    <i class="fas fa-users text-purple-500 mt-1"></i> 
+                                    <span><strong>社区建设：</strong> 管理和发展活跃的数字社区及自主内容开发。</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-purple-500/10 to-transparent p-5 rounded-xl border border-purple-500/20 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-1 h-full bg-purple-500"></div>
+                            <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="fas fa-lightbulb text-purple-400"></i> 智能破解 (The Hack)</h4>
+                            <p class="text-sm text-gray-300 leading-relaxed">
+                                无需编写一行代码即可解决实体业务中的“排队等候”问题。通过流程再造和优先级系统，将等待时间从 30 分钟减少到 10 分钟，使销售额和客户满意度翻倍。
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 bg-black py-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            
+            <div class="flex items-center gap-2 mb-6">
+                <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full opacity-80">
+                <span class="text-xl font-bold text-white tracking-widest">SOPEN NET</span>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <a href="https://x.com/SopenNet" class="social-link hover:bg-blue-500 hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@sopen.ai" class="social-link hover:bg-black hover:text-white hover:border border-white/20"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@SopenNetinc" class="social-link hover:bg-red-600 hover:text-white"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/sopen.ai/" class="social-link hover:bg-pink-600 hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61585190857126" class="social-link hover:bg-blue-600 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-700 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-400 hover:text-white"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+
+            <div class="text-center border-t border-white/10 pt-8 w-full">
+                <p class="text-gray-500 text-sm mb-2">© 2025 Sopen Net, Inc. 保留所有权利。</p>
+                <p class="text-gray-600 text-xs">自豪地在伊拉克巴比伦制造 <i class="fas fa-heart text-red-900 ml-1"></i></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
