@@ -2,9 +2,9 @@
 <html lang="es" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="../assets/img/logo.jpg">
+    <link rel="icon" href="assets/img/logo.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo | Sopen Net, Inc</title>
+    <title>El Equipo | Sopen Net, Inc</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -34,9 +34,10 @@
             {
               "@type": "Person",
               "name": "Reda Hussein",
+              "alternateName": "Reda Hussein",
               "jobTitle": "Founder & CEO",
               "image": "https://sopen.ai/assets/img/f1.jpg",
-              "url": "https://sopen.ai/es/founders.html",
+              "url": "https://sopen.ai/founders.html",
               "worksFor": {
                 "@type": "Organization",
                 "name": "Sopen Net, Inc."
@@ -47,14 +48,15 @@
                 "https://www.instagram.com/ri_husse",
                 "https://t.me/Ri_Huss"
               ],
-              "description": "Fundador técnico e ingeniero de software. Especializado en sistemas .NET y desarrollo de IA."
+              "description": "Fundador Técnico e Ingeniero de Software. Especializado en sistemas .NET y desarrollo de IA."
             },
             {
               "@type": "Person",
               "name": "Montazer Amer",
+              "alternateName": "Montazer Amer",
               "jobTitle": "Co-Founder & COO",
               "image": "https://sopen.ai/assets/img/f2.png",
-              "url": "https://sopen.ai/es/founders.html",
+              "url": "https://sopen.ai/founders.html",
               "worksFor": {
                 "@type": "Organization",
                 "name": "Sopen Net, Inc."
@@ -65,7 +67,25 @@
                 "https://www.instagram.com/mnt_amer",
                 "https://t.me/mnt_amer"
               ],
-              "description": "Cofundador y director de operaciones. Experto en gestión de comunidades digitales y sistemas educativos."
+              "description": "Cofundador y COO. Experto en gestión de comunidades digitales y sistemas educativos."
+            },
+            {
+              "@type": "Person",
+              "name": "Abdullah Hassan",
+              "alternateName": "Abdullah Hassan",
+              "jobTitle": "CISO | CSO Trainee",
+              "image": "assets/img/f3.jpg",
+              "url": "https://sopen.ai/founders.html",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Sopen Net, Inc."
+              },
+              "sameAs": [
+                "https://x.com/abdall_hass",
+                "https://www.tiktok.com/@abdall_hass",
+                "https://www.instagram.com/abdall_hass"
+              ],
+              "description": "CISO | CSO en formación. Estudiante de Ciberseguridad en la Universidad de Córdoba."
             }
           ]
         }
@@ -97,17 +117,16 @@
             color: white;
             transform: translateY(-2px);
         }
-        /* Adjusted for LTR */
         .timeline-item {
             position: relative;
-            padding-left: 2rem; /* Changed from padding-right */
-            border-left: 2px solid #333; /* Changed from border-right */
+            padding-left: 2rem;
+            border-left: 2px solid #333;
             margin-bottom: 2rem;
         }
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -0.4rem; /* Changed from right */
+            left: -0.4rem;
             top: 0.5rem;
             width: 0.8rem;
             height: 0.8rem;
@@ -143,6 +162,7 @@
         .tag-core { color: #fca5a5; border-color: rgba(252, 165, 165, 0.2); background: rgba(252, 165, 165, 0.05); }
         .tag-dev { color: #fcd34d; border-color: rgba(252, 211, 77, 0.2); background: rgba(252, 211, 77, 0.05); }
         
+        /* Research Badge Style (New) */
         .research-badge {
             font-size: 0.6rem;
             padding: 2px 6px;
@@ -157,7 +177,7 @@
     <nav class="w-full py-6 px-4 border-b border-white/5 bg-black/50 backdrop-blur-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-2">
-                <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full border border-white/10">
+                <img src="assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full border border-white/10">
                 <span class="font-bold text-white tracking-wider">SOPEN NET</span>
             </a>
             <a href="index.html" class="text-sm text-gray-400 hover:text-white transition flex items-center gap-2 group">
@@ -172,7 +192,7 @@
         <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-purple-900/10 rounded-full blur-[100px] -z-10"></div>
 
         <div class="max-w-7xl mx-auto px-4 text-center mb-16">
-            <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">Equipo de Liderazgo</h1>
+            <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">Equipo Directivo</h1>
             <p class="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
                 Mentes iraquíes construyendo la infraestructura para el futuro de la IA.
             </p>
@@ -188,7 +208,7 @@
                     <!-- Left Column: Image, Socials, Stack -->
                     <div class="w-full md:w-1/3 flex flex-col items-center text-center">
                         <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-blue-500/50 mb-6 shadow-2xl relative group">
-                            <img src="../assets/img/f1.jpg" onerror="this.src='https://via.placeholder.com/200'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                            <img src="assets/img/f1.jpg" onerror="this.src='https://via.placeholder.com/200'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         </div>
                         <h2 class="text-3xl font-bold text-white mb-2">Reda Hussein</h2>
                         <p class="text-blue-400 font-bold text-sm tracking-widest uppercase mb-1">Founder & CEO | Full-Stack</p>
@@ -263,14 +283,14 @@
                             <!-- Project Timeline (Full) -->
                             <div class="mt-4 pt-4 border-t border-white/5">
                                 <h5 class="tech-category-title"><i class="fas fa-history text-gray-400"></i> Cronología Completa</h5>
-                                <div class="space-y-1 text-[0.65rem] text-gray-400 font-mono pl-2 border-l border-white/10"> <!-- Changed to border-l and pl-2 -->
-                                    <div class="flex justify-between"><span>Dec 2025</span> <span class="text-white">SISE Engine</span></div>
+                                <div class="space-y-1 text-[0.65rem] text-gray-400 font-mono pl-2 border-l border-white/10">
+                                    <div class="flex justify-between"><span>Dic 2025</span> <span class="text-white">SISE Engine</span></div>
                                     <div class="flex justify-between"><span>Oct 2025</span> <span class="text-white">Zakkur AI</span></div>
-                                    <div class="flex justify-between"><span>Aug 2025</span> <span class="text-white">Omudia</span></div>
+                                    <div class="flex justify-between"><span>Ago 2025</span> <span class="text-white">Omudia</span></div>
                                     <div class="flex justify-between"><span>Jul 2025</span> <span class="text-white">CinemaBoxD</span></div>
                                     <div class="flex justify-between"><span>Mar 2025</span> <span class="text-white">Senmud</span></div>
-                                    <div class="flex justify-between"><span>Jan 2025</span> <span class="text-white">UseMindWin</span></div>
-                                    <div class="flex justify-between"><span>Aug 2024</span> <span class="text-white">FamilyOS</span></div>
+                                    <div class="flex justify-between"><span>Ene 2025</span> <span class="text-white">UseMindWin</span></div>
+                                    <div class="flex justify-between"><span>Ago 2024</span> <span class="text-white">FamilyOS</span></div>
                                     <div class="flex justify-between"><span>Jun 2024</span> <span class="text-white">PDF Reader</span></div>
                                     <div class="flex justify-between"><span>Mar 2024</span> <span class="text-white">DyausOS</span></div>
                                 </div>
@@ -280,7 +300,7 @@
                     </div>
 
                     <!-- Right Column: Detailed Info -->
-                    <div class="w-full md:w-2/3 space-y-10 border-l border-white/5 pl-0 md:pl-8"> <!-- Changed from border-r to border-l, pr to pl -->
+                    <div class="w-full md:w-2/3 space-y-10 border-l border-white/5 pl-0 md:pl-8">
                         
                         <!-- About -->
                         <div>
@@ -292,24 +312,24 @@
                                 Actualmente lidero <strong>Sopen Net, Inc.</strong> para construir la próxima generación de infraestructura de IA (Zakkur, Omudia, Senmud).
                             </p>
                             <p class="text-gray-400 leading-relaxed text-sm">
-                                Mi viaje combina una profunda curiosidad con una ingeniería sólida. Me especializo en cerrar la brecha entre optimizaciones a nivel de kernel (C#) y aplicaciones avanzadas de IA (Python).
+                                Mi trayectoria combina una profunda curiosidad con una ingeniería sólida. Me especializo en cerrar la brecha entre las optimizaciones a nivel de núcleo (Kernel Level) en C# y las aplicaciones avanzadas de IA en Python.
                             </p>
                         </div>
 
                         <!-- Experience -->
                         <div>
                             <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                                <i class="fas fa-briefcase text-blue-500"></i> Experiencia Profesional
+                                <i class="fas fa-briefcase text-blue-500"></i> Experiencia Laboral
                             </h3>
                             <div class="timeline-item">
-                                <h4 class="text-white font-bold text-lg">Fundador y CEO</h4>
-                                <p class="text-blue-400 text-sm mb-1">Sopen Net, Inc | Delaware, US (Remoto desde Irak)</p>
+                                <h4 class="text-white font-bold text-lg">Founder & CEO</h4>
+                                <p class="text-blue-400 text-sm mb-1">Sopen Net, Inc | Delaware, EE. UU. (Remoto desde Irak)</p>
                                 <p class="text-gray-500 text-xs mb-3 font-mono">Jun 2025 - Presente</p>
                                 <ul class="list-disc list-inside text-gray-400 text-sm space-y-2 marker:text-blue-500">
                                     <li>Liderar la visión estratégica y la ingeniería técnica para construir sistemas de IA autónomos.</li>
                                     <li>Supervisión directa del desarrollo de productos principales (Zakkur, Omudia, Senmud).</li>
-                                    <li>Ingeniería de sistemas de alto rendimiento usando .NET 10.</li>
-                                    <li>Desarrollo de algoritmos SISE para optimización inteligente de recursos.</li>
+                                    <li>Ingeniería de sistemas de alto rendimiento utilizando .NET 10.</li>
+                                    <li>Desarrollo de algoritmos SISE para la optimización inteligente de recursos del sistema.</li>
                                 </ul>
                             </div>
                         </div>
@@ -318,7 +338,7 @@
                         <div class="bg-gradient-to-br from-purple-900/10 to-transparent p-6 rounded-2xl border border-purple-500/10 relative overflow-hidden mb-10">
                              <div class="absolute top-0 right-0 w-1 h-full bg-purple-600"></div>
                             <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                                <i class="fas fa-atom text-purple-500"></i> Teorías e Investigación Científica
+                                <i class="fas fa-atom text-purple-500"></i> Teorías Científicas e Investigación
                             </h3>
                             
                             <div class="space-y-4">
@@ -327,12 +347,12 @@
                                     <div class="flex justify-between items-start mb-2">
                                         <div>
                                             <h4 class="text-white font-bold text-base group-hover:text-purple-400 transition">The Multi-Inquiry System (MIS)</h4>
-                                            <p class="text-[10px] text-gray-500 mt-0.5">Cognitive Science • Artificial Intelligence Theory</p>
+                                            <p class="text-[10px] text-gray-500 mt-0.5">Ciencia Cognitiva • Teoría de IA</p>
                                         </div>
                                         <i class="fas fa-file-alt text-purple-500/50"></i>
                                     </div>
                                     <p class="text-gray-400 text-xs leading-relaxed mt-2">
-                                        Un documento de investigación que presenta un nuevo modelo para la Inteligencia General Artificial (AGI). Redefine la mente no como una máquina de respuestas, sino como un sistema dinámico para gestionar la "tensión inquisitiva", estableciendo una IA con curiosidad intrínseca y capacidad de auto-cuestionamiento.
+                                        Un artículo de investigación que propone un nuevo modelo para la Inteligencia Artificial General (AGI). Redefine la mente no como una máquina generadora de respuestas, sino como un sistema dinámico para gestionar la "Tensión de Indagación" (Inquiry Tension), estableciendo una IA con curiosidad intrínseca y capacidad de cuestionar sus propios modelos.
                                     </p>
                                     <div class="mt-3 flex gap-2">
                                         <span class="research-badge">Philosophy of Mind</span>
@@ -345,12 +365,12 @@
                                     <div class="flex justify-between items-start mb-2">
                                         <div>
                                             <h4 class="text-white font-bold text-base group-hover:text-blue-400 transition">Dyaus AGI-7X Architecture</h4>
-                                            <p class="text-[10px] text-gray-500 mt-0.5">System Architecture • AI Alignment</p>
+                                            <p class="text-[10px] text-gray-500 mt-0.5">Arquitectura de Sistemas • Alineación de IA</p>
                                         </div>
                                         <i class="fas fa-network-wired text-blue-500/50"></i>
                                     </div>
                                     <p class="text-gray-400 text-xs leading-relaxed mt-2">
-                                        Diseño de arquitectura integral para "consciencia artificial" compuesta por 7 capas funcionales (incluyendo LMEGO para motivación y LMindSelf para supervisión de valores). El sistema integra causalidad y pensamiento generativo para decisiones seguras y explicables.
+                                        Diseño arquitectónico integral para una "Conciencia Artificial" que consta de 7 capas funcionales (incluyendo LMEGO para impulsos y LMindSelf para supervisión de valores). El sistema integra la causalidad con el razonamiento generativo para garantizar decisiones seguras e interpretables.
                                     </p>
                                 </div>
 
@@ -359,12 +379,12 @@
                                     <div class="flex justify-between items-start mb-2">
                                         <div>
                                             <h4 class="text-white font-bold text-base group-hover:text-pink-400 transition">UTFN Protocol</h4>
-                                            <p class="text-[10px] text-gray-500 mt-0.5">Distributed Systems • Neural Communication</p>
+                                            <p class="text-[10px] text-gray-500 mt-0.5">Sistemas Distribuidos • Comunicación Neuronal</p>
                                         </div>
                                         <i class="fas fa-share-alt text-pink-500/50"></i>
                                     </div>
                                     <p class="text-gray-400 text-xs leading-relaxed mt-2">
-                                        (Unified Thought & Function Network) - Protocolo de comunicación neuronal que conecta componentes de inteligencia distribuidos. Se caracteriza por transferir "estado mental" y contexto completo, con una capa de "Guardia de Causalidad" para prevenir saltos ilógicos.
+                                        (Unified Thought & Function Network) - Un protocolo de comunicación neuronal que conecta componentes de inteligencia distribuidos. Cuenta con transferencia de "Estado Mental" y contexto completo, con una capa de "Guardia de Causalidad" para evitar saltos ilógicos en el razonamiento.
                                     </p>
                                 </div>
                             </div>
@@ -382,7 +402,7 @@
                                         <h4 class="text-white font-bold group-hover:text-blue-400 transition">SISE Engine</h4>
                                         <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded">Kernel Lvl</span>
                                     </div>
-                                    <p class="text-gray-400 text-xs leading-relaxed">Motor de optimización inteligente (Context-Aware) que gestiona recursos de CPU/RAM dinámicamente usando C#.</p>
+                                    <p class="text-gray-400 text-xs leading-relaxed">Motor de optimización de sistemas inteligente y consciente del contexto que gestiona dinámicamente los recursos de CPU/RAM utilizando C#.</p>
                                 </div>
                                 <!-- Zakkur -->
                                 <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
@@ -390,7 +410,7 @@
                                         <h4 class="text-white font-bold group-hover:text-blue-400 transition">Zakkur AI</h4>
                                         <span class="text-[10px] bg-yellow-500/20 text-yellow-300 px-2 py-0.5 rounded">Python AI</span>
                                     </div>
-                                    <p class="text-gray-400 text-xs leading-relaxed">Motor de Decisión y Ejecución. El cerebro del sistema que convierte análisis en acciones.</p>
+                                    <p class="text-gray-400 text-xs leading-relaxed">Motor de decisión y ejecución. El cerebro del sistema que convierte el análisis en acción.</p>
                                 </div>
                                 <!-- Omudia -->
                                 <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
@@ -398,7 +418,7 @@
                                         <h4 class="text-white font-bold group-hover:text-blue-400 transition">Omudia</h4>
                                         <span class="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded">Automation</span>
                                     </div>
-                                    <p class="text-gray-400 text-xs leading-relaxed">Fábrica de contenido automatizada. Sistema de publicación y distribución que gestiona todo el ciclo de vida del contenido.</p>
+                                    <p class="text-gray-400 text-xs leading-relaxed">Fábrica de contenido automatizada. Un sistema de publicación y distribución que gestiona todo el ciclo de vida del contenido.</p>
                                 </div>
                                 <!-- Senmud -->
                                 <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
@@ -406,7 +426,7 @@
                                         <h4 class="text-white font-bold group-hover:text-blue-400 transition">Senmud</h4>
                                         <span class="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded">AI Social</span>
                                     </div>
-                                    <p class="text-gray-400 text-xs leading-relaxed">Plataforma social basada en IA para capturar "señales" reales y construir comunidades inteligentes.</p>
+                                    <p class="text-gray-400 text-xs leading-relaxed">Plataforma de redes sociales que utiliza IA para capturar "señales" reales y construir comunidades inteligentes.</p>
                                 </div>
                             </div>
                         </div>
@@ -421,21 +441,21 @@
                                     <i class="fas fa-bug text-red-500 mt-1"></i>
                                     <div>
                                         <strong class="text-white block mb-1">Shabakaty TV - Critical API Security</strong>
-                                        <span class="text-xs">Descubrimiento de vulnerabilidad crítica IDOR y desarrollo de PoC para ataque DoS, contribuyendo a la seguridad de la plataforma.</span>
+                                        <span class="text-xs">Descubrimiento de vulnerabilidad crítica IDOR y desarrollo de herramienta PoC para demostrar posible ataque DoS, contribuyendo a la seguridad de la plataforma.</span>
                                     </div>
                                 </li>
                                 <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
                                     <i class="fas fa-shield-alt text-blue-500 mt-1"></i>
                                     <div>
                                         <strong class="text-white block mb-1">Albox - Security Bounty</strong>
-                                        <span class="text-xs">Descubrimiento de vulnerabilidad en CDN permitiendo acceso a archivos privados de usuarios.</span>
+                                        <span class="text-xs">Descubrimiento de vulnerabilidad en CDN que permitía el acceso a archivos privados de usuarios.</span>
                                     </div>
                                 </li>
                                 <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
                                     <i class="fas fa-university text-green-500 mt-1"></i>
                                     <div>
-                                        <strong class="text-white block mb-1">University of Babylon - Critical Disclosure</strong>
-                                        <span class="text-xs">Protección de datos de 25,000 estudiantes mediante reporte responsable de vulnerabilidad de infraestructura.</span>
+                                        <strong class="text-white block mb-1">Universidad de Babilonia - Divulgación Crítica</strong>
+                                        <span class="text-xs">Protección de datos de 25,000 estudiantes mediante el informe responsable de una vulnerabilidad de infraestructura.</span>
                                     </div>
                                 </li>
                             </ul>
@@ -453,10 +473,10 @@
                     <!-- Image & Quick Info -->
                     <div class="w-full md:w-1/3 flex flex-col items-center text-center">
                         <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-purple-500/50 mb-6 shadow-2xl relative">
-                            <img src="../assets/img/f2.png" onerror="this.src='https://via.placeholder.com/150'" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                            <img src="assets/img/f2.png" onerror="this.src='https://via.placeholder.com/150'" class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <h2 class="text-2xl font-bold text-white mb-2">Montazer Amer</h2>
-                        <p class="text-purple-400 font-bold text-sm tracking-widest uppercase mb-4">Cofundador & COO</p>
+                        <p class="text-purple-400 font-bold text-sm tracking-widest uppercase mb-4">Cofundador y COO</p>
                         <p class="text-gray-500 text-xs mb-6 dir-ltr"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Babilonia, Irak</p>
                         
                         <!-- Socials -->
@@ -474,10 +494,10 @@
                         <div>
                             <h3 class="text-xl font-bold text-white mb-4 border-b border-white/10 pb-2">Sobre el Cofundador</h3>
                             <p class="text-gray-400 leading-relaxed text-sm mb-4">
-                                La mano derecha que convierte el caos en sistema. Montazer gestiona las operaciones diarias y los sistemas de contenido para permitir que el equipo de ingeniería se mueva a máxima velocidad.
+                                La mano derecha que convierte el caos en orden. Montazer gestiona las operaciones diarias y los sistemas de contenido para permitir que el equipo de ingeniería avance a la máxima velocidad.
                             </p>
                             <p class="text-gray-400 leading-relaxed text-sm">
-                                Experto en gestión de comunidades digitales y sistemas educativos, posee una visión aguda para mejorar la eficiencia operativa sin complejidad técnica.
+                                Experto en gestión de comunidades digitales y sistemas educativos, con una visión aguda para mejorar la Eficiencia Operativa sin complejidad técnica.
                             </p>
                         </div>
 
@@ -494,7 +514,7 @@
                                 </li>
                                 <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
                                     <i class="fas fa-users text-purple-500 mt-1"></i> 
-                                    <span><strong>Construcción de Comunidades:</strong> Gestión y crecimiento de comunidades digitales activas y desarrollo de contenido autónomo.</span>
+                                    <span><strong>Construcción de Comunidades:</strong> Gestión y crecimiento de comunidades digitales activas y desarrollo de contenido propio.</span>
                                 </li>
                             </ul>
                         </div>
@@ -503,8 +523,61 @@
                             <div class="absolute top-0 right-0 w-1 h-full bg-purple-500"></div>
                             <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="fas fa-lightbulb text-purple-400"></i> El Hack Inteligente</h4>
                             <p class="text-sm text-gray-300 leading-relaxed">
-                                Resolvió un problema de "colas de espera" en un negocio real sin escribir una sola línea de código. Mediante la reingeniería del flujo de trabajo y el sistema de prioridades, redujo el tiempo de espera de 30 a 10 minutos, duplicando las ventas y la satisfacción del cliente.
+                                Resolvió un problema de "colas de espera" en un negocio real sin escribir una sola línea de código. Mediante la reingeniería del flujo de trabajo y el sistema de prioridades, redujo el tiempo de espera de 30 minutos a 10 minutos, duplicando las ventas y la satisfacción del cliente.
                             </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Member: Abdullah Hassan -->
+            <div class="bg-brand-gray/30 border border-white/10 rounded-3xl p-8 mb-16 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-600 to-emerald-600"></div>
+                
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <!-- Image & Quick Info -->
+                    <div class="w-full md:w-1/3 flex flex-col items-center text-center">
+                        <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-green-500/50 mb-6 shadow-2xl relative">
+                            <img src="assets/img/f3.jpg" onerror="this.src='https://via.placeholder.com/150'" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        </div>
+                        <h2 class="text-2xl font-bold text-white mb-2">Abdullah Hassan</h2>
+                        <p class="text-green-400 font-bold text-sm tracking-widest uppercase mb-4">CISO | CSO en Formación</p>
+                        <p class="text-gray-500 text-xs mb-6 dir-ltr"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Babilonia, Irak</p>
+                        
+                        <!-- Socials -->
+                        <div class="flex justify-center flex-wrap gap-2 mb-6">
+                            <a href="https://x.com/abdall_hass" class="social-link hover:bg-black"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.tiktok.com/@abdall_hass" class="social-link hover:bg-black"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com/abdall_hass" class="social-link hover:bg-pink-600"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Info -->
+                    <div class="w-full md:w-2/3 space-y-8">
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 border-b border-white/10 pb-2">Sobre el Oficial de Ciberseguridad (Aprendiz)</h3>
+                            <p class="text-gray-400 leading-relaxed text-sm mb-4">
+                                Este rol combina los deberes de <strong>CISO</strong> (Director de Seguridad de la Información) y <strong>CSO</strong> (Director de Seguridad). Abdullah se centra en diseñar estrategias para proteger datos confidenciales, asegurar la infraestructura contra ataques cibernéticos y gestionar riesgos digitales para garantizar la continuidad del negocio de forma segura.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-green-300 font-bold mb-3 text-sm uppercase tracking-wide">Educación Académica</h4>
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-green-500/30 transition">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h5 class="text-white font-bold text-base">Universidad de Córdoba – Najaf</h5>
+                                        <p class="text-gray-400 text-xs mt-1">Licenciatura en Ciberseguridad</p>
+                                    </div>
+                                    <i class="fas fa-graduation-cap text-green-500/50 text-xl"></i>
+                                </div>
+                                <div class="mt-3 flex items-center gap-2 text-xs text-gray-500 font-mono border-t border-white/5 pt-2">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>Nov 2025 - Nov 2029</span>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -519,18 +592,19 @@
         <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
             
             <div class="flex items-center gap-2 mb-6">
-                <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full opacity-80">
+                <img src="assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full opacity-80">
                 <span class="text-xl font-bold text-white tracking-widest">SOPEN NET</span>
             </div>
 
+            <!-- Social Media Links (Company) -->
             <div class="flex flex-wrap justify-center gap-4 mb-8">
-                <a href="https://x.com/SopenNet" class="social-link hover:bg-blue-500 hover:text-white"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.tiktok.com/@sopen.ai" class="social-link hover:bg-black hover:text-white hover:border border-white/20"><i class="fab fa-tiktok"></i></a>
-                <a href="https://www.youtube.com/@SopenNetinc" class="social-link hover:bg-red-600 hover:text-white"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/sopen.ai/" class="social-link hover:bg-pink-600 hover:text-white"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61585190857126" class="social-link hover:bg-blue-600 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-700 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-400 hover:text-white"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://x.com/SopenNet" class="social-link hover:bg-blue-500 hover:text-white" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@sopen.ai" class="social-link hover:bg-black hover:text-white hover:border border-white/20" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@SopenNetinc" class="social-link hover:bg-red-600 hover:text-white" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/sopen.ai/" class="social-link hover:bg-pink-600 hover:text-white" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61585190857126" class="social-link hover:bg-blue-600 hover:text-white" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-700 hover:text-white" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-400 hover:text-white" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
             </div>
 
             <div class="text-center border-t border-white/10 pt-8 w-full">

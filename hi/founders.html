@@ -2,11 +2,12 @@
 <html lang="hi" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="../assets/img/logo.jpg">
+    <link rel="icon" href="assets/img/logo.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>टीम | Sopen Net, Inc</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Added Noto Sans Devanagari for Hindi support -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
@@ -21,7 +22,8 @@
                         }
                     },
                     fontFamily: {
-                        sans: ['Hind', 'sans-serif'],
+                        // Updated to prioritize Hindi font
+                        sans: ['Noto Sans Devanagari', 'Cairo', 'sans-serif'],
                     }
                 }
             }
@@ -34,9 +36,10 @@
             {
               "@type": "Person",
               "name": "Reda Hussein",
+              "alternateName": "रदा हुसैन",
               "jobTitle": "Founder & CEO",
               "image": "https://sopen.ai/assets/img/f1.jpg",
-              "url": "https://sopen.ai/hi/founders.html",
+              "url": "https://sopen.ai/founders.html",
               "worksFor": {
                 "@type": "Organization",
                 "name": "Sopen Net, Inc."
@@ -47,14 +50,15 @@
                 "https://www.instagram.com/ri_husse",
                 "https://t.me/Ri_Huss"
               ],
-              "description": "तकनीकी संस्थापक और सॉफ्टवेयर इंजीनियर। .NET सिस्टम और AI विकास में विशेषज्ञता।"
+              "description": "तकनीकी संस्थापक और सॉफ्टवेयर इंजीनियर। .NET सिस्टम और AI विकास में विशेषज्ञ।"
             },
             {
               "@type": "Person",
               "name": "Montazer Amer",
+              "alternateName": "मंतज़र आमेर",
               "jobTitle": "Co-Founder & COO",
               "image": "https://sopen.ai/assets/img/f2.png",
-              "url": "https://sopen.ai/hi/founders.html",
+              "url": "https://sopen.ai/founders.html",
               "worksFor": {
                 "@type": "Organization",
                 "name": "Sopen Net, Inc."
@@ -65,7 +69,25 @@
                 "https://www.instagram.com/mnt_amer",
                 "https://t.me/mnt_amer"
               ],
-              "description": "सह-संस्थापक और COO। डिजिटल समुदाय प्रबंधन और शैक्षिक प्रणालियों में विशेषज्ञ।"
+              "description": "सह-संस्थापक और सीओओ। डिजिटल समुदाय प्रबंधन और शैक्षिक प्रणालियों में विशेषज्ञ।"
+            },
+            {
+              "@type": "Person",
+              "name": "Abdullah Hassan",
+              "alternateName": "अब्दुल्लाह हसन",
+              "jobTitle": "CISO | CSO Trainee",
+              "image": "assets/img/f3.jpg",
+              "url": "https://sopen.ai/founders.html",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Sopen Net, Inc."
+              },
+              "sameAs": [
+                "https://x.com/abdall_hass",
+                "https://www.tiktok.com/@abdall_hass",
+                "https://www.instagram.com/abdall_hass"
+              ],
+              "description": "CISO | CSO प्रशिक्षु। कॉर्डोबा विश्वविद्यालय में साइबर सुरक्षा का अध्ययन कर रहे हैं।"
             }
           ]
         }
@@ -80,7 +102,7 @@
   gtag('config', 'G-MK33KY03WQ');
 </script>
     <style>
-        body { font-family: 'Hind', sans-serif; background-color: #050505; color: #e5e5e5; }
+        body { font-family: 'Noto Sans Devanagari', 'Cairo', sans-serif; background-color: #050505; color: #e5e5e5; }
         .social-link {
             width: 2.2rem;
             height: 2.2rem;
@@ -142,6 +164,7 @@
         .tag-core { color: #fca5a5; border-color: rgba(252, 165, 165, 0.2); background: rgba(252, 165, 165, 0.05); }
         .tag-dev { color: #fcd34d; border-color: rgba(252, 211, 77, 0.2); background: rgba(252, 211, 77, 0.05); }
         
+        /* Research Badge Style (New) */
         .research-badge {
             font-size: 0.6rem;
             padding: 2px 6px;
@@ -156,11 +179,11 @@
     <nav class="w-full py-6 px-4 border-b border-white/5 bg-black/50 backdrop-blur-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-2">
-                <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full border border-white/10">
+                <img src="assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full border border-white/10">
                 <span class="font-bold text-white tracking-wider">SOPEN NET</span>
             </a>
             <a href="index.html" class="text-sm text-gray-400 hover:text-white transition flex items-center gap-2 group">
-                <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i> होम पर वापस
+                <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i> होम पर वापस जाएं
             </a>
         </div>
     </nav>
@@ -173,7 +196,7 @@
         <div class="max-w-7xl mx-auto px-4 text-center mb-16">
             <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">नेतृत्व टीम</h1>
             <p class="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                इराकी दिमाग AI के भविष्य के लिए बुनियादी ढांचे का निर्माण कर रहे हैं।
+                एआई के भविष्य के लिए बुनियादी ढांचा तैयार करने वाले इराकी दिमाग।
             </p>
         </div>
 
@@ -187,11 +210,11 @@
                     <!-- Left Column: Image, Socials, Stack -->
                     <div class="w-full md:w-1/3 flex flex-col items-center text-center">
                         <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-blue-500/50 mb-6 shadow-2xl relative group">
-                            <img src="../assets/img/f1.jpg" onerror="this.src='https://via.placeholder.com/200'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                            <img src="assets/img/f1.jpg" onerror="this.src='https://via.placeholder.com/200'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         </div>
-                        <h2 class="text-3xl font-bold text-white mb-2">Reda Hussein</h2>
+                        <h2 class="text-3xl font-bold text-white mb-2">रदा हुसैन</h2>
                         <p class="text-blue-400 font-bold text-sm tracking-widest uppercase mb-1">Founder & CEO | Full-Stack</p>
-                        <p class="text-gray-500 text-xs mb-6 dir-ltr flex items-center justify-center gap-1"><i class="fas fa-map-marker-alt text-red-500"></i> Babylon, Iraq</p>
+                        <p class="text-gray-500 text-xs mb-6 dir-ltr flex items-center justify-center gap-1"><i class="fas fa-map-marker-alt text-red-500"></i> बेबीलोन, इराक</p>
                         
                         <!-- Socials -->
                         <div class="flex justify-center flex-wrap gap-2 mb-8">
@@ -248,7 +271,7 @@
 
                             <!-- Dev Environment -->
                             <div class="tech-category">
-                                <h5 class="tech-category-title"><i class="fas fa-laptop-code text-yellow-400"></i> विकास पर्यावरण</h5>
+                                <h5 class="tech-category-title"><i class="fas fa-laptop-code text-yellow-400"></i> देव एनवायरनमेंट</h5>
                                 <div>
                                     <span class="tech-tag tag-dev">Node.js</span>
                                     <span class="tech-tag tag-dev">Next.js</span>
@@ -263,15 +286,15 @@
                             <div class="mt-4 pt-4 border-t border-white/5">
                                 <h5 class="tech-category-title"><i class="fas fa-history text-gray-400"></i> पूर्ण समयरेखा</h5>
                                 <div class="space-y-1 text-[0.65rem] text-gray-400 font-mono pl-2 border-l border-white/10">
-                                    <div class="flex justify-between"><span>Dec 2025</span> <span class="text-white">SISE Engine</span></div>
-                                    <div class="flex justify-between"><span>Oct 2025</span> <span class="text-white">Zakkur AI</span></div>
-                                    <div class="flex justify-between"><span>Aug 2025</span> <span class="text-white">Omudia</span></div>
-                                    <div class="flex justify-between"><span>Jul 2025</span> <span class="text-white">CinemaBoxD</span></div>
-                                    <div class="flex justify-between"><span>Mar 2025</span> <span class="text-white">Senmud</span></div>
-                                    <div class="flex justify-between"><span>Jan 2025</span> <span class="text-white">UseMindWin</span></div>
-                                    <div class="flex justify-between"><span>Aug 2024</span> <span class="text-white">FamilyOS</span></div>
-                                    <div class="flex justify-between"><span>Jun 2024</span> <span class="text-white">PDF Reader</span></div>
-                                    <div class="flex justify-between"><span>Mar 2024</span> <span class="text-white">DyausOS</span></div>
+                                    <div class="flex justify-between"><span>दिसंबर 2025</span> <span class="text-white">SISE Engine</span></div>
+                                    <div class="flex justify-between"><span>अक्टूबर 2025</span> <span class="text-white">Zakkur AI</span></div>
+                                    <div class="flex justify-between"><span>अगस्त 2025</span> <span class="text-white">Omudia</span></div>
+                                    <div class="flex justify-between"><span>जुलाई 2025</span> <span class="text-white">CinemaBoxD</span></div>
+                                    <div class="flex justify-between"><span>मार्च 2025</span> <span class="text-white">Senmud</span></div>
+                                    <div class="flex justify-between"><span>जनवरी 2025</span> <span class="text-white">UseMindWin</span></div>
+                                    <div class="flex justify-between"><span>अगस्त 2024</span> <span class="text-white">FamilyOS</span></div>
+                                    <div class="flex justify-between"><span>जून 2024</span> <span class="text-white">PDF Reader</span></div>
+                                    <div class="flex justify-between"><span>मार्च 2024</span> <span class="text-white">DyausOS</span></div>
                                 </div>
                             </div>
 
@@ -287,11 +310,11 @@
                                 <i class="fas fa-user-astronaut text-blue-500"></i> संस्थापक के बारे में
                             </h3>
                             <p class="text-gray-400 leading-relaxed text-sm mb-4 bg-black/20 p-4 rounded-xl border border-white/5">
-                                बाबुल, इराक से तकनीकी संस्थापक और स्व-सिखाया सॉफ्टवेयर इंजीनियर। मेरा मानना है कि कोड वास्तविकता को फिर से आकार देने का सबसे शक्तिशाली उपकरण है।
-                                वर्तमान में मैं <strong>Sopen Net, Inc.</strong> का नेतृत्व कर रहा हूँ ताकि अगली पीढ़ी के AI बुनियादी ढांचे (Zakkur, Omudia, Senmud) का निर्माण किया जा सके।
+                                बेबीलोन, इराक के एक स्व-सिखाया तकनीकी संस्थापक और सॉफ्टवेयर इंजीनियर। मेरा मानना है कि वास्तविकता को फिर से आकार देने के लिए कोड सबसे शक्तिशाली उपकरण है।
+                                वर्तमान में एआई बुनियादी ढांचे (Zakkur, Omudia, Senmud) की अगली पीढ़ी के निर्माण के लिए <strong>Sopen Net, Inc.</strong> का नेतृत्व कर रहे हैं।
                             </p>
                             <p class="text-gray-400 leading-relaxed text-sm">
-                                मेरी यात्रा गहरी जिज्ञासा और ठोस इंजीनियरिंग को जोड़ती है। मैं कर्नेल स्तर के अनुकूलन (C#) और उन्नत AI अनुप्रयोगों (Python) के बीच की खाई को पाटने में माहिर हूँ।
+                                मेरी यात्रा गहरी जिज्ञासा को ठोस इंजीनियरिंग के साथ मिलाती है। मैं C# में कर्नेल स्तर के अनुकूलन और Python में उन्नत एआई अनुप्रयोगों के बीच की खाई को पाटने में विशेषज्ञ हूं।
                             </p>
                         </div>
 
@@ -301,14 +324,14 @@
                                 <i class="fas fa-briefcase text-blue-500"></i> कार्य अनुभव
                             </h3>
                             <div class="timeline-item">
-                                <h4 class="text-white font-bold text-lg">संस्थापक और CEO</h4>
-                                <p class="text-blue-400 text-sm mb-1">Sopen Net, Inc | Delaware, US (इराक से रिमोट)</p>
-                                <p class="text-gray-500 text-xs mb-3 font-mono">Jun 2025 - वर्तमान</p>
+                                <h4 class="text-white font-bold text-lg">Founder & CEO</h4>
+                                <p class="text-blue-400 text-sm mb-1">Sopen Net, Inc | डेलावेयर, यूएस (इराक से रिमोट)</p>
+                                <p class="text-gray-500 text-xs mb-3 font-mono">जून 2025 - वर्तमान</p>
                                 <ul class="list-disc list-inside text-gray-400 text-sm space-y-2 marker:text-blue-500">
-                                    <li>स्वायत्त AI सिस्टम बनाने के लिए रणनीतिक दृष्टि और तकनीकी इंजीनियरिंग का नेतृत्व करना।</li>
-                                    <li>मुख्य उत्पादों (Zakkur, Omudia, Senmud) के विकास की प्रत्यक्ष निगरानी।</li>
-                                    <li>.NET 10 का उपयोग करके उच्च-प्रदर्शन प्रणालियों की इंजीनियरिंग।</li>
-                                    <li>बुद्धिमान संसाधन अनुकूलन के लिए SISE एल्गोरिदम का विकास।</li>
+                                    <li>स्वायत्त एआई सिस्टम बनाने के लिए रणनीतिक दृष्टि और तकनीकी इंजीनियरिंग का नेतृत्व करना।</li>
+                                    <li>प्रमुख उत्पाद विकास (Zakkur, Omudia, Senmud) का प्रत्यक्ष पर्यवेक्षण।</li>
+                                    <li>.NET 10 का उपयोग करके उच्च प्रदर्शन प्रणाली (High-Performance Systems) की इंजीनियरिंग।</li>
+                                    <li>बुद्धिमान सिस्टम संसाधन अनुकूलन के लिए SISE एल्गोरिदम विकसित करना।</li>
                                 </ul>
                             </div>
                         </div>
@@ -317,7 +340,7 @@
                         <div class="bg-gradient-to-br from-purple-900/10 to-transparent p-6 rounded-2xl border border-purple-500/10 relative overflow-hidden mb-10">
                              <div class="absolute top-0 right-0 w-1 h-full bg-purple-600"></div>
                             <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                                <i class="fas fa-atom text-purple-500"></i> सिद्धांत और वैज्ञानिक अनुसंधान
+                                <i class="fas fa-atom text-purple-500"></i> वैज्ञानिक सिद्धांत और अनुसंधान
                             </h3>
                             
                             <div class="space-y-4">
@@ -326,12 +349,12 @@
                                     <div class="flex justify-between items-start mb-2">
                                         <div>
                                             <h4 class="text-white font-bold text-base group-hover:text-purple-400 transition">The Multi-Inquiry System (MIS)</h4>
-                                            <p class="text-[10px] text-gray-500 mt-0.5">Cognitive Science • Artificial Intelligence Theory</p>
+                                            <p class="text-[10px] text-gray-500 mt-0.5">संज्ञानात्मक विज्ञान • कृत्रिम बुद्धिमत्ता सिद्धांत</p>
                                         </div>
                                         <i class="fas fa-file-alt text-purple-500/50"></i>
                                     </div>
                                     <p class="text-gray-400 text-xs leading-relaxed mt-2">
-                                        एक शोध पत्र जो आर्टिफिशियल जनरल इंटेलिजेंस (AGI) के लिए एक नया मॉडल प्रस्तुत करता है। यह मन को उत्तरों की मशीन के रूप में नहीं, बल्कि "पूछताछ तनाव" (Inquiry Tension) के प्रबंधन के लिए एक गतिशील प्रणाली के रूप में पुनर्परिभाषित करता है, जो आंतरिक जिज्ञासा और आत्म-प्रश्न करने की क्षमता के साथ AI की स्थापना करता है।
+                                        आर्टिफिशियल जनरल इंटेलिजेंस (AGI) के लिए एक नया मॉडल प्रस्तावित करने वाला एक शोध पत्र। यह मस्तिष्क को उत्तर देने वाली मशीन के रूप में नहीं, बल्कि "पूछताछ तनाव" (Inquiry Tension) के प्रबंधन के लिए एक गतिशील प्रणाली के रूप में फिर से परिभाषित करता है, जो आंतरिक जिज्ञासा और अपने स्वयं के मॉडल पर सवाल उठाने की क्षमता के साथ एआई स्थापित करता है।
                                     </p>
                                     <div class="mt-3 flex gap-2">
                                         <span class="research-badge">Philosophy of Mind</span>
@@ -344,12 +367,12 @@
                                     <div class="flex justify-between items-start mb-2">
                                         <div>
                                             <h4 class="text-white font-bold text-base group-hover:text-blue-400 transition">Dyaus AGI-7X Architecture</h4>
-                                            <p class="text-[10px] text-gray-500 mt-0.5">System Architecture • AI Alignment</p>
+                                            <p class="text-[10px] text-gray-500 mt-0.5">सिस्टम आर्किटेक्चर • एआई संरेखण</p>
                                         </div>
                                         <i class="fas fa-network-wired text-blue-500/50"></i>
                                     </div>
                                     <p class="text-gray-400 text-xs leading-relaxed mt-2">
-                                        "कृत्रिम चेतना" के लिए व्यापक वास्तुकला डिजाइन जिसमें 7 कार्यात्मक परतें (प्रेरणा के लिए LMEGO और मूल्य पर्यवेक्षण के लिए LMindSelf सहित) शामिल हैं। यह प्रणाली सुरक्षित और स्पष्ट निर्णयों के लिए कार्य-कारण (Causality) और उत्पादक सोच को एकीकृत करती है।
+                                        "कृत्रिम चेतना" के लिए व्यापक वास्तुशिल्प डिजाइन जिसमें 7 कार्यात्मक परतें शामिल हैं (ड्राइव के लिए LMEGO और मूल्य निरीक्षण के लिए LMindSelf सहित)। सुरक्षित और व्याख्या योग्य निर्णय सुनिश्चित करने के लिए प्रणाली जनरेटिव तर्क के साथ कार्य-कारण (Causality) को एकीकृत करती है।
                                     </p>
                                 </div>
 
@@ -358,12 +381,12 @@
                                     <div class="flex justify-between items-start mb-2">
                                         <div>
                                             <h4 class="text-white font-bold text-base group-hover:text-pink-400 transition">UTFN Protocol</h4>
-                                            <p class="text-[10px] text-gray-500 mt-0.5">Distributed Systems • Neural Communication</p>
+                                            <p class="text-[10px] text-gray-500 mt-0.5">वितरित प्रणाली • तंत्रिका संचार</p>
                                         </div>
                                         <i class="fas fa-share-alt text-pink-500/50"></i>
                                     </div>
                                     <p class="text-gray-400 text-xs leading-relaxed mt-2">
-                                        (Unified Thought & Function Network) - वितरित खुफिया घटकों को जोड़ने वाला एक तंत्रिका संचार प्रोटोकॉल। यह अतार्किक छलांगों को रोकने के लिए "कार्य-कारण गार्ड" (Causality Guard) परत के साथ "मानसिक स्थिति" और पूर्ण संदर्भ को स्थानांतरित करने की विशेषता रखता है।
+                                        (Unified Thought & Function Network) - वितरित खुफिया घटकों को जोड़ने वाला एक तंत्रिका संचार प्रोटोकॉल। तर्क में अतार्किक छलांग को रोकने के लिए "Causality Guard" परत के साथ "मानसिक स्थिति" हस्तांतरण और पूर्ण संदर्भ की सुविधा है।
                                     </p>
                                 </div>
                             </div>
@@ -372,7 +395,7 @@
                         <!-- Projects -->
                         <div>
                             <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                                <i class="fas fa-laptop-code text-blue-500"></i> प्रमुख परियोजनाएँ
+                                <i class="fas fa-laptop-code text-blue-500"></i> प्रमुख परियोजनाएं
                             </h3>
                             <div class="grid grid-cols-1 gap-4">
                                 <!-- SISE -->
@@ -381,7 +404,7 @@
                                         <h4 class="text-white font-bold group-hover:text-blue-400 transition">SISE Engine</h4>
                                         <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded">Kernel Lvl</span>
                                     </div>
-                                    <p class="text-gray-400 text-xs leading-relaxed">बुद्धिमान अनुकूलन इंजन (Context-Aware) जो C# का उपयोग करके CPU/RAM संसाधनों को गतिशील रूप से प्रबंधित करता है।</p>
+                                    <p class="text-gray-400 text-xs leading-relaxed">बुद्धिमान संदर्भ-जागरूक प्रणाली अनुकूलन इंजन गतिशील रूप से C# का उपयोग करके CPU/RAM संसाधनों का प्रबंधन करता है।</p>
                                 </div>
                                 <!-- Zakkur -->
                                 <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
@@ -389,7 +412,7 @@
                                         <h4 class="text-white font-bold group-hover:text-blue-400 transition">Zakkur AI</h4>
                                         <span class="text-[10px] bg-yellow-500/20 text-yellow-300 px-2 py-0.5 rounded">Python AI</span>
                                     </div>
-                                    <p class="text-gray-400 text-xs leading-relaxed">निर्णय और निष्पादन इंजन। सिस्टम का दिमाग जो विश्लेषण को क्रियाओं में बदलता है।</p>
+                                    <p class="text-gray-400 text-xs leading-relaxed">निर्णय और निष्पादन इंजन। सिस्टम का मास्टरमाइंड जो विश्लेषण को क्रिया में बदल देता है।</p>
                                 </div>
                                 <!-- Omudia -->
                                 <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
@@ -397,7 +420,7 @@
                                         <h4 class="text-white font-bold group-hover:text-blue-400 transition">Omudia</h4>
                                         <span class="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded">Automation</span>
                                     </div>
-                                    <p class="text-gray-400 text-xs leading-relaxed">स्वचालित सामग्री कारखाना। प्रकाशन और वितरण प्रणाली जो सामग्री के पूरे जीवनचक्र का प्रबंधन करती है।</p>
+                                    <p class="text-gray-400 text-xs leading-relaxed">स्वचालित सामग्री कारखाना। संपूर्ण सामग्री जीवनचक्र का प्रबंधन करने वाली एक प्रकाशन और वितरण प्रणाली।</p>
                                 </div>
                                 <!-- Senmud -->
                                 <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
@@ -405,7 +428,7 @@
                                         <h4 class="text-white font-bold group-hover:text-blue-400 transition">Senmud</h4>
                                         <span class="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded">AI Social</span>
                                     </div>
-                                    <p class="text-gray-400 text-xs leading-relaxed">वास्तविक "संकेतों" को पकड़ने और बुद्धिमान समुदायों का निर्माण करने के लिए AI-आधारित सोशल प्लेटफॉर्म।</p>
+                                    <p class="text-gray-400 text-xs leading-relaxed">वास्तविक "संकेतों" को पकड़ने और बुद्धिमान समुदायों का निर्माण करने के लिए एआई पर निर्भर सोशल नेटवर्किंग प्लेटफॉर्म।</p>
                                 </div>
                             </div>
                         </div>
@@ -413,28 +436,28 @@
                         <!-- Awards -->
                         <div>
                             <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                                <i class="fas fa-medal text-yellow-500"></i> पुरस्कार और मान्यता
+                                <i class="fas fa-medal text-yellow-500"></i> पुरस्कार और सम्मान
                             </h3>
                             <ul class="space-y-4 text-sm text-gray-400">
                                 <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
                                     <i class="fas fa-bug text-red-500 mt-1"></i>
                                     <div>
                                         <strong class="text-white block mb-1">Shabakaty TV - Critical API Security</strong>
-                                        <span class="text-xs">एक महत्वपूर्ण IDOR भेद्यता की खोज और DoS हमले के लिए PoC विकसित करना, जिससे प्लेटफ़ॉर्म की सुरक्षा में योगदान मिला।</span>
+                                        <span class="text-xs">महत्वपूर्ण IDOR भेद्यता की खोज की और संभावित DoS हमले को प्रदर्शित करने के लिए एक PoC उपकरण विकसित किया, जो प्लेटफॉर्म सुरक्षा में योगदान देता है।</span>
                                     </div>
                                 </li>
                                 <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
                                     <i class="fas fa-shield-alt text-blue-500 mt-1"></i>
                                     <div>
                                         <strong class="text-white block mb-1">Albox - Security Bounty</strong>
-                                        <span class="text-xs">CDN में भेद्यता की खोज जिससे निजी उपयोगकर्ता फ़ाइलों तक पहुँच की अनुमति मिली।</span>
+                                        <span class="text-xs">एक सीडीएन भेद्यता की खोज की जो निजी उपयोगकर्ता फ़ाइलों तक पहुंच की अनुमति देती थी।</span>
                                     </div>
                                 </li>
                                 <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
                                     <i class="fas fa-university text-green-500 mt-1"></i>
                                     <div>
                                         <strong class="text-white block mb-1">University of Babylon - Critical Disclosure</strong>
-                                        <span class="text-xs">बुनियादी ढांचे की भेद्यता की जिम्मेदार रिपोर्टिंग के माध्यम से 25,000 छात्रों के डेटा की सुरक्षा।</span>
+                                        <span class="text-xs">एक बुनियादी ढांचे की भेद्यता की जिम्मेदार रिपोर्टिंग के माध्यम से 25,000 छात्रों के डेटा की सुरक्षा की।</span>
                                     </div>
                                 </li>
                             </ul>
@@ -452,11 +475,11 @@
                     <!-- Image & Quick Info -->
                     <div class="w-full md:w-1/3 flex flex-col items-center text-center">
                         <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-purple-500/50 mb-6 shadow-2xl relative">
-                            <img src="../assets/img/f2.png" onerror="this.src='https://via.placeholder.com/150'" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                            <img src="assets/img/f2.png" onerror="this.src='https://via.placeholder.com/150'" class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
-                        <h2 class="text-2xl font-bold text-white mb-2">Montazer Amer</h2>
-                        <p class="text-purple-400 font-bold text-sm tracking-widest uppercase mb-4">सह-संस्थापक और COO</p>
-                        <p class="text-gray-500 text-xs mb-6 dir-ltr"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Babylon, Iraq</p>
+                        <h2 class="text-2xl font-bold text-white mb-2">मंतज़र आमेर</h2>
+                        <p class="text-purple-400 font-bold text-sm tracking-widest uppercase mb-4">Co-Founder & COO</p>
+                        <p class="text-gray-500 text-xs mb-6 dir-ltr"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> बेबीलोन, इराक</p>
                         
                         <!-- Socials -->
                         <div class="flex justify-center flex-wrap gap-2 mb-6">
@@ -473,10 +496,10 @@
                         <div>
                             <h3 class="text-xl font-bold text-white mb-4 border-b border-white/10 pb-2">सह-संस्थापक के बारे में</h3>
                             <p class="text-gray-400 leading-relaxed text-sm mb-4">
-                                वह दाहिना हाथ जो अराजकता को व्यवस्था में बदल देता है। मोंटाज़र इंजीनियरिंग टीम को अधिकतम गति से आगे बढ़ने में सक्षम बनाने के लिए दैनिक संचालन और सामग्री प्रणालियों का प्रबंधन करता है।
+                                वह दाहिना हाथ जो अराजकता को व्यवस्था में बदल देता है। मंतज़र दैनिक कार्यों और सामग्री प्रणालियों का प्रबंधन करते हैं ताकि इंजीनियरिंग टीम अधिकतम गति से आगे बढ़ सके।
                             </p>
                             <p class="text-gray-400 leading-relaxed text-sm">
-                                डिजिटल समुदायों और शैक्षिक प्रणालियों के प्रबंधन में विशेषज्ञ, उनके पास तकनीकी जटिलता के बिना परिचालन दक्षता (Operational Efficiency) में सुधार करने के लिए एक गहरी दृष्टि है।
+                                डिजिटल सामुदायिक प्रबंधन और शैक्षिक प्रणालियों के विशेषज्ञ, तकनीकी जटिलता के बिना परिचालन क्षमता (Operational Efficiency) में सुधार करने की गहरी अंतर्दृष्टि के साथ।
                             </p>
                         </div>
 
@@ -485,25 +508,78 @@
                             <ul class="space-y-3 text-gray-300 text-sm list-none">
                                 <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
                                     <i class="fas fa-project-diagram text-purple-500 mt-1"></i> 
-                                    <span><strong>सामग्री प्रणाली प्रबंधन:</strong> डिजिटल सामग्री आपूर्ति श्रृंखला और एकीकृत शिक्षण प्रणालियों का निर्माण और प्रबंधन।</span>
+                                    <span><strong>सामग्री प्रणाली प्रबंधन:</strong> डिजिटल सामग्री आपूर्ति श्रृंखला और एकीकृत शिक्षण प्रणाली का निर्माण और प्रबंधन।</span>
                                 </li>
                                 <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
                                     <i class="fas fa-robot text-purple-500 mt-1"></i> 
-                                    <span><strong>प्रक्रिया स्वचालन:</strong> वर्कफ़्लोज़ (Workflows) बनाना जो प्रकाशन और समन्वय में मैन्युअल प्रयास को कम करता है।</span>
+                                    <span><strong>प्रक्रिया स्वचालन:</strong> वर्कफ़्लो (Workflows) बनाना जो प्रकाशन और समन्वय में मैन्युअल प्रयास को कम करता है।</span>
                                 </li>
                                 <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
                                     <i class="fas fa-users text-purple-500 mt-1"></i> 
-                                    <span><strong>समुदाय निर्माण:</strong> सक्रिय डिजिटल समुदायों का प्रबंधन और विकास तथा स्वायत्त सामग्री विकास।</span>
+                                    <span><strong>समुदाय निर्माण:</strong> सक्रिय डिजिटल समुदायों और स्व-विकासशील सामग्री का प्रबंधन और विकास।</span>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="bg-gradient-to-br from-purple-500/10 to-transparent p-5 rounded-xl border border-purple-500/20 relative overflow-hidden">
                             <div class="absolute top-0 right-0 w-1 h-full bg-purple-500"></div>
-                            <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="fas fa-lightbulb text-purple-400"></i> स्मार्ट हैक (The Hack)</h4>
+                            <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="fas fa-lightbulb text-purple-400"></i> स्मार्ट हैक</h4>
                             <p class="text-sm text-gray-300 leading-relaxed">
-                                कोड की एक भी पंक्ति लिखे बिना वास्तविक व्यवसाय में "प्रतीक्षा कतार" की समस्या को हल किया। वर्कफ़्लो रीइंजीनियरिंग और प्राथमिकता प्रणाली के माध्यम से, प्रतीक्षा समय को 30 मिनट से घटाकर 10 मिनट कर दिया, जिससे बिक्री और ग्राहक संतुष्टि दोगुनी हो गई।
+                                कोड की एक भी पंक्ति लिखे बिना वास्तविक दुनिया के व्यवसाय में "कतार" की समस्या का समाधान किया। वर्कफ़्लो और प्राथमिकता प्रणाली (प्रक्रिया री-इंजीनियरिंग) को फिर से डिज़ाइन करके, उन्होंने प्रतीक्षा समय को 30 मिनट से घटाकर 10 मिनट कर दिया, जिससे बिक्री और ग्राहकों की संतुष्टि दोगुनी हो गई।
                             </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Member: Abdullah Hassan -->
+            <div class="bg-brand-gray/30 border border-white/10 rounded-3xl p-8 mb-16 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-600 to-emerald-600"></div>
+                
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <!-- Image & Quick Info -->
+                    <div class="w-full md:w-1/3 flex flex-col items-center text-center">
+                        <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-green-500/50 mb-6 shadow-2xl relative">
+                            <img src="assets/img/f3.jpg" onerror="this.src='https://via.placeholder.com/150'" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        </div>
+                        <h2 class="text-2xl font-bold text-white mb-2">अब्दुल्लाह हसन</h2>
+                        <p class="text-green-400 font-bold text-sm tracking-widest uppercase mb-4">CISO | CSO Trainee</p>
+                        <p class="text-gray-500 text-xs mb-6 dir-ltr"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> बेबीलोन, इराक</p>
+                        
+                        <!-- Socials -->
+                        <div class="flex justify-center flex-wrap gap-2 mb-6">
+                            <a href="https://x.com/abdall_hass" class="social-link hover:bg-black"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.tiktok.com/@abdall_hass" class="social-link hover:bg-black"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com/abdall_hass" class="social-link hover:bg-pink-600"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Info -->
+                    <div class="w-full md:w-2/3 space-y-8">
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4 border-b border-white/10 pb-2">साइबर सुरक्षा अधिकारी (प्रशिक्षु) के बारे में</h3>
+                            <p class="text-gray-400 leading-relaxed text-sm mb-4">
+                                यह भूमिका <strong>CISO</strong> (मुख्य सूचना सुरक्षा अधिकारी) और <strong>CSO</strong> (मुख्य सुरक्षा अधिकारी) के कर्तव्यों को जोड़ती है। अब्दुल्लाह संवेदनशील डेटा की सुरक्षा के लिए रणनीति बनाने, साइबर हमलों से बुनियादी ढांचे को सुरक्षित करने और व्यवसाय की निरंतरता को सुरक्षित रूप से सुनिश्चित करने के लिए डिजिटल जोखिमों के प्रबंधन पर ध्यान केंद्रित करते हैं।
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-green-300 font-bold mb-3 text-sm uppercase tracking-wide">शैक्षणिक शिक्षा</h4>
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-green-500/30 transition">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h5 class="text-white font-bold text-base">University of Cordoba – Najaf</h5>
+                                        <p class="text-gray-400 text-xs mt-1">BA, Cybersecurity</p>
+                                    </div>
+                                    <i class="fas fa-graduation-cap text-green-500/50 text-xl"></i>
+                                </div>
+                                <div class="mt-3 flex items-center gap-2 text-xs text-gray-500 font-mono border-t border-white/5 pt-2">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>Nov 2025 - Nov 2029</span>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -518,23 +594,24 @@
         <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
             
             <div class="flex items-center gap-2 mb-6">
-                <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full opacity-80">
+                <img src="assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full opacity-80">
                 <span class="text-xl font-bold text-white tracking-widest">SOPEN NET</span>
             </div>
 
+            <!-- Social Media Links (Company) -->
             <div class="flex flex-wrap justify-center gap-4 mb-8">
-                <a href="https://x.com/SopenNet" class="social-link hover:bg-blue-500 hover:text-white"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.tiktok.com/@sopen.ai" class="social-link hover:bg-black hover:text-white hover:border border-white/20"><i class="fab fa-tiktok"></i></a>
-                <a href="https://www.youtube.com/@SopenNetinc" class="social-link hover:bg-red-600 hover:text-white"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/sopen.ai/" class="social-link hover:bg-pink-600 hover:text-white"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61585190857126" class="social-link hover:bg-blue-600 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-700 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-400 hover:text-white"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://x.com/SopenNet" class="social-link hover:bg-blue-500 hover:text-white" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@sopen.ai" class="social-link hover:bg-black hover:text-white hover:border border-white/20" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@SopenNetinc" class="social-link hover:bg-red-600 hover:text-white" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/sopen.ai/" class="social-link hover:bg-pink-600 hover:text-white" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61585190857126" class="social-link hover:bg-blue-600 hover:text-white" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-700 hover:text-white" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-400 hover:text-white" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
             </div>
 
             <div class="text-center border-t border-white/10 pt-8 w-full">
                 <p class="text-gray-500 text-sm mb-2">© 2025 Sopen Net, Inc. सर्वाधिकार सुरक्षित।</p>
-                <p class="text-gray-600 text-xs">बाबुल, इराक में गर्व के साथ बनाया गया <i class="fas fa-heart text-red-900 ml-1"></i></p>
+                <p class="text-gray-600 text-xs">बेबीलोन, इराक में गर्व के साथ निर्मित <i class="fas fa-heart text-red-900 ml-1"></i></p>
             </div>
         </div>
     </footer>
