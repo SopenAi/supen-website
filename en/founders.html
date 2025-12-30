@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en-AU" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="../assets/img/logo.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team | Sopen Net, Inc</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Roboto for English/Australian context -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
@@ -21,7 +22,7 @@
                         }
                     },
                     fontFamily: {
-                        sans: ['Cairo', 'sans-serif'],
+                        sans: ['Roboto', 'Cairo', 'sans-serif'],
                     }
                 }
             }
@@ -34,7 +35,6 @@
             {
               "@type": "Person",
               "name": "Reda Hussein",
-              "alternateName": "Reda Hussein",
               "jobTitle": "Founder & CEO",
               "image": "https://sopen.ai/assets/img/f1.jpg",
               "url": "https://sopen.ai/founders.html",
@@ -48,59 +48,21 @@
                 "https://www.instagram.com/ri_husse",
                 "https://t.me/Ri_Huss"
               ],
-              "description": "Technical Founder & Software Engineer. Specialized in .NET systems and AI development."
-            },
-            {
-              "@type": "Person",
-              "name": "Montazer Amer",
-              "alternateName": "Montazer Amer",
-              "jobTitle": "Co-Founder & COO",
-              "image": "https://sopen.ai/assets/img/f2.png",
-              "url": "https://sopen.ai/founders.html",
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Sopen Net, Inc."
-              },
-              "sameAs": [
-                "https://x.com/mnt_amer",
-                "https://www.tiktok.com/@mnt_amer",
-                "https://www.instagram.com/mnt_amer",
-                "https://t.me/mnt_amer"
-              ],
-              "description": "Co-Founder & COO. Expert in digital community management and educational systems."
-            },
-            {
-              "@type": "Person",
-              "name": "Abdullah Hassan",
-              "alternateName": "Abdullah Hassan",
-              "jobTitle": "CISO | CSO Trainee",
-              "image": "../assets/img/f3.jpg",
-              "url": "https://sopen.ai/founders.html",
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Sopen Net, Inc."
-              },
-              "sameAs": [
-                "https://x.com/abdall_hass",
-                "https://www.tiktok.com/@abdall_hass",
-                "https://www.instagram.com/abdall_hass"
-              ],
-              "description": "CISO | CSO Trainee. Studying Cybersecurity at Cordoba University."
+              "description": "Technical Founder & Software Engineer. Specialising in .NET systems and AI development."
             }
           ]
         }
-        </script>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MK33KY03WQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MK33KY03WQ');
-</script>
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MK33KY03WQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MK33KY03WQ');
+    </script>
     <style>
-        body { font-family: 'Cairo', sans-serif; background-color: #050505; color: #e5e5e5; }
+        body { font-family: 'Roboto', 'Cairo', sans-serif; background-color: #050505; color: #e5e5e5; }
         .social-link {
             width: 2.2rem;
             height: 2.2rem;
@@ -119,14 +81,14 @@
         }
         .timeline-item {
             position: relative;
-            padding-left: 2rem; /* Changed from padding-right for LTR */
-            border-left: 2px solid #333; /* Changed from border-right for LTR */
+            padding-left: 2rem;
+            border-left: 2px solid #333;
             margin-bottom: 2rem;
         }
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -0.4rem; /* Changed from right for LTR */
+            left: -0.4rem;
             top: 0.5rem;
             width: 0.8rem;
             height: 0.8rem;
@@ -142,8 +104,7 @@
             font-weight: bold;
             margin-bottom: 0.5rem;
             display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            align-items: center; gap: 0.5rem;
         }
         .tech-tag {
             font-size: 0.7rem;
@@ -156,13 +117,11 @@
             display: inline-block;
             margin: 0.1rem;
         }
-        /* Custom colors for categories */
         .tag-data { color: #86efac; border-color: rgba(134, 239, 172, 0.2); background: rgba(134, 239, 172, 0.05); }
         .tag-cloud { color: #93c5fd; border-color: rgba(147, 197, 253, 0.2); background: rgba(147, 197, 253, 0.05); }
         .tag-core { color: #fca5a5; border-color: rgba(252, 165, 165, 0.2); background: rgba(252, 165, 165, 0.05); }
         .tag-dev { color: #fcd34d; border-color: rgba(252, 211, 77, 0.2); background: rgba(252, 211, 77, 0.05); }
         
-        /* Research Badge Style (New) */
         .research-badge {
             font-size: 0.6rem;
             padding: 2px 6px;
@@ -181,20 +140,19 @@
                 <span class="font-bold text-white tracking-wider">SOPEN NET</span>
             </a>
             <a href="index.html" class="text-sm text-gray-400 hover:text-white transition flex items-center gap-2 group">
-                <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i> Back to Home
+                <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i> Back Home
             </a>
         </div>
     </nav>
 
     <section class="py-20 relative overflow-hidden">
-        <!-- Decoration -->
         <div class="absolute top-0 right-1/4 w-96 h-96 bg-blue-900/10 rounded-full blur-[100px] -z-10"></div>
         <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-purple-900/10 rounded-full blur-[100px] -z-10"></div>
 
         <div class="max-w-7xl mx-auto px-4 text-center mb-16">
-            <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">Leadership Team</h1>
+            <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">Founder</h1>
             <p class="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                Iraqi minds building the infrastructure for the future of AI.
+                Iraqi minds building infrastructure for the future of AI.
             </p>
         </div>
 
@@ -205,7 +163,7 @@
                 <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-purple-600"></div>
                 
                 <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <!-- Left Column: Image, Socials, Stack -->
+                    <!-- Left Column -->
                     <div class="w-full md:w-1/3 flex flex-col items-center text-center">
                         <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-blue-500/50 mb-6 shadow-2xl relative group">
                             <img src="../assets/img/f1.jpg" onerror="this.src='https://via.placeholder.com/200'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
@@ -214,7 +172,6 @@
                         <p class="text-blue-400 font-bold text-sm tracking-widest uppercase mb-1">Founder & CEO | Full-Stack</p>
                         <p class="text-gray-500 text-xs mb-6 dir-ltr flex items-center justify-center gap-1"><i class="fas fa-map-marker-alt text-red-500"></i> Babylon, Iraq</p>
                         
-                        <!-- Socials -->
                         <div class="flex justify-center flex-wrap gap-2 mb-8">
                             <a href="https://x.com/ri_husse" class="social-link hover:bg-black"><i class="fab fa-twitter"></i></a>
                             <a href="https://www.tiktok.com/@ri_huss" class="social-link hover:bg-black"><i class="fab fa-tiktok"></i></a>
@@ -223,10 +180,8 @@
                             <a href="https://t.me/Ri_Huss" class="social-link hover:bg-blue-400"><i class="fab fa-telegram-plane"></i></a>
                         </div>
 
-                        <!-- Full Tech Stack (Categorized) -->
-                        <div class="w-full text-left space-y-4 border-t border-white/10 pt-6"> <!-- Changed text-right to text-left -->
-                            
-                            <!-- Data & Storage -->
+                        <!-- Full Tech Stack -->
+                        <div class="w-full text-left space-y-4 border-t border-white/10 pt-6">
                             <div class="tech-category">
                                 <h5 class="tech-category-title"><i class="fas fa-database text-green-400"></i> Data & Storage</h5>
                                 <div>
@@ -236,8 +191,6 @@
                                     <span class="tech-tag tag-data">Redis</span>
                                 </div>
                             </div>
-
-                            <!-- Cloud & Infra -->
                             <div class="tech-category">
                                 <h5 class="tech-category-title"><i class="fas fa-cloud text-blue-400"></i> Cloud & Infra</h5>
                                 <div>
@@ -252,8 +205,6 @@
                                     <span class="tech-tag tag-cloud">G-Workspace</span>
                                 </div>
                             </div>
-
-                            <!-- Core & Programming -->
                             <div class="tech-category">
                                 <h5 class="tech-category-title"><i class="fas fa-code text-red-400"></i> Core & Programming</h5>
                                 <div>
@@ -266,8 +217,6 @@
                                     <span class="tech-tag tag-core">REST APIs</span>
                                 </div>
                             </div>
-
-                            <!-- Dev Environment -->
                             <div class="tech-category">
                                 <h5 class="tech-category-title"><i class="fas fa-laptop-code text-yellow-400"></i> Dev Environment</h5>
                                 <div>
@@ -279,11 +228,10 @@
                                     <span class="tech-tag tag-dev">Visual Studio</span>
                                 </div>
                             </div>
-
-                            <!-- Project Timeline (Full) -->
+                            <!-- Full Timeline -->
                             <div class="mt-4 pt-4 border-t border-white/5">
                                 <h5 class="tech-category-title"><i class="fas fa-history text-gray-400"></i> Full Timeline</h5>
-                                <div class="space-y-1 text-[0.65rem] text-gray-400 font-mono pl-2 border-l border-white/10"> <!-- Changed pr-2 to pl-2 and border-r to border-l -->
+                                <div class="space-y-1 text-[0.65rem] text-gray-400 font-mono pl-2 border-l border-white/10">
                                     <div class="flex justify-between"><span>Dec 2025</span> <span class="text-white">SISE Engine</span></div>
                                     <div class="flex justify-between"><span>Oct 2025</span> <span class="text-white">Zakkur AI</span></div>
                                     <div class="flex justify-between"><span>Aug 2025</span> <span class="text-white">Omudia</span></div>
@@ -295,24 +243,22 @@
                                     <div class="flex justify-between"><span>Mar 2024</span> <span class="text-white">DyausOS</span></div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
-                    <!-- Right Column: Detailed Info -->
-                    <div class="w-full md:w-2/3 space-y-10 border-l border-white/5 pl-0 md:pl-8"> <!-- Changed border-r to border-l and pr to pl -->
-                        
+                    <!-- Right Column -->
+                    <div class="w-full md:w-2/3 space-y-10 border-l border-white/5 pl-0 md:pl-8">
                         <!-- About -->
                         <div>
                             <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                                <i class="fas fa-user-astronaut text-blue-500"></i> About the Founder
+                                <i class="fas fa-user-astronaut text-blue-500"></i> About Founder
                             </h3>
                             <p class="text-gray-400 leading-relaxed text-sm mb-4 bg-black/20 p-4 rounded-xl border border-white/5">
-                                Self-taught Technical Founder and Software Engineer from Babylon, Iraq. I believe code is the most powerful tool to reshape reality.
+                                Self-taught Technical Founder & Software Engineer from Babylon, Iraq. I believe code is the most powerful tool to reshape reality.
                                 Currently leading <strong>Sopen Net, Inc.</strong> to build the next generation of AI infrastructure (Zakkur, Omudia, Senmud).
                             </p>
                             <p class="text-gray-400 leading-relaxed text-sm">
-                                My journey blends deep curiosity with solid engineering. I specialize in bridging the gap between Kernel Level optimizations in C# and advanced AI applications in Python.
+                                My journey blends deep curiosity with solid engineering. I specialise in bridging the gap between Kernel Level optimisations in C# and advanced AI applications in Python.
                             </p>
                         </div>
 
@@ -329,38 +275,31 @@
                                     <li>Leading strategic vision and technical engineering to build autonomous AI systems.</li>
                                     <li>Direct supervision of core product development (Zakkur, Omudia, Senmud).</li>
                                     <li>Engineering High-Performance Systems using .NET 10.</li>
-                                    <li>Developing SISE algorithms for intelligent system resource optimization.</li>
+                                    <li>Developing SISE algorithms for intelligent system resource optimisation.</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <!-- Scientific Research & Theories (NEW SECTION) -->
+                        <!-- Full Research Section -->
                         <div class="bg-gradient-to-br from-purple-900/10 to-transparent p-6 rounded-2xl border border-purple-500/10 relative overflow-hidden mb-10">
-                             <div class="absolute top-0 right-0 w-1 h-full bg-purple-600"></div>
+                            <div class="absolute top-0 right-0 w-1 h-full bg-purple-600"></div>
                             <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
                                 <i class="fas fa-atom text-purple-500"></i> Scientific Theories & Research
                             </h3>
-                            
                             <div class="space-y-4">
-                                <!-- Paper 1 -->
                                 <div class="bg-black/30 p-4 rounded-xl border border-white/5 hover:border-purple-500/30 transition group">
                                     <div class="flex justify-between items-start mb-2">
                                         <div>
                                             <h4 class="text-white font-bold text-base group-hover:text-purple-400 transition">The Multi-Inquiry System (MIS)</h4>
-                                            <p class="text-[10px] text-gray-500 mt-0.5">Cognitive Science • Artificial Intelligence Theory</p>
+                                            <p class="text-[10px] text-gray-500 mt-0.5">Cognitive Science • AI Theory</p>
                                         </div>
                                         <i class="fas fa-file-alt text-purple-500/50"></i>
                                     </div>
                                     <p class="text-gray-400 text-xs leading-relaxed mt-2">
                                         A research paper proposing a new model for Artificial General Intelligence (AGI). It redefines the mind not as an answer-generating machine, but as a dynamic system for managing "Inquiry Tension", establishing an AI with intrinsic curiosity and the ability to question its own models.
                                     </p>
-                                    <div class="mt-3 flex gap-2">
-                                        <span class="research-badge">Philosophy of Mind</span>
-                                        <span class="research-badge">Epistemic Curiosity</span>
-                                    </div>
+                                    <div class="mt-3 flex gap-2"><span class="research-badge">Philosophy of Mind</span><span class="research-badge">Epistemic Curiosity</span></div>
                                 </div>
-                                
-                                <!-- Paper 2 -->
                                 <div class="bg-black/30 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
                                     <div class="flex justify-between items-start mb-2">
                                         <div>
@@ -370,11 +309,9 @@
                                         <i class="fas fa-network-wired text-blue-500/50"></i>
                                     </div>
                                     <p class="text-gray-400 text-xs leading-relaxed mt-2">
-                                        Comprehensive architectural design for "Artificial Consciousness" consisting of 7 functional layers (including LMEGO for drives and LMindSelf for value oversight). The system integrates Causality with generative reasoning to ensure safe and interpretable decisions.
+                                        Comprehensive architectural design for "Artificial Consciousness" consisting of 7 functional layers (including LMEGO for drives and LMindSelf for value supervision). The system integrates Causality with generative reasoning to ensure safe and interpretable decisions.
                                     </p>
                                 </div>
-
-                                <!-- Protocol -->
                                 <div class="bg-black/30 p-4 rounded-xl border border-white/5 hover:border-pink-500/30 transition group">
                                     <div class="flex justify-between items-start mb-2">
                                         <div>
@@ -390,58 +327,54 @@
                             </div>
                         </div>
 
-                        <!-- Projects -->
+                        <!-- Full Projects Section -->
                         <div>
                             <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
                                 <i class="fas fa-laptop-code text-blue-500"></i> Key Projects
                             </h3>
                             <div class="grid grid-cols-1 gap-4">
-                                <!-- SISE -->
                                 <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
                                     <div class="flex justify-between items-start mb-2">
                                         <h4 class="text-white font-bold group-hover:text-blue-400 transition">SISE Engine</h4>
                                         <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded">Kernel Lvl</span>
                                     </div>
-                                    <p class="text-gray-400 text-xs leading-relaxed">Intelligent Context-Aware system optimization engine dynamically managing CPU/RAM resources using C#.</p>
+                                    <p class="text-gray-400 text-xs leading-relaxed">Intelligent context-aware system optimisation engine dynamically managing CPU/RAM resources using C#.</p>
                                 </div>
-                                <!-- Zakkur -->
                                 <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
                                     <div class="flex justify-between items-start mb-2">
                                         <h4 class="text-white font-bold group-hover:text-blue-400 transition">Zakkur AI</h4>
                                         <span class="text-[10px] bg-yellow-500/20 text-yellow-300 px-2 py-0.5 rounded">Python AI</span>
                                     </div>
-                                    <p class="text-gray-400 text-xs leading-relaxed">Decision and execution engine. The mastermind of the system that turns analysis into action.</p>
+                                    <p class="text-gray-400 text-xs leading-relaxed">Decision and Execution Engine. The system mastermind that turns analysis into action.</p>
                                 </div>
-                                <!-- Omudia -->
                                 <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
                                     <div class="flex justify-between items-start mb-2">
                                         <h4 class="text-white font-bold group-hover:text-blue-400 transition">Omudia</h4>
                                         <span class="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded">Automation</span>
                                     </div>
-                                    <p class="text-gray-400 text-xs leading-relaxed">Automated content factory. A publishing and distribution system managing the entire content lifecycle.</p>
+                                    <p class="text-gray-400 text-xs leading-relaxed">Automated Content Factory. A publishing and distribution system managing the full content lifecycle.</p>
                                 </div>
-                                <!-- Senmud -->
                                 <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition group">
                                     <div class="flex justify-between items-start mb-2">
                                         <h4 class="text-white font-bold group-hover:text-blue-400 transition">Senmud</h4>
                                         <span class="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded">AI Social</span>
                                     </div>
-                                    <p class="text-gray-400 text-xs leading-relaxed">Social networking platform relying on AI to capture real "signals" and build intelligent communities.</p>
+                                    <p class="text-gray-400 text-xs leading-relaxed">AI-reliant social networking platform for capturing real "signals" and building intelligent communities.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Awards -->
+                        <!-- Full Awards Section -->
                         <div>
                             <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                                <i class="fas fa-medal text-yellow-500"></i> Awards & Recognitions
+                                <i class="fas fa-medal text-yellow-500"></i> Awards & Recognition
                             </h3>
                             <ul class="space-y-4 text-sm text-gray-400">
                                 <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
                                     <i class="fas fa-bug text-red-500 mt-1"></i>
                                     <div>
                                         <strong class="text-white block mb-1">Shabakaty TV - Critical API Security</strong>
-                                        <span class="text-xs">Discovered critical IDOR vulnerability and developed a PoC tool to demonstrate potential DoS attack, contributing to platform security.</span>
+                                        <span class="text-xs">Discovered critical IDOR vulnerability and developed PoC tool to demonstrate potential DoS attack, contributing to platform security.</span>
                                     </div>
                                 </li>
                                 <li class="flex gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
@@ -455,131 +388,11 @@
                                     <i class="fas fa-university text-green-500 mt-1"></i>
                                     <div>
                                         <strong class="text-white block mb-1">University of Babylon - Critical Disclosure</strong>
-                                        <span class="text-xs">Protected data of 25,000 students through responsible reporting of an infrastructure vulnerability.</span>
+                                        <span class="text-xs">Secured data of 25,000 students through responsible reporting of an infrastructure vulnerability.</span>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Co-Founder: Montazer Amer -->
-            <div class="bg-brand-gray/30 border border-white/10 rounded-3xl p-8 mb-16 relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-pink-600"></div>
-                
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <!-- Image & Quick Info -->
-                    <div class="w-full md:w-1/3 flex flex-col items-center text-center">
-                        <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-purple-500/50 mb-6 shadow-2xl relative">
-                            <img src="../assets/img/f2.png" onerror="this.src='https://via.placeholder.com/150'" class="w-full h-full object-cover transition duration-500 hover:scale-110">
-                        </div>
-                        <h2 class="text-2xl font-bold text-white mb-2">Montazer Amer</h2>
-                        <p class="text-purple-400 font-bold text-sm tracking-widest uppercase mb-4">Co-Founder & COO</p>
-                        <p class="text-gray-500 text-xs mb-6 dir-ltr"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Babylon, Iraq</p>
-                        
-                        <!-- Socials -->
-                        <div class="flex justify-center flex-wrap gap-2 mb-6">
-                            <a href="https://x.com/mnt_amer" class="social-link hover:bg-black"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.tiktok.com/@mnt_amer" class="social-link hover:bg-black"><i class="fab fa-tiktok"></i></a>
-                            <a href="https://www.instagram.com/mnt_amer" class="social-link hover:bg-pink-600"><i class="fab fa-instagram"></i></a>
-                            <a href="https://t.me/mnt_amer" class="social-link hover:bg-blue-400"><i class="fab fa-telegram-plane"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Detailed Info -->
-                    <div class="w-full md:w-2/3 space-y-8">
-                        
-                        <div>
-                            <h3 class="text-xl font-bold text-white mb-4 border-b border-white/10 pb-2">About the Co-Founder</h3>
-                            <p class="text-gray-400 leading-relaxed text-sm mb-4">
-                                The right hand that turns chaos into order. Montazer manages daily operations and content systems to enable the engineering team to move at maximum speed.
-                            </p>
-                            <p class="text-gray-400 leading-relaxed text-sm">
-                                Expert in digital community management and educational systems, with keen insight into improving Operational Efficiency without technical complexity.
-                            </p>
-                        </div>
-
-                        <div>
-                            <h4 class="text-purple-300 font-bold mb-3 text-sm uppercase tracking-wide">Key Achievements</h4>
-                            <ul class="space-y-3 text-gray-300 text-sm list-none">
-                                <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
-                                    <i class="fas fa-project-diagram text-purple-500 mt-1"></i> 
-                                    <span><strong>Content Systems Management:</strong> Building and managing digital content supply chains and integrated learning systems.</span>
-                                </li>
-                                <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
-                                    <i class="fas fa-robot text-purple-500 mt-1"></i> 
-                                    <span><strong>Process Automation:</strong> Creating Workflows that reduce manual effort in publishing and coordination.</span>
-                                </li>
-                                <li class="flex items-start gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
-                                    <i class="fas fa-users text-purple-500 mt-1"></i> 
-                                    <span><strong>Community Building:</strong> Managing and growing active digital communities and self-developing content.</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-gradient-to-br from-purple-500/10 to-transparent p-5 rounded-xl border border-purple-500/20 relative overflow-hidden">
-                            <div class="absolute top-0 right-0 w-1 h-full bg-purple-500"></div>
-                            <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="fas fa-lightbulb text-purple-400"></i> The Smart Hack</h4>
-                            <p class="text-sm text-gray-300 leading-relaxed">
-                                Solved a "queue" problem in a real-world business without writing a single line of code. By re-engineering the workflow and priority system (Process Re-engineering), he reduced waiting time from 30 minutes to 10 minutes, doubling sales and customer satisfaction.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- New Member: Abdullah Hassan -->
-            <div class="bg-brand-gray/30 border border-white/10 rounded-3xl p-8 mb-16 relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-600 to-emerald-600"></div>
-                
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <!-- Image & Quick Info -->
-                    <div class="w-full md:w-1/3 flex flex-col items-center text-center">
-                        <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-brand-dark ring-2 ring-green-500/50 mb-6 shadow-2xl relative">
-                            <img src="../assets/img/f3.jpg" onerror="this.src='https://via.placeholder.com/150'" class="w-full h-full object-cover transition duration-500 hover:scale-110">
-                        </div>
-                        <h2 class="text-2xl font-bold text-white mb-2">Abdullah Hassan</h2>
-                        <p class="text-green-400 font-bold text-sm tracking-widest uppercase mb-4">CISO | CSO Trainee</p>
-                        <p class="text-gray-500 text-xs mb-6 dir-ltr"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Babylon, Iraq</p>
-                        
-                        <!-- Socials -->
-                        <div class="flex justify-center flex-wrap gap-2 mb-6">
-                            <a href="https://x.com/abdall_hass" class="social-link hover:bg-black"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.tiktok.com/@abdall_hass" class="social-link hover:bg-black"><i class="fab fa-tiktok"></i></a>
-                            <a href="https://www.instagram.com/abdall_hass" class="social-link hover:bg-pink-600"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Detailed Info -->
-                    <div class="w-full md:w-2/3 space-y-8">
-                        
-                        <div>
-                            <h3 class="text-xl font-bold text-white mb-4 border-b border-white/10 pb-2">About the Cybersecurity Officer (Trainee)</h3>
-                            <p class="text-gray-400 leading-relaxed text-sm mb-4">
-                                This role combines the duties of <strong>CISO</strong> (Chief Information Security Officer) and <strong>CSO</strong> (Chief Security Officer). Abdullah focuses on strategizing to protect sensitive data, securing infrastructure from cyber attacks, and managing digital risks to ensure business continuity safely.
-                            </p>
-                        </div>
-
-                        <div>
-                            <h4 class="text-green-300 font-bold mb-3 text-sm uppercase tracking-wide">Academic Education</h4>
-                            <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:border-green-500/30 transition">
-                                <div class="flex justify-between items-start">
-                                    <div>
-                                        <h5 class="text-white font-bold text-base">University of Cordoba – Najaf</h5>
-                                        <p class="text-gray-400 text-xs mt-1">BA, Cybersecurity</p>
-                                    </div>
-                                    <i class="fas fa-graduation-cap text-green-500/50 text-xl"></i>
-                                </div>
-                                <div class="mt-3 flex items-center gap-2 text-xs text-gray-500 font-mono border-t border-white/5 pt-2">
-                                    <i class="far fa-calendar-alt"></i>
-                                    <span>Nov 2025 - Nov 2029</span>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -590,27 +403,19 @@
     <!-- Footer -->
     <footer class="border-t border-white/5 bg-black py-12">
         <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
-            
             <div class="flex items-center gap-2 mb-6">
                 <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40'" class="h-8 rounded-full opacity-80">
                 <span class="text-xl font-bold text-white tracking-widest">SOPEN NET</span>
             </div>
-
-            <!-- Social Media Links (Company) -->
             <div class="flex flex-wrap justify-center gap-4 mb-8">
-                <a href="https://x.com/SopenNet" class="social-link hover:bg-blue-500 hover:text-white" title="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.tiktok.com/@sopen.ai" class="social-link hover:bg-black hover:text-white hover:border border-white/20" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                <a href="https://www.youtube.com/@SopenNetinc" class="social-link hover:bg-red-600 hover:text-white" title="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/sopen.ai/" class="social-link hover:bg-pink-600 hover:text-white" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61585190857126" class="social-link hover:bg-blue-600 hover:text-white" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-700 hover:text-white" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-400 hover:text-white" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://x.com/SopenNet" class="social-link hover:bg-blue-500 hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@sopen.ai" class="social-link hover:bg-black hover:text-white"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@SopenNetinc" class="social-link hover:bg-red-600 hover:text-white"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/sopen.ai/" class="social-link hover:bg-pink-600 hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/SopenNet" class="social-link hover:bg-blue-400 hover:text-white"><i class="fab fa-telegram-plane"></i></a>
             </div>
-
-            <div class="text-center border-t border-white/10 pt-8 w-full">
-                <p class="text-gray-500 text-sm mb-2">© 2025 Sopen Net, Inc. All rights reserved.</p>
-                <p class="text-gray-600 text-xs">Proudly made in Babylon, Iraq <i class="fas fa-heart text-red-900 ml-1"></i></p>
-            </div>
+            <p class="text-gray-500 text-sm mb-2">© 2025 Sopen Net, Inc. All rights reserved.</p>
+            <p class="text-gray-600 text-xs">Proudly made in Babylon, Iraq <i class="fas fa-heart text-red-900 ml-1"></i></p>
         </div>
     </footer>
 </body>
