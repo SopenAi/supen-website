@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sopen Net, Inc | Операционные системы для людей и компаний</title>
-    <meta name="description" content="Sopen Net — это не продуктовая компания, а компания, создающая операционные системы для людей и бизнеса. Zakkur, Omudia, Senmud.">
+    <meta name="description"
+        content="Sopen Net — это не продуктовая компания, а компания, создающая операционные системы для людей и бизнеса. Zakkur, Omudia, Senmud.">
     <link rel="icon" href="../assets/img/logo.jpg">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts (Inter supports Cyrillic) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -24,7 +27,7 @@
                         brand: {
                             dark: '#050505',
                             gray: '#1a1a1a',
-                            accent: '#3b82f6', 
+                            accent: '#3b82f6',
                             purple: '#8b5cf6',
                             pink: '#ec4899',
                             teal: '#14b8a6',
@@ -115,24 +118,42 @@
           ]
         }
         </script>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MK33KY03WQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MK33KY03WQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-MK33KY03WQ');
-</script>
+        gtag('config', 'G-MK33KY03WQ');
+    </script>
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #e5e5e5; overflow-x: hidden; }
-        html { scroll-behavior: smooth; }
-        .text-gradient { background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .bg-grid { background-size: 50px 50px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px); mask-image: linear-gradient(to bottom, black 40%, transparent 100%); }
-        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #e5e5e5;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-grid {
+            background-size: 50px 50px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+        }
+
         .tech-pill {
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 0.5rem 1rem;
             border-radius: 9999px;
             font-size: 0.85rem;
@@ -143,13 +164,14 @@
             gap: 0.5rem;
             margin: 0.25rem;
         }
+
         .tech-pill:hover {
             background: rgba(59, 130, 246, 0.1);
             border-color: rgba(59, 130, 246, 0.4);
             color: white;
             transform: translateY(-2px);
         }
-        
+
         .feature-list li {
             position: relative;
             padding-left: 1.5rem;
@@ -157,6 +179,7 @@
             color: #d1d5db;
             line-height: 1.6;
         }
+
         .feature-list li::before {
             content: "•";
             position: absolute;
@@ -192,13 +215,15 @@
             overflow: hidden;
             transition: max-height 0.3s ease-out;
         }
+
         .faq-item.active .faq-content {
             max-height: 500px;
         }
+
         .faq-item.active .faq-icon {
             transform: rotate(180deg);
         }
-        
+
         .glass-panel {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(10px);
@@ -206,6 +231,7 @@
         }
     </style>
 </head>
+
 <body class="antialiased">
 
     <!-- Scroll Progress Bar -->
@@ -217,92 +243,125 @@
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center gap-3">
                     <a href="index.html" class="flex items-center gap-2">
-                        <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/50x50/333/fff?text=S'" alt="Sopen Net Logo" class="h-10 w-auto rounded-full border border-white/10">
+                        <img src="../assets/img/logo.png"
+                            onerror="this.src='https://via.placeholder.com/50x50/333/fff?text=S'" alt="Sopen Net Logo"
+                            class="h-10 w-auto rounded-full border border-white/10">
                         <span class="text-xl font-bold tracking-wider text-white hidden sm:block">SOPEN NET</span>
                     </a>
-                    
-                    <div class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 ml-4">
+
+                    <div
+                        class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 ml-4">
                         <span class="relative flex h-2 w-2">
-                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                          <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                         </span>
-                        <span class="text-[10px] font-bold text-green-400 uppercase tracking-wide">СИСТЕМЫ В НОРМЕ: 100%</span>
+                        <span class="text-[10px] font-bold text-green-400 uppercase tracking-wide">СИСТЕМЫ В НОРМЕ:
+                            100%</span>
                     </div>
                 </div>
 
                 <div class="hidden md:flex items-center gap-4 lg:gap-6">
                     <div class="flex items-baseline space-x-2 lg:space-x-4 text-sm lg:text-base">
-                        <a href="#home" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Главная</a>
-                        <a href="#architecture" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Экосистема</a>
-                        <a href="#products" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Продукты</a>
-                        <a href="#tech-stack" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Технологии</a>
-                        <a href="founders.html" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Команда</a>
-                        <a href="investors.html" class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Инвесторам</a>
+                        <a href="#home"
+                            class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Главная</a>
+                        <a href="#architecture"
+                            class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Экосистема</a>
+                        <a href="#products"
+                            class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Продукты</a>
+                        <a href="#tech-stack"
+                            class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Технологии</a>
+                        <a href="founders.html"
+                            class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Команда</a>
+                        <a href="investors.html"
+                            class="hover:text-brand-accent px-2 py-2 rounded-md font-medium transition">Инвесторам</a>
                     </div>
-                    
+
                     <!-- Language Dropdown -->
                     <div class="relative group">
-                        <button class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white/10 transition flex items-center gap-2 text-gray-300">
+                        <button
+                            class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white/10 transition flex items-center gap-2 text-gray-300">
                             <i class="fas fa-globe"></i>
                             <span>Русский</span>
                             <i class="fas fa-chevron-down text-[10px]"></i>
                         </button>
-                        <div class="absolute right-0 mt-2 w-48 bg-brand-dark border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
-                            <a href="../index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                        <div
+                            class="absolute right-0 mt-2 w-48 bg-brand-dark border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
+                            <a href="../index.html"
+                                class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
                                 <span>العربية</span>
                                 <span class="text-xs border border-white/10 px-1 rounded">AR</span>
                             </a>
-                            <a href="../en/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                            <a href="../en/index.html"
+                                class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
                                 <span>English</span>
                                 <span class="text-xs border border-white/10 px-1 rounded">EN</span>
                             </a>
-                            <a href="../es/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                            <a href="../es/index.html"
+                                class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
                                 <span>Español</span>
                                 <span class="text-xs border border-white/10 px-1 rounded">ES</span>
                             </a>
-                            <a href="../zh/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                            <a href="../zh/index.html"
+                                class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
                                 <span>中文 (Mandarin)</span>
                                 <span class="text-xs border border-white/10 px-1 rounded">ZH</span>
                             </a>
-                            <a href="../hi/index.html" class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
+                            <a href="../hi/index.html"
+                                class="block px-4 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white border-b border-white/5 flex justify-between items-center">
                                 <span>हिन्दी (Hindi)</span>
                                 <span class="text-xs border border-white/10 px-1 rounded">HI</span>
                             </a>
-                            <div class="block px-4 py-3 text-sm text-brand-accent font-bold bg-white/5 flex justify-between items-center">
+                            <div
+                                class="block px-4 py-3 text-sm text-brand-accent font-bold bg-white/5 flex justify-between items-center">
                                 <span>Русский</span>
                                 <i class="fas fa-check"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="-mr-2 flex md:hidden gap-4">
-                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
         </div>
-        
+
         <!-- Mobile Menu -->
         <div class="hidden md:hidden bg-brand-dark border-b border-white/10" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-left">
-                <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Главная</a>
-                <a href="#architecture" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Экосистема</a>
-                <a href="#products" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Продукты</a>
-                <a href="#tech-stack" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Технологии</a>
-                <a href="founders.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Команда</a>
-                <a href="investors.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Инвесторам</a>
-                
+                <a href="#home"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Главная</a>
+                <a href="#architecture"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Экосистема</a>
+                <a href="#products"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Продукты</a>
+                <a href="#tech-stack"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Технологии</a>
+                <a href="founders.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Команда</a>
+                <a href="investors.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Инвесторам</a>
+
                 <div class="border-t border-white/10 mt-4 pt-4">
                     <p class="px-3 text-xs text-gray-500 uppercase tracking-widest mb-3">Языки</p>
                     <div class="grid grid-cols-2 gap-2 px-3">
-                        <a href="../index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">العربية</a>
-                        <a href="../en/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">English</a>
-                        <a href="../es/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">Español</a>
-                        <a href="../zh/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">中文</a>
-                        <a href="../hi/index.html" class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">हिन्दी</a>
-                        <div class="text-center py-2 border border-brand-accent/50 bg-brand-accent/10 rounded text-sm text-brand-accent font-bold">Русский</div>
+                        <a href="../index.html"
+                            class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">العربية</a>
+                        <a href="../en/index.html"
+                            class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">English</a>
+                        <a href="../es/index.html"
+                            class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">Español</a>
+                        <a href="../zh/index.html"
+                            class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">中文</a>
+                        <a href="../hi/index.html"
+                            class="text-center py-2 border border-white/10 rounded hover:bg-white/5 text-sm text-gray-300">हिन्दी</a>
+                        <div
+                            class="text-center py-2 border border-brand-accent/50 bg-brand-accent/10 rounded text-sm text-brand-accent font-bold">
+                            Русский</div>
                     </div>
                 </div>
             </div>
@@ -312,14 +371,18 @@
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div class="absolute inset-0 bg-grid"></div>
-        <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse"></div>
-        <div class="absolute top-1/3 left-1/4 w-80 h-80 bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
+        <div
+            class="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse">
+        </div>
+        <div class="absolute top-1/3 left-1/4 w-80 h-80 bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse"
+            style="animation-delay: 2s;"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
             <div class="inline-block mb-4 px-4 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
                 <span class="text-sm font-light tracking-wide text-gray-300">Sopen System 1.5v - Скоро</span>
             </div>
-            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight h-[160px] md:h-[180px] flex flex-col justify-center">
+            <h1
+                class="text-5xl md:text-7xl font-black mb-6 leading-tight h-[160px] md:h-[180px] flex flex-col justify-center">
                 <span>AI-Native Компания</span>
                 <!-- Typewriter Effect -->
                 <span class="text-gradient block mt-2">
@@ -327,88 +390,402 @@
                 </span>
             </h1>
             <p class="mt-4 max-w-3xl mx-auto text-xl text-gray-400 font-light leading-relaxed">
-                Sopen Net — это не набор разрозненных приложений. Это единая операционная система, состоящая из четырех взаимосвязанных частей.
+                Sopen Net — это не набор разрозненных приложений. Это единая операционная система, состоящая из четырех
+                взаимосвязанных частей.
                 <br>
                 <span class="text-white font-medium mt-2 block">
                     Решение (Zakkur) &rarr; Исполнение (Omudia) &rarr; Сигнал (Senmud)
                 </span>
             </p>
-            
+
             <div class="mt-10 flex flex-wrap justify-center gap-4">
-                <a href="#performance" class="px-8 py-3 rounded-full bg-white text-black font-bold hover:bg-gray-200 transition shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                <a href="#performance"
+                    class="px-8 py-3 rounded-full bg-white text-black font-bold hover:bg-gray-200 transition shadow-[0_0_20px_rgba(255,255,255,0.3)]">
                     Производительность
                 </a>
-                <a href="#products" class="px-8 py-3 rounded-full border border-white/20 hover:bg-white/10 transition backdrop-blur-sm">
+                <a href="#products"
+                    class="px-8 py-3 rounded-full border border-white/20 hover:bg-white/10 transition backdrop-blur-sm">
                     Обзор системы
                 </a>
             </div>
 
-            <div class="mt-12 flex items-center justify-center gap-2 opacity-80 hover:opacity-100 transition duration-300">
+            <div
+                class="mt-12 flex items-center justify-center gap-2 opacity-80 hover:opacity-100 transition duration-300">
                 <span class="text-xs text-gray-500 uppercase tracking-widest">Powered By</span>
-                <div class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
+                <div
+                    class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
                     <i class="fab fa-google text-white text-lg"></i>
-                    <span class="font-bold text-white text-sm">Google Cloud <span class="text-blue-400">Startups</span></span>
+                    <span class="font-bold text-white text-sm">Google Cloud <span
+                            class="text-blue-400">Startups</span></span>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecosystem Matrix Section -->
+    <section id="ecosystem" class="py-20 bg-black relative overflow-hidden">
+        <div class="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div class="max-w-2xl">
+                    <span
+                        class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-4 tracking-widest uppercase">Матрица
+                        экосистемы</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-white leading-tight">Интегрированная <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">AI-Инфраструктура</span>
+                    </h2>
+                </div>
+                <a href="#products"
+                    class="group flex items-center gap-3 text-gray-400 hover:text-white transition-all duration-300 bg-white/5 px-6 py-3 rounded-2xl border border-white/10 hover:border-blue-500/50">
+                    <span class="text-sm font-bold uppercase tracking-wider">Исследовать экосистему</span>
+                    <i class="fas fa-arrow-right text-xs group-hover:translate-x-2 transition-transform"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <!-- Zakkur -->
+                <a href="#products"
+                    class="group relative p-8 rounded-3xl bg-brand-gray/30 border border-white/5 hover:border-blue-500/50 transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-brain text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Zakkur</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Движок решений и исполнения на базе AI.
+                        </p>
+                        <span class="text-[10px] font-black tracking-widest text-blue-500 uppercase">ДВИЖОК
+                            РЕШЕНИЙ</span>
+                    </div>
+                </a>
+
+                <!-- Omudia -->
+                <a href="#products"
+                    class="group relative p-8 rounded-3xl bg-brand-gray/30 border border-white/5 hover:border-purple-500/50 transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-industry text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Omudia</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Фабрика AI-контента и промышленная
+                            публикация.</p>
+                        <span class="text-[10px] font-black tracking-widest text-purple-500 uppercase">ФАБРИКА
+                            КОНТЕНТА</span>
+                    </div>
+                </a>
+
+                <!-- Senmud -->
+                <a href="#products"
+                    class="group relative p-8 rounded-3xl bg-brand-gray/30 border border-white/5 hover:border-pink-500/50 transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-pink-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-pink-500/10 flex items-center justify-center text-pink-400 mb-6 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-satellite-dish text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Senmud</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Слой человеческого сигнала и
+                            AI-коммуникации.</p>
+                        <span class="text-[10px] font-black tracking-widest text-pink-500 uppercase">СЛОЙ СИГНАЛА</span>
+                    </div>
+                </a>
+
+                <!-- Sopen CV -->
+                <a href="https://cv.sopen.ai" target="_blank"
+                    class="group relative p-8 rounded-3xl bg-brand-gray/30 border border-white/5 hover:border-teal-500/50 transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-teal-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-teal-500/10 flex items-center justify-center text-teal-400 mb-6 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-fingerprint text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Sopen CV</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Единая цифровая личность и управление
+                            контекстом.</p>
+                        <span class="text-[10px] font-black tracking-widest text-teal-500 uppercase">ЕДИНАЯ
+                            ЛИЧНОСТЬ</span>
+                    </div>
+                </a>
+
+                <!-- Sopen Pay -->
+                <a href="https://pay.sopen.ai" target="_blank"
+                    class="group relative p-8 rounded-3xl bg-brand-gray/30 border border-white/5 hover:border-yellow-500/50 transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-yellow-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-yellow-500/10 flex items-center justify-center text-yellow-400 mb-6 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-wallet text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Sopen Pay</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Новая цифровая экономика и мгновенные
+                            транзакции.</p>
+                        <span class="text-[10px] font-black tracking-widest text-yellow-500 uppercase">ЦИФРОВАЯ
+                            ЭКОНОМИКА</span>
+                    </div>
+                </a>
+
+                <!-- Sopen Ads -->
+                <a href="https://ads.sopen.ai" target="_blank"
+                    class="group relative p-8 rounded-3xl bg-brand-gray/30 border border-white/5 hover:border-orange-500/50 transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-orange-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-400 mb-6 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-bullseye text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Sopen Ads</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Точный таргетинг и AI-рекламная сеть.</p>
+                        <span class="text-[10px] font-black tracking-widest text-orange-500 uppercase">РЕДЕР
+                            ТАРГЕТИНГА</span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Architecture Section -->
     <section id="architecture" class="py-24 bg-brand-gray/30 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Sopen System 1.5v</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto text-lg">
-                    Основная идея: Решение → Исполнение → Сигнал → Оптимизация.
-                    <br>
-                    Единый, полностью отслеживаемый и проверяемый цикл.
-                </p>
+        <div class="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+            <span
+                class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-4 tracking-widest uppercase">Архитектура</span>
+            <h2 class="text-5xl md:text-6xl font-black mb-6 tracking-tight text-white">Sopen <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">System</span>
+                1.5v</h2>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto font-light leading-relaxed">
+                Архитектура, спроектированная как расширенный цифровой мозг. Это не просто набор инструментов, а полный
+                жизненный цикл:
+                <br>
+                <span
+                    class="text-white font-medium mt-3 inline-block bg-white/5 px-4 py-2 rounded-lg border border-white/10">Решение
+                    (Zakkur) &larr; Исполнение (Omudia) &larr; Сигнал (Senmud) &larr; Личность (Sopen CV)</span>
+            </p>
+
+            <!-- Interactive Ecosystem Network (Desktop) -->
+            <div class="relative w-full max-w-[100rem] mx-auto h-[750px] hidden md:block mt-20 mb-32 overflow-hidden">
+                <style>
+                    .neural-path {
+                        stroke-dasharray: 12;
+                        stroke-dashoffset: 0;
+                        animation: signal 30s linear infinite;
+                    }
+
+                    @keyframes signal {
+                        to {
+                            stroke-dashoffset: -240;
+                        }
+                    }
+
+                    .node-hover {
+                        transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+                        cursor: pointer;
+                    }
+
+                    .node-hover:hover {
+                        transform: scale(1.15);
+                        filter: drop-shadow(0 0 30px currentColor);
+                    }
+
+                    .node-glow {
+                        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.05));
+                    }
+
+                    .animate-spin-slow {
+                        animation: spin 20s linear infinite;
+                    }
+
+                    @keyframes spin {
+                        from {
+                            transform: rotate(0deg);
+                        }
+
+                        to {
+                            transform: rotate(360deg);
+                        }
+                    }
+                </style>
+
+                <!-- SVG Neural Lines -->
+                <svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 1600 700"
+                    preserveAspectRatio="xMidYMid meet">
+                    <g fill="none" class="neural-path" stroke-width="2">
+                        <path d="M800 350 L800 120" stroke="rgba(59, 130, 246, 0.3)" />
+                        <path d="M800 350 L1150 220" stroke="rgba(168, 85, 247, 0.3)" />
+                        <path d="M800 350 L1150 480" stroke="rgba(236, 72, 153, 0.3)" />
+                        <path d="M800 350 L800 580" stroke="rgba(20, 184, 166, 0.3)" />
+                        <path d="M800 350 L450 480" stroke="rgba(234, 179, 8, 0.3)" />
+                        <path d="M800 350 L450 220" stroke="rgba(249, 115, 22, 0.3)" />
+                    </g>
+                    <circle cx="800" cy="350" r="280" stroke="rgba(255,255,255,0.03)" stroke-dasharray="10, 20"
+                        fill="none" />
+                </svg>
+
+                <!-- Center Hub: Sopen HQ -->
+                <div
+                    class="absolute top-[350px] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30 flex flex-col items-center">
+                    <div
+                        class="relative w-48 h-48 rounded-full bg-black/80 border-2 border-white/20 flex items-center justify-center backdrop-blur-3xl shadow-[0_0_100px_rgba(255,255,255,0.05)] node-glow group cursor-default">
+                        <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/100'"
+                            class="w-24 h-24 rounded-full border border-white/10 opacity-90 group-hover:rotate-12 transition-transform duration-700">
+                        <div
+                            class="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/10 to-transparent animate-spin-slow">
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="text-3xl font-black text-white tracking-[0.2em] uppercase">Sopen HQ</h3>
+                        <span
+                            class="text-xs text-blue-400 font-mono tracking-widest bg-blue-500/10 px-3 py-1 rounded-full border border-blue-500/20 mt-2 inline-block">ОПЕРАЦИОННЫЙ
+                            ЦЕНТР</span>
+                    </div>
+                </div>
+
+                <!-- Product Nodes -->
+                <a href="#products"
+                    class="absolute top-[120px] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center group node-hover"
+                    style="color: #3b82f6;">
+                    <div
+                        class="w-28 h-28 rounded-full bg-gray-900 border-2 border-blue-500/40 flex items-center justify-center overflow-hidden shadow-[0_0_30px_rgba(59,130,246,0.2)]">
+                        <img src="../assets/img/i1.jpg" onerror="this.src='https://via.placeholder.com/100'"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="mt-3 font-bold text-white text-lg group-hover:text-blue-400">Zakkur</h4>
+                    <span
+                        class="text-[10px] text-blue-500 font-bold uppercase tracking-wider bg-blue-500/10 px-2 rounded">Движок
+                        решений</span>
+                </a>
+
+                <a href="#products"
+                    class="absolute top-[220px] left-[72%] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center group node-hover"
+                    style="color: #a855f7;">
+                    <div
+                        class="w-28 h-28 rounded-full bg-gray-900 border-2 border-purple-500/40 flex items-center justify-center overflow-hidden shadow-[0_0_30px_rgba(168,85,247,0.2)]">
+                        <img src="../assets/img/i2.png" onerror="this.src='https://via.placeholder.com/100'"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="mt-3 font-bold text-white text-lg group-hover:text-purple-400">Omudia</h4>
+                    <span
+                        class="text-[10px] text-purple-500 font-bold uppercase tracking-wider bg-purple-500/10 px-2 rounded">Фабрика
+                        контента</span>
+                </a>
+
+                <a href="#products"
+                    class="absolute top-[480px] left-[72%] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center group node-hover"
+                    style="color: #ec4899;">
+                    <div
+                        class="w-28 h-28 rounded-full bg-gray-900 border-2 border-pink-500/40 flex items-center justify-center overflow-hidden shadow-[0_0_30px_rgba(236,72,153,0.2)]">
+                        <img src="../assets/img/i3.png" onerror="this.src='https://via.placeholder.com/100'"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="mt-3 font-bold text-white text-lg group-hover:text-pink-400">Senmud</h4>
+                    <span
+                        class="text-[10px] text-pink-500 font-bold uppercase tracking-wider bg-pink-500/10 px-2 rounded">Человеческий
+                        сигнал</span>
+                </a>
+
+                <a href="https://cv.sopen.ai" target="_blank"
+                    class="absolute top-[580px] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center group node-hover"
+                    style="color: #14b8a6;">
+                    <div
+                        class="w-28 h-28 rounded-full bg-gray-900 border-2 border-teal-500/40 flex items-center justify-center shadow-[0_0_30px_rgba(20,184,166,0.2)]">
+                        <i class="fas fa-fingerprint text-5xl text-teal-400"></i>
+                    </div>
+                    <h4 class="mt-3 font-bold text-white text-lg group-hover:text-teal-400">Sopen CV</h4>
+                    <span
+                        class="text-[10px] text-teal-500 font-bold uppercase tracking-wider bg-teal-500/10 px-2 rounded">Центральная
+                        личность</span>
+                </a>
+
+                <a href="https://pay.sopen.ai" target="_blank"
+                    class="absolute top-[480px] left-[28%] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center group node-hover"
+                    style="color: #eab308;">
+                    <div
+                        class="w-28 h-28 rounded-full bg-gray-900 border-2 border-yellow-500/40 flex items-center justify-center shadow-[0_0_30px_rgba(234,179,8,0.2)]">
+                        <i class="fas fa-wallet text-5xl text-yellow-500"></i>
+                    </div>
+                    <h4 class="mt-3 font-bold text-white text-lg group-hover:text-yellow-400">Sopen Pay</h4>
+                    <span
+                        class="text-[10px] text-yellow-500 font-bold uppercase tracking-wider bg-yellow-500/10 px-2 rounded">Цифровая
+                        экономика</span>
+                </a>
+
+                <a href="https://ads.sopen.ai" target="_blank"
+                    class="absolute top-[220px] left-[28%] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center group node-hover"
+                    style="color: #f97316;">
+                    <div
+                        class="w-28 h-28 rounded-full bg-gray-900 border-2 border-orange-500/40 flex items-center justify-center shadow-[0_0_30px_rgba(249,115,22,0.2)]">
+                        <i class="fas fa-bullseye text-5xl text-orange-500"></i>
+                    </div>
+                    <h4 class="mt-3 font-bold text-white text-lg group-hover:text-orange-400">Sopen Ads</h4>
+                    <span
+                        class="text-[10px] text-orange-500 font-bold uppercase tracking-wider bg-orange-500/10 px-2 rounded">Рекламная
+                        сеть</span>
+                </a>
             </div>
-            
-            <div class="relative grid grid-cols-1 md:grid-cols-4 gap-8 items-center justify-items-center mb-12">
-                <div class="hidden md:block absolute top-[40%] left-0 w-full h-1 flow-line opacity-30 -z-10 rounded-full"></div>
 
-                <!-- Products Icons -->
-                <div class="group relative flex flex-col items-center w-full max-w-xs">
-                    <div class="relative w-36 h-36 rounded-full bg-gray-900 border-2 border-blue-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-blue-500 overflow-hidden">
-                        <img src="../assets/img/i1.jpg" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Zakkur" class="w-full h-full object-cover z-20 transition hover:opacity-90">
-                        <i class="fas fa-brain text-4xl text-blue-500 absolute z-10 hidden animate-pulse"></i>
+            <!-- Mobile: Interactive List -->
+            <div class="md:hidden space-y-4 mt-12 mb-20 px-4">
+                <div class="p-6 bg-white/5 border border-white/10 rounded-3xl flex items-center gap-6">
+                    <div
+                        class="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-400 ring-2 ring-blue-500/20">
+                        <i class="fas fa-brain text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-blue-400 mb-1">Zakkur</h3>
-                    <p class="text-xs text-gray-400 text-center">Мозг принятия решений</p>
+                    <div>
+                        <h4 class="text-xl font-bold text-white">Zakkur</h4>
+                        <p class="text-xs text-gray-400 mt-1">Мозг решений и исполнения</p>
+                    </div>
                 </div>
-
-                <div class="group relative flex flex-col items-center w-full max-w-xs">
-                    <div class="relative w-36 h-36 rounded-full bg-gray-900 border-2 border-purple-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(139,92,246,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-purple-500 overflow-hidden">
-                        <img src="../assets/img/i2.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Omudia" class="w-full h-full object-cover z-20 transition hover:opacity-90">
-                        <i class="fas fa-bullhorn text-4xl text-purple-500 absolute z-10 hidden animate-pulse"></i>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-3xl flex items-center gap-6">
+                    <div
+                        class="w-16 h-16 bg-purple-500/10 rounded-full flex items-center justify-center text-purple-400 ring-2 ring-purple-500/20">
+                        <i class="fas fa-industry text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-purple-400 mb-1">Omudia</h3>
-                    <p class="text-xs text-gray-400 text-center">Производство и публикация</p>
+                    <div>
+                        <h4 class="text-xl font-bold text-white">Omudia</h4>
+                        <p class="text-xs text-gray-400 mt-1">Филиал производства и публикации</p>
+                    </div>
                 </div>
-
-                <div class="group relative flex flex-col items-center w-full max-w-xs">
-                    <div class="relative w-36 h-36 rounded-full bg-gray-900 border-2 border-pink-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(236,72,153,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-pink-500 overflow-hidden">
-                        <img src="../assets/img/i3.png" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" alt="Senmud" class="w-full h-full object-cover z-20 transition hover:opacity-90">
-                        <i class="fas fa-users text-4xl text-pink-500 absolute z-10 hidden animate-pulse"></i>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-3xl flex items-center gap-6">
+                    <div
+                        class="w-16 h-16 bg-pink-500/10 rounded-full flex items-center justify-center text-pink-400 ring-2 ring-pink-500/20">
+                        <i class="fas fa-users text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-pink-400 mb-1">Senmud</h3>
-                    <p class="text-xs text-gray-400 text-center">Слой человеческого сигнала</p>
+                    <div>
+                        <h4 class="text-xl font-bold text-white">Senmud</h4>
+                        <p class="text-xs text-gray-400 mt-1">Слой человеческого сигнала</p>
+                    </div>
                 </div>
-
-                <div class="group relative flex flex-col items-center w-full max-w-xs">
-                    <div class="relative w-36 h-36 rounded-full bg-gray-900 border-2 border-teal-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(20,184,166,0.2)] transition-all duration-500 group-hover:scale-105 group-hover:border-teal-500 overflow-hidden">
-                        <i class="fas fa-fingerprint text-5xl text-teal-500 z-10"></i>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-3xl flex items-center gap-6">
+                    <div
+                        class="w-16 h-16 bg-teal-500/10 rounded-full flex items-center justify-center text-teal-400 ring-2 ring-teal-500/20">
+                        <i class="fas fa-fingerprint text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-teal-400 mb-1">Sopen CV</h3>
-                    <p class="text-xs text-gray-400 text-center">Единая идентификация</p>
+                    <div>
+                        <h4 class="text-xl font-bold text-white">Sopen CV</h4>
+                        <p class="text-xs text-gray-400 mt-1">Единая личность и контекст</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="mt-8 text-center border-t border-dashed border-gray-700 pt-8 relative">
-                 <p class="text-gray-400 text-sm max-w-2xl mx-auto">
-                    <i class="fas fa-sync animate-spin mr-2 text-blue-500"></i>
-                    Система работает как единый цикл: <span class="text-white">Senmud</span> ловит сигнал → <span class="text-white">Zakkur</span> решает → <span class="text-white">Omudia</span> исполняет → <span class="text-white">Sopen CV</span> документирует.
+            <div class="mt-8 text-center border-t border-white/5 pt-8 relative">
+                <p class="text-gray-400 text-lg max-w-3xl mx-auto font-light leading-relaxed">
+                    <i class="fas fa-sync animate-spin mr-3 text-blue-500"></i>
+                    Система, работающая как единый мозговой цикл: <span class="text-white font-bold">Senmud</span>
+                    чувствует и улавливает сигнал, <span class="text-blue-400 font-bold">Zakkur</span> анализирует и
+                    решает, <span class="text-purple-400 font-bold">Omudia</span> исполняет и публикует, а <span
+                        class="text-teal-400 font-bold">Sopen CV</span> документирует личность и права.
                 </p>
             </div>
         </div>
@@ -427,163 +804,225 @@
             <div class="flex flex-col lg:flex-row items-start gap-12 mb-40 relative">
                 <div class="lg:w-3/5 z-10 text-left">
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="p-4 bg-blue-500/20 rounded-2xl text-blue-400"><i class="fas fa-brain text-3xl"></i></div>
+                        <div class="p-4 bg-blue-500/20 rounded-2xl text-blue-400"><i class="fas fa-brain text-3xl"></i>
+                        </div>
                         <div>
-                            <span class="block text-blue-400 text-xs font-bold uppercase tracking-widest mb-1">AI Decision & Execution</span>
+                            <span class="block text-blue-400 text-xs font-bold uppercase tracking-widest mb-1">AI
+                                Decision & Execution</span>
                             <h3 class="text-5xl font-bold text-white">Zakkur</h3>
                         </div>
                     </div>
-                    
+
                     <h4 class="text-2xl text-blue-300 mb-6 font-light">Мозг решений и исполнения - Цифровой C-Suite</h4>
-                    
+
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        Zakkur — это не просто умный помощник, дающий советы, это <strong>операционная система для принятия решений</strong>. Она решает экзистенциальные проблемы компаний: медленное принятие решений, отсутствие отслеживания и крах ручного исполнения под давлением. Работает как цифровая исполнительная команда (CFO, CTO, CMO, COO) в рамках одной структуры.
+                        Zakkur — это не просто умный помощник, дающий советы, это <strong>операционная система для
+                            принятия решений</strong>. Она решает экзистенциальные проблемы компаний: медленное принятие
+                        решений, отсутствие отслеживания и крах ручного исполнения под давлением. Работает как цифровая
+                        исполнительная команда (CFO, CTO, CMO, COO) в рамках одной структуры.
                     </p>
-                    
+
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-blue-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">Как это работает (The Pipeline):</h5>
+                        <h5 class="text-blue-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">Как это работает
+                            (The Pipeline):</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>1. Чтение (Read):</strong> Собирает контекст из множества источников (финансовые данные, KPI, логи, риски).</li>
-                            <li><strong>2. Проверка (Validate):</strong> Пропускает данные через фильтры "Zero-Trust" и политики соответствия перед обработкой.</li>
-                            <li><strong>3. Решение (Decide):</strong> Не дает расплывчатого мнения, а генерирует окончательный вариант, подкрепленный альтернативами (Option A/B), рисками и условиями успеха.</li>
-                            <li><strong>4. Исполнение (Execute):</strong> Немедленно преобразует решение в действия: запуск задач, отправка API-команд, обновление настроек или запуск кампаний.</li>
-                            <li><strong>5. Аудит (Audit):</strong> Записывает каждый шаг в хронологическом порядке: Кто решил? Почему? И на основе каких данных? Для обеспечения абсолютной прозрачности.</li>
+                            <li><strong>1. Чтение (Read):</strong> Собирает контекст из множества источников (финансовые
+                                данные, KPI, логи, риски).</li>
+                            <li><strong>2. Проверка (Validate):</strong> Пропускает данные через фильтры "Zero-Trust" и
+                                политики соответствия перед обработкой.</li>
+                            <li><strong>3. Решение (Decide):</strong> Не дает расплывчатого мнения, а генерирует
+                                окончательный вариант, подкрепленный альтернативами (Option A/B), рисками и условиями
+                                успеха.</li>
+                            <li><strong>4. Исполнение (Execute):</strong> Немедленно преобразует решение в действия:
+                                запуск задач, отправка API-команд, обновление настроек или запуск кампаний.</li>
+                            <li><strong>5. Аудит (Audit):</strong> Записывает каждый шаг в хронологическом порядке: Кто
+                                решил? Почему? И на основе каких данных? Для обеспечения абсолютной прозрачности.</li>
                         </ul>
                     </div>
 
-                    <div class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
+                    <div
+                        class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
                         <i class="fas fa-shield-alt text-blue-500 text-xl"></i>
-                        <span>Решает конфликт "скорость против безопасности" с помощью Guardrails, предотвращающих выход за рамки.</span>
+                        <span>Решает конфликт "скорость против безопасности" с помощью Guardrails, предотвращающих выход
+                            за рамки.</span>
                     </div>
                 </div>
-                
+
                 <div class="lg:w-2/5 w-full sticky top-24">
-                    <div class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-blue-900/20 flex flex-col justify-between overflow-hidden backdrop-blur-md">
-                        <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent blur-2xl -z-10"></div>
-                        <img src="../assets/img/in1.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Zakkur+Interface'" alt="Zakkur" class="w-full mt-8 rounded-t-xl border-t-4 border-blue-500 shadow-lg object-cover">
+                    <div
+                        class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-blue-900/20 flex flex-col justify-between overflow-hidden backdrop-blur-md">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent blur-2xl -z-10">
+                        </div>
+                        <img src="../assets/img/in1.png"
+                            onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Zakkur+Interface'"
+                            alt="Zakkur"
+                            class="w-full mt-8 rounded-t-xl border-t-4 border-blue-500 shadow-lg object-cover">
                     </div>
                 </div>
             </div>
 
             <!-- Omudia Detailed -->
             <div class="flex flex-col lg:flex-row-reverse items-start gap-12 mb-40 relative">
-                 <div class="lg:w-3/5 z-10 text-left">
+                <div class="lg:w-3/5 z-10 text-left">
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="p-4 bg-purple-500/20 rounded-2xl text-purple-400"><i class="fas fa-industry text-3xl"></i></div>
+                        <div class="p-4 bg-purple-500/20 rounded-2xl text-purple-400"><i
+                                class="fas fa-industry text-3xl"></i></div>
                         <div>
-                            <span class="block text-purple-400 text-xs font-bold uppercase tracking-widest mb-1">AI Content Production</span>
+                            <span class="block text-purple-400 text-xs font-bold uppercase tracking-widest mb-1">AI
+                                Content Production</span>
                             <h3 class="text-5xl font-bold text-white">Omudia</h3>
                         </div>
                     </div>
-                    
-                    <h4 class="text-2xl text-purple-300 mb-6 font-light">Промышленное производство и публикация - Фабрика (The Factory)</h4>
-                    
+
+                    <h4 class="text-2xl text-purple-300 mb-6 font-light">Промышленное производство и публикация -
+                        Фабрика (The Factory)</h4>
+
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        Omudia меняет концепцию контента с "творческого вдохновения" на "измеримый операционный процесс". Это комплексная фабрика для компаний и основателей (Founder-Led Marketing), решающая проблему потери времени и рассеивания идентичности на разных платформах.
+                        Omudia меняет концепцию контента с "творческого вдохновения" на "измеримый операционный
+                        процесс". Это комплексная фабрика для компаний и основателей (Founder-Led Marketing), решающая
+                        проблему потери времени и рассеивания идентичности на разных платформах.
                     </p>
-                    
+
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-purple-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">Цикл фабрики (The Factory Loop):</h5>
+                        <h5 class="text-purple-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">Цикл фабрики
+                            (The Factory Loop):</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>Идея &rarr; Бриф:</strong> Точное определение цели, аудитории и ограничений (юридических/брендовых).</li>
-                            <li><strong>Генерация & Адаптация:</strong> Не просто пишет, а "адаптирует". Превращает одну идею в статью, твит, короткое видео и пост в LinkedIn с уникальным стилем для каждой платформы.</li>
-                            <li><strong>Проверка & Фильтр:</strong> Проверка контента на соответствие политикам компании для предотвращения неподтвержденных заявлений или рисков.</li>
-                            <li><strong>Публикация & Планирование:</strong> Полностью автоматизированная публикация и планирование во всех каналах.</li>
-                            <li><strong>Измерение & Оптимизация:</strong> Публикация — это не конец. Система измеряет взаимодействие (клики, показы, конверсию) и передает данные обратно в Zakkur для улучшения следующего цикла.</li>
+                            <li><strong>Идея &rarr; Бриф:</strong> Точное определение цели, аудитории и ограничений
+                                (юридических/брендовых).</li>
+                            <li><strong>Генерация & Адаптация:</strong> Не просто пишет, а "адаптирует". Превращает одну
+                                идею в статью, твит, короткое видео и пост в LinkedIn с уникальным стилем для каждой
+                                платформы.</li>
+                            <li><strong>Проверка & Фильтр:</strong> Проверка контента на соответствие политикам компании
+                                для предотвращения неподтвержденных заявлений или рисков.</li>
+                            <li><strong>Публикация & Планирование:</strong> Полностью автоматизированная публикация и
+                                планирование во всех каналах.</li>
+                            <li><strong>Измерение & Оптимизация:</strong> Публикация — это не конец. Система измеряет
+                                взаимодействие (клики, показы, конверсию) и передает данные обратно в Zakkur для
+                                улучшения следующего цикла.</li>
                         </ul>
                     </div>
 
-                    <div class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
+                    <div
+                        class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
                         <i class="fas fa-sync text-purple-500 text-xl"></i>
                         <span>Полная интеграция: Zakkur определяет стратегию, Omudia исполняет и публикует.</span>
                     </div>
                 </div>
-                
+
                 <div class="lg:w-2/5 w-full sticky top-24">
-                    <div class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-purple-900/20 flex flex-col justify-between overflow-hidden backdrop-blur-md">
-                        <div class="absolute inset-0 bg-gradient-to-bl from-purple-600/10 to-transparent blur-2xl -z-10"></div>
-                        <img src="../assets/img/in2.png" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Omudia+Factory'" alt="Omudia" class="w-full rounded-lg border border-purple-500/30 shadow-lg object-cover">
+                    <div
+                        class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-purple-900/20 flex flex-col justify-between overflow-hidden backdrop-blur-md">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-bl from-purple-600/10 to-transparent blur-2xl -z-10">
+                        </div>
+                        <img src="../assets/img/in2.png"
+                            onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Omudia+Factory'"
+                            alt="Omudia" class="w-full rounded-lg border border-purple-500/30 shadow-lg object-cover">
                     </div>
                 </div>
             </div>
 
             <!-- Senmud Detailed -->
             <div class="flex flex-col lg:flex-row items-start gap-12 mb-40 relative">
-                 <div class="lg:w-3/5 z-10 text-left">
+                <div class="lg:w-3/5 z-10 text-left">
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="p-4 bg-pink-500/20 rounded-2xl text-pink-400"><i class="fas fa-satellite-dish text-3xl"></i></div>
+                        <div class="p-4 bg-pink-500/20 rounded-2xl text-pink-400"><i
+                                class="fas fa-satellite-dish text-3xl"></i></div>
                         <div>
-                            <span class="block text-pink-400 text-xs font-bold uppercase tracking-widest mb-1">AI-Native Social</span>
+                            <span class="block text-pink-400 text-xs font-bold uppercase tracking-widest mb-1">AI-Native
+                                Social</span>
                             <h3 class="text-5xl font-bold text-white">Senmud</h3>
                         </div>
                     </div>
-                    
-                    <h4 class="text-2xl text-pink-300 mb-6 font-light">Слой человеческого сигнала - Сигнал против Шума</h4>
-                    
+
+                    <h4 class="text-2xl text-pink-300 mb-6 font-light">Слой человеческого сигнала - Сигнал против Шума
+                    </h4>
+
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        Senmud нацелен на проблемы традиционных сетей: шум, зависимость и поверхностное взаимодействие. Здесь ИИ — это не побочная функция, а инфраструктура, помогающая людям создавать смысл.
+                        Senmud нацелен на проблемы традиционных сетей: шум, зависимость и поверхностное взаимодействие.
+                        Здесь ИИ — это не побочная функция, а инфраструктура, помогающая людям создавать смысл.
                     </p>
-                    
+
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-pink-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">Что внутри Senmud?</h5>
+                        <h5 class="text-pink-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">Что внутри
+                            Senmud?</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
-                            <li><strong>Комплексная платформа:</strong> Не просто страница, содержит посты, истории (Stories), аудиокомнаты и прямые трансляции.</li>
-                            <li><strong>ИИ как соавтор (Co-Creator):</strong> Помогает формулировать идеи, резюмировать длинные дебаты, переводить контент и даже предлагать ответы для опровержения аргументов.</li>
-                            <li><strong>Системы качества:</strong> Основаны на репутации, таблицах лидеров и геймификации для повышения качества дискуссий.</li>
-                            <li><strong>Чувства системы:</strong> Senmud улавливает, что действительно работает, а что нет с аудиторией, и передает эти "сигналы" в Zakkur для принятия следующего шага.</li>
+                            <li><strong>Комплексная платформа:</strong> Не просто страница, содержит посты, истории
+                                (Stories), аудиокомнаты и прямые трансляции.</li>
+                            <li><strong>ИИ как соавтор (Co-Creator):</strong> Помогает формулировать идеи, резюмировать
+                                длинные дебаты, переводить контент и даже предлагать ответы для опровержения аргументов.
+                            </li>
+                            <li><strong>Системы качества:</strong> Основаны на репутации, таблицах лидеров и
+                                геймификации для повышения качества дискуссий.</li>
+                            <li><strong>Чувства системы:</strong> Senmud улавливает, что действительно работает, а что
+                                нет с аудиторией, и передает эти "сигналы" в Zakkur для принятия следующего шага.</li>
                         </ul>
                     </div>
 
-                    <div class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
+                    <div
+                        class="flex gap-4 items-center text-sm text-gray-500 bg-white/5 p-4 rounded-lg border border-white/5">
                         <i class="fas fa-users text-pink-500 text-xl"></i>
                         <span>Люди определяют смысл, ИИ помогает в построении и уточнении.</span>
                     </div>
                 </div>
-                
+
                 <div class="lg:w-2/5 w-full sticky top-24">
-                    <div class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-pink-900/20 flex flex-col justify-center items-center overflow-hidden backdrop-blur-md">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-pink-600/10 to-transparent blur-2xl -z-10"></div>
-                        <img src="../assets/img/in3.jpg" onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Senmud+Feed'" alt="Senmud" class="w-full rounded-lg border border-pink-500/30 shadow-lg object-cover">
+                    <div
+                        class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-pink-900/20 flex flex-col justify-center items-center overflow-hidden backdrop-blur-md">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-pink-600/10 to-transparent blur-2xl -z-10">
+                        </div>
+                        <img src="../assets/img/in3.jpg"
+                            onerror="this.src='https://via.placeholder.com/400x800/111/333?text=Senmud+Feed'"
+                            alt="Senmud" class="w-full rounded-lg border border-pink-500/30 shadow-lg object-cover">
                     </div>
                 </div>
             </div>
 
             <!-- Sopen CV Detailed -->
             <div class="flex flex-col lg:flex-row-reverse items-start gap-12 relative">
-                 <div class="lg:w-3/5 z-10 text-left">
+                <div class="lg:w-3/5 z-10 text-left">
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="p-4 bg-brand-teal/20 rounded-2xl text-teal-400"><i class="fas fa-fingerprint text-3xl"></i></div>
+                        <div class="p-4 bg-brand-teal/20 rounded-2xl text-teal-400"><i
+                                class="fas fa-fingerprint text-3xl"></i></div>
                         <div>
-                            <span class="block text-teal-400 text-xs font-bold uppercase tracking-widest mb-1">Unified Identity Layer</span>
+                            <span class="block text-teal-400 text-xs font-bold uppercase tracking-widest mb-1">Unified
+                                Identity Layer</span>
                             <h3 class="text-5xl font-bold text-white">Sopen CV</h3>
                         </div>
                     </div>
-                    
+
                     <h4 class="text-2xl text-teal-300 mb-6 font-light">Единая личность + Права + Контекст</h4>
-                    
+
                     <p class="text-gray-300 text-lg leading-loose mb-8">
-                        Цель: Нет "нового пользователя" для каждого приложения. Есть один пользователь с контекстом, который перемещается вместе с вами. Sopen CV — это цифровой "паспорт" внутри экосистемы.
+                        Цель: Нет "нового пользователя" для каждого приложения. Есть один пользователь с контекстом,
+                        который перемещается вместе с вами. Sopen CV — это цифровой "паспорт" внутри экосистемы.
                     </p>
-                    
+
                     <div class="glass-panel rounded-2xl p-8 mb-8">
-                        <h5 class="text-teal-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">Ключевые особенности:</h5>
+                        <h5 class="text-teal-400 font-bold mb-4 text-lg border-b border-white/10 pb-2">Ключевые
+                            особенности:</h5>
                         <ul class="text-gray-300 space-y-4 feature-list">
                             <li><strong>Единый вход (SSO):</strong> Один безопасный аккаунт для всей экосистемы.</li>
-                            <li><strong>Операционный профиль:</strong> Не обычное резюме, а запись, отражающая вашу активность, прогресс, репутацию в Senmud и историю в системе.</li>
-                            <li><strong>Паспорт контекста:</strong> Передает Zakkur необходимую информацию (Кто вы? Какие у вас права? Какова ваша цель?), чтобы он мог принимать точные решения от вашего имени.</li>
-                            <li><strong>Управление организациями:</strong> Полная поддержка корпоративных аккаунтов, команд и прав (Админ, Участник, Наблюдатель).</li>
+                            <li><strong>Операционный профиль:</strong> Не обычное резюме, а запись, отражающая вашу
+                                активность, прогресс, репутацию в Senmud и историю в системе.</li>
+                            <li><strong>Паспорт контекста:</strong> Передает Zakkur необходимую информацию (Кто вы?
+                                Какие у вас права? Какова ваша цель?), чтобы он мог принимать точные решения от вашего
+                                имени.</li>
+                            <li><strong>Управление организациями:</strong> Полная поддержка корпоративных аккаунтов,
+                                команд и прав (Админ, Участник, Наблюдатель).</li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="lg:w-2/5 w-full sticky top-24">
-                    <div class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-teal-900/20 flex justify-center items-center overflow-hidden backdrop-blur-md">
+                    <div
+                        class="relative w-full aspect-[3/4] rounded-3xl border border-white/10 bg-gray-900/50 p-6 shadow-2xl shadow-teal-900/20 flex justify-center items-center overflow-hidden backdrop-blur-md">
                         <div class="absolute inset-0 bg-teal-600/5 blur-2xl -z-10"></div>
                         <div class="text-center p-8 border border-teal-500/30 rounded-2xl bg-black/40 w-full">
                             <div class="w-20 h-20 bg-gray-700 rounded-full mx-auto mb-4 border-2 border-teal-500"></div>
                             <h5 class="text-white text-xl font-bold mb-1">Имя пользователя</h5>
                             <p class="text-gray-500 text-sm mb-6">@username • Admin</p>
-                            
+
                             <div class="space-y-3 text-left">
                                 <div class="flex justify-between text-sm text-gray-400">
                                     <span>Репутация</span>
@@ -608,14 +1047,18 @@
     <section id="tech-stack" class="py-20 bg-black relative border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-4">Under The Hood</span>
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-4">Under
+                    The Hood</span>
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Технический арсенал</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">Мы используем новейшие технологии для создания надежной, быстрой и бесконечно масштабируемой инфраструктуры.</p>
+                <p class="text-gray-400 max-w-2xl mx-auto">Мы используем новейшие технологии для создания надежной,
+                    быстрой и бесконечно масштабируемой инфраструктуры.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Data -->
-                <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
+                <div
+                    class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-database text-blue-400 text-xl"></i>
                         <h3 class="text-white font-bold">Данные и Хранение</h3>
@@ -628,7 +1071,8 @@
                     </div>
                 </div>
                 <!-- Infra -->
-                <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
+                <div
+                    class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-cloud text-blue-400 text-xl"></i>
                         <h3 class="text-white font-bold">Облако и Инфраструктура</h3>
@@ -644,7 +1088,8 @@
                     </div>
                 </div>
                 <!-- Core -->
-                <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
+                <div
+                    class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-code text-blue-400 text-xl"></i>
                         <h3 class="text-white font-bold">Ядро и Программирование</h3>
@@ -658,7 +1103,8 @@
                     </div>
                 </div>
                 <!-- Mobile -->
-                <div class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
+                <div
+                    class="bg-brand-gray/30 p-6 rounded-2xl border border-white/5 hover:border-blue-500/30 transition duration-300">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-laptop-code text-blue-400 text-xl"></i>
                         <h3 class="text-white font-bold">Среда разработки</h3>
@@ -679,36 +1125,45 @@
         <div class="max-w-4xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-10 text-white">Часто задаваемые вопросы</h2>
             <div class="space-y-4">
-                <div class="faq-item border border-white/10 rounded-lg bg-black/40 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
+                <div class="faq-item border border-white/10 rounded-lg bg-black/40 overflow-hidden cursor-pointer"
+                    onclick="toggleFaq(this)">
                     <div class="p-4 flex justify-between items-center">
                         <h4 class="text-lg font-bold text-gray-200">Является ли Zakkur заменой сотрудникам?</h4>
                         <i class="fas fa-chevron-down text-gray-500 faq-icon transition-transform duration-300"></i>
                     </div>
                     <div class="faq-content bg-white/5">
                         <div class="p-4 text-gray-400 text-sm leading-relaxed">
-                            Нет, Zakkur — это "инструмент усиления" (Enabler). Он не заменяет человеческое руководство, а вооружает его точными данными, быстрым анализом и безошибочным исполнением, позволяя сотрудникам сосредоточиться на творчестве и стратегии.
+                            Нет, Zakkur — это "инструмент усиления" (Enabler). Он не заменяет человеческое руководство,
+                            а вооружает его точными данными, быстрым анализом и безошибочным исполнением, позволяя
+                            сотрудникам сосредоточиться на творчестве и стратегии.
                         </div>
                     </div>
                 </div>
-                <div class="faq-item border border-white/10 rounded-lg bg-black/40 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
+                <div class="faq-item border border-white/10 rounded-lg bg-black/40 overflow-hidden cursor-pointer"
+                    onclick="toggleFaq(this)">
                     <div class="p-4 flex justify-between items-center">
                         <h4 class="text-lg font-bold text-gray-200">Что такое Sopen CV?</h4>
                         <i class="fas fa-chevron-down text-gray-500 faq-icon transition-transform duration-300"></i>
                     </div>
                     <div class="faq-content bg-white/5">
                         <div class="p-4 text-gray-400 text-sm leading-relaxed">
-                            Sopen CV — это не традиционное резюме (PDF), а "живой" файл, документирующий ваши действия, решения и репутацию внутри системы, давая вам доверие, основанное на том, "что вы сделали", а не только на том, "что вы написали".
+                            Sopen CV — это не традиционное резюме (PDF), а "живой" файл, документирующий ваши действия,
+                            решения и репутацию внутри системы, давая вам доверие, основанное на том, "что вы сделали",
+                            а не только на том, "что вы написали".
                         </div>
                     </div>
                 </div>
-                <div class="faq-item border border-white/10 rounded-lg bg-black/40 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
+                <div class="faq-item border border-white/10 rounded-lg bg-black/40 overflow-hidden cursor-pointer"
+                    onclick="toggleFaq(this)">
                     <div class="p-4 flex justify-between items-center">
                         <h4 class="text-lg font-bold text-gray-200">Когда запуск?</h4>
                         <i class="fas fa-chevron-down text-gray-500 faq-icon transition-transform duration-300"></i>
                     </div>
                     <div class="faq-content bg-white/5">
                         <div class="p-4 text-gray-400 text-sm leading-relaxed">
-                            Мы следуем политике "Непрерывного развертывания" (Continuous Deployment). Мы будем запускать модули последовательно, как только они будут готовы и пройдут тесты безопасности. Подпишитесь на рассылку, чтобы узнать первыми.
+                            Мы следуем политике "Непрерывного развертывания" (Continuous Deployment). Мы будем запускать
+                            модули последовательно, как только они будут готовы и пройдут тесты безопасности.
+                            Подпишитесь на рассылку, чтобы узнать первыми.
                         </div>
                     </div>
                 </div>
@@ -717,7 +1172,8 @@
     </section>
 
     <!-- PageSpeed Insights Section -->
-    <section id="performance" class="py-24 bg-gradient-to-r from-brand-gray to-black border-y border-white/5 relative overflow-hidden">
+    <section id="performance"
+        class="py-24 bg-gradient-to-r from-brand-gray to-black border-y border-white/5 relative overflow-hidden">
         <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-green-600/10 rounded-full blur-3xl"></div>
         <div class="absolute -right-20 -top-20 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl"></div>
 
@@ -729,40 +1185,56 @@
             <p class="text-gray-400 text-lg mb-16 max-w-2xl mx-auto">
                 Реальные результаты производительности, отражающие качество кода и скорость отклика.
             </p>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- SEO -->
-                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:border-green-500/50 transition duration-500 group">
-                    <div class="text-green-500 text-4xl mb-4 group-hover:scale-110 transition duration-300"><i class="fas fa-search"></i></div>
-                    <div class="text-5xl font-black text-white mb-2">100<span class="text-xl text-gray-500 font-normal">/100</span></div>
-                    <div class="text-green-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
+                <div
+                    class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:border-green-500/50 transition duration-500 group">
+                    <div class="text-green-500 text-4xl mb-4 group-hover:scale-110 transition duration-300"><i
+                            class="fas fa-search"></i></div>
+                    <div class="text-5xl font-black text-white mb-2">100<span
+                            class="text-xl text-gray-500 font-normal">/100</span></div>
+                    <div
+                        class="text-green-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-green-500"></span>
                         SEO Оптимизация
                     </div>
                 </div>
                 <!-- Best Practices -->
-                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:border-green-500/50 transition duration-500 group">
-                    <div class="text-green-500 text-4xl mb-4 group-hover:scale-110 transition duration-300"><i class="fas fa-check-double"></i></div>
-                    <div class="text-5xl font-black text-white mb-2">96<span class="text-xl text-gray-500 font-normal">/100</span></div>
-                    <div class="text-green-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
+                <div
+                    class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:border-green-500/50 transition duration-500 group">
+                    <div class="text-green-500 text-4xl mb-4 group-hover:scale-110 transition duration-300"><i
+                            class="fas fa-check-double"></i></div>
+                    <div class="text-5xl font-black text-white mb-2">96<span
+                            class="text-xl text-gray-500 font-normal">/100</span></div>
+                    <div
+                        class="text-green-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-green-500"></span>
                         Лучшие практики
                     </div>
                 </div>
                 <!-- Accessibility -->
-                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:border-green-500/50 transition duration-500 group">
-                    <div class="text-green-500 text-4xl mb-4 group-hover:scale-110 transition duration-300"><i class="fas fa-universal-access"></i></div>
-                    <div class="text-5xl font-black text-white mb-2">90<span class="text-xl text-gray-500 font-normal">/100</span></div>
-                    <div class="text-green-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
+                <div
+                    class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:border-green-500/50 transition duration-500 group">
+                    <div class="text-green-500 text-4xl mb-4 group-hover:scale-110 transition duration-300"><i
+                            class="fas fa-universal-access"></i></div>
+                    <div class="text-5xl font-black text-white mb-2">90<span
+                            class="text-xl text-gray-500 font-normal">/100</span></div>
+                    <div
+                        class="text-green-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-green-500"></span>
                         Доступность
                     </div>
                 </div>
                 <!-- Performance -->
-                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:border-orange-500/50 transition duration-500 group">
-                    <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition duration-300"><i class="fas fa-bolt"></i></div>
-                    <div class="text-5xl font-black text-white mb-2">78<span class="text-xl text-gray-500 font-normal">/100</span></div>
-                    <div class="text-orange-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
+                <div
+                    class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:border-orange-500/50 transition duration-500 group">
+                    <div class="text-orange-500 text-4xl mb-4 group-hover:scale-110 transition duration-300"><i
+                            class="fas fa-bolt"></i></div>
+                    <div class="text-5xl font-black text-white mb-2">78<span
+                            class="text-xl text-gray-500 font-normal">/100</span></div>
+                    <div
+                        class="text-orange-400 text-sm font-bold uppercase tracking-wider flex justify-center items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
                         Производительность
                     </div>
@@ -779,13 +1251,16 @@
         <div class="absolute inset-0 bg-blue-900/5"></div>
         <div class="max-w-7xl mx-auto px-4 relative z-10">
             <div class="text-center mb-12">
-                <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-4">Platform Edition</span>
+                <span
+                    class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-4">Platform
+                    Edition</span>
                 <h3 class="text-3xl font-bold text-white mb-4">Zakkur v1.5: Метрики производительности</h3>
-                <p class="text-gray-400 max-w-2xl mx-auto">Система разработана для высокой пропускной способности при приеме и низкой задержки при отображении.</p>
+                <p class="text-gray-400 max-w-2xl mx-auto">Система разработана для высокой пропускной способности при
+                    приеме и низкой задержки при отображении.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                
+
                 <!-- Performance Summary Table -->
                 <div class="bg-brand-gray/50 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm">
                     <div class="p-6 border-b border-white/10 flex items-center gap-3 bg-white/5">
@@ -815,12 +1290,14 @@
                                 <tr class="border-b border-white/5">
                                     <td class="py-3">Анализ одного агента</td>
                                     <td class="py-3 text-blue-400 font-mono font-bold">1.5 - 3s</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Зависит от скорости ИИ</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Зависит от скорости ИИ
+                                    </td>
                                 </tr>
                                 <tr class="border-b border-white/5">
                                     <td class="py-3">Полный совет (Full Board)</td>
                                     <td class="py-3 text-purple-400 font-mono font-bold">8 - 12s</td>
-                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Параллельное выполнение</td>
+                                    <td class="py-3 text-gray-500 text-xs hidden sm:table-cell">Параллельное выполнение
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="py-3">Первая отрисовка (TTFT)</td>
@@ -835,7 +1312,8 @@
                 <!-- Scalability & Reliability -->
                 <div class="space-y-6">
                     <!-- Throughput -->
-                    <div class="bg-brand-gray/50 border border-white/10 rounded-2xl overflow-hidden p-6 hover:border-purple-500/30 transition duration-300">
+                    <div
+                        class="bg-brand-gray/50 border border-white/10 rounded-2xl overflow-hidden p-6 hover:border-purple-500/30 transition duration-300">
                         <div class="flex items-center gap-3 mb-4">
                             <i class="fas fa-bolt text-purple-500 text-xl"></i>
                             <h4 class="text-white font-bold">Масштабируемость (Scalability)</h4>
@@ -860,7 +1338,8 @@
                     </div>
 
                     <!-- Reliability -->
-                    <div class="bg-brand-gray/50 border border-white/10 rounded-2xl overflow-hidden p-6 hover:border-teal-500/30 transition duration-300">
+                    <div
+                        class="bg-brand-gray/50 border border-white/10 rounded-2xl overflow-hidden p-6 hover:border-teal-500/30 transition duration-300">
                         <div class="flex items-center gap-3 mb-4">
                             <i class="fas fa-shield-alt text-teal-500 text-xl"></i>
                             <h4 class="text-white font-bold">Надежность (Reliability)</h4>
@@ -871,7 +1350,9 @@
                                 <div class="text-xs text-gray-500">Ожидаемый уровень ошибок</div>
                             </div>
                             <div class="text-right">
-                                <div class="px-3 py-1 rounded bg-teal-500/10 text-teal-400 text-xs border border-teal-500/20">Auto-Recovery</div>
+                                <div
+                                    class="px-3 py-1 rounded bg-teal-500/10 text-teal-400 text-xs border border-teal-500/20">
+                                    Auto-Recovery</div>
                             </div>
                         </div>
                         <p class="text-gray-400 text-sm border-t border-white/5 pt-3">
@@ -887,26 +1368,43 @@
 
     <!-- Footer -->
     <footer class="border-t border-white/5 bg-black pt-16 pb-8">
-        <div class="max-w-7xl mx-auto px-4">
+        <div class="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-12">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div class="col-span-1 md:col-span-2">
                     <a href="#" class="flex items-center gap-2 mb-4">
-                        <img src="../assets/img/logo.png" onerror="this.src='https://via.placeholder.com/40x40/333/fff?text=S'" alt="Logo" class="h-8 w-auto">
+                        <img src="../assets/img/logo.png"
+                            onerror="this.src='https://via.placeholder.com/40x40/333/fff?text=S'" alt="Logo"
+                            class="h-8 w-auto">
                         <span class="text-2xl font-bold text-white">SOPEN NET</span>
                     </a>
                     <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
-                        Компания операционных систем для людей и предприятий. Мы строим будущее, объединяя решения, исполнение и коммуникацию в единое целое.
+                        Компания операционных систем для людей и предприятий. Мы строим будущее, объединяя решения,
+                        исполнение и коммуникацию в единое целое.
                     </p>
                     <div class="flex flex-wrap gap-4 mt-6">
-                        <a href="https://x.com/SopenNet" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-500 hover:text-white transition"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.tiktok.com/@sopen.ai" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-black hover:text-white hover:border border-white/20 transition"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.youtube.com/@SopenNetinc" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-red-600 hover:text-white transition"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/sopen.ai/" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-pink-600 hover:text-white transition"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61585190857126" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://t.me/SopenNet" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-700 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://t.me/SopenNet" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-400 hover:text-white transition"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://x.com/SopenNet"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-500 hover:text-white transition"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@sopen.ai"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-black hover:text-white hover:border border-white/20 transition"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@SopenNetinc"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-red-600 hover:text-white transition"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/sopen.ai/"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-pink-600 hover:text-white transition"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61585190857126"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://t.me/SopenNet"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-700 hover:text-white transition"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://t.me/SopenNet"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-400 hover:text-white transition"><i
+                                class="fab fa-telegram-plane"></i></a>
                     </div>
-                    
+
                     <!-- Registered Address -->
                     <div class="mt-8 pt-6 border-t border-white/5">
                         <p class="text-xs text-gray-500 font-bold uppercase tracking-widest mb-3">Юридический адрес</p>
@@ -918,7 +1416,7 @@
                         </address>
                     </div>
                 </div>
-                
+
                 <div>
                     <h4 class="text-white font-bold mb-4">Продукты</h4>
                     <ul class="space-y-2 text-sm text-gray-500">
@@ -938,11 +1436,12 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-gray-600 text-sm text-center md:text-left">© 2025 Sopen Net, Inc. Все права защищены.</p>
                 <div class="flex gap-4">
-                    <img src="../assets/img/logo.png" onerror="this.style.display='none'" class="h-6 opacity-30 grayscale">
+                    <img src="../assets/img/logo.png" onerror="this.style.display='none'"
+                        class="h-6 opacity-30 grayscale">
                 </div>
             </div>
         </div>
@@ -952,7 +1451,7 @@
     <script>
         // Typewriter Logic
         const textElement = document.getElementById('typewriter-text');
-        const phrases = ["работает как единая система", "принимает решения", "выполняет задачи", "умно соединяет всех"];
+        const phrases = ["Матрица экосистемы", "Sopen System 1.5v", "Будущее AI", "Децентрализованный интеллект"];
         let phraseIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -960,11 +1459,11 @@
 
         function type() {
             const currentPhrase = phrases[phraseIndex];
-            
+
             if (isDeleting) {
                 textElement.textContent = currentPhrase.substring(0, charIndex - 1);
                 charIndex--;
-                typeSpeed = 50; 
+                typeSpeed = 50;
             } else {
                 textElement.textContent = currentPhrase.substring(0, charIndex + 1);
                 charIndex++;
@@ -985,7 +1484,7 @@
         document.addEventListener('DOMContentLoaded', type);
 
         // Scroll Progress Bar Logic
-        window.onscroll = function() {
+        window.onscroll = function () {
             let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             let scrolled = (winScroll / height) * 100;
@@ -998,4 +1497,5 @@
         }
     </script>
 </body>
+
 </html>
